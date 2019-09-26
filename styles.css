@@ -1,6 +1,92 @@
 /* FONTS */
 body {
   font-size: 16px;
+  font-family: 'SuisseIntl-UltralightItalic';
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Black';
+  src: url(assets/fonts/SuisseIntl-Black.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Black-Italic';
+  src: url(assets/fonts/SuisseIntl-BlackItalic.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Black-Bold';
+  src: url(assets/fonts/SuisseIntl-Bold.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Black-BoldItalic';
+  src: url(assets/fonts/SuisseIntl-BoldItalic.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Black-Book';
+  src: url(assets/fonts/SuisseIntl-Book.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-BookItalic';
+  src: url(assets/fonts/SuisseIntl-BookItalic.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Light';
+  src: url(assets/fonts/SuisseIntl-Light.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-LightItalic';
+  src: url(assets/fonts/SuisseIntl-LightItalic.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Medium';
+  src: url(assets/fonts/SuisseIntl-Medium.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-MediumItalic';
+  src: url(assets/fonts/SuisseIntl-MediumItalic.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Regular';
+  src: url(assets/fonts/SuisseIntl-Regular.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-RegularItalic';
+  src: url(assets/fonts/SuisseIntl-RegularItalic.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-SemiBold';
+  src: url(assets/fonts/SuisseIntl-SemiBold.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Thin';
+  src: url(assets/fonts/SuisseIntl-Thin.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-ThinItalic';
+  src: url(assets/fonts/SuisseIntl-ThinItalic.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Ultralight';
+  src: url(assets/fonts/SuisseIntl-Ultralight.otf);
+}
+
+@font-face {
+  font-family: 'SuisseIntl-UltralightItalic';
+  src: url(assets/fonts/SuisseIntl-UltralightItalic.otf);
 }
 
 /* ICONS */
