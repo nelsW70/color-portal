@@ -1,3 +1,14 @@
+/* FONTS */
+body {
+  font-size: 16px;
+}
+
+/* ICONS */
+.fa.fa-bars {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
 /* HEADER COLOR STRIP */
 .color-strip {
   height: 5px;
@@ -8,4 +19,32 @@
     #1aa063 65%,
     #0157fc
   );
+}
+
+/* HEADER MENU */
+.header-menu {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 60px;
+  background-color: #112330;
+}
+
+/* BODY */
+.main-content {
+  min-height: calc(100vh - 195px);
+}
+
+/* FOOTER */
+footer {
+  height: 60px;
+  background-color: #e7ebed;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 40px;
+  padding-left: 25px;
 }

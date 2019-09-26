@@ -15,6 +15,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- custom css -->
     <link rel="stylesheet" href="styles.css" />
 
@@ -22,9 +28,33 @@
   </head>
   <header>
     <div class="color-strip"></div>
+    <div class="header-menu">
+      <div class="dropdown">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+        <i
+          class="fa fa-bars"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        ></i>
+      </div>
+    </div>
   </header>
   <body>
-    <p>i'm the body</p>
+    <section class="main-content">
+      <p>i'm the main content</p>
+    </section>
+
+    <footer>
+      <img src="assets/PPG_Blue_Bug.png" alt="PPG Logo" />
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
