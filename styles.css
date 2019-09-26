@@ -1,92 +1,59 @@
 /* FONTS */
 body {
   font-size: 16px;
-  font-family: 'SuisseIntl-UltralightItalic';
+  font-family: 'Suisse Intl';
 }
 
 @font-face {
-  font-family: 'SuisseIntl-Black';
-  src: url(assets/fonts/SuisseIntl-Black.otf);
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Light.eot');
+  src: local('Suisse Intl Light'), local('SuisseIntl-Light'),
+    url('/fonts/SuisseIntl-Light.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/SuisseIntl-Light.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Light.woff') format('woff'),
+    url('/fonts/SuisseIntl-Light.ttf') format('truetype'),
+    url('/fonts/SuisseIntl-Light.svg#SuisseIntl') format('svg');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'SuisseIntl-Black-Italic';
-  src: url(assets/fonts/SuisseIntl-BlackItalic.otf);
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Regular.eot');
+  src: local('Suisse Intl Regular'), local('SuisseIntl-Regular'),
+    url('/fonts/SuisseIntl-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/SuisseIntl-Regular.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Regular.woff') format('woff'),
+    url('/fonts/SuisseIntl-Regular.ttf') format('truetype'),
+    url('/fonts/SuisseIntl-Regular.svg#SuisseIntl') format('svg');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'SuisseIntl-Black-Bold';
-  src: url(assets/fonts/SuisseIntl-Bold.otf);
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Medium.eot');
+  src: local('Suisse Intl Medium'), local('SuisseIntl-Medium'),
+    url('/fonts/SuisseIntl-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/SuisseIntl-Medium.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Medium.woff') format('woff'),
+    url('/fonts/SuisseIntl-Medium.ttf') format('truetype'),
+    url('/fonts/SuisseIntl-Medium.svg#SuisseIntl-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'SuisseIntl-Black-BoldItalic';
-  src: url(assets/fonts/SuisseIntl-BoldItalic.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-Black-Book';
-  src: url(assets/fonts/SuisseIntl-Book.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-BookItalic';
-  src: url(assets/fonts/SuisseIntl-BookItalic.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-Light';
-  src: url(assets/fonts/SuisseIntl-Light.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-LightItalic';
-  src: url(assets/fonts/SuisseIntl-LightItalic.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-Medium';
-  src: url(assets/fonts/SuisseIntl-Medium.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-MediumItalic';
-  src: url(assets/fonts/SuisseIntl-MediumItalic.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-Regular';
-  src: url(assets/fonts/SuisseIntl-Regular.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-RegularItalic';
-  src: url(assets/fonts/SuisseIntl-RegularItalic.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-SemiBold';
-  src: url(assets/fonts/SuisseIntl-SemiBold.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-Thin';
-  src: url(assets/fonts/SuisseIntl-Thin.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-ThinItalic';
-  src: url(assets/fonts/SuisseIntl-ThinItalic.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-Ultralight';
-  src: url(assets/fonts/SuisseIntl-Ultralight.otf);
-}
-
-@font-face {
-  font-family: 'SuisseIntl-UltralightItalic';
-  src: url(assets/fonts/SuisseIntl-UltralightItalic.otf);
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Bold.eot');
+  src: local('Suisse Intl Bold'), local('SuisseIntl-Bold'),
+    url('/fonts/SuisseIntl-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/SuisseIntl-Bold.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Bold.woff') format('woff'),
+    url('/fonts/SuisseIntl-Bold.ttf') format('truetype'),
+    url('/fonts/SuisseIntl-Bold.svg#SuisseIntl-Bold') format('svg');
+  font-weight: 600;
+  font-style: normal;
 }
 
 /* ICONS */
