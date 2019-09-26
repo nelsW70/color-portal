@@ -1,0 +1,11 @@
+/* HEADER COLOR STRIP */
+.color-strip {
+  height: 5px;
+  background-image: linear-gradient(
+    to left,
+    #ff0000,
+    #ffd602 33%,
+    #1aa063 65%,
+    #0157fc
+  );
+}
