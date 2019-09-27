@@ -119,7 +119,7 @@ h1 {
 }
 
 .dropdown-item .material-icons {
-  padding-right: 1.25rem;
+  padding-right: 1.5rem;
 }
 
 /* BODY */
@@ -131,7 +131,7 @@ h1 {
 .header-menu .dropdown {
   display: flex;
   align-items: center;
-  width: 10rem;
+  width: 15rem;
 }
 
 .dropdown-menu.show {
@@ -150,7 +150,7 @@ h1 {
 .header-menu .user-info {
   display: flex;
   justify-content: flex-end;
-  width: 10rem;
+  width: 15rem;
   text-align: right;
 }
 
