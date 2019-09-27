@@ -127,6 +127,16 @@ h1 {
   min-height: calc(100vh - 195px);
 }
 
+/* NAVBAR */
+.navbar {
+  height: 70px;
+  padding: 0.5rem 8px;
+}
+
+/* .navbar .nav-link:first-of-type {
+  padding-left: 0;
+} */
+
 /* CONTAINERS */
 .header-menu .dropdown {
   display: flex;
