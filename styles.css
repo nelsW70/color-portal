@@ -56,11 +56,42 @@ body {
   font-style: normal;
 }
 
-/* ICONS */
-/* REPLACE WITH MATERIAL ICON!!!!!!!!!!!!!  */
-.fa.fa-bars {
+/* menu label */
+.menu-label {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+/* ICONS */
+.material-icons.menu {
+  color: #ffffff;
+  font-size: 2rem;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+/* BODY */
+.main-content {
+  min-height: calc(100vh - 195px);
+}
+
+/* CONTAINERS */
+.header-menu .dropdown {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+}
+
+.header-menu .title {
+  flex: 1;
+  text-align: center;
+}
+
+.header-menu .user-info {
+  width: 10rem;
+  text-align: right;
 }
 
 /* HEADER COLOR STRIP */
@@ -79,15 +110,12 @@ body {
 .header-menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-left: 25px;
   padding-right: 25px;
   height: 60px;
   background-color: #112330;
-}
-
-/* BODY */
-.main-content {
-  min-height: calc(100vh - 195px);
+  color: #ffffff;
 }
 
 /* FOOTER */
