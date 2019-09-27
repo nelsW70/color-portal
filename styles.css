@@ -6,6 +6,19 @@ body {
 
 @font-face {
   font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Thin-WebS.eot');
+  src: local('Suisse Intl Thin'), local('SuisseIntl-Thin-WebS'),
+    url('/fonts/SuisseIntl-Thin-WebS.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/SuisseIntl-Thin-WebS.woff2') format('woff2'),
+    url('/fonts/SuisseIntl-Thin-WebS.woff') format('woff'),
+    url('/fonts/SuisseIntl-Thin-WebS.ttf') format('truetype'),
+    url('/fonts/SuisseIntl-Thin-WebS.svg#SuisseIntl') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Suisse Intl';
   src: url('/fonts/SuisseIntl-Light.eot');
   src: local('Suisse Intl Light'), local('SuisseIntl-Light'),
     url('/fonts/SuisseIntl-Light.eot?#iefix') format('embedded-opentype'),
@@ -56,12 +69,31 @@ body {
   font-style: normal;
 }
 
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
 /* menu label */
 .menu-label {
   color: #ffffff;
   font-size: 18px;
   font-weight: 300;
-  cursor: pointer;
+}
+
+/* title span */
+.title-span {
+  font-weight: 100;
+}
+
+/* title tm */
+.title-tm {
+  font-weight: 300;
+}
+
+/* user info */
+.user-info--text {
+  font-weight: 300;
 }
 
 /* ICONS */
@@ -70,6 +102,10 @@ body {
   font-size: 2rem;
   padding-right: 0.5rem;
   cursor: pointer;
+}
+
+.material-icons.account {
+  padding-right: 0.5rem;
 }
 
 /* BODY */
@@ -90,6 +126,8 @@ body {
 }
 
 .header-menu .user-info {
+  display: flex;
+  justify-content: flex-end;
   width: 10rem;
   text-align: right;
 }
