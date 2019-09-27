@@ -162,6 +162,34 @@ h1 {
   width: 100%;
 }
 
+/* navbar underline animation */
+.navbar .navbar-nav > li > a,
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+  position: relative;
+  font-weight: bold;
+}
+.navbar .navbar-nav > li > a:before {
+  background-color: #3ec7f4;
+  content: '';
+  height: 5px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar .navbar-nav > li > a:hover:before,
+.navbar-default .navbar-nav > li > a:focus:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 /* CONTAINERS */
 .header-menu .dropdown {
   display: flex;
@@ -225,3 +253,5 @@ footer img {
   height: 40px;
   padding-left: 25px;
 }
+
+/* https://jsfiddle.net/elektriheart/de2d0yd5/ */

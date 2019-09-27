@@ -31,6 +31,17 @@
     <!-- custom css -->
     <link rel="stylesheet" href="styles.css" />
 
+    <!-- navbar underline animation -->
+    <script>
+      $(document).ready(function() {
+        $('ul.nav > li > a').click(function(e) {
+          e.preventDefault();
+          $('ul.nav > li > a').removeClass('active');
+          $(this).addClass('active');
+        });
+      });
+    </script>
+
     <title>color portal</title>
   </head>
   <header>
