@@ -79,7 +79,7 @@
             </div>
           </a>
         </div>
-        <i
+        <!-- <i
           class="material-icons menu"
           href="#"
           role="button"
@@ -88,7 +88,21 @@
           aria-haspopup="true"
           aria-expanded="false"
           >menu</i
+        > -->
+        <div
+          id="nav-icon"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
         >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="menu-label">
           Menu
         </div>
@@ -194,5 +208,12 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function() {
+        $('#nav-icon').click(function() {
+          $(this).toggleClass('open');
+        });
+      });
+    </script>
   </body>
 </html>
