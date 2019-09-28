@@ -187,7 +187,7 @@
         This site is best viewed on screens wider than 960px.
         <br />
         <br />
-        Please adjust your screen width.
+        Please adjust the width of your screen.
       </div>
     </div>
 
@@ -209,10 +209,21 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      // hamburger menu animation
       $(document).ready(function() {
         $('#nav-icon').click(function() {
           $(this).toggleClass('open');
         });
+      });
+    </script>
+    <script>
+      //if you click outside the menu icon it will close the icon
+      $(document).click(function(event) {
+        if (!$(event.target).closest('#nav-icon,.open').length) {
+          $('body')
+            .find('#nav-icon')
+            .removeClass('open');
+        }
       });
     </script>
   </body>
