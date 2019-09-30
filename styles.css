@@ -2,6 +2,7 @@
 body {
   font-size: 16px;
   font-family: 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #193040;
 }
 
 @font-face {
@@ -74,6 +75,10 @@ h1 {
   margin-bottom: 0;
 }
 
+h2 {
+  font-size: 1.75rem;
+}
+
 /* menu label */
 .menu-label {
   color: #ffffff;
@@ -126,6 +131,10 @@ input::placeholder {
   letter-spacing: normal;
 }
 
+.print-button-text {
+  font-size: 14px;
+}
+
 /* ICONS */
 .material-icons.account {
   padding-right: 0.5rem;
@@ -135,9 +144,21 @@ input::placeholder {
   padding-right: 1.5rem;
 }
 
+.material-icons.print {
+  color: #7f98ab;
+}
+
+/* BUTTONS */
+
+/* print button */
+.btn-print {
+  background-color: #e7ebed;
+}
+
 /* BODY */
 .main-content {
   min-height: calc(100vh - 195px);
+  padding: 25px;
 }
 
 /* NAVBAR */
@@ -223,7 +244,16 @@ a.nav-link {
   transform: scaleX(1);
 }
 
+/* BREADCRUMBS */
+.breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0;
+  padding: 0;
+}
+
 /* CONTAINERS */
+
+/* header */
 .header-menu .dropdown {
   display: flex;
   align-items: center;
@@ -248,6 +278,14 @@ a.nav-link {
   justify-content: flex-end;
   width: 15rem;
   text-align: right;
+}
+
+/* breadcrumbs row */
+.breadcrumbs-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
 }
 
 /* HEADER COLOR STRIP */
@@ -355,7 +393,7 @@ a.nav-link {
 }
 
 /* HEADER INPUT */
-form .bg-light {
+.navbar form .bg-light {
   border-radius: 2px;
 }
 
