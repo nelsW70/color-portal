@@ -540,6 +540,25 @@ a.nav-link {
   background-color: rgba(17, 35, 48, 0.03);
 }
 
+/* status dots  */
+
+.dot {
+  height: 9px;
+  width: 9px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.dot--approved {
+  background-color: #02a154;
+}
+
+.dot--pending {
+  background-color: #ff9a00;
+}
+
 /* FOOTER */
 footer {
   height: 60px;
