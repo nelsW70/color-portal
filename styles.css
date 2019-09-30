@@ -140,6 +140,14 @@ input::placeholder {
   color: #1966ec;
 }
 
+.customer-info label {
+  margin-bottom: 0.25rem;
+}
+
+.label {
+  color: #334756;
+}
+
 /* ICONS */
 .material-icons.account {
   padding-right: 0.5rem;
@@ -154,10 +162,37 @@ input::placeholder {
 }
 
 /* BUTTONS */
+button.btn {
+  border-radius: 2px;
+}
+
+.btn.btn-primary {
+  background-color: #1e5dcb;
+}
+
+.btn.btn-primary:hover {
+  background-color: #1b499a;
+}
+
+.btn.btn-outline-primary {
+  color: #1e5dcb;
+  border-color: #1e5dcb;
+}
+
+.btn.btn-outline-primary:hover {
+  background-color: #1e5dcb;
+  color: #ffffff;
+}
 
 /* print button */
 .btn-print {
   background-color: #e7ebed;
+}
+
+/* add project and view programs buttons */
+.btn-add-project,
+.btn-view-programs {
+  height: 40px;
 }
 
 /* BODY */
@@ -293,6 +328,17 @@ a.nav-link {
   margin-bottom: 1.25rem;
 }
 
+/* title row */
+.title-row {
+  margin-bottom: 1.5rem;
+}
+
+/* customer info row */
+.customer-info {
+  display: flex;
+  align-items: flex-end;
+}
+
 /* HEADER COLOR STRIP */
 .color-strip {
   height: 5px;
@@ -397,9 +443,14 @@ a.nav-link {
   left: 50%;
 }
 
-/* HEADER INPUT */
-.navbar form .bg-light {
+/* INPUTS */
+.navbar form .bg-light,
+.customer-info .input-group.border {
   border-radius: 2px;
+}
+
+.customer-info form .input-group.border {
+  border: 1px solid #b3c1cc !important;
 }
 
 /* FOOTER */
