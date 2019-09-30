@@ -106,6 +106,12 @@ h1 {
   padding: 0.375rem 1.5rem;
 }
 
+/* INPUT PLACEHOLDER */
+input::placeholder {
+  font-family: 'Suisse Intl';
+  color: #9ba6ae !important;
+}
+
 /* navbar links */
 .color-portal.color-portal-nav .navbar-nav .nav-link {
   color: #ffffff;
@@ -121,13 +127,6 @@ h1 {
 }
 
 /* ICONS */
-/* .material-icons.menu {
-  color: #ffffff;
-  font-size: 2rem;
-  padding-right: 0.5rem;
-  cursor: pointer;
-} */
-
 .material-icons.account {
   padding-right: 0.5rem;
 }
@@ -275,53 +274,11 @@ a.nav-link {
   color: #ffffff;
 }
 
-/* FOOTER */
-footer {
-  height: 60px;
-  background-color: #e7ebed;
-  display: flex;
-  align-items: center;
+/* HEADER DROPDOWN MENU  */
+.dropdown-menu {
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgba(25, 48, 64, 0.2);
 }
-
-footer img {
-  height: 40px;
-  padding-left: 25px;
-}
-
-/* FULL SCREEN OVERLAY BELOW 960PX */
-#overlay {
-  position: fixed;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(21, 35, 47, 1);
-  z-index: 2;
-  cursor: pointer;
-}
-
-#text {
-  position: absolute;
-  font-family: 'Suisse Intl';
-  font-weight: 300;
-  top: 45%;
-  left: 50%;
-  font-size: 1.5rem;
-  color: #ffffff;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-@media only screen and (min-width: 960px) {
-  #overlay {
-    display: none;
-  }
-}
-
-/* https://jsfiddle.net/elektriheart/de2d0yd5/ */
 
 /* HAMBURGER ANIMATION */
 #nav-icon {
@@ -396,3 +353,57 @@ footer img {
   width: 0%;
   left: 50%;
 }
+
+/* HEADER INPUT */
+form .bg-light {
+  border-radius: 2px;
+}
+
+/* FOOTER */
+footer {
+  height: 60px;
+  background-color: #e7ebed;
+  /* background-color: #112330; */
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 40px;
+  padding-left: 25px;
+}
+
+/* FULL SCREEN OVERLAY BELOW 960PX */
+#overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(21, 35, 47, 1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  font-family: 'Suisse Intl';
+  font-weight: 300;
+  top: 45%;
+  left: 50%;
+  font-size: 1.5rem;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 960px) {
+  #overlay {
+    display: none;
+  }
+}
+
+/* https://jsfiddle.net/elektriheart/de2d0yd5/ */
