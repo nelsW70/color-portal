@@ -184,40 +184,75 @@
         <h2>Stylist Projects</h2>
       </div>
       <div class="customer-info">
-        <form action="" class="mr-3">
-          <label for="inputCustomer" class="label">Customer</label>
-          <div class="input-group border customer-search">
-            <input
-              type="search"
-              placeholder="Search for customer name"
-              aria-describedby="button-addon4"
-              class="form-control bg-none border-0"
-            />
-            <div class="input-group-prepend border-0">
+        <div class="customer-info__col-one mr-3">
+          <form action="" class="mr-3">
+            <label for="inputCustomer" class="label">Customer</label>
+            <div class="input-group border customer-search">
+              <input
+                type="search"
+                placeholder="Search for customer name"
+                aria-describedby="button-addon4"
+                class="form-control bg-none border-0"
+              />
+              <div class="input-group-prepend border-0">
+                <button
+                  id="button-addon4"
+                  type="button"
+                  class="btn btn-link text-primary"
+                >
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <button
+            type="button"
+            class="btn btn-primary btn-add-project d-flex justify-content-center align-content-between align-items-center mr-3"
+          >
+            <i class="material-icons mr-1">add_box </i>
+            <span class="print-button-text">Add Project</span>
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-primary btn-view-programs d-flex justify-content-center align-content-between align-items-center"
+          >
+            <i class="material-icons mr-1">list </i>
+            <span class="print-button-text">View Styling Programs</span>
+          </button>
+        </div>
+        <div class="customer-info__col-two">
+          <div class="buttons-container mr-3">
+            <label for="basic-url" class="label">Project Status:</label>
+            <div class="btn-group" role="group" aria-label="Project Status">
               <button
-                id="button-addon4"
                 type="button"
-                class="btn btn-link text-primary"
+                class="btn btn-project btn-project--status active"
               >
-                <i class="fa fa-search"></i>
+                Open
+              </button>
+              <button type="button" class="btn btn-project btn-project--status">
+                Closed
               </button>
             </div>
           </div>
-        </form>
-        <button
-          type="button"
-          class="btn btn-primary btn-add-project d-flex justify-content-center align-content-between align-items-center mr-3"
-        >
-          <i class="material-icons mr-1">add_box </i>
-          <span class="print-button-text">Add Project</span>
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-primary btn-view-programs d-flex justify-content-center align-content-between align-items-center"
-        >
-          <i class="material-icons mr-1">list </i>
-          <span class="print-button-text">View Styling Programs</span>
-        </button>
+          <div class="buttons-container">
+            <label for="basic-url" class="label">Show:</label>
+            <div class="btn-group" role="group" aria-label="Project Status">
+              <button
+                type="button"
+                class="btn btn-project btn-project--show active"
+              >
+                Mine
+              </button>
+              <button type="button" class="btn btn-project btn-project--show">
+                Team
+              </button>
+              <button type="button" class="btn btn-project btn-project--show">
+                All
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -269,6 +304,22 @@
             .find('#nav-icon')
             .removeClass('open');
         }
+      });
+    </script>
+    <script>
+      // adds/removes active to project status buttons
+      $('.btn-project--status').click(function(e) {
+        e.stopPropagation();
+        $('.btn-project--status').removeClass('active');
+        $(this).addClass('active');
+      });
+    </script>
+    <script>
+      // adds/removes active to project show buttons
+      $('.btn-project--show').click(function(e) {
+        e.stopPropagation();
+        $('.btn-project--show').removeClass('active');
+        $(this).addClass('active');
       });
     </script>
   </body>

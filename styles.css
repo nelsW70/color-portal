@@ -112,6 +112,20 @@ h2 {
   padding: 0.375rem 1.5rem;
 }
 
+/* project buttons */
+.btn.btn-project {
+  font-size: 13px;
+  color: #334756;
+  border-radius: 2px;
+  width: 70px;
+}
+
+.btn.btn-project:hover,
+.btn.btn-project.active {
+  font-size: 13px;
+  color: #1e5dcb;
+}
+
 /* INPUT PLACEHOLDER */
 input::placeholder {
   font-family: 'Suisse Intl';
@@ -146,6 +160,7 @@ input::placeholder {
 
 .label {
   color: #334756;
+  font-size: 13px;
 }
 
 /* ICONS */
@@ -193,6 +208,18 @@ button.btn {
 .btn-add-project,
 .btn-view-programs {
   height: 40px;
+}
+
+.btn.btn-project {
+  border-radius: 2px;
+  border: solid 1px #b3c1cc;
+  background-color: #ffffff;
+}
+
+.btn.btn-project:hover,
+.btn.btn-project.active {
+  border: solid 1px #1966ec;
+  background-color: rgba(25, 102, 236, 0.1);
 }
 
 /* BODY */
@@ -337,6 +364,23 @@ a.nav-link {
 .customer-info {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.customer-info__col-one {
+  display: flex;
+  align-items: flex-end;
+}
+
+.customer-info__col-two {
+  display: flex;
+  align-items: flex-end;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
 }
 
 /* HEADER COLOR STRIP */
@@ -503,5 +547,3 @@ footer img {
     display: none;
   }
 }
-
-/* https://jsfiddle.net/elektriheart/de2d0yd5/ */
