@@ -453,6 +453,10 @@ a.nav-link {
   border: 1px solid #b3c1cc !important;
 }
 
+.customer-info .customer-search {
+  min-width: 18rem;
+}
+
 /* FOOTER */
 footer {
   height: 60px;
