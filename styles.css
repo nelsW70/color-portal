@@ -452,9 +452,26 @@ a.nav-link {
   margin: 0;
 }
 
-.pagination-row .pagination .page-item:first-child,
-.pagination-row .pagination .page-item:nth-child(7) {
+.pagination-row .pagination .page-item:first-child {
   margin-right: 1.5rem;
+}
+
+.pagination-row .pagination .page-item:first-child a {
+  background-color: #e7ebed;
+  color: #193040;
+}
+
+.pagination-row .pagination .page-item:nth-child(8) {
+  margin-left: 1.5rem;
+}
+
+.pagination-row .pagination .page-item:nth-child(8) a {
+  background-color: #e7ebed;
+  color: #193040;
+}
+
+.pagination-row .pagination .page-item .page-link {
+  padding: 0.25rem 0.75rem;
 }
 
 /* HEADER COLOR STRIP */
