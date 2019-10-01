@@ -644,9 +644,11 @@ a.nav-link {
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: rgba(17, 35, 48, 0.03);
 }
+.table td {
+  border-top: none;
+}
 
 /* status dots  */
-
 .dot {
   height: 9px;
   width: 9px;
