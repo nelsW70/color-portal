@@ -132,21 +132,7 @@ a {
   padding: 0.375rem 1.5rem;
 }
 
-/* project buttons */
-.btn.btn-project {
-  font-size: 13px;
-  color: #334756;
-  border-radius: 2px;
-  width: 70px;
-}
-
-.btn.btn-project:hover,
-.btn.btn-project.active {
-  font-size: 13px;
-  color: #1e5dcb;
-}
-
-/* INPUT PLACEHOLDER */
+/* input placeholder */
 input::placeholder {
   font-family: 'Suisse Intl';
   color: #9ba6ae !important;
@@ -189,6 +175,12 @@ input::placeholder {
 
 .pagination-row .pagination .page-item {
   font-size: 14px;
+}
+
+/* BODY */
+.main-content {
+  min-height: calc(100vh - 195px);
+  padding: 25px;
 }
 
 /* ICONS */
@@ -260,10 +252,18 @@ button.btn {
   height: 35px;
 }
 
-/* BODY */
-.main-content {
-  min-height: calc(100vh - 195px);
-  padding: 25px;
+/* project buttons */
+.btn.btn-project {
+  font-size: 13px;
+  color: #334756;
+  border-radius: 2px;
+  width: 70px;
+}
+
+.btn.btn-project:hover,
+.btn.btn-project.active {
+  font-size: 13px;
+  color: #1e5dcb;
 }
 
 /* NAVBAR */
@@ -648,7 +648,7 @@ a.nav-link {
   border-top: none;
 }
 
-/* status dots  */
+/* TABLE STATUS DOTS  */
 .dot {
   height: 9px;
   width: 9px;
