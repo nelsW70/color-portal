@@ -465,7 +465,7 @@ a.nav-link {
 }
 
 .pagination-row .pagination .page-item:first-child {
-  margin-right: 1.5rem;
+  margin-right: 1.25rem;
 }
 
 .pagination-row .pagination .page-item:first-child a {
@@ -474,7 +474,7 @@ a.nav-link {
 }
 
 .pagination-row .pagination .page-item:nth-child(8) {
-  margin-left: 1.5rem;
+  margin-left: 1.25rem;
 }
 
 .pagination-row .pagination .page-item:nth-child(8) a {
