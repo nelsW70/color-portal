@@ -96,6 +96,10 @@ td a {
   cursor: pointer;
 }
 
+a {
+  color: #1966ec;
+}
+
 /* menu label */
 .menu-label {
   color: #ffffff;
@@ -177,6 +181,14 @@ input::placeholder {
 .label {
   color: #334756;
   font-size: 13px;
+}
+
+.label.label-large {
+  font-size: 14px;
+}
+
+.pagination-row .pagination .page-item {
+  font-size: 14px;
 }
 
 /* ICONS */
@@ -474,6 +486,7 @@ a.nav-link {
   padding: 0.25rem 0.75rem;
   color: #334756;
   border: none;
+  border-radius: 1px;
 }
 
 .pagination-row .pagination .page-item .page-link:focus {
@@ -487,6 +500,18 @@ a.nav-link {
 
 .pagination-row .pagination .page-item:nth-child(5) {
   margin-left: 0.75rem;
+}
+
+.go-to-page {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.go-to-page input {
+  width: 42px;
+  height: 35px;
+  border-radius: 1px;
 }
 
 /* HEADER COLOR STRIP */
