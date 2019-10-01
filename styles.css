@@ -266,6 +266,12 @@ button.btn {
   color: #1e5dcb;
 }
 
+.btn.btn-items-per-page:hover,
+.btn.btn-items-per-page:focus {
+  background-color: #1e5dcb;
+  border-color: #1e5dcb;
+}
+
 /* NAVBAR */
 .navbar {
   height: 70px;
