@@ -349,6 +349,110 @@ a.nav-link {
   transform: scaleX(1);
 }
 
+/* HEADER COLOR STRIP */
+.color-strip {
+  height: 5px;
+  background-image: linear-gradient(
+    to left,
+    #ff0000,
+    #ffd602 33%,
+    #1aa063 65%,
+    #0157fc
+  );
+}
+
+/* HEADER MENU */
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 60px;
+  background-color: #112330;
+  color: #ffffff;
+}
+
+/* HEADER DROPDOWN MENU  */
+.dropdown-menu {
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgba(25, 48, 64, 0.2);
+}
+
+/* HAMBURGER ANIMATION */
+#nav-icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 0.5rem;
+  margin-top: 0.35rem;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon span:nth-child(2),
+#nav-icon span:nth-child(3) {
+  top: 9px;
+}
+
+#nav-icon span:nth-child(4) {
+  top: 18px;
+}
+
+#nav-icon.open span:nth-child(1) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+
 /* BREADCRUMBS */
 .breadcrumb {
   background-color: transparent;
@@ -512,110 +616,6 @@ a.nav-link {
   width: 42px;
   height: 35px;
   border-radius: 1px;
-}
-
-/* HEADER COLOR STRIP */
-.color-strip {
-  height: 5px;
-  background-image: linear-gradient(
-    to left,
-    #ff0000,
-    #ffd602 33%,
-    #1aa063 65%,
-    #0157fc
-  );
-}
-
-/* HEADER MENU */
-.header-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 25px;
-  padding-right: 25px;
-  height: 60px;
-  background-color: #112330;
-  color: #ffffff;
-}
-
-/* HEADER DROPDOWN MENU  */
-.dropdown-menu {
-  border-radius: 2px;
-  box-shadow: 0 1px 4px 0 rgba(25, 48, 64, 0.2);
-}
-
-/* HAMBURGER ANIMATION */
-#nav-icon {
-  width: 26px;
-  height: 26px;
-  margin-right: 0.5rem;
-  margin-top: 0.35rem;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-#nav-icon span {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: #ffffff;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-#nav-icon span:nth-child(1) {
-  top: 0px;
-}
-
-#nav-icon span:nth-child(2),
-#nav-icon span:nth-child(3) {
-  top: 9px;
-}
-
-#nav-icon span:nth-child(4) {
-  top: 18px;
-}
-
-#nav-icon.open span:nth-child(1) {
-  top: 9px;
-  width: 0%;
-  left: 50%;
-}
-
-#nav-icon.open span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-#nav-icon.open span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-#nav-icon.open span:nth-child(4) {
-  top: 9px;
-  width: 0%;
-  left: 50%;
 }
 
 /* INPUTS */
