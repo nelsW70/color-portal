@@ -429,8 +429,21 @@ a.nav-link {
 .items-per-page {
   display: flex;
   align-items: baseline;
+  width: 15rem;
 }
 
+.pagination-buttons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.go-to-page {
+  width: 15rem;
+  text-align: right;
+}
+
+/* PAGINATION */
 .pagination-row .dropdown-menu.show {
   min-width: fit-content;
 }
