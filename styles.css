@@ -196,6 +196,11 @@ input::placeholder {
   color: #7f98ab;
 }
 
+.navbar .ui.icon.input .search {
+  color: #1966ec;
+  opacity: 1;
+}
+
 /* BUTTONS */
 button.btn {
   border-radius: 2px;
@@ -619,10 +624,10 @@ a.nav-link {
 }
 
 /* INPUTS */
-.navbar form .bg-light,
+/* .navbar form .bg-light,
 .customer-info .input-group.border {
   border-radius: 2px;
-}
+} */
 
 .customer-info form .input-group.border {
   border: 1px solid #b3c1cc !important;
