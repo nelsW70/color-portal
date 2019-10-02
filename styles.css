@@ -178,6 +178,11 @@ input::placeholder {
   font-size: 14px;
 }
 
+/* SEARCH RESULTS 'No Results' HEADER */
+.ui.search > .results > .message .header {
+  font-family: 'Suisse Intl';
+}
+
 /* BODY */
 .main-content {
   min-height: calc(100vh - 195px);
