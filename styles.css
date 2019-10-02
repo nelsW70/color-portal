@@ -199,7 +199,7 @@ input::placeholder {
 
 .ui.icon.input .search {
   color: #1966ec;
-  opacity: 0.75;
+  /* opacity: 0.85; */
 }
 
 /* BUTTONS */
@@ -473,7 +473,6 @@ a.nav-link {
 }
 
 /* SEARCH DROPDOWN  */
-
 .ui.search > .results .result:hover {
   background: rgba(25, 102, 236, 0.1);
 }
