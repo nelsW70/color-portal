@@ -207,6 +207,15 @@ input::placeholder {
   font-size: 14px;
 }
 
+/* items per page default value  */
+.pagination-row .ui.fluid.selection.dropdown .text {
+  color: #334756;
+}
+
+.pagination-row .ui.fluid.selection.dropdown .item {
+  color: #334756;
+}
+
 /* BODY */
 .main-content {
   min-height: calc(100vh - 195px);
