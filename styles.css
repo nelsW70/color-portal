@@ -71,6 +71,8 @@ body {
   font-style: normal;
 }
 
+/* this really shouldn't be necessary 
+but the hierarchy helps override the library fonts */
 h1,
 h2,
 h3,
@@ -125,9 +127,8 @@ a {
 /* title tm */
 .title .title-tm {
   font-weight: 100;
-  font-size: initial;
+  font-size: 20px;
   vertical-align: top;
-  line-height: initial;
 }
 
 /* user info */
