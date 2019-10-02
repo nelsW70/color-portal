@@ -198,7 +198,7 @@ input::placeholder {
 
 .navbar .ui.icon.input .search {
   color: #1966ec;
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 /* BUTTONS */
@@ -296,13 +296,13 @@ a.nav-link {
   width: 75%;
 }
 
-.navbar form {
+.navbar .ui.icon.input {
   width: 25%;
 }
 
-.navbar form > div {
+/* .navbar form > div {
   width: 100%;
-}
+} */
 
 .nav-item:first-of-type {
   width: 9%;
