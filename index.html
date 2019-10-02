@@ -351,27 +351,15 @@
           <label for="itemsPerPage" class="label label-large mr-2"
             >Items per page</label
           >
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary btn-items-per-page dropdown-toggle"
-              type="button"
-              id="dropdownMenu2"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              10
-            </button>
-            <div class="dropdown-menu" aria-labelledby="itemsPerPage">
-              <button class="dropdown-item" type="button">
-                20
-              </button>
-              <button class="dropdown-item" type="button">
-                30
-              </button>
-              <button class="dropdown-item" type="button">
-                40
-              </button>
+          <div class="ui fluid selection dropdown">
+            <input type="hidden" name="items-per-page" />
+            <i class="dropdown icon"></i>
+            <div class="default">10</div>
+            <div class="menu">
+              <div class="item" data-value="0">10</div>
+              <div class="item" data-value="1">20</div>
+              <div class="item" data-value="2">30</div>
+              <div class="item" data-value="3">40</div>
             </div>
           </div>
         </div>
@@ -446,8 +434,8 @@
     <!-- Semantic UI -->
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 
-    <!-- Yes, I know the scripts below should be in their own js files but this is 
-    so you don't have to go looking for them and can structure things however you prefer -->
+    <!-- I know the scripts below should be in their own js files but this is 
+         so you don't have to go looking for them and can structure things however you prefer -->
     <script>
       // hamburger menu animation
       $(document).ready(function() {
@@ -501,6 +489,10 @@
       $('.ui.search').search({
         source: content
       });
+    </script>
+    <script>
+      // intialize semantic ui dropdown
+      $('.ui.dropdown').dropdown();
     </script>
   </body>
 </html>
