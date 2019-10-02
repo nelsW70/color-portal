@@ -472,6 +472,12 @@ a.nav-link {
   padding: 0;
 }
 
+/* SEARCH DROPDOWN  */
+
+.ui.search > .results .result:hover {
+  background: rgba(25, 102, 236, 0.1);
+}
+
 /* CONTAINERS */
 
 /* header */
