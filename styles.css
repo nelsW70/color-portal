@@ -115,6 +115,7 @@ a {
 /* menu label */
 .menu-label {
   color: #ffffff;
+  font-family: 'Suisse Intl';
   font-size: 18px;
   font-weight: 300;
 }
@@ -227,8 +228,8 @@ input::placeholder {
   padding-right: 0.5rem;
 }
 
-.dropdown-item .material-icons {
-  padding-right: 1.5rem;
+.dropdown .ui.floating .item .material-icons {
+  padding-right: 1rem;
 }
 
 .material-icons.print {
@@ -420,13 +421,13 @@ a.nav-link {
 }
 
 /* HEADER DROPDOWN MENU  */
-.dropdown-menu {
-  border-radius: 2px;
+.header-menu .dropdown .ui.floating .menu.transition.visible {
+  /* border-radius: 2px; */
   box-shadow: 0 1px 4px 0 rgba(25, 48, 64, 0.2);
 }
 
 /* HAMBURGER ANIMATION */
-#nav-icon {
+.nav-icon {
   width: 26px;
   height: 26px;
   margin-right: 0.5rem;
@@ -442,7 +443,7 @@ a.nav-link {
   cursor: pointer;
 }
 
-#nav-icon span {
+.nav-icon span {
   display: block;
   position: absolute;
   height: 3px;
@@ -460,40 +461,40 @@ a.nav-link {
   transition: 0.3s ease-in-out;
 }
 
-#nav-icon span:nth-child(1) {
+.nav-icon span:nth-child(1) {
   top: 0px;
 }
 
-#nav-icon span:nth-child(2),
-#nav-icon span:nth-child(3) {
+.nav-icon span:nth-child(2),
+.nav-icon span:nth-child(3) {
   top: 9px;
 }
 
-#nav-icon span:nth-child(4) {
+.nav-icon span:nth-child(4) {
   top: 18px;
 }
 
-#nav-icon.open span:nth-child(1) {
+.nav-icon.open span:nth-child(1) {
   top: 9px;
   width: 0%;
   left: 50%;
 }
 
-#nav-icon.open span:nth-child(2) {
+.nav-icon.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#nav-icon.open span:nth-child(3) {
+.nav-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-#nav-icon.open span:nth-child(4) {
+.nav-icon.open span:nth-child(4) {
   top: 9px;
   width: 0%;
   left: 50%;
@@ -543,12 +544,18 @@ a.nav-link {
   width: 15rem;
 }
 
+.header-menu .dropdown .ui.floating {
+  background-color: transparent;
+  padding: 0;
+}
+
 .dropdown-menu.show {
   padding: 1.25rem 0.25rem;
 }
 
-.header-menu .dropdown-item {
+.header-menu .dropdown .ui.floating .item {
   display: flex;
+  align-items: center;
 }
 
 .header-menu .title {

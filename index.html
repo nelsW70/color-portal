@@ -42,7 +42,7 @@
   <header>
     <div class="color-strip"></div>
     <div class="header-menu">
-      <div class="dropdown">
+      <!-- <div class="dropdown">
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <a class="dropdown-item" href="#">
             <i class="material-icons">
@@ -100,6 +100,37 @@
         </div>
         <div class="menu-label">
           Menu
+        </div>
+      </div> -->
+      <div class="dropdown">
+        <div class="ui buttons" id="nav-icon-container">
+          <div class="ui floating dropdown icon button">
+            <div class="nav-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-label">
+              Menu
+            </div>
+            <div class="menu">
+              <div class="item">
+                <i class="material-icons">settings_input_component</i>Register
+                Instrument
+              </div>
+              <div class="item">
+                <i class="material-icons">build</i>Customer Maintenance
+              </div>
+              <div class="item">
+                <i class="material-icons">palette</i>Color Search
+              </div>
+              <div class="item">
+                <i class="material-icons">account_box</i>Login as User
+              </div>
+              <div class="item"><i class="material-icons">help</i>Help</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="title">
@@ -438,17 +469,17 @@
     <script>
       // hamburger menu animation
       $(document).ready(function() {
-        $('#nav-icon').click(function() {
-          $(this).toggleClass('open');
+        $('#nav-icon-container').click(function() {
+          $('.nav-icon').toggleClass('open');
         });
       });
     </script>
     <script>
       //if you click outside the menu icon it will close the icon
       $(document).click(function(event) {
-        if (!$(event.target).closest('#nav-icon,.open').length) {
+        if (!$(event.target).closest('#nav-icon-container,.open').length) {
           $('body')
-            .find('#nav-icon')
+            .find('.nav-icon')
             .removeClass('open');
         }
       });
