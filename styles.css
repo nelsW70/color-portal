@@ -90,6 +90,7 @@ h1 {
 
 h2 {
   font-size: 1.75rem;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
@@ -175,8 +176,19 @@ input::placeholder {
   font-size: 14px;
 }
 
-.breadcrumb-item.active a {
+.ui.breadcrumb .divider {
+  color: #334756;
+  font-size: 13px;
+}
+
+.ui.breadcrumb a.section {
+  color: #334756;
+  font-size: 13px;
+}
+
+.ui.breadcrumb a.section.active {
   color: #1966ec;
+  font-weight: inherit;
 }
 
 .customer-info label {
@@ -522,6 +534,7 @@ button.btn {
 }
 
 /* BREADCRUMBS */
+/* DELETE AFTER BOOTSTRAP IS OUT */
 .breadcrumb {
   background-color: transparent;
   margin-bottom: 0;
