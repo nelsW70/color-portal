@@ -290,6 +290,7 @@ input::placeholder {
 }
 .ui.primary.button:hover {
   background-color: #1b499a;
+  transition: all 0.25s;
 }
 
 .ui.primary.button:focus {
