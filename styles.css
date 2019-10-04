@@ -78,7 +78,8 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+.item {
   font-family: 'Suisse Intl', sans-serif;
 }
 
@@ -139,13 +140,14 @@ a {
 
 /* header dropdown menu text */
 .display-item--text {
-  line-height: 28px;
+  color: #193040;
+  font-size: 14px;
 }
 
-.dropdown-item {
+/* .dropdown .menu .item {
   color: #334756;
   padding: 0.375rem 1.5rem;
-}
+} */
 
 /* input placeholder */
 input::placeholder {
@@ -224,6 +226,11 @@ input::placeholder {
 }
 
 /* ICONS */
+
+.menu .item .material-icons {
+  color: #334756;
+  font-size: 18px;
+}
 .material-icons.account {
   padding-right: 0.5rem;
 }
@@ -431,7 +438,7 @@ a.nav-link {
   width: 26px;
   height: 26px;
   margin-right: 0.5rem;
-  margin-top: 0.35rem;
+  margin-top: 0.25rem;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
