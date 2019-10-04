@@ -428,7 +428,7 @@ a.nav-link {
 }
 
 /* HEADER DROPDOWN MENU  */
-.header-menu .dropdown .ui.floating .menu.transition.visible {
+.header-menu .dropdown .ui.floating .menu {
   border-radius: 2px !important;
   background-color: #ffffff;
   box-shadow: 0 1px 4px 0 rgba(25, 48, 64, 0.2);
@@ -562,9 +562,9 @@ a.nav-link {
   padding: 0;
 }
 
-.dropdown-menu.show {
+/* .dropdown-menu.show {
   padding: 1.25rem 0.25rem;
-}
+} */
 
 .header-menu .dropdown .ui.floating .item {
   display: flex;
