@@ -172,8 +172,13 @@ input::placeholder {
   letter-spacing: normal;
 }
 
+/* THIS IS GONNA BREAK SOME STUFF  */
 .print-button-text {
   font-size: 14px;
+}
+
+.ui.button.btn-print .print-button-text {
+  color: #193040;
 }
 
 .ui.breadcrumb .divider {
@@ -186,7 +191,8 @@ input::placeholder {
   font-size: 13px;
 }
 
-.ui.breadcrumb a.section.active {
+.ui.breadcrumb a.section.active,
+.ui.breadcrumb a.section:hover {
   color: #1966ec;
   font-weight: inherit;
 }
@@ -261,6 +267,17 @@ input::placeholder {
 }
 
 /* BUTTONS */
+.ui.button {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: 'Suisse Intl';
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 3px;
+}
+
+/* DELETE AFTER BOOTSTRAP IS OUT */
 button.btn {
   border-radius: 2px;
 }
@@ -284,8 +301,13 @@ button.btn {
 }
 
 /* print button */
-.btn-print {
+.ui.button.btn-print {
   background-color: #e7ebed;
+}
+
+.ui.button.btn-print:hover {
+  background-color: #d6dadc;
+  transition: all 0.25s;
 }
 
 /* add project and view programs buttons */
