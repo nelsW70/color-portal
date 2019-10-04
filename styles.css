@@ -226,7 +226,6 @@ input::placeholder {
 }
 
 /* ICONS */
-
 .menu .item .material-icons {
   color: #334756;
   font-size: 20px;
@@ -322,6 +321,63 @@ button.btn {
 .btn.btn-items-per-page:focus {
   background-color: #1e5dcb;
   border-color: #1e5dcb;
+}
+
+/* SEMANTIC UI NAVBAR  */
+.ui-nav.ui.menu {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0.5rem 8px;
+  background-color: #334756 !important;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.ui-nav.ui.menu .menu-links-container {
+  display: flex;
+  width: 75%;
+}
+
+.ui-nav.ui.menu .ui.icon.input {
+  width: 25%;
+}
+
+.ui-nav .item {
+  justify-content: center;
+}
+
+.ui-nav .item:first-of-type {
+  width: 9%;
+}
+
+.ui-nav .item:nth-child(2) {
+  width: 12%;
+}
+
+.ui-nav .item:nth-child(3) {
+  width: 14%;
+}
+
+.ui-nav .item:nth-child(4) {
+  width: 23%;
+}
+
+.ui-nav .item:nth-child(5) {
+  width: 14%;
+}
+
+.ui-nav .item:nth-child(6) {
+  width: 16%;
+}
+
+.ui-nav .item:nth-child(7) {
+  width: 10%;
+}
+
+.ui-nav.ui.menu .active.item {
+  background: none;
 }
 
 /* NAVBAR */
