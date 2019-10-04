@@ -288,13 +288,21 @@ input::placeholder {
 .ui.primary.button {
   background-color: #1e5dcb;
 }
-.ui.primary.button:hover {
+.ui.primary.button:hover,
+.ui.primary.button:focus {
   background-color: #1b499a;
   transition: all 0.25s;
 }
 
-.ui.primary.button:focus {
-  background-color: #1b499a;
+.ui.inverted.primary.button {
+  border: 1px solid #1e5dcb;
+  color: #1e5dcb;
+  box-shadow: none !important;
+}
+
+.ui.inverted.primary.button:hover,
+.ui.inverted.primary.button:focus {
+  background-color: #1e5dcb;
 }
 
 /* print button */
@@ -310,12 +318,13 @@ input::placeholder {
 }
 
 /* add project button */
-.btn-add-project .button-text {
+.btn-add-project .button-text,
+.btn-view-styling .button-text {
   font-weight: 400;
 }
 
 /* DELETE AFTER BOOTSTRAP IS OUT */
-button.btn {
+/* button.btn {
   border-radius: 2px;
 }
 
@@ -335,11 +344,11 @@ button.btn {
 .btn.btn-outline-primary:hover {
   background-color: #1e5dcb;
   color: #ffffff;
-}
+} */
 
 /* add project and view programs buttons */
 .btn-add-project,
-.btn-view-programs {
+.btn-view-styling {
   height: 40px;
 }
 
@@ -688,7 +697,7 @@ button.btn {
   margin-top: 1.5rem;
 }
 
-@media only screen and (max-width: 1107px) {
+@media only screen and (max-width: 1113px) {
   .customer-info__col-two {
     margin-top: 1.25rem;
   }
