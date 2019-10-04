@@ -156,6 +156,22 @@ input::placeholder {
   color: #9ba6ae !important;
 }
 
+/* semantic ui navbar links */
+.ui-nav.ui.menu .item {
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 0.0275rem;
+  padding: 8px;
+}
+
+.ui-nav.ui.menu .item:focus,
+.ui-nav.ui.menu .item:hover {
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+/* remove this stuff after new nav is in */
 /* navbar links */
 .color-portal.color-portal-nav .navbar-nav .nav-link {
   color: #ffffff;
