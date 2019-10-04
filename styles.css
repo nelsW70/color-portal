@@ -173,11 +173,11 @@ input::placeholder {
 }
 
 /* THIS IS GONNA BREAK SOME STUFF WHEN YOU CHANGE IT  */
-.print-button-text {
+.button-text {
   font-size: 14px;
 }
 
-.ui.button.btn-print .print-button-text {
+.ui.button.btn-print .button-text {
   color: #193040;
 }
 
@@ -281,9 +281,36 @@ input::placeholder {
   align-items: center;
   margin: 0;
   font-family: 'Suisse Intl';
-  font-weight: 500;
   padding: 6px 12px;
+  border-radius: 2px;
+}
+
+.ui.primary.button {
+  background-color: #1e5dcb;
+}
+.ui.primary.button:hover {
+  background-color: #1b499a;
+}
+
+.ui.primary.button:focus {
+  background-color: #1b499a;
+}
+
+/* print button */
+.ui.button.btn-print {
+  background-color: #e7ebed;
+  font-weight: 500;
   border-radius: 3px;
+}
+
+.ui.button.btn-print:hover {
+  background-color: #d6dadc;
+  transition: all 0.25s;
+}
+
+/* add project button */
+.btn-add-project .button-text {
+  font-weight: 400;
 }
 
 /* DELETE AFTER BOOTSTRAP IS OUT */
@@ -307,16 +334,6 @@ button.btn {
 .btn.btn-outline-primary:hover {
   background-color: #1e5dcb;
   color: #ffffff;
-}
-
-/* print button */
-.ui.button.btn-print {
-  background-color: #e7ebed;
-}
-
-.ui.button.btn-print:hover {
-  background-color: #d6dadc;
-  transition: all 0.25s;
 }
 
 /* add project and view programs buttons */
