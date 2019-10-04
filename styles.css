@@ -327,6 +327,7 @@ button.btn {
 .ui-nav.ui.menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 70px;
   padding: 0.5rem 8px;
   background-color: #334756 !important;
@@ -376,7 +377,7 @@ button.btn {
   width: 10%;
 }
 
-.ui-nav.ui.menu .active.item {
+.ui-nav.ui.menu .item:hover {
   background: none;
 }
 
@@ -762,6 +763,13 @@ a.nav-link {
 .ui.input > input {
   border: solid 1px #b3c1cc;
 }
+
+.ui-nav .ui.icon.input input {
+  border-radius: 2px;
+  height: 40px;
+}
+
+/* remove this after finishing new nav */
 .navbar .ui.icon.input input {
   border-radius: 2px;
   height: 40px;
