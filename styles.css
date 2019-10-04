@@ -171,21 +171,6 @@ input::placeholder {
   letter-spacing: normal;
 }
 
-/* remove this stuff after new nav is in */
-/* navbar links */
-.color-portal.color-portal-nav .navbar-nav .nav-link {
-  color: #ffffff;
-  font-weight: 300;
-  letter-spacing: 0.0275rem;
-}
-
-.color-portal.color-portal-nav .navbar-nav .nav-link:focus,
-.color-portal.color-portal-nav .navbar-nav .nav-link:hover {
-  color: #ffffff;
-  font-weight: 500;
-  letter-spacing: normal;
-}
-
 .print-button-text {
   font-size: 14px;
 }
@@ -339,7 +324,7 @@ button.btn {
   border-color: #1e5dcb;
 }
 
-/* SEMANTIC UI NAVBAR  */
+/* NAVBAR  */
 .ui-nav.ui.menu {
   display: flex;
   justify-content: space-between;
@@ -421,85 +406,6 @@ button.btn {
 }
 .ui-nav .menu-links-container > .item:hover:before,
 .ui-nav .menu-links-container > .item:focus:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-/* NAVBAR */
-.navbar {
-  height: 70px;
-  padding: 0.5rem 8px;
-  background-color: #334756 !important;
-}
-
-a.nav-link {
-  text-align: center;
-}
-
-.collapse.navbar-collapse {
-  justify-content: space-between;
-}
-
-.navbar-nav {
-  width: 75%;
-}
-
-.navbar .ui.icon.input {
-  width: 25%;
-}
-
-.nav-item:first-of-type {
-  width: 9%;
-}
-
-.nav-item:nth-child(2) {
-  width: 12%;
-}
-
-.nav-item:nth-child(3) {
-  width: 14%;
-}
-
-.nav-item:nth-child(4) {
-  width: 23%;
-}
-
-.nav-item:nth-child(5) {
-  width: 14%;
-}
-
-.nav-item:nth-child(6) {
-  width: 16%;
-}
-
-.nav-item:nth-child(7) {
-  width: 10%;
-}
-
-/* navbar underline animation */
-.navbar .navbar-nav > li > a,
-.navbar .navbar-nav > li > a:hover,
-.navbar .navbar-nav > li > a:focus {
-  position: relative;
-  font-weight: bold;
-}
-.navbar .navbar-nav > li > a:before {
-  background-color: #3ec7f4;
-  content: '';
-  height: 5px;
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  width: 100%;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-.navbar .navbar-nav > li > a:hover:before,
-.navbar .navbar-nav > li > a:focus:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
