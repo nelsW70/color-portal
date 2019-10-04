@@ -323,29 +323,6 @@ input::placeholder {
   font-weight: 400;
 }
 
-/* DELETE AFTER BOOTSTRAP IS OUT */
-/* button.btn {
-  border-radius: 2px;
-}
-
-.btn.btn-primary {
-  background-color: #1e5dcb;
-}
-
-.btn.btn-primary:hover {
-  background-color: #1b499a;
-}
-
-.btn.btn-outline-primary {
-  color: #1e5dcb;
-  border-color: #1e5dcb;
-}
-
-.btn.btn-outline-primary:hover {
-  background-color: #1e5dcb;
-  color: #ffffff;
-} */
-
 /* add project and view programs buttons */
 .btn-add-project,
 .btn-view-styling {
