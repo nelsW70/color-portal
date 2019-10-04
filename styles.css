@@ -172,7 +172,7 @@ input::placeholder {
   letter-spacing: normal;
 }
 
-/* THIS IS GONNA BREAK SOME STUFF  */
+/* THIS IS GONNA BREAK SOME STUFF WHEN YOU CHANGE IT  */
 .print-button-text {
   font-size: 14px;
 }
@@ -242,6 +242,15 @@ input::placeholder {
 .main-content {
   min-height: calc(100vh - 195px);
   padding: 25px;
+}
+
+/* SPACING */
+.mr-1 {
+  margin-right: 0.5rem !important;
+}
+
+.mr-3 {
+  margin-right: 1rem !important;
 }
 
 /* ICONS */
