@@ -139,7 +139,7 @@ a {
 }
 
 /* header dropdown menu text */
-.display-item--text {
+.item-text {
   color: #193040;
   font-size: 14px;
 }
@@ -229,7 +229,7 @@ input::placeholder {
 
 .menu .item .material-icons {
   color: #334756;
-  font-size: 18px;
+  font-size: 20px;
 }
 .material-icons.account {
   padding-right: 0.5rem;
@@ -429,8 +429,14 @@ a.nav-link {
 
 /* HEADER DROPDOWN MENU  */
 .header-menu .dropdown .ui.floating .menu.transition.visible {
-  /* border-radius: 2px; */
+  border-radius: 2px !important;
+  background-color: #ffffff;
   box-shadow: 0 1px 4px 0 rgba(25, 48, 64, 0.2);
+  padding: 0.75rem 0.25rem;
+}
+
+.header-menu .ui.dropdown .menu > .item {
+  padding: 0.525rem 1.14285714rem !important;
 }
 
 /* HAMBURGER ANIMATION */
