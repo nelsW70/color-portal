@@ -238,6 +238,12 @@ input::placeholder {
   color: #334756;
 }
 
+/* add project button */
+.btn-add-project .button-text,
+.btn-view-styling .button-text {
+  font-weight: 400;
+}
+
 /* BODY */
 .main-content {
   min-height: calc(100vh - 195px);
@@ -251,6 +257,10 @@ input::placeholder {
 
 .mr-3 {
   margin-right: 1rem !important;
+}
+
+.mr-5 {
+  margin-right: 5rem !important;
 }
 
 /* ICONS */
@@ -281,12 +291,12 @@ input::placeholder {
   align-items: center;
   margin: 0;
   font-family: 'Suisse Intl';
-  padding: 6px 12px;
   border-radius: 2px;
 }
 
 .ui.primary.button {
   background-color: #1e5dcb;
+  padding: 6px 12px;
 }
 .ui.primary.button:hover,
 .ui.primary.button:focus {
@@ -298,6 +308,7 @@ input::placeholder {
   border: 1px solid #1e5dcb;
   color: #1e5dcb;
   box-shadow: none !important;
+  padding: 6px 12px;
 }
 
 .ui.inverted.primary.button:hover,
@@ -305,40 +316,47 @@ input::placeholder {
   background-color: #1e5dcb;
 }
 
+/* tiny */
+.ui.basic.buttons .tiny.ui.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #334756 !important;
+  padding: 0.375rem 0.75rem;
+  border: solid 1px #b3c1cc;
+  background-color: #ffffff;
+  font-size: 13px;
+  min-width: 70px;
+  min-height: 30px;
+}
+.ui.basic.buttons .tiny.ui.button:first-child {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.ui.basic.buttons .tiny.ui.button:last-child {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.ui.basic.buttons .tiny.ui.button:hover,
+.ui.basic.buttons .tiny.ui.button.active {
+  color: #1e5dcb !important;
+  border: solid 1px #1966ec;
+  background-color: rgba(25, 102, 236, 0.1) !important;
+}
+
 /* print button */
 .ui.button.btn-print {
   background-color: #e7ebed;
   font-weight: 500;
   border-radius: 3px;
+  padding: 6px 12px;
 }
 
 .ui.button.btn-print:hover {
   background-color: #d6dadc;
   transition: all 0.25s;
-}
-
-/* add project button */
-.btn-add-project .button-text,
-.btn-view-styling .button-text {
-  font-weight: 400;
-}
-
-/* add project and view programs buttons */
-.btn-add-project,
-.btn-view-styling {
-  height: 40px;
-}
-
-.btn.btn-project {
-  border-radius: 2px;
-  border: solid 1px #b3c1cc;
-  background-color: #ffffff;
-}
-
-.btn.btn-project:hover,
-.btn.btn-project.active {
-  border: solid 1px #1966ec;
-  background-color: rgba(25, 102, 236, 0.1);
 }
 
 /* items per page button */
@@ -349,20 +367,6 @@ input::placeholder {
   color: #334756;
   width: 63px;
   height: 35px;
-}
-
-/* project buttons */
-.btn.btn-project {
-  font-size: 13px;
-  color: #334756;
-  border-radius: 2px;
-  width: 70px;
-}
-
-.btn.btn-project:hover,
-.btn.btn-project.active {
-  font-size: 13px;
-  color: #1e5dcb;
 }
 
 .btn.btn-items-per-page:hover,
