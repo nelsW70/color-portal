@@ -429,11 +429,7 @@ input::placeholder {
   width: 10%;
 }
 
-/* .ui-nav.ui.menu .item:hover {
-  background: none;
-} */
-
-/* semantic navbar underline animation */
+/* NAVBAR UNDERLINE ANIMATION */
 .ui-nav .menu-links-container > .item,
 .ui-nav .menu-links-container > .item:hover,
 .ui-nav .menu-links-container > .item:focus {
@@ -445,7 +441,6 @@ input::placeholder {
   content: '';
   height: 5px;
   position: absolute;
-  /* bottom: -15px; */
   top: 46px;
   left: 0;
   width: 100%;
