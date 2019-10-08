@@ -309,12 +309,12 @@
           <div class="ui fluid selection dropdown">
             <input type="hidden" name="items-per-page" />
             <i class="dropdown icon"></i>
-            <div class="default text">100</div>
+            <div class="default text">10</div>
             <div class="menu">
               <div class="item" data-value="1">10</div>
               <div class="item" data-value="0">20</div>
               <div class="item" data-value="3">30</div>
-              <div class="item" data-value="4">40</div>
+              <div class="item" data-value="4">100</div>
             </div>
           </div>
         </div>
@@ -354,12 +354,18 @@
           <label for="goToPage" class="label label-large mr-1"
             >Go to page</label
           >
-          <input class="form-control" id="goToPage" type="text" />
-          <label for="" class="label label-large ml-2">
+          <!-- <input class="form-control" id="goToPage" type="text" /> -->
+          <div class="ui input">
+            <input type="text" />
+          </div>
+          <label for="" class="label label-large ml-1">
             <a href="">Go <span>&rsaquo;</span></a></label
           >
         </div>
       </div>
+      <!-- <div class="results-shown label">
+        Showing 1-10 of 428 results
+      </div> -->
     </section>
 
     <footer>

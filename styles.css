@@ -251,6 +251,9 @@ input::placeholder {
   margin-right: 0.5rem !important;
 }
 
+.ml-1 {
+  margin-left: 0.5rem !important;
+}
 .mr-2 {
   margin-right: 1rem !important;
 }
@@ -590,8 +593,10 @@ input::placeholder {
 .pagination-row .ui.fluid.selection.dropdown {
   background-color: #e7ebed;
   border-radius: 1px;
-  padding: 0.5rem 2.1rem 0.5rem 1rem;
-  width: 4.5rem;
+  /* padding: 0.5rem; */
+  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+  text-align: center;
+  width: 4rem;
   min-height: 36px;
   height: 36px;
   line-height: 1.1rem;
@@ -602,7 +607,8 @@ input::placeholder {
 }
 
 .pagination-row .ui.selection.dropdown .menu > .item {
-  padding: 0.5rem 1.14285714rem !important;
+  padding: 0.5rem !important;
+  text-align: center;
 }
 
 /* CONTAINERS */
@@ -861,10 +867,15 @@ input::placeholder {
   min-width: 18rem;
 }
 
-.go-to-page input {
+.go-to-page .ui.input input {
   width: 42px;
   height: 35px;
   border-radius: 1px;
+  padding: 0.25rem;
+}
+
+.go-to-page .ui.input input:focus {
+  border: solid 1px #1966ec;
 }
 
 /* TABLES */
