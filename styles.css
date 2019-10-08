@@ -296,6 +296,7 @@ input::placeholder {
 
 .ui.primary.button {
   background-color: #1e5dcb;
+  height: 40px;
   padding: 6px 12px;
 }
 .ui.primary.button:hover,
@@ -307,6 +308,7 @@ input::placeholder {
 .ui.inverted.primary.button {
   border: 1px solid #1e5dcb;
   color: #1e5dcb;
+  height: 40px;
   box-shadow: none !important;
   padding: 6px 12px;
 }
@@ -674,7 +676,7 @@ input::placeholder {
   margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 1113px) {
+@media only screen and (max-width: 1152px) {
   .customer-info__col-two {
     margin-top: 1.25rem;
   }
@@ -768,7 +770,6 @@ input::placeholder {
   height: 40px;
 }
 
-/* remove this after finishing new nav */
 .navbar .ui.icon.input input {
   border-radius: 2px;
   height: 40px;
@@ -794,12 +795,11 @@ input::placeholder {
 }
 
 /* TABLES */
-
 .ui.table tr td {
   border-top: 1px solid transparent;
 }
 
-.ui.table tr {
+.ui.table tbody tr {
   cursor: pointer;
 }
 
@@ -825,16 +825,9 @@ table.ui.very.basic.selectable.striped.padded.table {
   border-bottom: solid 1px rgba(17, 35, 48, 0.25);
 }
 
-.ui.basic.striped.table tr:hover {
+.ui.basic.striped.table tbody tr:hover {
   background-color: rgba(25, 102, 236, 0.1) !important;
 }
-
-/* .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(17, 35, 48, 0.03);
-} */
-/* .ui.table td {
-  border-top: none;
-} */
 
 /* TABLE STATUS INDICATOR DOTS  */
 .dot {
