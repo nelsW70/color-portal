@@ -123,7 +123,11 @@
         </a>
       </div>
       <div class="ui icon input">
-        <input type="text" placeholder="Search ColorPortal" />
+        <input
+          aria-label="Search ColorPortal"
+          type="text"
+          placeholder="Search ColorPortal"
+        />
         <i class="search link icon"></i>
       </div>
     </nav>
@@ -147,12 +151,13 @@
         <h2>Stylist Projects</h2>
       </div>
       <div class="customer-info">
-        <div class="customer-info__col-one mr-3">
-          <div class="customer-info__search-container mr-3">
+        <div class="customer-info__col-one mr-2">
+          <div class="customer-info__search-container mr-2">
             <label for="inputCustomer" class="label">Customer</label>
             <div class="ui fluid search">
               <div class="ui icon input">
                 <input
+                  id="inputCustomer"
                   class="prompt"
                   type="text"
                   placeholder="Search for customer name"
@@ -162,7 +167,7 @@
               <div class="results"></div>
             </div>
           </div>
-          <button class="ui primary button btn-add-project mr-3">
+          <button class="ui primary button btn-add-project mr-2">
             <i class="material-icons mr-1">add_box</i>
             <span class="button-text">Add Project</span>
           </button>
@@ -298,7 +303,7 @@
       </div>
       <div class="pagination-row">
         <div class="items-per-page">
-          <label for="itemsPerPage" class="label label-large mr-2"
+          <label for="itemsPerPage" class="label label-large mr-1"
             >Show Items</label
           >
           <div class="ui fluid selection dropdown">
@@ -316,57 +321,37 @@
         <div class="pagination-buttons">
           <!-- <nav aria-label="pagination"> -->
           <div class="ui pagination menu">
-            <a class="item">
+            <a class="item" href="#" aria-label="Previous">
               <i class="angle left icon"></i>
             </a>
-            <a class="active item">
+            <a class="active item item--page-selection">
               1
             </a>
-            <a class="item">
+            <a class="item item--page-selection">
               2
             </a>
-            <a class="item">
+            <a class="item item--page-selection">
               3
             </a>
-            <div class="disabled item">
+            <div class="item">
               ...
             </div>
-            <a class="item">
+            <a class="item item--page-selection">
               4
             </a>
-            <a class="item">
+            <a class="item item--page-selection">
               5
             </a>
-            <a class="item">
+            <a class="item item--page-selection">
               6
             </a>
-            <a class="item">
+            <a class="item" href="#" aria-label="Next">
               <i class="angle right icon"></i>
             </a>
           </div>
-          <!-- <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&lsaquo;</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              ...
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item"><a class="page-link" href="#">6</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&rsaquo;</span>
-                </a>
-              </li>
-            </ul> -->
-          <!-- </nav> -->
         </div>
         <div class="go-to-page">
-          <label for="goToPage" class="label label-large mr-2"
+          <label for="goToPage" class="label label-large mr-1"
             >Go to page</label
           >
           <input class="form-control" id="goToPage" type="text" />
@@ -446,6 +431,14 @@
       $('.btn-project--show').click(function(e) {
         e.stopPropagation();
         $('.btn-project--show').removeClass('active');
+        $(this).addClass('active');
+      });
+    </script>
+    <script>
+      // adds/removes active to pagination number
+      $('.item--page-selection').click(function(e) {
+        e.stopPropagation();
+        $('.item--page-selection').removeClass('active');
         $(this).addClass('active');
       });
     </script>
