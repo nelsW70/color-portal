@@ -146,11 +146,6 @@ a {
   font-size: 14px;
 }
 
-/* .dropdown .menu .item {
-  color: #334756;
-  padding: 0.375rem 1.5rem;
-} */
-
 /* input placeholder */
 input::placeholder {
   font-family: 'Suisse Intl';
@@ -173,7 +168,7 @@ input::placeholder {
   letter-spacing: normal;
 }
 
-/* THIS IS GONNA BREAK SOME STUFF WHEN YOU CHANGE IT  */
+/* button text */
 .button-text {
   font-size: 14px;
 }
@@ -182,6 +177,7 @@ input::placeholder {
   color: #193040;
 }
 
+/* breadcrumbs */
 .ui.breadcrumb .divider {
   color: #334756;
   font-size: 13px;
@@ -198,6 +194,7 @@ input::placeholder {
   font-weight: inherit;
 }
 
+/* labels */
 .customer-info label {
   margin-bottom: 0.25rem;
 }
@@ -317,7 +314,6 @@ input::placeholder {
 
 .ui.icon.input .search {
   color: #1966ec;
-  /* opacity: 0.85; */
 }
 
 /* BUTTONS */
@@ -353,7 +349,7 @@ input::placeholder {
   background-color: #1e5dcb;
 }
 
-/* tiny */
+/* tiny buttons */
 .ui.basic.buttons .tiny.ui.button {
   display: flex;
   align-items: center;
@@ -604,14 +600,6 @@ input::placeholder {
   left: 50%;
 }
 
-/* BREADCRUMBS */
-/* DELETE AFTER BOOTSTRAP IS OUT */
-.breadcrumb {
-  background-color: transparent;
-  margin-bottom: 0;
-  padding: 0;
-}
-
 /* SEARCH DROPDOWN  */
 .ui.search > .results {
   border-radius: 2px;
@@ -625,7 +613,6 @@ input::placeholder {
 .pagination-row .ui.fluid.selection.dropdown {
   background-color: #e7ebed;
   border-radius: 1px;
-  /* padding: 0.5rem; */
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
   text-align: center;
   width: 4rem;
@@ -656,10 +643,6 @@ input::placeholder {
   background-color: transparent;
   padding: 0;
 }
-
-/* .dropdown-menu.show {
-  padding: 1.25rem 0.25rem;
-} */
 
 .header-menu .dropdown .ui.floating .item {
   display: flex;
@@ -709,6 +692,7 @@ input::placeholder {
   align-items: flex-end;
 }
 
+/* projects table */
 .projects-table {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
@@ -720,6 +704,7 @@ input::placeholder {
   }
 }
 
+/* buttons container */
 .buttons-container {
   display: flex;
   flex-direction: column;
@@ -803,7 +788,6 @@ input::placeholder {
 .pagination-row .ui.pagination.menu .item:nth-child(6),
 .pagination-row .ui.pagination.menu .item:nth-child(7),
 .pagination-row .ui.pagination.menu .item:nth-child(8) {
-  /* min-width: fit-content; */
   padding: 0.25rem 0.75rem;
 }
 
@@ -822,48 +806,6 @@ input::placeholder {
   color: #ffffff;
   background-color: #1966ec;
 }
-
-/* .pagination-row ul {
-  margin: 0;
-} */
-
-/* .pagination-row .pagination .page-item:first-child {
-  margin-right: 1.25rem;
-}
-
-.pagination-row .pagination .page-item:first-child a {
-  background-color: #e7ebed;
-  color: #193040;
-}
-
-.pagination-row .pagination .page-item:nth-child(8) {
-  margin-left: 1.25rem;
-}
-
-.pagination-row .pagination .page-item:nth-child(8) a {
-  background-color: #e7ebed;
-  color: #193040;
-}
-
-.pagination-row .pagination .page-item .page-link {
-  padding: 0.25rem 0.75rem;
-  color: #334756;
-  border: none;
-  border-radius: 1px;
-}
-
-.pagination-row .pagination .page-item .page-link:focus {
-  color: #ffffff;
-  background-color: #1966ec;
-}
-
-.pagination-row .pagination .page-item:nth-child(4) {
-  margin-right: 0.75rem;
-}
-
-.pagination-row .pagination .page-item:nth-child(5) {
-  margin-left: 0.75rem;
-} */
 
 .go-to-page {
   display: flex;
@@ -910,7 +852,7 @@ input::placeholder {
   border: solid 1px #1966ec;
 }
 
-/* TABLES */
+/* TABLE */
 .ui.table tr td {
   border-top: 1px solid transparent;
 }
