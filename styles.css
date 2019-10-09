@@ -85,6 +85,7 @@ p,
 
 h1 {
   font-size: 1.5rem;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
@@ -131,7 +132,7 @@ a {
 .title .title-tm {
   font-weight: 100;
   font-size: 20px;
-  vertical-align: top;
+  vertical-align: text-top;
 }
 
 /* user info */
@@ -687,7 +688,7 @@ input::placeholder {
 
 /* title row */
 .title-row {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 /* customer info row */
@@ -996,6 +997,7 @@ footer img {
   position: absolute;
   font-family: 'Suisse Intl';
   font-weight: 300;
+  line-height: 2rem;
   top: 45%;
   left: 50%;
   font-size: 1.5rem;
