@@ -675,6 +675,7 @@ input::placeholder {
 
 .header-menu .ppg-logo img {
   height: 40px;
+  cursor: pointer;
 }
 
 /* breadcrumbs row */
@@ -830,6 +831,13 @@ input::placeholder {
 }
 
 /* INPUTS */
+input[type='search'] {
+  -webkit-appearance: searchfield;
+}
+input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+}
+
 .ui.input > input {
   border: solid 1px #b3c1cc;
 }
@@ -939,6 +947,7 @@ footer img {
   height: 40px;
   margin-left: 25px;
   margin-right: 24px;
+  cursor: pointer;
 }
 
 /* FULL SCREEN OVERLAY BELOW 960PX */
