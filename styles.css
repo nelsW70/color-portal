@@ -857,10 +857,6 @@ input[type='search']::-webkit-search-cancel-button {
   height: 40px;
 }
 
-.customer-info form .input-group.border {
-  border: 1px solid #b3c1cc !important;
-}
-
 .customer-info .ui.icon.input {
   min-width: 18rem;
 }
