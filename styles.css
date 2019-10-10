@@ -269,6 +269,13 @@ input::placeholder {
   }
 }
 
+/* footer trademark  */
+.footer-trademark {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
 /* BODY */
 .main-content {
   min-height: calc(100vh - 195px);
@@ -657,8 +664,17 @@ input::placeholder {
 .header-menu .user-info {
   display: flex;
   justify-content: flex-end;
-  width: 15rem;
+  width: 20rem;
   text-align: right;
+}
+
+.header-menu .ppg-logo {
+  display: flex;
+  width: 5rem;
+}
+
+.header-menu .ppg-logo img {
+  height: 40px;
 }
 
 /* breadcrumbs row */
@@ -905,19 +921,24 @@ table.ui.very.basic.selectable.striped.padded.table {
   background-color: #ff9a00;
 }
 
+.dot--rejected {
+  background-color: #ce3f11;
+}
+
 /* FOOTER */
 footer {
   height: 60px;
-  background-color: #e7ebed;
   /* optional color */
-  /* background-color: #112330; */
+  /* background-color: #e7ebed; */
+  background-color: #112330;
   display: flex;
   align-items: center;
 }
 
 footer img {
   height: 40px;
-  padding-left: 25px;
+  margin-left: 25px;
+  margin-right: 24px;
 }
 
 /* FULL SCREEN OVERLAY BELOW 960PX */
