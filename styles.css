@@ -324,7 +324,7 @@ input::placeholder {
 }
 
 /* BUTTONS */
-.ui.button {
+.color-portal.ui.button {
   display: flex;
   align-items: center;
   margin: 0;
@@ -387,14 +387,14 @@ input::placeholder {
 }
 
 /* print button */
-.ui.button.btn-print {
+.color-portal.ui.button.btn-print {
   background-color: #e7ebed;
   font-weight: 500;
   border-radius: 3px;
   padding: 6px 12px;
 }
 
-.ui.button.btn-print:hover {
+.color-portal.ui.button.btn-print:hover {
   background-color: #d6dadc;
   transition: all 0.25s;
 }
