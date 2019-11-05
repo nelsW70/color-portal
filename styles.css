@@ -71,8 +71,7 @@ body {
   font-style: normal;
 }
 
-/* this really shouldn't be necessary 
-but the hierarchy helps override the library fonts */
+/* the increased hierarchy overrides the library fonts */
 h1,
 h2,
 h3,
