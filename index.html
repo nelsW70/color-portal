@@ -433,73 +433,12 @@
     <!-- Semantic UI -->
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 
-    <!-- I know the scripts below should be in their own js files but this is 
-         so you don't have to go looking for them and can structure things however you prefer -->
-    <script>
-      // hamburger menu animation
-      $(document).ready(function() {
-        $('#nav-icon-container').click(function() {
-          $('.nav-icon').toggleClass('open');
-        });
-      });
-    </script>
-    <script>
-      //if you click outside the menu icon it will close the icon
-      $(document).click(function(event) {
-        if (!$(event.target).closest('#nav-icon-container,.open').length) {
-          $('body')
-            .find('.nav-icon')
-            .removeClass('open');
-        }
-      });
-    </script>
-    <script>
-      // adds/removes active to project status buttons
-      $('.btn-project--status').click(function(e) {
-        e.stopPropagation();
-        $('.btn-project--status').removeClass('active');
-        $(this).addClass('active');
-      });
-    </script>
-    <script>
-      // adds/removes active to project show buttons
-      $('.btn-project--show').click(function(e) {
-        e.stopPropagation();
-        $('.btn-project--show').removeClass('active');
-        $(this).addClass('active');
-      });
-    </script>
-    <script>
-      // adds/removes active to pagination number
-      $('.item--page-selection').click(function(e) {
-        e.stopPropagation();
-        $('.item--page-selection').removeClass('active');
-        $(this).addClass('active');
-      });
-    </script>
-    <script>
-      // fake local data implementation of predictive results for customer search
-      // documentation for semantic ui is here
-      // https://semantic-ui.com/modules/search.html#/definition
-      var content = [
-        { title: 'Isuzu' },
-        { title: 'Jiangnan Mosu' },
-        { title: 'Jiulong Jiansu' },
-        { title: 'Mitsubishi' },
-        { title: 'Ron Swanson' },
-        { title: 'Subaru' },
-        { title: 'Suzuki' },
-        { title: 'Uknown OEM - Sumaré' },
-        { title: 'Wanlong Suzhou' },
-        { title: 'Wick, John' }
-      ];
-      $('.ui.search').search({
-        source: content
-      });
-    </script>
-    <script>
-      // intialize semantic ui dropdown
-      $('.ui.dropdown').dropdown();
-    </script>
+    <!-- JS scripts -->
+    <script src="js/hamburger-menu-animation.js"></script>
+    <script src="js/project-status-btns.js"></script>
+    <script src="js/project-show-btns.js"></script>
+    <script src="js/pagination-btn.js"></script>
+    <script src="js/semantic-ui-dropdown-intialize.js"></script>
+    <script src="js/fake-predicitive-search.js"></script>
   </body>
 </html>
