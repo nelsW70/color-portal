@@ -621,7 +621,7 @@ input::placeholder {
   background-color: #e7ebed;
   border-radius: 1px;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
-  text-align: center;
+  text-align: left;
   width: 4rem;
   min-height: 36px;
   height: 36px;
@@ -634,7 +634,7 @@ input::placeholder {
 
 .pagination-row .ui.selection.dropdown .menu > .item {
   padding: 0.5rem !important;
-  text-align: center;
+  text-align: left;
 }
 
 /* CONTAINERS */
