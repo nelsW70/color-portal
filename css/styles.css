@@ -37,7 +37,7 @@
 html,
 body {
   font-size: 16px;
-  font-family: "Suisse Intl", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Suisse Intl", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #193040;
 }
 
@@ -87,7 +87,7 @@ a {
 /* menu label */
 .menu-label {
   color: #ffffff;
-  font-family: "Suisse Intl";
+  font-family: "Suisse Intl", sans-serif;
   font-size: 18px;
   font-weight: 300;
 }
@@ -117,7 +117,7 @@ a {
 
 /* input placeholder */
 input::placeholder {
-  font-family: "Suisse Intl";
+  font-family: "Suisse Intl", sans-serif;
   font-size: 14px;
   color: #9ba6ae !important;
 }
@@ -180,7 +180,7 @@ input::placeholder {
 /* SEARCH RESULTS 'No Results' HEADER */
 .ui.search > .results > .message .header,
 .ui.search > .results .result .content .title {
-  font-family: "Suisse Intl";
+  font-family: "Suisse Intl", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #193040;
@@ -188,7 +188,7 @@ input::placeholder {
 
 /* input results */
 .customer-info__search-container .ui.search .prompt {
-  font-family: "Suisse Intl";
+  font-family: "Suisse Intl", sans-serif;
   font-size: 14px;
 }
 
@@ -339,7 +339,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   margin: 0;
-  font-family: "Suisse Intl";
+  font-family: "Suisse Intl", sans-serif;
   border-radius: 2px;
 }
 
@@ -1079,7 +1079,7 @@ footer img {
 
 #text {
   position: absolute;
-  font-family: "Suisse Intl";
+  font-family: "Suisse Intl", sans-serif;
   font-weight: 300;
   line-height: 2rem;
   top: 45%;

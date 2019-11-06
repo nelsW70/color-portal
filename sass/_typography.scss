@@ -2,7 +2,7 @@
 html,
 body {
   font-size: 16px;
-  font-family: 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: $font-family-base, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #193040;
 }
 
@@ -14,7 +14,7 @@ h4,
 h5,
 p,
 .item {
-  font-family: 'Suisse Intl', sans-serif;
+  font-family: $font-family-base;
 }
 
 h1 {
@@ -52,7 +52,7 @@ a {
 /* menu label */
 .menu-label {
   color: #ffffff;
-  font-family: 'Suisse Intl';
+  font-family: $font-family-base;
   font-size: 18px;
   font-weight: 300;
 }
@@ -82,7 +82,7 @@ a {
 
 /* input placeholder */
 input::placeholder {
-  font-family: 'Suisse Intl';
+  font-family: $font-family-base;
   font-size: 14px;
   color: #9ba6ae !important;
 }
@@ -145,7 +145,7 @@ input::placeholder {
 /* SEARCH RESULTS 'No Results' HEADER */
 .ui.search > .results > .message .header,
 .ui.search > .results .result .content .title {
-  font-family: 'Suisse Intl';
+  font-family: $font-family-base;
   font-size: 14px;
   font-weight: 400;
   color: #193040;
@@ -153,7 +153,7 @@ input::placeholder {
 
 /* input results */
 .customer-info__search-container .ui.search .prompt {
-  font-family: 'Suisse Intl';
+  font-family: $font-family-base;
   font-size: 14px;
 }
 
