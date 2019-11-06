@@ -530,9 +530,10 @@ input::placeholder {
   .custom-checkbox:checked
   + .colorportal-checkbox__label:before {
   background-color: #1966ec;
+  border: 1px solid #1966ec;
 }
 .colorportal-checkbox_primary .colorportal-checkbox__label:before {
-  border-color: #1966ec;
+  border: 1px solid #b3c1cc;
 }
 
 @-webkit-keyframes check {
