@@ -760,6 +760,13 @@ input::placeholder {
 }
 
 /* CONTAINERS */
+
+/* body */
+.main-content {
+  min-height: calc(100vh - 195px);
+  padding: 25px;
+}
+
 /* breadcrumbs row */
 .breadcrumbs-row {
   display: flex;
@@ -1094,11 +1101,6 @@ footer img {
   #overlay {
     display: none;
   }
-}
-/* BODY */
-.main-content {
-  min-height: calc(100vh - 195px);
-  padding: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */

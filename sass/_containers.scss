@@ -1,5 +1,11 @@
 /* CONTAINERS */
 
+/* body */
+.main-content {
+  min-height: calc(100vh - 195px);
+  padding: 25px;
+}
+
 /* breadcrumbs row */
 .breadcrumbs-row {
   display: flex;

@@ -14,9 +14,3 @@
 @import '_tables.scss';
 @import '_footer.scss';
 @import '_blackout-overlay.scss';
-
-/* BODY */
-.main-content {
-  min-height: calc(100vh - 195px);
-  padding: 25px;
-}
