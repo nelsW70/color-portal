@@ -489,13 +489,12 @@ input::placeholder {
 .colorportal-checkbox__label:before {
   content: '';
   display: block;
-  border: 2px solid;
+  border: 1px solid;
   width: 25px;
   height: 25px;
   position: absolute;
   left: 0;
 }
-
 .custom-checkbox:disabled ~ .colorportal-checkbox__label {
   cursor: no-drop;
 }
@@ -509,7 +508,6 @@ input::placeholder {
   animation: check 0.35s;
   opacity: 1;
 }
-
 .colorportal-checkbox
   .custom-checkbox:checked
   + .colorportal-checkbox__label:before {
