@@ -1,0 +1,22 @@
+@import '_fonts.scss';
+@import '_typography.scss';
+@import '_spacing.scss';
+@import '_icons.scss';
+@import '_buttons.scss';
+@import '_checkbox.scss';
+@import '_navbar.scss';
+@import '_containers.scss';
+@import '_search-dropdown.scss';
+@import '_items-per-page-dropdown.scss';
+@import '_pagination.scss';
+@import '_inputs.scss';
+@import '_tables.scss';
+@import '_footer.scss';
+@import '_blackout-overlay.scss';
+@import '_variables.scss';
+
+/* BODY */
+.main-content {
+  min-height: calc(100vh - 195px);
+  padding: 25px;
+}

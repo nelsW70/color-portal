@@ -1,74 +1,44 @@
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/fonts/SuisseIntl-Thin-WebS.eot");
+  src: local("Suisse Intl Thin"), local("SuisseIntl-Thin-WebS"), url("/fonts/SuisseIntl-Thin-WebS.eot?#iefix") format("embedded-opentype"), url("/fonts/SuisseIntl-Thin-WebS.woff2") format("woff2"), url("/fonts/SuisseIntl-Thin-WebS.woff") format("woff"), url("/fonts/SuisseIntl-Thin-WebS.ttf") format("truetype"), url("/fonts/SuisseIntl-Thin-WebS.svg#SuisseIntl") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/fonts/SuisseIntl-Light.eot");
+  src: local("Suisse Intl Light"), local("SuisseIntl-Light"), url("/fonts/SuisseIntl-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/SuisseIntl-Light.woff2") format("woff2"), url("/fonts/SuisseIntl-Light.woff") format("woff"), url("/fonts/SuisseIntl-Light.ttf") format("truetype"), url("/fonts/SuisseIntl-Light.svg#SuisseIntl") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/fonts/SuisseIntl-Regular.eot");
+  src: local("Suisse Intl Regular"), local("SuisseIntl-Regular"), url("/fonts/SuisseIntl-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/SuisseIntl-Regular.woff2") format("woff2"), url("/fonts/SuisseIntl-Regular.woff") format("woff"), url("/fonts/SuisseIntl-Regular.ttf") format("truetype"), url("/fonts/SuisseIntl-Regular.svg#SuisseIntl") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/fonts/SuisseIntl-Medium.eot");
+  src: local("Suisse Intl Medium"), local("SuisseIntl-Medium"), url("/fonts/SuisseIntl-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/SuisseIntl-Medium.woff2") format("woff2"), url("/fonts/SuisseIntl-Medium.woff") format("woff"), url("/fonts/SuisseIntl-Medium.ttf") format("truetype"), url("/fonts/SuisseIntl-Medium.svg#SuisseIntl-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("/fonts/SuisseIntl-Bold.eot");
+  src: local("Suisse Intl Bold"), local("SuisseIntl-Bold"), url("/fonts/SuisseIntl-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/SuisseIntl-Bold.woff2") format("woff2"), url("/fonts/SuisseIntl-Bold.woff") format("woff"), url("/fonts/SuisseIntl-Bold.ttf") format("truetype"), url("/fonts/SuisseIntl-Bold.svg#SuisseIntl-Bold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
 /* FONTS */
 html,
 body {
   font-size: 16px;
-  font-family: 'Suisse Intl', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Suisse Intl", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #193040;
-}
-
-@font-face {
-  font-family: 'Suisse Intl';
-  src: url('/fonts/SuisseIntl-Thin-WebS.eot');
-  src: local('Suisse Intl Thin'), local('SuisseIntl-Thin-WebS'),
-    url('/fonts/SuisseIntl-Thin-WebS.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/SuisseIntl-Thin-WebS.woff2') format('woff2'),
-    url('/fonts/SuisseIntl-Thin-WebS.woff') format('woff'),
-    url('/fonts/SuisseIntl-Thin-WebS.ttf') format('truetype'),
-    url('/fonts/SuisseIntl-Thin-WebS.svg#SuisseIntl') format('svg');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Suisse Intl';
-  src: url('/fonts/SuisseIntl-Light.eot');
-  src: local('Suisse Intl Light'), local('SuisseIntl-Light'),
-    url('/fonts/SuisseIntl-Light.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/SuisseIntl-Light.woff2') format('woff2'),
-    url('/fonts/SuisseIntl-Light.woff') format('woff'),
-    url('/fonts/SuisseIntl-Light.ttf') format('truetype'),
-    url('/fonts/SuisseIntl-Light.svg#SuisseIntl') format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Suisse Intl';
-  src: url('/fonts/SuisseIntl-Regular.eot');
-  src: local('Suisse Intl Regular'), local('SuisseIntl-Regular'),
-    url('/fonts/SuisseIntl-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/SuisseIntl-Regular.woff2') format('woff2'),
-    url('/fonts/SuisseIntl-Regular.woff') format('woff'),
-    url('/fonts/SuisseIntl-Regular.ttf') format('truetype'),
-    url('/fonts/SuisseIntl-Regular.svg#SuisseIntl') format('svg');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Suisse Intl';
-  src: url('/fonts/SuisseIntl-Medium.eot');
-  src: local('Suisse Intl Medium'), local('SuisseIntl-Medium'),
-    url('/fonts/SuisseIntl-Medium.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/SuisseIntl-Medium.woff2') format('woff2'),
-    url('/fonts/SuisseIntl-Medium.woff') format('woff'),
-    url('/fonts/SuisseIntl-Medium.ttf') format('truetype'),
-    url('/fonts/SuisseIntl-Medium.svg#SuisseIntl-Medium') format('svg');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Suisse Intl';
-  src: url('/fonts/SuisseIntl-Bold.eot');
-  src: local('Suisse Intl Bold'), local('SuisseIntl-Bold'),
-    url('/fonts/SuisseIntl-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/SuisseIntl-Bold.woff2') format('woff2'),
-    url('/fonts/SuisseIntl-Bold.woff') format('woff'),
-    url('/fonts/SuisseIntl-Bold.ttf') format('truetype'),
-    url('/fonts/SuisseIntl-Bold.svg#SuisseIntl-Bold') format('svg');
-  font-weight: 600;
-  font-style: normal;
 }
 
 /* the increased hierarchy overrides the library fonts */
@@ -79,7 +49,7 @@ h4,
 h5,
 p,
 .item {
-  font-family: 'Suisse Intl', sans-serif;
+  font-family: "Suisse Intl", sans-serif;
 }
 
 h1 {
@@ -117,7 +87,7 @@ a {
 /* menu label */
 .menu-label {
   color: #ffffff;
-  font-family: 'Suisse Intl';
+  font-family: "Suisse Intl";
   font-size: 18px;
   font-weight: 300;
 }
@@ -147,7 +117,7 @@ a {
 
 /* input placeholder */
 input::placeholder {
-  font-family: 'Suisse Intl';
+  font-family: "Suisse Intl";
   font-size: 14px;
   color: #9ba6ae !important;
 }
@@ -210,7 +180,7 @@ input::placeholder {
 /* SEARCH RESULTS 'No Results' HEADER */
 .ui.search > .results > .message .header,
 .ui.search > .results .result .content .title {
-  font-family: 'Suisse Intl';
+  font-family: "Suisse Intl";
   font-size: 14px;
   font-weight: 400;
   color: #193040;
@@ -218,7 +188,7 @@ input::placeholder {
 
 /* input results */
 .customer-info__search-container .ui.search .prompt {
-  font-family: 'Suisse Intl';
+  font-family: "Suisse Intl";
   font-size: 14px;
 }
 
@@ -261,13 +231,11 @@ input::placeholder {
     display: none;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .item-count--small-screen {
     display: none;
   }
 }
-
 /* footer trademark  */
 .footer-trademark {
   font-size: 14px;
@@ -275,16 +243,11 @@ input::placeholder {
   color: #ffffff;
 }
 
-/* BODY */
-.main-content {
-  min-height: calc(100vh - 195px);
-  padding: 25px;
-}
-
 /* SPACING */
 .mt-1 {
   margin-top: 0.5rem !important;
 }
+
 .mr-1 {
   margin-right: 0.5rem !important;
 }
@@ -300,6 +263,7 @@ input::placeholder {
 .mt-2 {
   margin-top: 1rem !important;
 }
+
 .mr-2 {
   margin-right: 1rem !important;
 }
@@ -353,6 +317,7 @@ input::placeholder {
   color: #334756;
   font-size: 20px;
 }
+
 .material-icons.account {
   padding-right: 0.5rem;
 }
@@ -374,7 +339,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   margin: 0;
-  font-family: 'Suisse Intl';
+  font-family: "Suisse Intl";
   border-radius: 2px;
 }
 
@@ -383,6 +348,7 @@ input::placeholder {
   height: 40px;
   padding: 6px 12px;
 }
+
 .ui.primary.button:hover,
 .ui.primary.button:focus {
   background-color: #1b499a;
@@ -415,6 +381,7 @@ input::placeholder {
   min-width: 70px;
   min-height: 30px;
 }
+
 .ui.basic.buttons .tiny.ui.button:first-child {
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -470,8 +437,9 @@ input::placeholder {
   line-height: 25px;
   padding-left: 30px;
 }
+
 .colorportal-checkbox__label:after {
-  content: '';
+  content: "";
   display: block;
   width: 5px;
   height: 15px;
@@ -486,8 +454,9 @@ input::placeholder {
   -webkit-transform-origin: left top;
   transform-origin: left top;
 }
+
 .colorportal-checkbox__label:before {
-  content: '';
+  content: "";
   display: block;
   border: 1px solid;
   width: 25px;
@@ -495,41 +464,42 @@ input::placeholder {
   position: absolute;
   left: 0;
 }
+
 .custom-checkbox:disabled ~ .colorportal-checkbox__label {
   cursor: no-drop;
 }
+
 .custom-checkbox {
   display: none;
 }
-.colorportal-checkbox
-  .custom-checkbox:checked
-  + .colorportal-checkbox__label:after {
+
+.colorportal-checkbox .custom-checkbox:checked + .colorportal-checkbox__label:after {
   -webkit-animation: check 0.35s;
   animation: check 0.35s;
   opacity: 1;
 }
-.colorportal-checkbox
-  .custom-checkbox:checked
-  + .colorportal-checkbox__label:before {
+
+.colorportal-checkbox .custom-checkbox:checked + .colorportal-checkbox__label:before {
   background-color: #eee;
 }
+
 .colorportal-checkbox .colorportal-checkbox__label:before {
   border-color: #eee;
 }
+
 .custom-checkbox:disabled ~ .colorportal-checkbox__label {
   color: #eee;
 }
-.colorportal-checkbox_primary
-  .custom-checkbox:checked
-  + .colorportal-checkbox__label:after {
+
+.colorportal-checkbox_primary .custom-checkbox:checked + .colorportal-checkbox__label:after {
   border-color: #fff;
 }
-.colorportal-checkbox_primary
-  .custom-checkbox:checked
-  + .colorportal-checkbox__label:before {
+
+.colorportal-checkbox_primary .custom-checkbox:checked + .colorportal-checkbox__label:before {
   background-color: #1966ec;
   border: 1px solid #1966ec;
 }
+
 .colorportal-checkbox_primary .colorportal-checkbox__label:before {
   border: 1px solid #b3c1cc;
 }
@@ -562,7 +532,6 @@ input::placeholder {
     width: 5px;
   }
 }
-
 /* NAVBAR  */
 .ui-nav.ui.menu {
   display: flex;
@@ -624,9 +593,10 @@ input::placeholder {
   position: relative;
   font-weight: bold;
 }
+
 .ui-nav .menu-links-container > .item:before {
   background-color: #3ec7f4;
-  content: '';
+  content: "";
   height: 5px;
   position: absolute;
   top: 46px;
@@ -638,6 +608,7 @@ input::placeholder {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
+
 .ui-nav .menu-links-container > .item:hover:before,
 .ui-nav .menu-links-container > .item:focus:before {
   visibility: visible;
@@ -648,13 +619,7 @@ input::placeholder {
 /* HEADER COLOR STRIP */
 .color-strip {
   height: 5px;
-  background-image: linear-gradient(
-    to left,
-    #ff0000,
-    #ffd602 33%,
-    #1aa063 65%,
-    #0157fc
-  );
+  background-image: linear-gradient(to left, #ff0000, #ffd602 33%, #1aa063 65%, #0157fc);
 }
 
 /* HEADER MENU */
@@ -755,38 +720,6 @@ input::placeholder {
   left: 50%;
 }
 
-/* SEARCH DROPDOWN  */
-.ui.search > .results {
-  border-radius: 2px;
-}
-
-.ui.search > .results .result:hover {
-  background: rgba(25, 102, 236, 0.1);
-}
-
-/* ITEMS PER PAGE DROPDOWN */
-.pagination-row .ui.fluid.selection.dropdown {
-  background-color: #e7ebed;
-  border-radius: 1px;
-  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
-  text-align: left;
-  width: 4rem;
-  min-height: 36px;
-  height: 36px;
-  line-height: 1.1rem;
-}
-
-.pagination-row .ui.fluid.selection.dropdown .dropdown.icon {
-  padding: 0.5rem;
-}
-
-.pagination-row .ui.selection.dropdown .menu > .item {
-  padding: 0.5rem !important;
-  text-align: left;
-}
-
-/* CONTAINERS */
-
 /* header */
 .header-menu .dropdown {
   display: flex;
@@ -826,6 +759,7 @@ input::placeholder {
   cursor: pointer;
 }
 
+/* CONTAINERS */
 /* breadcrumbs row */
 .breadcrumbs-row {
   display: flex;
@@ -868,7 +802,6 @@ input::placeholder {
     margin-top: 1.25rem;
   }
 }
-
 /* buttons container */
 .buttons-container {
   display: flex;
@@ -904,6 +837,42 @@ input::placeholder {
   text-align: right;
 }
 
+.go-to-page {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+/* SEARCH DROPDOWN  */
+.ui.search > .results {
+  border-radius: 2px;
+}
+
+.ui.search > .results .result:hover {
+  background: rgba(25, 102, 236, 0.1);
+}
+
+/* ITEMS PER PAGE DROPDOWN */
+.pagination-row .ui.fluid.selection.dropdown {
+  background-color: #e7ebed;
+  border-radius: 1px;
+  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+  text-align: left;
+  width: 4rem;
+  min-height: 36px;
+  height: 36px;
+  line-height: 1.1rem;
+}
+
+.pagination-row .ui.fluid.selection.dropdown .dropdown.icon {
+  padding: 0.5rem;
+}
+
+.pagination-row .ui.selection.dropdown .menu > .item {
+  padding: 0.5rem !important;
+  text-align: left;
+}
+
 /* PAGINATION */
 .pagination-row .ui.pagination.menu {
   min-height: fit-content;
@@ -920,6 +889,7 @@ input::placeholder {
 .pagination-row .ui.pagination.menu .item {
   min-width: fit-content;
 }
+
 .pagination-row .ui.menu .item:before {
   background: transparent;
 }
@@ -972,17 +942,12 @@ input::placeholder {
   background-color: #1966ec;
 }
 
-.go-to-page {
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-}
-
 /* INPUTS */
-input[type='search'] {
+input[type=search] {
   -webkit-appearance: searchfield;
 }
-input[type='search']::-webkit-search-cancel-button {
+
+input[type=search]::-webkit-search-cancel-button {
   -webkit-appearance: searchfield-cancel-button;
 }
 
@@ -1044,6 +1009,7 @@ table.ui.very.basic.selectable.striped.padded.table {
 .ui.basic.striped.table tbody tr:nth-child(2n) {
   background-color: transparent !important;
 }
+
 .ui.basic.striped.table {
   border-bottom: solid 1px rgba(17, 35, 48, 0.25);
 }
@@ -1106,14 +1072,14 @@ footer img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(21, 35, 47, 1);
+  background-color: #15232f;
   z-index: 2;
   cursor: pointer;
 }
 
 #text {
   position: absolute;
-  font-family: 'Suisse Intl';
+  font-family: "Suisse Intl";
   font-weight: 300;
   line-height: 2rem;
   top: 45%;
@@ -1129,3 +1095,10 @@ footer img {
     display: none;
   }
 }
+/* BODY */
+.main-content {
+  min-height: calc(100vh - 195px);
+  padding: 25px;
+}
+
+/*# sourceMappingURL=styles.css.map */

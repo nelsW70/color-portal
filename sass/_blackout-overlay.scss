@@ -1,0 +1,33 @@
+/* FULL SCREEN OVERLAY BELOW 960PX */
+#overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(21, 35, 47, 1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text {
+  position: absolute;
+  font-family: 'Suisse Intl';
+  font-weight: 300;
+  line-height: 2rem;
+  top: 45%;
+  left: 50%;
+  font-size: 1.5rem;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 960px) {
+  #overlay {
+    display: none;
+  }
+}

@@ -1,0 +1,230 @@
+/* NAVBAR  */
+.ui-nav.ui.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0.5rem 8px;
+  background-color: #334756 !important;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.ui-nav.ui.menu .menu-links-container {
+  display: flex;
+  width: 75%;
+}
+
+.ui-nav.ui.menu .ui.icon.input {
+  width: 25%;
+}
+
+.ui-nav .item {
+  justify-content: center;
+}
+
+.ui-nav .item:first-of-type {
+  width: 9%;
+}
+
+.ui-nav .item:nth-child(2) {
+  width: 12%;
+}
+
+.ui-nav .item:nth-child(3) {
+  width: 14%;
+}
+
+.ui-nav .item:nth-child(4) {
+  width: 23%;
+}
+
+.ui-nav .item:nth-child(5) {
+  width: 14%;
+}
+
+.ui-nav .item:nth-child(6) {
+  width: 16%;
+}
+
+.ui-nav .item:nth-child(7) {
+  width: 10%;
+}
+
+/* NAVBAR UNDERLINE ANIMATION */
+.ui-nav .menu-links-container > .item,
+.ui-nav .menu-links-container > .item:hover,
+.ui-nav .menu-links-container > .item:focus {
+  position: relative;
+  font-weight: bold;
+}
+.ui-nav .menu-links-container > .item:before {
+  background-color: #3ec7f4;
+  content: '';
+  height: 5px;
+  position: absolute;
+  top: 46px;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.ui-nav .menu-links-container > .item:hover:before,
+.ui-nav .menu-links-container > .item:focus:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* HEADER COLOR STRIP */
+.color-strip {
+  height: 5px;
+  background-image: linear-gradient(
+    to left,
+    #ff0000,
+    #ffd602 33%,
+    #1aa063 65%,
+    #0157fc
+  );
+}
+
+/* HEADER MENU */
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 60px;
+  background-color: #112330;
+  color: #ffffff;
+}
+
+/* HEADER DROPDOWN MENU  */
+.header-menu .dropdown .ui.floating .menu {
+  border-radius: 2px !important;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(25, 48, 64, 0.2);
+  padding: 0.75rem 0.25rem;
+}
+
+.header-menu .ui.dropdown .menu > .item {
+  padding: 0.525rem 1.14285714rem !important;
+}
+
+/* HAMBURGER ANIMATION */
+.nav-icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.nav-icon span:nth-child(2),
+.nav-icon span:nth-child(3) {
+  top: 9px;
+}
+
+.nav-icon span:nth-child(4) {
+  top: 18px;
+}
+
+.nav-icon.open span:nth-child(1) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+
+.nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.nav-icon.open span:nth-child(4) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+
+/* header */
+.header-menu .dropdown {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+}
+
+.header-menu .dropdown .ui.floating {
+  background-color: transparent;
+  padding: 0;
+}
+
+.header-menu .dropdown .ui.floating .item {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu .title {
+  flex: 1;
+  text-align: center;
+}
+
+.header-menu .user-info {
+  display: flex;
+  justify-content: flex-end;
+  width: 20rem;
+  text-align: right;
+}
+
+.header-menu .ppg-logo {
+  display: flex;
+  width: 5rem;
+}
+
+.header-menu .ppg-logo img {
+  height: 40px;
+  cursor: pointer;
+}

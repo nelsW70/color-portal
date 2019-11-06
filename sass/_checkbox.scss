@@ -1,0 +1,101 @@
+/* CHECKBOX */
+.colorportal-checkbox__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 30px;
+}
+.colorportal-checkbox__label:after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 15px;
+  opacity: 0;
+  border-right: 2px solid #eee;
+  border-top: 2px solid #eee;
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  -webkit-transform: scaleX(-1) rotate(135deg);
+  transform: scaleX(-1) rotate(135deg);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+.colorportal-checkbox__label:before {
+  content: '';
+  display: block;
+  border: 1px solid;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+}
+.custom-checkbox:disabled ~ .colorportal-checkbox__label {
+  cursor: no-drop;
+}
+.custom-checkbox {
+  display: none;
+}
+.colorportal-checkbox
+  .custom-checkbox:checked
+  + .colorportal-checkbox__label:after {
+  -webkit-animation: check 0.35s;
+  animation: check 0.35s;
+  opacity: 1;
+}
+.colorportal-checkbox
+  .custom-checkbox:checked
+  + .colorportal-checkbox__label:before {
+  background-color: #eee;
+}
+.colorportal-checkbox .colorportal-checkbox__label:before {
+  border-color: #eee;
+}
+.custom-checkbox:disabled ~ .colorportal-checkbox__label {
+  color: #eee;
+}
+.colorportal-checkbox_primary
+  .custom-checkbox:checked
+  + .colorportal-checkbox__label:after {
+  border-color: #fff;
+}
+.colorportal-checkbox_primary
+  .custom-checkbox:checked
+  + .colorportal-checkbox__label:before {
+  background-color: #1966ec;
+  border: 1px solid #1966ec;
+}
+.colorportal-checkbox_primary .colorportal-checkbox__label:before {
+  border: 1px solid #b3c1cc;
+}
+
+@-webkit-keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 5px;
+  }
+  50% {
+    height: 15px;
+    width: 5px;
+  }
+}
+@keyframes check {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  25% {
+    height: 0;
+    width: 5px;
+  }
+  50% {
+    height: 15px;
+    width: 5px;
+  }
+}
