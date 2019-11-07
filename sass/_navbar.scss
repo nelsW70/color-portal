@@ -5,7 +5,7 @@
   align-items: center;
   height: 70px;
   padding: 0.5rem 8px;
-  background-color: #334756 !important;
+  background-color: $background-color-gray-four !important;
   margin: 0;
   border: none;
   border-radius: 0;
@@ -60,7 +60,7 @@
   font-weight: bold;
 }
 .ui-nav .menu-links-container > .item:before {
-  background-color: #3ec7f4;
+  background-color: $background-color-blue-four;
   content: '';
   height: 5px;
   position: absolute;

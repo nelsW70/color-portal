@@ -25,7 +25,7 @@
   width: 40px;
   height: 28px;
   border-radius: 1px;
-  background-color: #e7ebed;
+  background-color: $background-color-gray-one;
 }
 
 .pagination-row .ui.pagination.menu .item:nth-child(1) {
@@ -38,7 +38,7 @@
 
 .pagination-row .ui.pagination.menu .item:nth-child(1):hover,
 .pagination-row .ui.pagination.menu .item:nth-child(9):hover {
-  background-color: rgba(25, 102, 236, 0.5);
+  background-color: $background-color-blue-five;
 }
 
 .pagination-row .ui.pagination.menu .item:nth-child(2),
