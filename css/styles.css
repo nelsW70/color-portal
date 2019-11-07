@@ -347,11 +347,12 @@ input::placeholder {
   background-color: #1e5dcb;
   height: 40px;
   padding: 6px 12px;
+  transition: all 0.25s;
 }
 
 .ui.primary.button:hover,
 .ui.primary.button:focus {
-  background-color: #1b499a;
+  background-color: #194eaa;
   transition: all 0.25s;
 }
 
