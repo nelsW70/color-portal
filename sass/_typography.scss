@@ -38,16 +38,16 @@ h2 {
 
 .ui.table td {
   font-size: 0.8125rem;
-  color: rgba(25, 48, 64, 0.7);
+  color: $font-color-td;
 }
 
 .ui.table td a {
-  color: #1966ec;
+  color: $font-color-blue-one;
   cursor: pointer;
 }
 
 a {
-  color: #1966ec;
+  color: $font-color-blue-one;
 }
 
 /* menu label */
@@ -125,7 +125,7 @@ input::placeholder {
 
 .ui.breadcrumb a.section.active,
 .ui.breadcrumb a.section:hover {
-  color: #1966ec;
+  color: $font-color-blue-one;
   font-weight: inherit;
 }
 
