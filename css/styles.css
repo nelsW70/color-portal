@@ -448,7 +448,7 @@ input::placeholder {
   border-right: 2px solid #eee;
   border-top: 2px solid #eee;
   position: absolute;
-  left: 5px;
+  left: 6px;
   top: 15px;
   -webkit-transform: scaleX(-1) rotate(135deg);
   transform: scaleX(-1) rotate(135deg);
@@ -493,7 +493,7 @@ input::placeholder {
 }
 
 .colorportal-checkbox_primary .custom-checkbox:checked + .colorportal-checkbox__label:after {
-  border-color: #fff;
+  border-color: #ffffff;
 }
 
 .colorportal-checkbox_primary .custom-checkbox:checked + .colorportal-checkbox__label:before {

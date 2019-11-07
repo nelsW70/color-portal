@@ -13,10 +13,10 @@
   width: 5px;
   height: 15px;
   opacity: 0;
-  border-right: 2px solid #eee;
-  border-top: 2px solid #eee;
+  border-right: 2px solid $background-color-white-two;
+  border-top: 2px solid $background-color-white-two;
   position: absolute;
-  left: 5px;
+  left: 6px;
   top: 15px;
   -webkit-transform: scaleX(-1) rotate(135deg);
   transform: scaleX(-1) rotate(135deg);
@@ -48,27 +48,27 @@
 .colorportal-checkbox
   .custom-checkbox:checked
   + .colorportal-checkbox__label:before {
-  background-color: #eee;
+  background-color: $background-color-white-two;
 }
 .colorportal-checkbox .colorportal-checkbox__label:before {
-  border-color: #eee;
+  border-color: $background-color-white-two;
 }
 .custom-checkbox:disabled ~ .colorportal-checkbox__label {
-  color: #eee;
+  color: $font-color-white-two;
 }
 .colorportal-checkbox_primary
   .custom-checkbox:checked
   + .colorportal-checkbox__label:after {
-  border-color: #fff;
+  border-color: $background-color-white;
 }
 .colorportal-checkbox_primary
   .custom-checkbox:checked
   + .colorportal-checkbox__label:before {
   background-color: $background-color-blue-one;
-  border: 1px solid #1966ec;
+  border: 1px solid $background-color-blue-one;
 }
 .colorportal-checkbox_primary .colorportal-checkbox__label:before {
-  border: 1px solid #b3c1cc;
+  border: 1px solid $background-color-gray-three;
 }
 
 @-webkit-keyframes check {
