@@ -31,13 +31,13 @@ h2 {
 }
 
 .ui.table thead th {
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: $font-weight-semi-bold;
   color: $font-color-primary;
 }
 
 .ui.table td {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: rgba(25, 48, 64, 0.7);
 }
 
@@ -54,7 +54,7 @@ a {
 .menu-label {
   color: $font-color-white;
   font-family: $font-family-primary;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: $font-weight-medium;
 }
 
@@ -66,7 +66,7 @@ a {
 /* title tm */
 .title .title-tm {
   font-weight: $font-weight-light;
-  font-size: 20px;
+  font-size: 1.25rem;
   vertical-align: text-top;
 }
 
@@ -78,13 +78,13 @@ a {
 /* header dropdown menu text */
 .item-text {
   color: $font-color-primary;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* input placeholder */
 input::placeholder {
   font-family: $font-family-primary;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #9ba6ae !important;
 }
 
@@ -105,7 +105,7 @@ input::placeholder {
 
 /* normal button text */
 .button-text {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .ui.button.btn-print .button-text {
@@ -115,12 +115,12 @@ input::placeholder {
 /* breadcrumbs */
 .ui.breadcrumb .divider {
   color: #334756;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .ui.breadcrumb a.section {
   color: #334756;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .ui.breadcrumb a.section.active,
@@ -136,18 +136,18 @@ input::placeholder {
 
 .label {
   color: $font-color-primary;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .label.label-large {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* SEARCH RESULTS 'No Results' HEADER */
 .ui.search > .results > .message .header,
 .ui.search > .results .result .content .title {
   font-family: $font-family-primary;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: $font-weight-normal;
   color: $font-color-primary;
 }
@@ -155,7 +155,7 @@ input::placeholder {
 /* input results */
 .customer-info__search-container .ui.search .prompt {
   font-family: $font-family-primary;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* items per page default value  */
@@ -175,7 +175,7 @@ input::placeholder {
 
 /* item count */
 .item-count {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #334756;
 }
 
@@ -206,7 +206,7 @@ input::placeholder {
 
 /* footer trademark  */
 .footer-trademark {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: $font-weight-medium;
   color: $font-color-white;
 }
