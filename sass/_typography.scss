@@ -19,19 +19,19 @@ p,
 
 h1 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: $font-weight-bold;
   margin-bottom: 0;
 }
 
 h2 {
   font-size: 1.75rem;
-  font-weight: 500;
+  font-weight: $font-weight-bold;
   margin-bottom: 0;
 }
 
 .ui.table thead th {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: $font-weight-bold;
   color: #193040;
 }
 
@@ -54,24 +54,24 @@ a {
   color: #ffffff;
   font-family: $font-family-base;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: $font-weight-medium;
 }
 
 /* title span */
 .title-span {
-  font-weight: 100;
+  font-weight: $font-weight-light;
 }
 
 /* title tm */
 .title .title-tm {
-  font-weight: 100;
+  font-weight: $font-weight-light;
   font-size: 20px;
   vertical-align: text-top;
 }
 
 /* user info */
 .user-info--text {
-  font-weight: 300;
+  font-weight: $font-weight-medium;
 }
 
 /* header dropdown menu text */
@@ -90,7 +90,7 @@ input::placeholder {
 /* semantic ui navbar links */
 .ui-nav.ui.menu .item {
   color: #ffffff;
-  font-weight: 300;
+  font-weight: $font-weight-medium;
   letter-spacing: 0.0275rem;
   padding: 8px;
 }
@@ -98,7 +98,7 @@ input::placeholder {
 .ui-nav.ui.menu .item:focus,
 .ui-nav.ui.menu .item:hover {
   color: #ffffff;
-  font-weight: 500;
+  font-weight: $font-weight-bold;
   letter-spacing: normal;
 }
 
@@ -147,7 +147,7 @@ input::placeholder {
 .ui.search > .results .result .content .title {
   font-family: $font-family-base;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $font-weight-semi-bold;
   color: #193040;
 }
 
@@ -169,7 +169,7 @@ input::placeholder {
 /* add project button */
 .btn-add-project .button-text,
 .btn-view-styling .button-text {
-  font-weight: 400;
+  font-weight: $font-weight-semi-bold;
 }
 
 /* item count */
@@ -206,6 +206,6 @@ input::placeholder {
 /* footer trademark  */
 .footer-trademark {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: $font-weight-medium;
   color: #ffffff;
 }
