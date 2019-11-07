@@ -52,7 +52,7 @@ a {
 
 /* menu label */
 .menu-label {
-  color: $font-color-white;
+  color: $font-color-white-one;
   font-family: $font-family-primary;
   font-size: 1.125rem;
   font-weight: $font-weight-medium;
@@ -90,7 +90,7 @@ input::placeholder {
 
 /* semantic ui navbar links */
 .ui-nav.ui.menu .item {
-  color: $font-color-white;
+  color: $font-color-white-one;
   font-weight: $font-weight-medium;
   letter-spacing: 0.0275rem;
   padding: 8px;
@@ -98,7 +98,7 @@ input::placeholder {
 
 .ui-nav.ui.menu .item:focus,
 .ui-nav.ui.menu .item:hover {
-  color: $font-color-white;
+  color: $font-color-white-one;
   font-weight: $font-weight-semi-bold;
   letter-spacing: normal;
 }
@@ -208,5 +208,5 @@ input::placeholder {
 .footer-trademark {
   font-size: 0.875rem;
   font-weight: $font-weight-medium;
-  color: $font-color-white;
+  color: $font-color-white-one;
 }
