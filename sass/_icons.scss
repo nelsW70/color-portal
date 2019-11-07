@@ -1,6 +1,6 @@
 /* ICONS */
 .menu .item .material-icons {
-  color: #334756;
+  color: $font-color-gray-two;
   font-size: 1.25rem;
 }
 .material-icons.account {
@@ -12,7 +12,7 @@
 }
 
 .material-icons.print {
-  color: #7f98ab;
+  color: $font-color-gray-three;
 }
 
 .ui.icon.input .search {
