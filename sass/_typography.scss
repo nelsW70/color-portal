@@ -2,8 +2,9 @@
 html,
 body {
   font-size: 16px;
-  font-family: $font-family-base, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: $font-color-base;
+  font-family: $font-family-primary, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  color: $font-color-primary;
 }
 
 /* the increased hierarchy overrides the library fonts */
@@ -14,7 +15,7 @@ h4,
 h5,
 p,
 .item {
-  font-family: $font-family-base;
+  font-family: $font-family-primary;
 }
 
 h1 {
@@ -32,7 +33,7 @@ h2 {
 .ui.table thead th {
   font-size: 13px;
   font-weight: $font-weight-semi-bold;
-  color: $font-color-base;
+  color: $font-color-primary;
 }
 
 .ui.table td {
@@ -52,7 +53,7 @@ a {
 /* menu label */
 .menu-label {
   color: $font-color-white;
-  font-family: $font-family-base;
+  font-family: $font-family-primary;
   font-size: 18px;
   font-weight: $font-weight-medium;
 }
@@ -76,13 +77,13 @@ a {
 
 /* header dropdown menu text */
 .item-text {
-  color: #193040;
+  color: $font-color-primary;
   font-size: 14px;
 }
 
 /* input placeholder */
 input::placeholder {
-  font-family: $font-family-base;
+  font-family: $font-family-primary;
   font-size: 14px;
   color: #9ba6ae !important;
 }
@@ -108,7 +109,7 @@ input::placeholder {
 }
 
 .ui.button.btn-print .button-text {
-  color: #193040;
+  color: $font-color-primary;
 }
 
 /* breadcrumbs */
@@ -134,7 +135,7 @@ input::placeholder {
 }
 
 .label {
-  color: #193040;
+  color: $font-color-primary;
   font-size: 13px;
 }
 
@@ -145,15 +146,15 @@ input::placeholder {
 /* SEARCH RESULTS 'No Results' HEADER */
 .ui.search > .results > .message .header,
 .ui.search > .results .result .content .title {
-  font-family: $font-family-base;
+  font-family: $font-family-primary;
   font-size: 14px;
   font-weight: $font-weight-normal;
-  color: #193040;
+  color: $font-color-primary;
 }
 
 /* input results */
 .customer-info__search-container .ui.search .prompt {
-  font-family: $font-family-base;
+  font-family: $font-family-primary;
   font-size: 14px;
 }
 
