@@ -19,19 +19,19 @@ p,
 
 h1 {
   font-size: 1.5rem;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-semi-bold;
   margin-bottom: 0;
 }
 
 h2 {
   font-size: 1.75rem;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-semi-bold;
   margin-bottom: 0;
 }
 
 .ui.table thead th {
   font-size: 13px;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-semi-bold;
   color: #193040;
 }
 
@@ -98,7 +98,7 @@ input::placeholder {
 .ui-nav.ui.menu .item:focus,
 .ui-nav.ui.menu .item:hover {
   color: #ffffff;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-semi-bold;
   letter-spacing: normal;
 }
 
@@ -147,7 +147,7 @@ input::placeholder {
 .ui.search > .results .result .content .title {
   font-family: $font-family-base;
   font-size: 14px;
-  font-weight: $font-weight-semi-bold;
+  font-weight: $font-weight-regular;
   color: #193040;
 }
 
@@ -169,7 +169,7 @@ input::placeholder {
 /* add project button */
 .btn-add-project .button-text,
 .btn-view-styling .button-text {
-  font-weight: $font-weight-semi-bold;
+  font-weight: $font-weight-regular;
 }
 
 /* item count */
@@ -188,7 +188,7 @@ input::placeholder {
 }
 
 .item-count span {
-  font-weight: 600;
+  font-weight: font-weight-bold;
 }
 
 @media only screen and (max-width: 1199px) {
