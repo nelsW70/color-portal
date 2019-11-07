@@ -4,8 +4,10 @@ $font-family-primary: 'Suisse Intl', sans-serif;
 //FONT COLORS
 $font-color-primary: #193040;
 $font-color-white: #ffffff;
-$font-color-td: rgba(25, 48, 64, 0.7);
+$font-color-gray-one: rgba(25, 48, 64, 0.7);
+$font-color-gray-two: #334756;
 $font-color-blue-one: #1966ec;
+$font-color-input-placeholder: #9ba6ae !important;
 
 //FONT WEIGHT
 $font-weight-light: 100;
@@ -17,3 +19,6 @@ $font-weight-bold: 600;
 //BACKGROUND COLORS
 $background-color-white: #ffffff;
 $background-color-blue-one: #1966ec;
+
+//UTILITY COLORS
+$breadcrumb-divider: #334756;

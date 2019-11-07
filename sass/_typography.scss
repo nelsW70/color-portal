@@ -38,7 +38,7 @@ h2 {
 
 .ui.table td {
   font-size: 0.8125rem;
-  color: $font-color-td;
+  color: $font-color-gray-one;
 }
 
 .ui.table td a {
@@ -85,7 +85,7 @@ a {
 input::placeholder {
   font-family: $font-family-primary;
   font-size: 0.875rem;
-  color: #9ba6ae !important;
+  color: $font-color-input-placeholder;
 }
 
 /* semantic ui navbar links */
@@ -114,12 +114,12 @@ input::placeholder {
 
 /* breadcrumbs */
 .ui.breadcrumb .divider {
-  color: #334756;
+  color: $breadcrumb-divider;
   font-size: 0.8125rem;
 }
 
 .ui.breadcrumb a.section {
-  color: #334756;
+  color: $breadcrumb-divider;
   font-size: 0.8125rem;
 }
 
@@ -160,11 +160,11 @@ input::placeholder {
 
 /* items per page default value  */
 .pagination-row .ui.fluid.selection.dropdown .text {
-  color: #334756;
+  color: $font-color-gray-two;
 }
 
 .pagination-row .ui.fluid.selection.dropdown .item {
-  color: #334756;
+  color: $font-color-gray-two;
 }
 
 /* add project button */
@@ -176,7 +176,7 @@ input::placeholder {
 /* item count */
 .item-count {
   font-size: 0.875rem;
-  color: #334756;
+  color: $font-color-gray-two;
 }
 
 .item-count--large-screen {
