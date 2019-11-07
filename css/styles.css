@@ -1076,8 +1076,7 @@ footer img {
   z-index: 2;
   cursor: pointer;
 }
-
-#text {
+#overlay #text {
   position: absolute;
   font-family: "Suisse Intl", sans-serif;
   font-weight: 300;
@@ -1089,7 +1088,6 @@ footer img {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
 @media only screen and (min-width: 960px) {
   #overlay {
     display: none;
