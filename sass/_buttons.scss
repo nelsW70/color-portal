@@ -10,7 +10,7 @@
 }
 
 .ui.primary.button {
-  background-color: #1e5dcb;
+  background-color: $background-color-blue-two;
   height: 40px;
   padding: 6px 12px;
 }
@@ -31,7 +31,7 @@
 
 .ui.inverted.primary.button:hover,
 .ui.inverted.primary.button:focus {
-  background-color: #1e5dcb;
+  background-color: $background-color-blue-two;
 }
 
 /* tiny buttons */
@@ -89,6 +89,6 @@
 
 .btn.btn-items-per-page:hover,
 .btn.btn-items-per-page:focus {
-  background-color: #1e5dcb;
+  background-color: $background-color-blue-two;
   border-color: #1e5dcb;
 }
