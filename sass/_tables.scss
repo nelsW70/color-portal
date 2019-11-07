@@ -37,14 +37,14 @@ table.ui.very.basic.selectable.striped.padded.table {
 .dot {
   height: 9px;
   width: 9px;
-  background-color: #bbb;
+  background-color: $background-color-white-three;
   border-radius: 50%;
   display: inline-block;
   margin-right: 6px;
 }
 
 .dot--approved {
-  background-color: #02a154;
+  background-color: $background-color-green-one;
 }
 
 .dot--pending {

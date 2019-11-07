@@ -177,30 +177,23 @@ input::placeholder {
 .item-count {
   font-size: 0.875rem;
   color: $font-color-primary;
-}
-
-.item-count--large-screen {
-  margin-right: 1.5rem;
-  margin-bottom: 0;
-}
-
-.item-count--small-screen {
-  margin-top: 1rem;
-}
-
-.item-count span {
-  font-weight: font-weight-bold;
-}
-
-@media only screen and (max-width: 1199px) {
-  .item-count--large-screen {
-    display: none;
+  & span {
+    font-weight: $font-weight-bold;
   }
-}
+  &--large-screen {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
 
-@media only screen and (min-width: 1200px) {
-  .item-count--small-screen {
-    display: none;
+    @media only screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+  &--small-screen {
+    margin-top: 1rem;
+
+    @media only screen and (min-width: 1200px) {
+      display: none;
+    }
   }
 }
 

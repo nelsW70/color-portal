@@ -212,30 +212,27 @@ input::placeholder {
   font-size: 0.875rem;
   color: #193040;
 }
-
+.item-count span {
+  font-weight: 600;
+}
 .item-count--large-screen {
   margin-right: 1.5rem;
   margin-bottom: 0;
 }
-
-.item-count--small-screen {
-  margin-top: 1rem;
-}
-
-.item-count span {
-  font-weight: font-weight-bold;
-}
-
 @media only screen and (max-width: 1199px) {
   .item-count--large-screen {
     display: none;
   }
+}
+.item-count--small-screen {
+  margin-top: 1rem;
 }
 @media only screen and (min-width: 1200px) {
   .item-count--small-screen {
     display: none;
   }
 }
+
 /* footer trademark  */
 .footer-trademark {
   font-size: 0.875rem;
