@@ -16,12 +16,12 @@
 #text {
   position: absolute;
   font-family: $font-family-base;
-  font-weight: 300;
+  font-weight: $font-weight-medium;
   line-height: 2rem;
   top: 45%;
   left: 50%;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: $font-color-white;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }

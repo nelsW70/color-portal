@@ -51,7 +51,7 @@ a {
 
 /* menu label */
 .menu-label {
-  color: #ffffff;
+  color: $font-color-white;
   font-family: $font-family-base;
   font-size: 18px;
   font-weight: $font-weight-medium;
@@ -89,7 +89,7 @@ input::placeholder {
 
 /* semantic ui navbar links */
 .ui-nav.ui.menu .item {
-  color: #ffffff;
+  color: $font-color-white;
   font-weight: $font-weight-medium;
   letter-spacing: 0.0275rem;
   padding: 8px;
@@ -97,7 +97,7 @@ input::placeholder {
 
 .ui-nav.ui.menu .item:focus,
 .ui-nav.ui.menu .item:hover {
-  color: #ffffff;
+  color: $font-color-white;
   font-weight: $font-weight-semi-bold;
   letter-spacing: normal;
 }
@@ -147,7 +147,7 @@ input::placeholder {
 .ui.search > .results .result .content .title {
   font-family: $font-family-base;
   font-size: 14px;
-  font-weight: $font-weight-regular;
+  font-weight: $font-weight-normal;
   color: #193040;
 }
 
@@ -169,7 +169,7 @@ input::placeholder {
 /* add project button */
 .btn-add-project .button-text,
 .btn-view-styling .button-text {
-  font-weight: $font-weight-regular;
+  font-weight: $font-weight-normal;
 }
 
 /* item count */
@@ -207,5 +207,5 @@ input::placeholder {
 .footer-trademark {
   font-size: 14px;
   font-weight: $font-weight-medium;
-  color: #ffffff;
+  color: $font-color-white;
 }
