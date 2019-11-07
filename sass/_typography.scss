@@ -30,6 +30,10 @@ h2 {
   margin-bottom: 0;
 }
 
+a {
+  color: $font-color-blue-one;
+}
+
 .ui.table thead th {
   font-size: 0.8125rem;
   font-weight: $font-weight-semi-bold;
@@ -39,15 +43,11 @@ h2 {
 .ui.table td {
   font-size: 0.8125rem;
   color: $font-color-gray-one;
-}
 
-.ui.table td a {
-  color: $font-color-blue-one;
-  cursor: pointer;
-}
-
-a {
-  color: $font-color-blue-one;
+  & a {
+    color: $font-color-blue-one;
+    cursor: pointer;
+  }
 }
 
 /* menu label */
@@ -121,12 +121,12 @@ input::placeholder {
 .ui.breadcrumb a.section {
   color: $breadcrumb-divider;
   font-size: 0.8125rem;
-}
 
-.ui.breadcrumb a.section.active,
-.ui.breadcrumb a.section:hover {
-  color: $font-color-blue-one;
-  font-weight: inherit;
+  &.active,
+  &:hover {
+    color: $font-color-blue-one;
+    font-weight: inherit;
+  }
 }
 
 /* labels */
@@ -158,13 +158,11 @@ input::placeholder {
   font-size: 0.875rem;
 }
 
-/* items per page default value  */
-.pagination-row .ui.fluid.selection.dropdown .text {
-  color: $font-color-gray-two;
-}
-
-.pagination-row .ui.fluid.selection.dropdown .item {
-  color: $font-color-gray-two;
+.pagination-row .ui.fluid.selection.dropdown {
+  & .text,
+  & .item {
+    color: $font-color-gray-two;
+  }
 }
 
 /* add project button */

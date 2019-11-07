@@ -64,6 +64,10 @@ h2 {
   margin-bottom: 0;
 }
 
+a {
+  color: #1966ec;
+}
+
 .ui.table thead th {
   font-size: 0.8125rem;
   font-weight: 500;
@@ -74,14 +78,9 @@ h2 {
   font-size: 0.8125rem;
   color: rgba(25, 48, 64, 0.7);
 }
-
 .ui.table td a {
   color: #1966ec;
   cursor: pointer;
-}
-
-a {
-  color: #1966ec;
 }
 
 /* menu label */
@@ -156,9 +155,7 @@ input::placeholder {
   color: #334756;
   font-size: 0.8125rem;
 }
-
-.ui.breadcrumb a.section.active,
-.ui.breadcrumb a.section:hover {
+.ui.breadcrumb a.section.active, .ui.breadcrumb a.section:hover {
   color: #1966ec;
   font-weight: inherit;
 }
@@ -192,12 +189,7 @@ input::placeholder {
   font-size: 0.875rem;
 }
 
-/* items per page default value  */
-.pagination-row .ui.fluid.selection.dropdown .text {
-  color: #334756;
-}
-
-.pagination-row .ui.fluid.selection.dropdown .item {
+.pagination-row .ui.fluid.selection.dropdown .text, .pagination-row .ui.fluid.selection.dropdown .item {
   color: #334756;
 }
 
