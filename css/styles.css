@@ -302,7 +302,7 @@ input::placeholder {
 }
 
 /* ICONS */
-.material-icons.print {
+.material-icons--print {
   color: #7f98ab;
 }
 
