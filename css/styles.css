@@ -406,9 +406,7 @@ input::placeholder {
   width: 63px;
   height: 35px;
 }
-
-.btn.btn-items-per-page:hover,
-.btn.btn-items-per-page:focus {
+.btn-items-per-page:hover, .btn-items-per-page:focus {
   background-color: #1e5dcb;
   border-color: #1e5dcb;
 }

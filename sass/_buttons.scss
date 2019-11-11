@@ -87,10 +87,10 @@
   color: $font-color-gray-two;
   width: 63px;
   height: 35px;
-}
 
-.btn.btn-items-per-page:hover,
-.btn.btn-items-per-page:focus {
-  background-color: $background-color-blue-two;
-  border-color: $background-color-blue-two;
+  &:hover,
+  &:focus {
+    background-color: $background-color-blue-two;
+    border-color: $background-color-blue-two;
+  }
 }
