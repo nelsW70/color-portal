@@ -46,10 +46,10 @@ table.ui.very.basic.striped.padded.table {
           background-color: $background-color-green-one;
         }
         &--pending {
-          background-color: #ff9a00;
+          background-color: $background-color-orange-one;
         }
         &--rejected {
-          background-color: #ce3f11;
+          background-color: $background-color-red-one;
         }
       }
     }
