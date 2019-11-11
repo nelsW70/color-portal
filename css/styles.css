@@ -1038,12 +1038,11 @@ table.ui.very.basic.selectable.striped.padded.table {
 footer {
   height: 60px;
   /* optional color */
-  /* background-color: #e7ebed; */
+  /* background-color: $background-color-gray-one; */
   background-color: #112330;
   display: flex;
   align-items: center;
 }
-
 footer img {
   height: 40px;
   margin-left: 25px;

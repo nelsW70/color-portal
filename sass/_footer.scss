@@ -2,15 +2,14 @@
 footer {
   height: 60px;
   /* optional color */
-  /* background-color: #e7ebed; */
+  /* background-color: $background-color-gray-one; */
   background-color: $background-color-blue-three;
   display: flex;
   align-items: center;
-}
-
-footer img {
-  height: 40px;
-  margin-left: 25px;
-  margin-right: 24px;
-  cursor: pointer;
+  & img {
+    height: 40px;
+    margin-left: 25px;
+    margin-right: 24px;
+    cursor: pointer;
+  }
 }
