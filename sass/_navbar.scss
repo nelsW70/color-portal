@@ -16,6 +16,7 @@
 
     & .item {
       justify-content: center;
+      font-weight: $font-weight-medium;
 
       &:first-of-type {
         width: 9%;
@@ -38,6 +39,33 @@
       &:nth-child(7) {
         width: 10%;
       }
+
+      &:hover,
+      &:focus {
+        position: relative;
+        font-weight: $font-weight-semi-bold !important;
+
+        &:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+      }
+
+      &:before {
+        background-color: $background-color-blue-four;
+        content: '';
+        height: 5px;
+        position: absolute;
+        top: 46px;
+        left: 0;
+        width: 100%;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
     }
   }
 
@@ -46,37 +74,28 @@
   }
 }
 
-// .ui-nav.ui.menu .ui.icon.input {
-//   width: 25%;
-// }
-
 /* NAVBAR UNDERLINE ANIMATION */
-.ui-nav .menu-links-container > .item,
-.ui-nav .menu-links-container > .item:hover,
-.ui-nav .menu-links-container > .item:focus {
-  position: relative;
-  font-weight: bold;
-}
-.ui-nav .menu-links-container > .item:before {
-  background-color: $background-color-blue-four;
-  content: '';
-  height: 5px;
-  position: absolute;
-  top: 46px;
-  left: 0;
-  width: 100%;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-.ui-nav .menu-links-container > .item:hover:before,
-.ui-nav .menu-links-container > .item:focus:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
+
+// .ui-nav .menu-links-container > .item:before {
+//   background-color: $background-color-blue-four;
+//   content: '';
+//   height: 5px;
+//   position: absolute;
+//   top: 46px;
+//   left: 0;
+//   width: 100%;
+//   visibility: hidden;
+//   -webkit-transform: scaleX(0);
+//   transform: scaleX(0);
+//   -webkit-transition: all 0.3s ease-in-out 0s;
+//   transition: all 0.3s ease-in-out 0s;
+// }
+// .ui-nav .menu-links-container > .item:hover:before,
+// .ui-nav .menu-links-container > .item:focus:before {
+//   visibility: visible;
+//   -webkit-transform: scaleX(1);
+//   transform: scaleX(1);
+// }
 
 /* HEADER COLOR STRIP */
 .color-strip {
