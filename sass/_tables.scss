@@ -6,15 +6,8 @@ table.ui.very.basic.selectable.striped.padded.table {
   border-radius: 0;
 }
 
-// .ui.basic.striped.table tbody tr:nth-child(1n) {
-//   background-color: $background-color-gray-five !important;
-// }
-
-// .ui.basic.striped.table tbody tr:nth-child(2n) {
-//   background-color: transparent !important;
-// }
-
 // NEW
+
 table.ui.very.basic.striped.padded.table {
   border-bottom: solid 1px $background-color-gray-six;
 
@@ -23,25 +16,23 @@ table.ui.very.basic.striped.padded.table {
     border-bottom: solid 1px $background-color-gray-six;
   }
 
-  & tbody {
-    & tr {
-      cursor: pointer;
+  & tbody tr {
+    cursor: pointer;
 
-      &:hover {
-        background-color: $background-color-blue-six !important;
-      }
+    &:nth-child(1n) {
+      background-color: $background-color-gray-five !important;
+    }
 
-      &:nth-child(1n) {
-        background-color: $background-color-gray-five !important;
-      }
+    &:nth-child(2n) {
+      background-color: transparent !important;
+    }
 
-      &:nth-child(2n) {
-        background-color: transparent !important;
-      }
+    &:hover {
+      background-color: $background-color-blue-six !important;
+    }
 
-      & td {
-        border-top: 1px solid transparent;
-      }
+    & td {
+      border-top: 1px solid transparent;
     }
   }
 }
