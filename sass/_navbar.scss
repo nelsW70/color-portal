@@ -24,31 +24,39 @@ header {
     background-color: $background-color-blue-three;
     color: $font-color-white-one;
 
-    /* HEADER DROPDOWN MENU  */
-    & .dropdown .ui.floating.dropdown {
-      & .nav-icon {
-        width: 26px;
-        height: 26px;
-        margin-right: 0.5rem;
-        margin-top: 0.25rem;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: 0.3s ease-in-out;
-        -moz-transition: 0.3s ease-in-out;
-        -o-transition: 0.3s ease-in-out;
-        transition: 0.3s ease-in-out;
-        cursor: pointer;
+    & .title {
+      flex: 1;
+      text-align: center;
+    }
 
-        & span {
-          display: block;
-          position: absolute;
-          height: 3px;
-          width: 100%;
-          background: #ffffff;
-          opacity: 1;
-          left: 0;
+    & .user-info {
+      display: flex;
+      justify-content: flex-end;
+      width: 20rem;
+      text-align: right;
+    }
+
+    & .ppg-logo {
+      display: flex;
+      width: 5rem;
+      & img {
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+
+    /* HEADER DROPDOWN MENU  */
+    & .dropdown {
+      display: flex;
+      align-items: center;
+      width: 15rem;
+
+      & .ui.floating.dropdown {
+        & .nav-icon {
+          width: 26px;
+          height: 26px;
+          margin-right: 0.5rem;
+          margin-top: 0.25rem;
           -webkit-transform: rotate(0deg);
           -moz-transform: rotate(0deg);
           -o-transform: rotate(0deg);
@@ -57,64 +65,83 @@ header {
           -moz-transition: 0.3s ease-in-out;
           -o-transition: 0.3s ease-in-out;
           transition: 0.3s ease-in-out;
+          cursor: pointer;
 
-          &:nth-child(1) {
-            top: 0px;
+          & span {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background: #ffffff;
+            opacity: 1;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: 0.3s ease-in-out;
+            -moz-transition: 0.3s ease-in-out;
+            -o-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+
+            &:nth-child(1) {
+              top: 0px;
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+              top: 9px;
+            }
+            &:nth-child(4) {
+              top: 18px;
+            }
           }
-          &:nth-child(2),
-          &:nth-child(3) {
-            top: 9px;
-          }
-          &:nth-child(4) {
-            top: 18px;
+
+          &.open span {
+            &:nth-child(1) {
+              top: 9px;
+              width: 0%;
+              left: 50%;
+            }
+            &:nth-child(2) {
+              -webkit-transform: rotate(45deg);
+              -moz-transform: rotate(45deg);
+              -o-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+            &:nth-child(3) {
+              -webkit-transform: rotate(-45deg);
+              -moz-transform: rotate(-45deg);
+              -o-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+            }
+            &:nth-child(4) {
+              top: 9px;
+              width: 0%;
+              left: 50%;
+            }
           }
         }
 
-        &.open span {
-          &:nth-child(1) {
-            top: 9px;
-            width: 0%;
-            left: 50%;
-          }
-          &:nth-child(2) {
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-          }
-          &:nth-child(3) {
-            -webkit-transform: rotate(-45deg);
-            -moz-transform: rotate(-45deg);
-            -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-          }
-          &:nth-child(4) {
-            top: 9px;
-            width: 0%;
-            left: 50%;
-          }
-        }
-      }
+        & .menu {
+          border-radius: 2px !important;
+          background-color: $background-color-white-one;
+          box-shadow: 0 1px 4px 0 rgba(25, 48, 64, 0.2);
+          padding: 0.75rem 0.25rem;
 
-      & .menu {
-        border-radius: 2px !important;
-        background-color: $background-color-white-one;
-        box-shadow: 0 1px 4px 0 rgba(25, 48, 64, 0.2);
-        padding: 0.75rem 0.25rem;
-
-        & .item {
-          padding: 0.525rem 1.14285714rem !important;
+          & .item {
+            padding: 0.525rem 1.14285714rem !important;
+          }
         }
       }
     }
   }
 
   /* header */
-  .header-menu .dropdown {
-    display: flex;
-    align-items: center;
-    width: 15rem;
-  }
+  // .header-menu .dropdown {
+  //   display: flex;
+  //   align-items: center;
+  //   width: 15rem;
+  // }
 
   .header-menu .dropdown .ui.floating {
     background-color: transparent;
@@ -126,27 +153,27 @@ header {
     align-items: center;
   }
 
-  .header-menu .title {
-    flex: 1;
-    text-align: center;
-  }
+  // .header-menu .title {
+  //   flex: 1;
+  //   text-align: center;
+  // }
 
-  .header-menu .user-info {
-    display: flex;
-    justify-content: flex-end;
-    width: 20rem;
-    text-align: right;
-  }
+  // .header-menu .user-info {
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   width: 20rem;
+  //   text-align: right;
+  // }
 
-  .header-menu .ppg-logo {
-    display: flex;
-    width: 5rem;
-  }
+  // .header-menu .ppg-logo {
+  //   display: flex;
+  //   width: 5rem;
+  // }
 
-  .header-menu .ppg-logo img {
-    height: 40px;
-    cursor: pointer;
-  }
+  // .header-menu .ppg-logo img {
+  //   height: 40px;
+  //   cursor: pointer;
+  // }
 
   // SECOND ROW HEADER
 
