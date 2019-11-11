@@ -65,22 +65,6 @@
     background-color: rgba(25, 102, 236, 0.1) !important;
   }
 }
-// .ui.basic.buttons .tiny.ui.button:first-child {
-//   border-top-left-radius: 2px;
-//   border-bottom-left-radius: 2px;
-// }
-
-// .ui.basic.buttons .tiny.ui.button:last-child {
-//   border-top-right-radius: 2px;
-//   border-bottom-right-radius: 2px;
-// }
-
-// .ui.basic.buttons .tiny.ui.button:hover,
-// .ui.basic.buttons .tiny.ui.button.active {
-//   color: #1e5dcb !important;
-//   border: solid 1px $background-color-blue-one;
-//   background-color: rgba(25, 102, 236, 0.1) !important;
-// }
 
 /* print button */
 .color-portal.ui.button.btn-print {
@@ -88,11 +72,11 @@
   font-weight: $font-weight-semi-bold;
   border-radius: 3px;
   padding: 6px 12px;
-}
 
-.color-portal.ui.button.btn-print:hover {
-  background-color: $background-color-gray-two;
-  transition: all 0.25s;
+  &:hover {
+    background-color: $background-color-gray-two;
+    transition: all 0.25s;
+  }
 }
 
 /* items per page button */

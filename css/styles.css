@@ -392,7 +392,6 @@ input::placeholder {
   border-radius: 3px;
   padding: 6px 12px;
 }
-
 .color-portal.ui.button.btn-print:hover {
   background-color: #d6dadc;
   transition: all 0.25s;
