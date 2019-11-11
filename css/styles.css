@@ -643,6 +643,9 @@ header .ui-nav.ui.menu {
   border: none;
   border-radius: 0;
 }
+header .ui-nav.ui.menu .ui.icon.input {
+  width: 25%;
+}
 header .ui-nav.ui.menu .menu-links-container {
   display: flex;
   width: 75%;
@@ -696,9 +699,6 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-}
-header .ui-nav.ui.menu .ui.icon.input {
-  width: 25%;
 }
 
 /* CONTAINERS */
