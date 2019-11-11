@@ -302,19 +302,6 @@ input::placeholder {
 }
 
 /* ICONS */
-.menu .item .material-icons {
-  color: #334756;
-  font-size: 1.25rem;
-}
-
-.material-icons.account {
-  padding-right: 0.5rem;
-}
-
-.dropdown .ui.floating .item .material-icons {
-  padding-right: 1rem;
-}
-
 .material-icons.print {
   color: #7f98ab;
 }
@@ -541,6 +528,9 @@ header .header-menu .user-info {
   width: 20rem;
   text-align: right;
 }
+header .header-menu .user-info .material-icons.account {
+  padding-right: 0.5rem;
+}
 header .header-menu .ppg-logo {
   display: flex;
   width: 5rem;
@@ -631,6 +621,11 @@ header .header-menu .dropdown .ui.floating.dropdown .menu .item {
   display: flex;
   align-items: center;
   padding: 0.525rem 1.14285714rem !important;
+}
+header .header-menu .dropdown .ui.floating.dropdown .menu .item .material-icons {
+  color: #334756;
+  font-size: 1.25rem;
+  padding-right: 1rem;
 }
 header .ui-nav.ui.menu {
   display: flex;

@@ -1,18 +1,9 @@
 /* ICONS */
-.menu .item .material-icons {
-  color: $font-color-gray-two;
-  font-size: 1.25rem;
-}
-.material-icons.account {
-  padding-right: 0.5rem;
-}
 
-.dropdown .ui.floating .item .material-icons {
-  padding-right: 1rem;
-}
-
-.material-icons.print {
-  color: $font-color-gray-three;
+.material-icons {
+  &.print {
+    color: $font-color-gray-three;
+  }
 }
 
 .ui.icon.input .search {
