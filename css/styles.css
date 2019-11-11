@@ -554,6 +554,10 @@ header .header-menu .dropdown {
   align-items: center;
   width: 15rem;
 }
+header .header-menu .dropdown .ui.floating.dropdown {
+  background-color: transparent;
+  padding: 0;
+}
 header .header-menu .dropdown .ui.floating.dropdown .nav-icon {
   width: 26px;
   height: 26px;
@@ -624,15 +628,9 @@ header .header-menu .dropdown .ui.floating.dropdown .menu {
   padding: 0.75rem 0.25rem;
 }
 header .header-menu .dropdown .ui.floating.dropdown .menu .item {
-  padding: 0.525rem 1.14285714rem !important;
-}
-header .header-menu .dropdown .ui.floating {
-  background-color: transparent;
-  padding: 0;
-}
-header .header-menu .dropdown .ui.floating .item {
   display: flex;
   align-items: center;
+  padding: 0.525rem 1.14285714rem !important;
 }
 header .ui-nav.ui.menu {
   display: flex;
