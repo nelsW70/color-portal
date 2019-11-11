@@ -338,9 +338,7 @@ input::placeholder {
   padding: 6px 12px;
   transition: all 0.25s;
 }
-
-.ui.primary.button:hover,
-.ui.primary.button:focus {
+.ui.primary.button:hover, .ui.primary.button:focus {
   background-color: #194eaa;
   transition: all 0.25s;
 }
@@ -352,9 +350,7 @@ input::placeholder {
   box-shadow: none !important;
   padding: 6px 12px;
 }
-
-.ui.inverted.primary.button:hover,
-.ui.inverted.primary.button:focus {
+.ui.inverted.primary.button:hover, .ui.inverted.primary.button:focus {
   background-color: #1e5dcb;
 }
 
