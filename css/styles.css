@@ -401,7 +401,7 @@ input::placeholder {
 }
 
 /* CHECKBOX */
-.colorportal-checkbox__label {
+.custom-checkbox__label {
   position: relative;
   display: block;
   cursor: pointer;
@@ -410,7 +410,7 @@ input::placeholder {
   padding-left: 30px;
 }
 
-.colorportal-checkbox__label:after {
+.custom-checkbox__label:after {
   content: "";
   display: block;
   width: 5px;
@@ -427,7 +427,7 @@ input::placeholder {
   transform-origin: left top;
 }
 
-.colorportal-checkbox__label:before {
+.custom-checkbox__label:before {
   content: "";
   display: block;
   border: 1px solid;
@@ -437,42 +437,42 @@ input::placeholder {
   left: 0;
 }
 
-.custom-checkbox:disabled ~ .colorportal-checkbox__label {
+.custom-checkbox__input:disabled ~ .custom-checkbox__label {
   cursor: no-drop;
 }
 
-.custom-checkbox {
+.custom-checkbox__input {
   display: none;
 }
 
-.colorportal-checkbox .custom-checkbox:checked + .colorportal-checkbox__label:after {
+.custom-checkbox .custom-checkbox__input:checked + .custom-checkbox__label:after {
   -webkit-animation: check 0.35s;
   animation: check 0.35s;
   opacity: 1;
 }
 
-.colorportal-checkbox .custom-checkbox:checked + .colorportal-checkbox__label:before {
+.custom-checkbox .custom-checkbox__input:checked + .custom-checkbox__label:before {
   background-color: #eee;
 }
 
-.colorportal-checkbox .colorportal-checkbox__label:before {
+.custom-checkbox .custom-checkbox__label:before {
   border-color: #eee;
 }
 
-.custom-checkbox:disabled ~ .colorportal-checkbox__label {
+.custom-checkbox__input:disabled ~ .custom-checkbox__label {
   color: #eee;
 }
 
-.colorportal-checkbox_primary .custom-checkbox:checked + .colorportal-checkbox__label:after {
+.custom-checkbox .custom-checkbox__input:checked + .custom-checkbox__label:after {
   border-color: #ffffff;
 }
 
-.colorportal-checkbox_primary .custom-checkbox:checked + .colorportal-checkbox__label:before {
+.custom-checkbox .custom-checkbox__input:checked + .custom-checkbox__label:before {
   background-color: #1966ec;
   border: 1px solid #1966ec;
 }
 
-.colorportal-checkbox_primary .colorportal-checkbox__label:before {
+.custom-checkbox .custom-checkbox__label:before {
   border: 1px solid #b3c1cc;
 }
 
