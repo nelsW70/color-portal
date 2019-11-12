@@ -901,16 +901,15 @@ input[type=search]::-webkit-search-cancel-button {
   padding: 0.59375rem 2.34375rem 0.59375rem 0.875rem !important;
 }
 
-.ui-nav .ui.icon.input input {
-  border-radius: 2px;
-  height: 40px;
-}
-
+.ui-nav .ui.icon.input input,
 .navbar .ui.icon.input input {
   border-radius: 2px;
   height: 40px;
 }
 
+.customer-info .ui.icon.input {
+  min-width: 18rem;
+}
 .customer-info__search-container .ui.search .prompt {
   border-radius: 2px;
   height: 40px;
@@ -919,17 +918,12 @@ input[type=search]::-webkit-search-cancel-button {
   border: 1px solid #1966ec;
 }
 
-.customer-info .ui.icon.input {
-  min-width: 18rem;
-}
-
 .go-to-page .ui.input input {
   width: 42px;
   height: 35px;
   border-radius: 1px;
   padding: 0.25rem 0.35rem;
 }
-
 .go-to-page .ui.input input:focus {
   border: solid 1px #1966ec;
 }
