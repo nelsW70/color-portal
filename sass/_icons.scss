@@ -1,11 +1,13 @@
 /* ICONS */
 
 .material-icons {
+  // print button icon
   &--print {
     color: $font-color-gray-three;
   }
 }
 
+// search magnifying class icon
 .ui.icon.input .search {
   color: $font-color-blue-one;
 }
