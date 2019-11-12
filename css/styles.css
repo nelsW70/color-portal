@@ -615,7 +615,7 @@ header .ui-nav.ui.menu {
   align-items: center;
   height: 70px;
   padding: 0.5rem 8px;
-  background-color: #334756 !important;
+  background-color: #334756;
   margin: 0;
   border: none;
   border-radius: 0;
@@ -655,7 +655,7 @@ header .ui-nav.ui.menu .menu-links-container .item:nth-child(7) {
 }
 header .ui-nav.ui.menu .menu-links-container .item:hover, header .ui-nav.ui.menu .menu-links-container .item:focus {
   position: relative;
-  font-weight: 500 !important;
+  font-weight: 500;
   /* NAVBAR UNDERLINE ANIMATION */
 }
 header .ui-nav.ui.menu .menu-links-container .item:hover:before, header .ui-nav.ui.menu .menu-links-container .item:focus:before {

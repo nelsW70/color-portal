@@ -158,7 +158,7 @@ header {
     align-items: center;
     height: 70px;
     padding: 0.5rem 8px;
-    background-color: $background-color-gray-four !important;
+    background-color: $background-color-gray-four;
     margin: 0;
     border: none;
     border-radius: 0;
@@ -200,7 +200,7 @@ header {
         &:hover,
         &:focus {
           position: relative;
-          font-weight: $font-weight-semi-bold !important;
+          font-weight: $font-weight-semi-bold;
 
           /* NAVBAR UNDERLINE ANIMATION */
           &:before {
