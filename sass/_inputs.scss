@@ -1,6 +1,4 @@
-/* INPUTS */
-
-// shows 'x' for clearing input field in chrome that is hidden otherwise
+/* SHOWS 'x' FOR CLEARING INPUT FIELD IN CHROME THAT IS HIDDEN OTHERWISE */
 input[type='search'] {
   -webkit-appearance: searchfield;
 }
@@ -8,7 +6,7 @@ input[type='search']::-webkit-search-cancel-button {
   -webkit-appearance: searchfield-cancel-button;
 }
 
-// general input
+/* GENERAL */
 .ui.icon.input > input {
   border: solid 1px $background-color-gray-three;
   font-size: 0.875rem !important;
@@ -21,7 +19,7 @@ input[type='search']::-webkit-search-cancel-button {
   height: 40px;
 }
 
-// customer info section search input
+/* CUSTOMER INFO SECTION SEARCH */
 .customer-info {
   & .ui.icon.input {
     min-width: 18rem;
@@ -37,7 +35,7 @@ input[type='search']::-webkit-search-cancel-button {
   }
 }
 
-// go to page section search input
+/* GO-TO PAGE SECTION INPUT */
 .go-to-page {
   & .ui.input input {
     width: 42px;

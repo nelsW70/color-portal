@@ -1,4 +1,3 @@
-/* FONTS */
 html,
 body {
   font-size: 16px;
@@ -51,7 +50,7 @@ a {
   }
 }
 
-/* menu label */
+/* MENU LABEL */
 .menu-label {
   color: $font-color-white-one;
   font-family: $font-family-primary;
@@ -59,37 +58,37 @@ a {
   font-weight: $font-weight-medium;
 }
 
-/* title span */
+/* TITLE SPAN */
 .title-span {
   font-weight: $font-weight-light;
 }
 
-/* title tm */
+/* TITLE TM */
 .title .title-tm {
   font-weight: $font-weight-light;
   font-size: 1.25rem;
   vertical-align: text-top;
 }
 
-/* user info */
+/* USER INFO */
 .user-info--text {
   font-weight: $font-weight-medium;
 }
 
-/* header dropdown menu text */
+/* HEADER DROPDOWN MENU TEXT */
 .item-text {
   color: $font-color-primary;
   font-size: 0.875rem;
 }
 
-/* input placeholder */
+/* INPUT PLACEHOLDER */
 input::placeholder {
   font-family: $font-family-primary;
   font-size: 0.875rem;
   color: $font-color-input-placeholder;
 }
 
-/* semantic ui navbar links */
+/* NAVBAR LINKS */
 .ui-nav.ui.menu .item {
   color: $font-color-white-one;
   font-weight: $font-weight-medium;
@@ -103,7 +102,7 @@ input::placeholder {
   }
 }
 
-/* breadcrumbs */
+/* BREADCRUMBS */
 .ui.breadcrumb {
   & .divider {
     color: $breadcrumb-divider;
@@ -121,7 +120,7 @@ input::placeholder {
   }
 }
 
-/* labels */
+/* LABELS */
 .customer-info label {
   margin-bottom: 0.25rem;
 }
@@ -144,7 +143,7 @@ input::placeholder {
   color: $font-color-primary;
 }
 
-/* input results */
+/* SEARCH INPUT RESULTS */
 .customer-info__search-container .ui.search .prompt {
   font-family: $font-family-primary;
   font-size: 0.875rem;
@@ -157,7 +156,7 @@ input::placeholder {
   }
 }
 
-/* item count */
+/* ITEM COUNT */
 .item-count {
   font-size: 0.875rem;
   color: $font-color-primary;
@@ -181,13 +180,13 @@ input::placeholder {
   }
 }
 
-/* pagination buttons */
+/* PAGINATION BUTTONS */
 .pagination-row .pagination .item {
   font-size: 0.875rem;
   color: $font-color-gray-two;
 }
 
-/* footer trademark  */
+/* FOOTER TRADEMARK  */
 .footer-trademark {
   font-size: 0.875rem;
   font-weight: $font-weight-medium;

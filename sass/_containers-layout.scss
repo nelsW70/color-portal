@@ -1,12 +1,10 @@
-/* CONTAINERS-LAYOUT */
-
-/* body */
+/* BODY */
 .main-content {
   min-height: calc(100vh - 195px);
   padding: 25px;
 }
 
-/* breadcrumbs row */
+/* BREADCRUMBS ROW */
 .breadcrumbs-row {
   display: flex;
   justify-content: space-between;
@@ -14,12 +12,12 @@
   margin-bottom: 1.25rem;
 }
 
-/* title row */
+/* TITLE ROW */
 .title-row {
   margin-bottom: 1.25rem;
 }
 
-/* customer info row */
+/* CUSTOMER INFO ROW */
 .customer-info {
   display: flex;
   align-items: flex-end;
@@ -40,19 +38,19 @@
   }
 }
 
-/* projects table */
+/* PROJECTS TABLE */
 .projects-table {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
 
-/* buttons container */
+/* BUTTONS CONTAINER */
 .buttons-container {
   display: flex;
   flex-direction: column;
 }
 
-/* pagination row */
+/* PAGINATION ROW */
 .pagination-row {
   display: flex;
   justify-content: space-between;
