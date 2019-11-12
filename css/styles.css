@@ -90,19 +90,19 @@ a {
 }
 
 /* TITLE SPAN */
-.title-span {
+.title__span {
   font-weight: 100;
 }
 
 /* TITLE TM */
-.title .title-tm {
+.title__tm {
   font-weight: 100;
   font-size: 1.25rem;
   vertical-align: text-top;
 }
 
 /* USER INFO */
-.user-info--text {
+.user-info__text {
   font-weight: 300;
 }
 
@@ -476,10 +476,11 @@ header .header-menu .title {
 header .header-menu .user-info {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 20rem;
   text-align: right;
 }
-header .header-menu .user-info .material-icons.account {
+header .header-menu .user-info .material-icons--account {
   padding-right: 0.5rem;
 }
 header .header-menu .ppg-logo {

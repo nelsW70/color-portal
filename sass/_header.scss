@@ -31,10 +31,11 @@ header {
     & .user-info {
       display: flex;
       justify-content: flex-end;
+      align-items: center;
       width: 20rem;
       text-align: right;
 
-      & .material-icons.account {
+      & .material-icons--account {
         padding-right: 0.5rem;
       }
     }
