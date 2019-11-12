@@ -127,17 +127,10 @@ input::placeholder {
   letter-spacing: 0.0275rem;
   padding: 8px;
 }
-
-.ui-nav.ui.menu .item:focus,
-.ui-nav.ui.menu .item:hover {
+.ui-nav.ui.menu .item:focus, .ui-nav.ui.menu .item:hover {
   color: #ffffff;
   font-weight: 500;
   letter-spacing: normal;
-}
-
-/* normal button text */
-.button-text {
-  font-size: 0.875rem;
 }
 
 /* breadcrumbs */
@@ -305,6 +298,11 @@ input::placeholder {
 }
 
 /* BUTTONS */
+/* normal button text */
+.button-text {
+  font-size: 0.875rem;
+}
+
 .color-portal.ui.button {
   display: flex;
   align-items: center;

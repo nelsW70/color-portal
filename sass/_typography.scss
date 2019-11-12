@@ -95,18 +95,12 @@ input::placeholder {
   font-weight: $font-weight-medium;
   letter-spacing: 0.0275rem;
   padding: 8px;
-}
-
-.ui-nav.ui.menu .item:focus,
-.ui-nav.ui.menu .item:hover {
-  color: $font-color-white-one;
-  font-weight: $font-weight-semi-bold;
-  letter-spacing: normal;
-}
-
-/* normal button text */
-.button-text {
-  font-size: 0.875rem;
+  &:focus,
+  &:hover {
+    color: $font-color-white-one;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: normal;
+  }
 }
 
 /* breadcrumbs */
