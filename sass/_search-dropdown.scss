@@ -2,8 +2,8 @@
 .ui.search > .results {
   border-radius: 2px;
   margin-top: 0;
-}
 
-.ui.search > .results .result:hover {
-  background: $background-color-blue-six;
+  & .result:hover {
+    background: $background-color-blue-six;
+  }
 }
