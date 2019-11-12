@@ -140,10 +140,6 @@ input::placeholder {
   font-size: 0.875rem;
 }
 
-.ui.button.btn-print .button-text {
-  color: #193040;
-}
-
 /* breadcrumbs */
 .ui.breadcrumb .divider {
   color: #334756;
@@ -319,6 +315,7 @@ input::placeholder {
 }
 .color-portal.ui.button.btn-print {
   background-color: #e7ebed;
+  color: #193040;
   font-weight: 500;
   border-radius: 3px;
   padding: 6px 12px;
