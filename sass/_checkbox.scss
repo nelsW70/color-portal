@@ -1,20 +1,24 @@
 /* CHECKBOX */
 
 .custom-checkbox {
+  // redo some of this
   &__input {
     display: none;
     &:disabled ~ .custom-checkbox__label {
+      color: $font-color-white-two;
       cursor: no-drop;
     }
   }
   & .custom-checkbox__input:checked + .custom-checkbox__label {
     &:after {
+      border-color: $background-color-white-one;
       -webkit-animation: check 0.35s;
       animation: check 0.35s;
       opacity: 1;
     }
     &:before {
-      background-color: $background-color-white-two;
+      background-color: $background-color-blue-one;
+      border: 1px solid $background-color-blue-one;
     }
   }
   &__label {
@@ -43,79 +47,47 @@
     &:before {
       content: '';
       display: block;
-      border: 1px solid;
+      border: 1px solid $background-color-gray-three;
       width: 25px;
       height: 25px;
       position: absolute;
       left: 0;
     }
   }
+
+  @-webkit-keyframes check {
+    0% {
+      height: 0;
+      width: 0;
+    }
+    25% {
+      height: 0;
+      width: 5px;
+    }
+    50% {
+      height: 15px;
+      width: 5px;
+    }
+  }
+  @keyframes check {
+    0% {
+      height: 0;
+      width: 0;
+    }
+    25% {
+      height: 0;
+      width: 5px;
+    }
+    50% {
+      height: 15px;
+      width: 5px;
+    }
+  }
 }
 
-// .custom-checkbox__input:disabled ~ .custom-checkbox__label {
-//   cursor: no-drop;
-// }
-// .custom-checkbox__input {
-//   display: none;
-// }
-// .custom-checkbox
-//   .custom-checkbox__input:checked
-//   + .custom-checkbox__label:after {
-//   -webkit-animation: check 0.35s;
-//   animation: check 0.35s;
-//   opacity: 1;
-// }
 // .custom-checkbox
 //   .custom-checkbox__input:checked
 //   + .custom-checkbox__label:before {
-//   background-color: $background-color-white-two;
+//   background-color: $background-color-blue-one;
+//   border: 1px solid $background-color-blue-one;
 // }
-.custom-checkbox .custom-checkbox__label:before {
-  border-color: $background-color-white-two;
-}
-.custom-checkbox__input:disabled ~ .custom-checkbox__label {
-  color: $font-color-white-two;
-}
-.custom-checkbox
-  .custom-checkbox__input:checked
-  + .custom-checkbox__label:after {
-  border-color: $background-color-white-one;
-}
-.custom-checkbox
-  .custom-checkbox__input:checked
-  + .custom-checkbox__label:before {
-  background-color: $background-color-blue-one;
-  border: 1px solid $background-color-blue-one;
-}
-.custom-checkbox .custom-checkbox__label:before {
-  border: 1px solid $background-color-gray-three;
-}
-
-@-webkit-keyframes check {
-  0% {
-    height: 0;
-    width: 0;
-  }
-  25% {
-    height: 0;
-    width: 5px;
-  }
-  50% {
-    height: 15px;
-    width: 5px;
-  }
-}
-@keyframes check {
-  0% {
-    height: 0;
-    width: 0;
-  }
-  25% {
-    height: 0;
-    width: 5px;
-  }
-  50% {
-    height: 15px;
-    width: 5px;
-  }
-}
