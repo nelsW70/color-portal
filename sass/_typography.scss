@@ -128,10 +128,10 @@ input::placeholder {
 .label {
   color: $font-color-primary;
   font-size: 0.8125rem;
-}
 
-.label.label-large {
-  font-size: 0.875rem;
+  &--large {
+    font-size: 0.875rem;
+  }
 }
 
 /* SEARCH RESULTS 'No Results' HEADER */

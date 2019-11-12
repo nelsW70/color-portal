@@ -155,8 +155,7 @@ input::placeholder {
   color: #193040;
   font-size: 0.8125rem;
 }
-
-.label.label-large {
+.label--large {
   font-size: 0.875rem;
 }
 
