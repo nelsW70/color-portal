@@ -8,13 +8,13 @@
   min-height: 36px;
   height: 36px;
   line-height: 1.1rem;
-}
 
-.pagination-row .ui.fluid.selection.dropdown .dropdown.icon {
-  padding: 0.5rem;
-}
+  & .dropdown.icon {
+    padding: 0.5rem;
+  }
 
-.pagination-row .ui.selection.dropdown .menu > .item {
-  padding: 0.5rem !important;
-  text-align: left;
+  & .menu > .item {
+    padding: 0.5rem !important;
+    text-align: left;
+  }
 }
