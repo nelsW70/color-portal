@@ -913,15 +913,16 @@ footer img {
 }
 #blackout-overlay__text {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+#blackout-overlay__text h1 {
+  color: #ffffff;
   font-family: "Suisse Intl", sans-serif;
   font-weight: 300;
   line-height: 2rem;
-  top: 45%;
-  left: 50%;
-  font-size: 1.5rem;
-  color: #ffffff;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
 }
 @media only screen and (min-width: 960px) {
   #blackout-overlay {
