@@ -34,19 +34,20 @@ a {
   color: $font-color-blue-one;
 }
 
-.ui.table thead th {
-  font-size: 0.8125rem;
-  font-weight: $font-weight-semi-bold;
-  color: $font-color-primary;
-}
+.ui.table {
+  & thead th {
+    font-size: 0.8125rem;
+    font-weight: $font-weight-semi-bold;
+    color: $font-color-primary;
+  }
+  & td {
+    font-size: 0.8125rem;
+    color: $font-color-gray-one;
 
-.ui.table td {
-  font-size: 0.8125rem;
-  color: $font-color-gray-one;
-
-  & a {
-    color: $font-color-blue-one;
-    cursor: pointer;
+    & a {
+      color: $font-color-blue-one;
+      cursor: pointer;
+    }
   }
 }
 
@@ -113,19 +114,20 @@ input::placeholder {
 }
 
 /* breadcrumbs */
-.ui.breadcrumb .divider {
-  color: $breadcrumb-divider;
-  font-size: 0.8125rem;
-}
+.ui.breadcrumb {
+  & .divider {
+    color: $breadcrumb-divider;
+    font-size: 0.8125rem;
+  }
+  & a.section {
+    color: $breadcrumb-divider;
+    font-size: 0.8125rem;
 
-.ui.breadcrumb a.section {
-  color: $breadcrumb-divider;
-  font-size: 0.8125rem;
-
-  &.active,
-  &:hover {
-    color: $font-color-blue-one;
-    font-weight: inherit;
+    &.active,
+    &:hover {
+      color: $font-color-blue-one;
+      font-weight: $font-weight-normal;
+    }
   }
 }
 

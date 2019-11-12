@@ -73,7 +73,6 @@ a {
   font-weight: 500;
   color: #193040;
 }
-
 .ui.table td {
   font-size: 0.8125rem;
   color: rgba(25, 48, 64, 0.7);
@@ -150,14 +149,13 @@ input::placeholder {
   color: #334756;
   font-size: 0.8125rem;
 }
-
 .ui.breadcrumb a.section {
   color: #334756;
   font-size: 0.8125rem;
 }
 .ui.breadcrumb a.section.active, .ui.breadcrumb a.section:hover {
   color: #1966ec;
-  font-weight: inherit;
+  font-weight: 400;
 }
 
 /* labels */
