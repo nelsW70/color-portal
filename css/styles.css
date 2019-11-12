@@ -898,7 +898,7 @@ footer img {
 }
 
 /* FULL SCREEN OVERLAY BELOW 960PX */
-#overlay {
+#blackout-overlay {
   position: fixed;
   display: block;
   width: 100%;
@@ -911,7 +911,7 @@ footer img {
   z-index: 2;
   cursor: pointer;
 }
-#overlay #text {
+#blackout-overlay__text {
   position: absolute;
   font-family: "Suisse Intl", sans-serif;
   font-weight: 300;
@@ -924,7 +924,7 @@ footer img {
   -ms-transform: translate(-50%, -50%);
 }
 @media only screen and (min-width: 960px) {
-  #overlay {
+  #blackout-overlay {
     display: none;
   }
 }

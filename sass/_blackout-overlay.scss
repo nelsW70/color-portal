@@ -1,5 +1,5 @@
 /* FULL SCREEN OVERLAY BELOW 960PX */
-#overlay {
+#blackout-overlay {
   position: fixed;
   display: block;
   width: 100%;
@@ -12,7 +12,7 @@
   z-index: 2;
   cursor: pointer;
 
-  & #text {
+  &__text {
     position: absolute;
     font-family: $font-family-primary;
     font-weight: $font-weight-medium;
