@@ -191,12 +191,6 @@ input::placeholder {
   color: #334756;
 }
 
-/* add project button */
-.btn-add-project .button-text,
-.btn-view-styling .button-text {
-  font-weight: 400;
-}
-
 /* item count */
 .item-count {
   font-size: 0.875rem;
@@ -320,29 +314,30 @@ input::placeholder {
   align-items: center;
   margin: 0;
   font-family: "Suisse Intl", sans-serif;
+  font-weight: 400;
   border-radius: 2px;
 }
-
-.ui.primary.button {
+.color-portal.ui.primary.button {
   background-color: #1e5dcb;
   height: 40px;
   padding: 6px 12px;
   transition: all 0.25s;
 }
-.ui.primary.button:hover, .ui.primary.button:focus {
+.color-portal.ui.primary.button:hover, .color-portal.ui.primary.button:focus {
   background-color: #194eaa;
   transition: all 0.25s;
 }
-
-.ui.inverted.primary.button {
+.color-portal.ui.secondary.button {
   border: 1px solid #1e5dcb;
   color: #1e5dcb;
+  background-color: #ffffff;
   height: 40px;
   box-shadow: none !important;
   padding: 6px 12px;
 }
-.ui.inverted.primary.button:hover, .ui.inverted.primary.button:focus {
+.color-portal.ui.secondary.button:hover, .color-portal.ui.secondary.button:focus {
   background-color: #1e5dcb;
+  color: #ffffff;
 }
 
 /* tiny buttons */
