@@ -1,24 +1,23 @@
 /* CHECKBOX */
 
 .custom-checkbox {
-  // redo some of this
   &__input {
     display: none;
     &:disabled ~ .custom-checkbox__label {
       color: $font-color-white-two;
       cursor: no-drop;
     }
-  }
-  & .custom-checkbox__input:checked + .custom-checkbox__label {
-    &:after {
-      border-color: $background-color-white-one;
-      -webkit-animation: check 0.35s;
-      animation: check 0.35s;
-      opacity: 1;
-    }
-    &:before {
-      background-color: $background-color-blue-one;
-      border: 1px solid $background-color-blue-one;
+    &:checked + .custom-checkbox__label {
+      &:after {
+        border-color: $background-color-white-one;
+        -webkit-animation: check 0.35s;
+        animation: check 0.35s;
+        opacity: 1;
+      }
+      &:before {
+        background-color: $background-color-blue-one;
+        border: 1px solid $background-color-blue-one;
+      }
     }
   }
   &__label {
@@ -84,10 +83,3 @@
     }
   }
 }
-
-// .custom-checkbox
-//   .custom-checkbox__input:checked
-//   + .custom-checkbox__label:before {
-//   background-color: $background-color-blue-one;
-//   border: 1px solid $background-color-blue-one;
-// }

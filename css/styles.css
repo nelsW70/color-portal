@@ -408,13 +408,13 @@ input::placeholder {
   color: #eee;
   cursor: no-drop;
 }
-.custom-checkbox .custom-checkbox__input:checked + .custom-checkbox__label:after {
+.custom-checkbox__input:checked + .custom-checkbox__label:after {
   border-color: #ffffff;
   -webkit-animation: check 0.35s;
   animation: check 0.35s;
   opacity: 1;
 }
-.custom-checkbox .custom-checkbox__input:checked + .custom-checkbox__label:before {
+.custom-checkbox__input:checked + .custom-checkbox__label:before {
   background-color: #1966ec;
   border: 1px solid #1966ec;
 }
