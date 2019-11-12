@@ -195,6 +195,12 @@ input::placeholder {
   }
 }
 
+/* pagination buttons */
+.pagination-row .pagination .item {
+  font-size: 0.875rem;
+  color: $font-color-gray-two;
+}
+
 /* footer trademark  */
 .footer-trademark {
   font-size: 0.875rem;
