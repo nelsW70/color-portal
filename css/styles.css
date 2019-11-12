@@ -723,12 +723,10 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .customer-info__col-one {
   display: flex;
   align-items: flex-end;
 }
-
 .customer-info__col-two {
   display: flex;
   align-items: flex-end;
