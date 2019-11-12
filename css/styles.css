@@ -317,6 +317,16 @@ input::placeholder {
   font-weight: 400;
   border-radius: 2px;
 }
+.color-portal.ui.button.btn-print {
+  background-color: #e7ebed;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 6px 12px;
+}
+.color-portal.ui.button.btn-print:hover {
+  background-color: #d6dadc;
+  transition: all 0.25s;
+}
 .color-portal.ui.primary.button {
   background-color: #1e5dcb;
   height: 40px;
@@ -339,9 +349,7 @@ input::placeholder {
   background-color: #1e5dcb;
   color: #ffffff;
 }
-
-/* tiny buttons */
-.ui.basic.buttons .tiny.ui.button {
+.color-portal.tiny.ui.button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -353,44 +361,18 @@ input::placeholder {
   min-width: 70px;
   min-height: 30px;
 }
-.ui.basic.buttons .tiny.ui.button:first-child {
+.color-portal.tiny.ui.button:first-child {
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }
-.ui.basic.buttons .tiny.ui.button:last-child {
+.color-portal.tiny.ui.button:last-child {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-.ui.basic.buttons .tiny.ui.button:hover, .ui.basic.buttons .tiny.ui.button.active {
+.color-portal.tiny.ui.button:hover, .color-portal.tiny.ui.button.active {
   color: #1e5dcb !important;
   border: solid 1px #1966ec;
   background-color: rgba(25, 102, 236, 0.1) !important;
-}
-
-/* print button */
-.color-portal.ui.button.btn-print {
-  background-color: #e7ebed;
-  font-weight: 500;
-  border-radius: 3px;
-  padding: 6px 12px;
-}
-.color-portal.ui.button.btn-print:hover {
-  background-color: #d6dadc;
-  transition: all 0.25s;
-}
-
-/* items per page button */
-.btn-items-per-page {
-  background-color: #e7ebed;
-  border-radius: 1px;
-  border: solid 1px #b3c1cc;
-  color: #334756;
-  width: 63px;
-  height: 35px;
-}
-.btn-items-per-page:hover, .btn-items-per-page:focus {
-  background-color: #1e5dcb;
-  border-color: #1e5dcb;
 }
 
 /* CHECKBOX */
