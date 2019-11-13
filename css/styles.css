@@ -192,23 +192,6 @@ input::placeholder {
 .item-count span {
   font-weight: 600;
 }
-.item-count--large-screen {
-  margin-right: 1.5rem;
-  margin-bottom: 0;
-}
-@media only screen and (max-width: 1199px) {
-  .item-count--large-screen {
-    display: none;
-  }
-}
-.item-count--small-screen {
-  margin-top: 1rem;
-}
-@media only screen and (min-width: 1200px) {
-  .item-count--small-screen {
-    display: none;
-  }
-}
 
 /* PAGINATION BUTTONS */
 .pagination-row .pagination .item {
@@ -727,6 +710,25 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   align-items: baseline;
   width: 33.333%;
   text-align: right;
+}
+
+/* ITEM COUNT */
+.item-count--large-screen {
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 1199px) {
+  .item-count--large-screen {
+    display: none;
+  }
+}
+.item-count--small-screen {
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 1200px) {
+  .item-count--small-screen {
+    display: none;
+  }
 }
 
 /* SEARCH DROPDOWN  */
