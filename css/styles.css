@@ -372,6 +372,9 @@ input::placeholder {
 }
 
 /** CUSTOM CHECKBOX **/
+.custom-checkbox {
+  max-width: fit-content;
+}
 .custom-checkbox__input {
   display: none;
 }

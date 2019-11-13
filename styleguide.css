@@ -4,6 +4,6 @@ body {
   padding: 2.5%;
 }
 
-h3.styleguide {
-  text-decoration: underline;
+hr {
+  margin: 2.5rem 0;
 }
