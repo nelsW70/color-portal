@@ -7,3 +7,7 @@ body {
 hr {
   margin: 2.5rem 0;
 }
+
+p.styleguide {
+  text-decoration: underline;
+}
