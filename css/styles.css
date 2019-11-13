@@ -122,8 +122,11 @@ a {
   font-size: 0.875rem;
 }
 
-/* INPUT PLACEHOLDER */
-input::placeholder {
+/* INPUT TEXT */
+.ui.icon.input input {
+  font-family: "Suisse Intl", sans-serif;
+}
+.ui.icon.input input::placeholder {
   font-family: "Suisse Intl", sans-serif;
   font-size: 0.875rem;
   color: #9ba6ae !important;

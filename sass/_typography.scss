@@ -83,11 +83,14 @@ a {
   font-size: 0.875rem;
 }
 
-/* INPUT PLACEHOLDER */
-input::placeholder {
+/* INPUT TEXT */
+.ui.icon.input input {
   font-family: $font-family-primary;
-  font-size: 0.875rem;
-  color: $font-color-input-placeholder;
+  &::placeholder {
+    font-family: $font-family-primary;
+    font-size: 0.875rem;
+    color: $font-color-input-placeholder;
+  }
 }
 
 /* NAVBAR LINKS */
