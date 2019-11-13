@@ -1,6 +1,6 @@
 /* SEARCH DROPDOWN  */
 .ui.search > .results {
-  border-radius: 2px;
+  border-radius: $border-radius-two;
   margin-top: 0;
 
   & .result:hover,

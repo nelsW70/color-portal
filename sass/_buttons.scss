@@ -11,7 +11,7 @@
     margin: 0;
     font-family: $font-family-primary;
     font-weight: $font-weight-normal;
-    border-radius: 2px;
+    border-radius: $border-radius-two;
     // PRINT BUTTON
     &.btn-print {
       background-color: $background-color-gray-one;
