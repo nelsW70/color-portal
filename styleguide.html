@@ -61,13 +61,13 @@
     </button>
    </xmp>
     <hr />
-    <p class="styleguide">tertiary</p>
-    <!-- TERTIARY -->
+    <p class="styleguide">tertiary w/icon</p>
+    <!-- TERTIARY W/ICON -->
     <button class="color-portal ui small button btn-print">
       <i class="material-icons material-icons--print mr-1">print</i>
       <span class="button-text">Print</span>
     </button>
-    <!-- TERTIARY -->
+    <!-- TERTIARY W/ICON -->
     <xmp>
     <button class="color-portal ui small button btn-print">
       <i class="material-icons material-icons--print mr-1">print</i>
@@ -75,8 +75,8 @@
     </button>
     </xmp>
     <hr />
-    <p class="styleguide">small button group</p>
-    <!-- SMALL BUTTON GROUP -->
+    <p class="styleguide">small button group w/label</p>
+    <!-- SMALL BUTTON GROUP W/LABEL-->
     <div class="buttons-container">
       <label for="basic-url" class="label">Show:</label>
       <div class="ui basic buttons">
@@ -108,13 +108,77 @@
       </div>
     </div>
     </xmp>
-    <p>requires js script to toggle active class</p>
+    <p class="requires-comment">requires js script to toggle active class</p>
     <xmp
 >
     $('.btn-project--show').click(function(e) {
       e.stopPropagation();
       $('.btn-project--show').removeClass('active');
       $(this).addClass('active');
+    });
+    </xmp>
+    <hr />
+    <h3 class="styleguide">inputs</h3>
+    <p class="styleguide">input w/predictive search and label</p>
+    <!-- INPUT W/PREDICITIVE SEARCH AND LABEL -->
+    <div class="search-container">
+      <label for="inputCustomer" class="label">Customer</label>
+      <div class="ui fluid search">
+        <div class="ui icon input">
+          <input
+            id="inputCustomer"
+            class="prompt"
+            type="search"
+            placeholder="Search for customer name"
+          />
+          <i class="search link icon"></i>
+        </div>
+        <div class="results"></div>
+      </div>
+    </div>
+    <!-- INPUT W/PREDICITIVE SEARCH AND LABEL -->
+    <xmp>
+    <div class="search-container">
+        <label for="inputCustomer" class="label">Customer</label>
+        <div class="ui fluid search">
+          <div class="ui icon input">
+            <input
+              id="inputCustomer"
+              class="prompt"
+              type="search"
+              placeholder="Search for customer name"
+            />
+            <i class="search link icon"></i>
+          </div>
+          <div class="results"></div>
+        </div>
+      </div>
+    </xmp>
+    <p class="requires-comment">
+      requires js script to initialize and populate/connect w/endpoint
+    </p>
+    <xmp
+>
+    // intialize semantic ui dropdown
+    $('.ui.dropdown').dropdown();
+  
+    // fake local data implementation of predictive results for customer search
+    // documentation for semantic ui is here
+    // https://semantic-ui.com/modules/search.html#/definition
+    var content = [
+      { title: 'Isuzu' },
+      { title: 'Jiangnan Mosu' },
+      { title: 'Jiulong Jiansu' },
+      { title: 'Mitsubishi' },
+      { title: 'Ron Swanson' },
+      { title: 'Subaru' },
+      { title: 'Suzuki' },
+      { title: 'Uknown OEM - Sumaré' },
+      { title: 'Wanlong Suzhou' },
+      { title: 'Wick, John' }
+    ];
+    $('.ui.search').search({
+      source: content
     });
     </xmp>
     <hr />

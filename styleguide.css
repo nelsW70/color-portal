@@ -5,9 +5,20 @@ body {
 }
 
 hr {
-  margin: 2.5rem 0;
+  margin: 1.5rem 0;
+}
+h3.styleguide {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 3rem;
 }
 
 p.styleguide {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.requires-comment:before {
+  content: ' *';
+  color: rgb(180, 3, 3);
 }
