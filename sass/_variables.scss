@@ -1,7 +1,7 @@
-// FONTFAMILY
+/* FONTFAMILY */
 $font-family-primary: 'Suisse Intl', sans-serif;
 
-//FONT COLORS
+/* FONT COLORS */
 $font-color-primary: #193040;
 $font-color-white-one: #ffffff;
 $font-color-white-two: #eee;
@@ -12,14 +12,14 @@ $font-color-blue-one: #1966ec;
 $font-color-blue-two: #1e5dcb;
 $font-color-input-placeholder: #9ba6ae !important;
 
-//FONT WEIGHT
+/* FONT WEIGHT */
 $font-weight-light: 100;
 $font-weight-medium: 300;
 $font-weight-normal: 400;
 $font-weight-semi-bold: 500;
 $font-weight-bold: 600;
 
-//BACKGROUND & BORDER COLORS
+/* BACKGROUND & BORDER COLORS */
 $background-color-white-one: #ffffff;
 $background-color-white-two: #eee;
 $background-color-white-three: #bbb;
@@ -39,5 +39,8 @@ $background-color-green-one: #02a154;
 $background-color-orange-one: #ff9a00;
 $background-color-red-one: #ce3f11;
 
-//UTILITY COLORS
+/* UTILITY COLORS */
 $breadcrumb-divider: #334756;
+
+/* BORDER-RADIUS */
+$border-radius-two: 2px;
