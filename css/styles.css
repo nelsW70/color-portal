@@ -1,9 +1,12 @@
+/** IMPORTS **/
+/** VARIABLES **/
 /* FONTFAMILY */
 /* FONT COLORS */
 /* FONT WEIGHT */
 /* BACKGROUND & BORDER COLORS */
 /* UTILITY COLORS */
 /* BORDER-RADIUS */
+/** FONT IMPORTS **/
 @font-face {
   font-family: "Suisse Intl";
   src: url("/fonts/SuisseIntl-Thin-WebS.eot");
@@ -39,6 +42,7 @@
   font-weight: 600;
   font-style: normal;
 }
+/** TYPOGRAPHY **/
 html,
 body {
   font-size: 16px;
@@ -206,6 +210,7 @@ input::placeholder {
   color: #ffffff;
 }
 
+/** PADDING AND MARGIN CLASSES **/
 .mt-1 {
   margin-top: 0.5rem !important;
 }
@@ -274,6 +279,7 @@ input::placeholder {
   padding-left: 1rem !important;
 }
 
+/** ICONS **/
 .material-icons {
   /* PRINT BUTTON ICON */
 }
@@ -286,6 +292,7 @@ input::placeholder {
   color: #1966ec;
 }
 
+/** BUTTONS **/
 /* NORMAL BUTTON TEXT */
 .button-text {
   font-size: 0.875rem;
@@ -358,6 +365,7 @@ input::placeholder {
   background-color: rgba(25, 102, 236, 0.1) !important;
 }
 
+/** CUSTOM CHECKBOX **/
 .custom-checkbox__input {
   display: none;
 }
@@ -437,6 +445,7 @@ input::placeholder {
   }
 }
 
+/** HEADER **/
 header {
   /* HEADER COLOR STRIP */
   /* ROW BELOW COLOR STRIP */
@@ -636,6 +645,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
+/** CONTAINERS AND LAYOUT **/
 /* BODY */
 .main-content {
   min-height: calc(100vh - 195px);
@@ -731,7 +741,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   }
 }
 
-/* SEARCH DROPDOWN  */
+/** PREDICTIVE SEARCH DROPDOWN  **/
 .ui.search > .results {
   border-radius: 2px;
   margin-top: 0;
@@ -740,7 +750,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   background: rgba(25, 102, 236, 0.1);
 }
 
-/* ITEMS PER PAGE DROPDOWN */
+/** ITEMS PER PAGE DROPDOWN **/
 .pagination-row .ui.fluid.selection.dropdown {
   background-color: #e7ebed;
   border-radius: 1px;
@@ -759,6 +769,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   text-align: left;
 }
 
+/** PAGINATION **/
 .pagination-buttons .ui.pagination.menu {
   min-height: fit-content;
   height: 28px;
@@ -800,6 +811,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   background-color: #1966ec;
 }
 
+/** INPUTS **/
 /* SHOWS 'x' FOR CLEARING INPUT FIELD IN CHROME THAT IS HIDDEN OTHERWISE */
 input[type=search] {
   -webkit-appearance: searchfield;
@@ -845,6 +857,7 @@ input[type=search]::-webkit-search-cancel-button {
   border: solid 1px #1966ec;
 }
 
+/** TABLES **/
 table.ui.very.basic.striped.padded.table {
   border-bottom: solid 1px rgba(17, 35, 48, 0.25);
   border-radius: 0;
@@ -890,6 +903,7 @@ table.ui.very.basic.striped.padded.table tbody tr td .dot--rejected {
   background-color: #ce3f11;
 }
 
+/** FOOTER **/
 footer {
   height: 60px;
   /* optional background-color */
@@ -905,7 +919,7 @@ footer img {
   cursor: pointer;
 }
 
-/* FULL SCREEN OVERLAY BELOW 960PX */
+/** FULL SCREEN BLACKOUT OVERLAY VISIBLE BELOW 960PX **/
 #blackout-overlay {
   position: fixed;
   display: block;
