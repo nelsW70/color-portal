@@ -439,8 +439,8 @@ input::placeholder {
 
 header {
   /* HEADER COLOR STRIP */
-  /* HEADER MENU */
-  /* NAVBAR  */
+  /* ROW BELOW COLOR STRIP */
+  /* NAVBAR ROW  */
 }
 header .color-strip {
   height: 5px;
@@ -455,7 +455,7 @@ header .header-menu {
   height: 60px;
   background-color: #112330;
   color: #ffffff;
-  /* HEADER DROPDOWN MENU  */
+  /* DROPDOWN MENU  */
 }
 header .header-menu .title {
   flex: 1;
@@ -588,7 +588,7 @@ header .ui-nav.ui.menu .menu-links-container {
 header .ui-nav.ui.menu .menu-links-container .item {
   justify-content: center;
   font-weight: 300;
-  /* NAVBAR UNDERLINE ANIMATION */
+  /* NAVLINK UNDERLINE ANIMATION */
 }
 header .ui-nav.ui.menu .menu-links-container .item:first-of-type {
   width: 9%;
@@ -614,7 +614,7 @@ header .ui-nav.ui.menu .menu-links-container .item:nth-child(7) {
 header .ui-nav.ui.menu .menu-links-container .item:hover, header .ui-nav.ui.menu .menu-links-container .item:focus {
   position: relative;
   font-weight: 500;
-  /* NAVBAR UNDERLINE ANIMATION */
+  /* NAVLINK UNDERLINE ANIMATION */
 }
 header .ui-nav.ui.menu .menu-links-container .item:hover:before, header .ui-nav.ui.menu .menu-links-container .item:focus:before {
   visibility: visible;

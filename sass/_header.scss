@@ -1,5 +1,4 @@
 header {
-  // FIRST ROW HEADER
   /* HEADER COLOR STRIP */
   & .color-strip {
     height: 5px;
@@ -12,7 +11,7 @@ header {
     );
   }
 
-  /* HEADER MENU */
+  /* ROW BELOW COLOR STRIP */
   .header-menu {
     display: flex;
     align-items: center;
@@ -49,7 +48,7 @@ header {
       }
     }
 
-    /* HEADER DROPDOWN MENU  */
+    /* DROPDOWN MENU  */
     & .dropdown {
       display: flex;
       align-items: center;
@@ -151,8 +150,7 @@ header {
     }
   }
 
-  // SECOND ROW HEADER
-  /* NAVBAR  */
+  /* NAVBAR ROW  */
   .ui-nav.ui.menu {
     display: flex;
     justify-content: space-between;
@@ -203,14 +201,14 @@ header {
           position: relative;
           font-weight: $font-weight-semi-bold;
 
-          /* NAVBAR UNDERLINE ANIMATION */
+          /* NAVLINK UNDERLINE ANIMATION */
           &:before {
             visibility: visible;
             -webkit-transform: scaleX(1);
             transform: scaleX(1);
           }
         }
-        /* NAVBAR UNDERLINE ANIMATION */
+        /* NAVLINK UNDERLINE ANIMATION */
         &:before {
           background-color: $background-color-blue-four;
           content: '';
