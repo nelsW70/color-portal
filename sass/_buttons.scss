@@ -5,6 +5,13 @@
   font-size: 0.875rem;
 }
 
+/* REMOVES BORDER FROM TINY BUTTON CONTAINER*/
+.buttons-container {
+  & .ui.basic.buttons {
+    border: none;
+  }
+}
+
 .color-portal {
   // BASE STYLE FOR REGULAR BUTTON
   &.ui.button {
