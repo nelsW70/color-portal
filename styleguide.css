@@ -1,0 +1,9 @@
+/* these are unique to the styleguide and only for displaying content here */
+/* all styles necessary for using elements are in styles.css */
+body {
+  padding: 2.5%;
+}
+
+h3.styleguide {
+  text-decoration: underline;
+}

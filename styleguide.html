@@ -25,17 +25,67 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="styleguide.css" />
+
     <title>ColorPortal Styleguide</title>
-    <style>
-      /* these are unique to the styleguide and only for displaying content here */
-      /* all styles necessary for using elements are in styles.css */
-      body {
-        padding: 2.5%;
-      }
-    </style>
   </head>
   <body>
-    <h4>checkbox</h4>
+    <h3 class="styleguide">buttons</h3>
+    <p>primary</p>
+    <!-- BUTTON -->
+    <button class="color-portal ui primary button">
+      <i class="material-icons mr-1">add_box</i>
+      <span class="button-text">Add Project</span>
+    </button>
+    <!-- BUTTON -->
+    <xmp>
+    <button class="color-portal ui primary button">
+      <i class="material-icons mr-1">add_box</i>
+      <span class="button-text">Add Project</span>
+    </button>
+    </xmp>
+
+    <hr />
+
+    <p>secondary</p>
+    <!-- BUTTON -->
+    <button class="color-portal ui secondary button">
+      <i class="material-icons mr-1">list</i>
+      <span class="button-text">View Styling Programs</span>
+    </button>
+    <!-- BUTTON -->
+    <xmp>
+    <button class="color-portal ui secondary button">
+      <i class="material-icons mr-1">list</i>
+      <span class="button-text">View Styling Programs</span>
+    </button>
+    </xmp>
+
+    <hr />
+
+    <p>small button group</p>
+    <!-- SMALL BUTTON GROUP -->
+    <div class="buttons-container">
+      <label for="basic-url" class="label">Show:</label>
+      <div class="ui basic buttons">
+        <div class="color-portal tiny ui button btn-project--show active">
+          Mine
+        </div>
+        <div class="color-portal tiny ui button btn-project--show">
+          Team
+        </div>
+        <div class="color-portal tiny ui button btn-project--show">
+          All
+        </div>
+      </div>
+    </div>
+    <!-- SMALL BUTTON GROUP -->
+
+    <hr />
+
+    <h3 class="styleguide">checkbox</h3>
     <!-- CHECKBOX -->
     <div class="custom-checkbox">
       <input
@@ -62,6 +112,9 @@
         >
       </div>
     </xmp>
+
+    <hr />
+
     <!-- Semantic UI -->
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
   </body>
