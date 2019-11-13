@@ -179,7 +179,7 @@ input::placeholder {
 }
 
 /* SEARCH INPUT RESULTS */
-.customer-info__search-container .ui.search .prompt {
+.search-container .ui.search .prompt {
   font-family: "Suisse Intl", sans-serif;
   font-size: 0.875rem;
 }
@@ -695,6 +695,12 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   }
 }
 
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 /* PROJECTS TABLE */
 .projects-table {
   margin-top: 1.5rem;
@@ -843,15 +849,15 @@ input[type=search]::-webkit-search-cancel-button {
   height: 40px;
 }
 
-/* CUSTOMER INFO SECTION SEARCH */
-.customer-info .ui.icon.input {
+/* PREDICTIVE SEARCH WITH LABEL */
+.search-container .ui.icon.input {
   min-width: 18rem;
 }
-.customer-info__search-container .ui.search .prompt {
+.search-container .ui.search .prompt {
   border-radius: 2px;
   height: 40px;
 }
-.customer-info__search-container .ui.search .prompt:focus {
+.search-container .ui.search .prompt:focus {
   border: 1px solid #1966ec;
 }
 

@@ -34,37 +34,47 @@
   <body>
     <h3 class="styleguide">buttons</h3>
     <p class="styleguide">primary</p>
-    <!-- BUTTON -->
+    <!-- PRIMARY BUTTON -->
     <button class="color-portal ui primary button">
       <i class="material-icons mr-1">add_box</i>
       <span class="button-text">Add Project</span>
     </button>
-    <!-- BUTTON -->
+    <!-- PRIMARY BUTTON -->
     <xmp>
-<button class="color-portal ui primary button">
-  <i class="material-icons mr-1">add_box</i>
-  <span class="button-text">Add Project</span>
-</button>
+    <button class="color-portal ui primary button">
+      <i class="material-icons mr-1">add_box</i>
+      <span class="button-text">Add Project</span>
+    </button>
     </xmp>
-
     <hr />
-
     <p class="styleguide">secondary</p>
-    <!-- BUTTON -->
+    <!-- SECONDARY BUTTON -->
     <button class="color-portal ui secondary button">
       <i class="material-icons mr-1">list</i>
       <span class="button-text">View Styling Programs</span>
     </button>
-    <!-- BUTTON -->
+    <!-- SECONDARY BUTTON -->
     <xmp>
-<button class="color-portal ui secondary button">
-  <i class="material-icons mr-1">list</i>
-  <span class="button-text">View Styling Programs</span>
-</button>
+    <button class="color-portal ui secondary button">
+      <i class="material-icons mr-1">list</i>
+      <span class="button-text">View Styling Programs</span>
+    </button>
    </xmp>
-
     <hr />
-
+    <p class="styleguide">tertiary</p>
+    <!-- TERTIARY -->
+    <button class="color-portal ui small button btn-print">
+      <i class="material-icons material-icons--print mr-1">print</i>
+      <span class="button-text">Print</span>
+    </button>
+    <!-- TERTIARY -->
+    <xmp>
+    <button class="color-portal ui small button btn-print">
+      <i class="material-icons material-icons--print mr-1">print</i>
+      <span class="button-text">Print</span>
+    </button>
+    </xmp>
+    <hr />
     <p class="styleguide">small button group</p>
     <!-- SMALL BUTTON GROUP -->
     <div class="buttons-container">
@@ -83,24 +93,31 @@
     </div>
     <!-- SMALL BUTTON GROUP -->
     <xmp>
-<div class="buttons-container">
-  <label for="basic-url" class="label">Show:</label>
-  <div class="ui basic buttons">
-    <div class="color-portal tiny ui button btn-project--show active">
-      Mine
+    <div class="buttons-container">
+      <label for="basic-url" class="label">Show:</label>
+      <div class="ui basic buttons">
+        <div class="color-portal tiny ui button btn-project--show active">
+          Mine
+        </div>
+        <div class="color-portal tiny ui button btn-project--show">
+          Team
+        </div>
+        <div class="color-portal tiny ui button btn-project--show">
+          All
+        </div>
+      </div>
     </div>
-    <div class="color-portal tiny ui button btn-project--show">
-      Team
-    </div>
-    <div class="color-portal tiny ui button btn-project--show">
-      All
-    </div>
-  </div>
-</div>
     </xmp>
-
+    <p>requires js script to toggle active class</p>
+    <xmp
+>
+    $('.btn-project--show').click(function(e) {
+      e.stopPropagation();
+      $('.btn-project--show').removeClass('active');
+      $(this).addClass('active');
+    });
+    </xmp>
     <hr />
-
     <h3 class="styleguide">checkbox</h3>
     <!-- CHECKBOX -->
     <div class="custom-checkbox">
@@ -116,22 +133,29 @@
     </div>
     <!-- CHECKBOX -->
     <xmp>
-<div class="custom-checkbox">
-  <input
-    type="checkbox"
-    id="checkbox1"
-    name="checkbox"
-    class="custom-checkbox__input"
-  />
-  <label class="custom-checkbox__label label" for="checkbox1"
-    >Check me</label
-  >
-</div>
+    <div class="custom-checkbox">
+      <input
+        type="checkbox"
+        id="checkbox1"
+        name="checkbox"
+        class="custom-checkbox__input"
+      />
+      <label class="custom-checkbox__label label" for="checkbox1"
+        >Check me</label
+      >
+    </div>
     </xmp>
-
     <hr />
 
     <!-- Semantic UI -->
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <!-- JS scripts -->
+    <script src="js/hamburger-menu-animation.js"></script>
+    <script src="js/project-status-btns.js"></script>
+    <script src="js/project-show-btns.js"></script>
+    <script src="js/pagination-btn.js"></script>
+    <script src="js/semantic-ui-dropdown-intialize.js"></script>
+    <script src="js/fake-predictive-search.js"></script>
   </body>
 </html>

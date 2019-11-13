@@ -40,6 +40,13 @@
   }
 }
 
+// SEARCH CONTAINER
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 /* PROJECTS TABLE */
 .projects-table {
   margin-top: 1.5rem;
