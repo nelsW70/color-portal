@@ -349,6 +349,7 @@ input::placeholder {
   background-color: #ffffff;
   font-size: 0.8125rem;
   min-width: 70px;
+  max-width: fit-content;
   min-height: 30px;
 }
 .color-portal.tiny.ui.button:first-child {

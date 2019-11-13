@@ -69,6 +69,7 @@
     background-color: $background-color-white-one;
     font-size: 0.8125rem;
     min-width: 70px;
+    max-width: fit-content;
     min-height: 30px;
 
     &:first-child {
