@@ -201,7 +201,7 @@ a {
 }
 
 /* PAGINATION BUTTONS */
-.pagination-row .pagination .item {
+.pagination .item {
   font-size: 0.875rem;
   color: #334756;
 }
