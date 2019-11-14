@@ -28,3 +28,11 @@ p.styleguide {
   margin-bottom: 2.5rem;
   width: fit-content;
 }
+
+.accordion .title {
+  color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.accordion .title:hover {
+  color: rgba(0, 0, 0, 0.95) !important;
+}
