@@ -40,12 +40,22 @@
       <span class="button-text">Add Project</span>
     </button>
     <!-- PRIMARY BUTTON -->
-    <xmp>
-    <button class="color-portal ui primary button">
-      <i class="material-icons mr-1">add_box</i>
-      <span class="button-text">Add Project</span>
-    </button>
-    </xmp>
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view code
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <xmp>
+<button class="color-portal ui primary button">
+  <i class="material-icons mr-1">add_box</i>
+  <span class="button-text">Add Project</span>
+</button>
+          </xmp>
+        </p>
+      </div>
+    </div>
     <hr />
     <p class="styleguide">secondary</p>
     <!-- SECONDARY BUTTON -->
@@ -54,12 +64,23 @@
       <span class="button-text">View Styling Programs</span>
     </button>
     <!-- SECONDARY BUTTON -->
-    <xmp>
-    <button class="color-portal ui secondary button">
-      <i class="material-icons mr-1">list</i>
-      <span class="button-text">View Styling Programs</span>
-    </button>
-   </xmp>
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view code
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <xmp>
+<button class="color-portal ui secondary button">
+  <i class="material-icons mr-1">list</i>
+  <span class="button-text">View Styling Programs</span>
+</button>
+          </xmp>
+        </p>
+      </div>
+    </div>
+
     <hr />
     <p class="styleguide">tertiary w/icon</p>
     <!-- TERTIARY W/ICON -->
@@ -243,5 +264,8 @@
     <script src="js/pagination-btn.js"></script>
     <script src="js/semantic-ui-dropdown-intialize.js"></script>
     <script src="js/fake-predictive-search.js"></script>
+    <script>
+      $('.ui.accordion').accordion();
+    </script>
   </body>
 </html>
