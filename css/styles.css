@@ -769,7 +769,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 
 /** ITEMS PER PAGE DROPDOWN **/
-.pagination-row .ui.fluid.selection.dropdown {
+.ui.fluid.selection.dropdown {
   background-color: #e7ebed;
   border-radius: 1px;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
@@ -779,10 +779,10 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   height: 36px;
   line-height: 1.1rem;
 }
-.pagination-row .ui.fluid.selection.dropdown .dropdown.icon {
+.ui.fluid.selection.dropdown .dropdown.icon {
   padding: 0.5rem;
 }
-.pagination-row .ui.fluid.selection.dropdown .menu > .item {
+.ui.fluid.selection.dropdown .menu > .item {
   padding: 0.5rem !important;
   text-align: left;
 }
