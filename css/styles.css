@@ -306,7 +306,7 @@ a {
   border: none;
 }
 
-.color-portal.ui.button {
+.ppg.ui.button {
   display: flex;
   align-items: center;
   margin: 0;
@@ -314,28 +314,28 @@ a {
   font-weight: 400;
   border-radius: 2px;
 }
-.color-portal.ui.button.btn-print {
+.ppg.ui.button.btn-print {
   background-color: #e7ebed;
   color: #193040;
   font-weight: 500;
   border-radius: 3px;
   padding: 6px 12px;
 }
-.color-portal.ui.button.btn-print:hover {
+.ppg.ui.button.btn-print:hover {
   background-color: #d6dadc;
   transition: all 0.25s;
 }
-.color-portal.ui.primary.button {
+.ppg.ui.primary.button {
   background-color: #1e5dcb;
   height: 40px;
   padding: 6px 12px;
   transition: all 0.25s;
 }
-.color-portal.ui.primary.button:hover, .color-portal.ui.primary.button:focus {
+.ppg.ui.primary.button:hover, .ppg.ui.primary.button:focus {
   background-color: #194eaa;
   transition: all 0.25s;
 }
-.color-portal.ui.secondary.button {
+.ppg.ui.secondary.button {
   border: 1px solid #1e5dcb;
   color: #1e5dcb;
   background-color: #ffffff;
@@ -343,11 +343,11 @@ a {
   box-shadow: none !important;
   padding: 6px 12px;
 }
-.color-portal.ui.secondary.button:hover, .color-portal.ui.secondary.button:focus {
+.ppg.ui.secondary.button:hover, .ppg.ui.secondary.button:focus {
   background-color: #1e5dcb;
   color: #ffffff;
 }
-.color-portal.tiny.ui.button {
+.ppg.tiny.ui.button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,15 +360,15 @@ a {
   max-width: fit-content;
   min-height: 30px;
 }
-.color-portal.tiny.ui.button:first-child {
+.ppg.tiny.ui.button:first-child {
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }
-.color-portal.tiny.ui.button:last-child {
+.ppg.tiny.ui.button:last-child {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-.color-portal.tiny.ui.button:hover, .color-portal.tiny.ui.button.active {
+.ppg.tiny.ui.button:hover, .ppg.tiny.ui.button.active {
   color: #1e5dcb !important;
   border: solid 1px #1966ec;
   background-color: rgba(25, 102, 236, 0.1) !important;
