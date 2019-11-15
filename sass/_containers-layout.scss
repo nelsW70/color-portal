@@ -2,6 +2,10 @@
 
 /* BODY */
 .main-content {
+  // !!! if an element is removed or the height is adjusted in the header or footer
+  // this height will need to be adjusted so that the layout doesn't break when less
+  // content is displayed than will fill the viewport height
+  // !!!
   min-height: calc(100vh - 195px);
   padding: 25px;
 }
