@@ -150,7 +150,11 @@
             <a class="section">Stylist</a>
           </div>
         </nav>
-        <button class="ppg ui small button btn-print">
+        <button
+          class="ppg ui small button btn-print"
+          role="button"
+          aria-label="print"
+        >
           <i class="material-icons material-icons--print mr-1">print</i>
           <span class="button-text">Print</span>
         </button>
@@ -165,7 +169,7 @@
       <div class="customer-info">
         <div class="customer-info__col-one mr-2">
           <div class="search-container mr-2">
-            <label for="inputCustomer" class="label label--stacked-input">
+            <label for="inputCustomer" class="label label--stacked">
               Customer
             </label>
             <div class="ui fluid search">
@@ -193,7 +197,7 @@
         <!-- PROJECT STATUS/SHOW BUTTONS -->
         <div class="customer-info__col-two">
           <div class="buttons-container mr-5">
-            <div class="label">Project Status:</div>
+            <div class="label label--stacked">Project Status:</div>
             <div class="ui basic buttons">
               <div
                 class="ppg tiny ui button btn-project--status active"
@@ -212,7 +216,7 @@
             </div>
           </div>
           <div class="buttons-container">
-            <div for="" class="label">Show:</div>
+            <div for="" class="label label--stacked">Show:</div>
             <div class="ui basic buttons">
               <div
                 class="ppg tiny ui button btn-project--show active"

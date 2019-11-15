@@ -215,7 +215,7 @@
     <p class="styleguide">small button group w/label</p>
     <!-- SMALL BUTTON GROUP W/LABEL-->
     <div class="buttons-container">
-      <div class="label">Show:</div>
+      <div class="label label--stacked">Show:</div>
       <div class="ui basic buttons">
         <div
           class="ppg tiny ui button btn-project--show active"
@@ -249,13 +249,23 @@
       <div class="content">
         <p class="transition visible" style="display: block !important;">
           <code>
-            &lt;div&nbsp;class=&quot;buttons-container&quot;&gt;<br />&nbsp;&nbsp;&lt;label&nbsp;for=&quot;&quot;&nbsp;class=&quot;label&quot;&gt;Show:&lt;/label&gt;<br />
+            &lt;div&nbsp;class=&quot;buttons-container&quot;&gt;<br />
+            &nbsp;&nbsp;&lt;div&nbsp;class=&quot;label&quot;&gt;Show:&lt;/div&gt;<br />
             &nbsp;&nbsp;&lt;div&nbsp;class=&quot;ui&nbsp;basic&nbsp;buttons&quot;&gt;<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;ppg&nbsp;tiny&nbsp;ui&nbsp;button&nbsp;btn-project--show&nbsp;active&quot;&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class=&quot;ppg&nbsp;tiny&nbsp;ui&nbsp;button&nbsp;btn-project--show&nbsp;active&quot;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aria-label=&quot;select&nbsp;my&nbsp;projects&quot;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role=&quot;button&quot;<br />&nbsp;&nbsp;&nbsp;&nbsp;&gt;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mine<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;ppg&nbsp;tiny&nbsp;ui&nbsp;button&nbsp;btn-project--show&quot;&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class=&quot;ppg&nbsp;tiny&nbsp;ui&nbsp;button&nbsp;btn-project--show&quot;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aria-label=&quot;select&nbsp;team&nbsp;projects&quot;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role=&quot;button&quot;<br />&nbsp;&nbsp;&nbsp;&nbsp;&gt;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;ppg&nbsp;tiny&nbsp;ui&nbsp;button&nbsp;btn-project--show&quot;&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class=&quot;ppg&nbsp;tiny&nbsp;ui&nbsp;button&nbsp;btn-project--show&quot;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aria-label=&quot;select&nbsp;all&nbsp;projects&quot;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role=&quot;button&quot;<br />&nbsp;&nbsp;&nbsp;&nbsp;&gt;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
           </code>
         </p>
@@ -305,7 +315,7 @@
     <p class="styleguide">input w/predictive search and label</p>
     <!-- INPUT W/PREDICTIVE SEARCH AND LABEL -->
     <div class="search-container">
-      <label for="inputID" class="label label--stacked-input">Customer</label>
+      <label for="inputID" class="label label--stacked">Customer</label>
       <div class="ui fluid search">
         <div class="ui icon input">
           <input
