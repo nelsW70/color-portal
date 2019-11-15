@@ -3,6 +3,7 @@
 .material-icons {
   /* PRINT BUTTON ICON */
   &--print {
+    // color adjusted for accessibility
     color: darken($color: $font-color-gray-three, $amount: 20);
   }
 }
