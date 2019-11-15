@@ -135,14 +135,13 @@ a {
     font-weight: 400; }
 
 /* LABELS */
-.customer-info label {
-  margin-bottom: 0.25rem; }
-
 .label {
   color: #193040;
   font-size: 0.8125rem; }
   .label--large {
     font-size: 0.875rem; }
+  .label--stacked-input {
+    margin-bottom: 0.25rem; }
 
 /* SEARCH RESULTS 'No Results' HEADER */
 .ui.search > .results > .message .header,
