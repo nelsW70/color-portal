@@ -9,6 +9,10 @@
   height: 36px;
   line-height: 1.1rem;
 
+  &:not(.button) > .default.text {
+    color: $font-color-gray-two;
+  }
+
   & .dropdown.icon {
     padding: 0.5rem;
   }
@@ -22,9 +26,6 @@
 /** DROPDOWN W/INLINE LABEL*/
 .inline-dropdown {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-
-  & .ui.dropdown:not(.button) > .default.text {
-    color: $font-color-gray-two;
-  }
 }

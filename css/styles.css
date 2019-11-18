@@ -772,6 +772,9 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   height: 36px;
   line-height: 1.1rem;
 }
+.ui.fluid.selection.dropdown:not(.button) > .default.text {
+  color: #334756;
+}
 .ui.fluid.selection.dropdown .dropdown.icon {
   padding: 0.5rem;
 }
@@ -783,10 +786,8 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 /** DROPDOWN W/INLINE LABEL*/
 .inline-dropdown {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-}
-.inline-dropdown .ui.dropdown:not(.button) > .default.text {
-  color: #334756;
 }
 
 /** PAGINATION **/
