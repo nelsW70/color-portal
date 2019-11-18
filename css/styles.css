@@ -710,11 +710,6 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 
 /* BUTTONS CONTAINER */
-.buttons-container {
-  display: flex;
-  flex-direction: column;
-}
-
 /* PAGINATION ROW */
 .pagination-row {
   display: flex;
