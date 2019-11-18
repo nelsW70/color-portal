@@ -85,10 +85,8 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    @media only screen and (min-width: 1160px) {
-      // because of ie
-      margin: auto;
-    }
+    // because of ie
+    margin: auto;
   }
 
   & .go-to-page {
