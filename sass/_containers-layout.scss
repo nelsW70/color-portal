@@ -85,7 +85,7 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    // margin: auto;
+    margin: auto;
     // because of ie
     @media only screen and (max-width: 1160px) {
       display: block;
