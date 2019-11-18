@@ -728,7 +728,10 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 .pagination-row .items-per-page .item-count {
   margin-bottom: 0 !important;
 }
-@media only screen and (max-width: 1159px) {
+@media only screen and (max-width: 1200px) {
+  .pagination-row .items-per-page .inline-dropdown {
+    width: 100%;
+  }
   .pagination-row .items-per-page .item-count {
     order: 2;
     margin-top: 1rem;
@@ -740,7 +743,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   justify-content: center;
   margin: auto;
 }
-@media only screen and (max-width: 1159px) {
+@media only screen and (max-width: 1200px) {
   .pagination-row .pagination-buttons {
     display: block;
     margin: 0;
