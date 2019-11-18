@@ -788,13 +788,13 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 
 /** PAGINATION **/
 .pagination-buttons .ui.pagination.menu {
-  min-height: fit-content;
+  min-height: 28px;
   height: 28px;
   box-shadow: none;
   border: none;
 }
 .pagination-buttons .ui.pagination.menu .item {
-  min-width: fit-content;
+  min-width: 32px;
 }
 .pagination-buttons .ui.pagination.menu .item > i.icon {
   margin: 0 0 0 2px;

@@ -2,12 +2,12 @@
 
 .pagination-buttons {
   & .ui.pagination.menu {
-    min-height: fit-content;
+    min-height: 28px;
     height: 28px;
     box-shadow: none;
     border: none;
     & .item {
-      min-width: fit-content;
+      min-width: 32px;
       & > i.icon {
         margin: 0 0 0 2px;
         font-size: 1rem;
