@@ -1,5 +1,4 @@
-/** ITEMS PER PAGE DROPDOWN **/
-
+/** SMALL DROPDOWN (GRAY BACKGROUND) **/
 .ui.fluid.selection.dropdown {
   background-color: $background-color-gray-one;
   border-radius: 1px;
@@ -17,5 +16,15 @@
   & .menu > .item {
     padding: 0.5rem !important;
     text-align: left;
+  }
+}
+
+/** DROPDOWN W/INLINE LABEL*/
+.inline-dropdown {
+  display: flex;
+  align-items: center;
+
+  & .ui.dropdown:not(.button) > .default.text {
+    color: $font-color-gray-two;
   }
 }
