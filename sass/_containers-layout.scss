@@ -85,8 +85,12 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    // margin: auto;
     // because of ie
-    margin: auto;
+    @media only screen and (max-width: 1160px) {
+      display: block;
+      margin: 0;
+    }
   }
 
   & .go-to-page {
