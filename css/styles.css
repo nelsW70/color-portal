@@ -725,7 +725,10 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   align-items: baseline;
   width: 33.333%;
 }
-@media only screen and (max-width: 1159px) {
+.pagination-row .items-per-page .item-count {
+  margin-bottom: 0 !important;
+}
+@media only screen and (max-width: 1160px) {
   .pagination-row .items-per-page .item-count {
     order: 2;
     margin-top: 1rem;
@@ -735,6 +738,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   flex: 1;
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 .pagination-row .go-to-page {
   display: flex;

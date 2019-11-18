@@ -69,6 +69,10 @@
     align-items: baseline;
     width: 33.333%;
 
+    & .item-count {
+      margin-bottom: 0 !important;
+    }
+
     @media only screen and (max-width: 1160px) {
       & .item-count {
         order: 2;
@@ -81,6 +85,8 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    // because of ie
+    margin: auto;
   }
 
   & .go-to-page {
