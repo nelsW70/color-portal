@@ -76,6 +76,9 @@ h2 {
 a {
   color: #1966ec;
 }
+a:hover {
+  color: #194eaa;
+}
 
 .ui.table thead th {
   font-size: 0.8125rem;
@@ -154,8 +157,12 @@ a {
   color: #334756;
   font-size: 0.8125rem;
 }
-.ui.breadcrumb a.section.active, .ui.breadcrumb a.section:hover {
+.ui.breadcrumb a.section.active {
   color: #1966ec;
+  font-weight: 400;
+}
+.ui.breadcrumb a.section:hover {
+  color: #194eaa;
   font-weight: 400;
 }
 
@@ -336,6 +343,7 @@ a {
 }
 .ppg.ui.primary.button:hover, .ppg.ui.primary.button:focus {
   background-color: #194eaa;
+  border: #194eaa;
   transition: all 0.25s;
 }
 .ppg.ui.secondary.button {
@@ -347,7 +355,8 @@ a {
   padding: 6px 12px;
 }
 .ppg.ui.secondary.button:hover, .ppg.ui.secondary.button:focus {
-  background-color: #1e5dcb;
+  background-color: #194eaa;
+  border: 1px solid #194eaa;
   color: #ffffff;
 }
 .ppg.tiny.ui.button {

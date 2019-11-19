@@ -46,6 +46,7 @@
       &:hover,
       &:focus {
         background-color: darken($background-color-blue-two, $amount: 7.5%);
+        border: darken($background-color-blue-two, $amount: 7.5%);
         transition: all 0.25s;
       }
     }
@@ -60,7 +61,8 @@
 
       &:hover,
       &:focus {
-        background-color: $background-color-blue-two;
+        background-color: darken($background-color-blue-two, $amount: 7.5%);
+        border: 1px solid darken($background-color-blue-two, $amount: 7.5%);
         color: $font-color-white-one;
       }
     }
