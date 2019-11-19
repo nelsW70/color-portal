@@ -340,11 +340,11 @@ a:hover {
   height: 40px;
   padding: 6px 12px;
   transition: all 0.25s;
+  transition-property: background-color, border;
 }
 .ppg.ui.primary.button:hover, .ppg.ui.primary.button:focus {
   background-color: #194eaa;
   border: #194eaa;
-  transition: all 0.25s;
 }
 .ppg.ui.secondary.button {
   border: 1px solid #1e5dcb;
@@ -353,6 +353,8 @@ a:hover {
   height: 40px;
   box-shadow: none !important;
   padding: 6px 12px;
+  transition: all 0.25s;
+  transition-property: background-color, border, color;
 }
 .ppg.ui.secondary.button:hover, .ppg.ui.secondary.button:focus {
   background-color: #194eaa;

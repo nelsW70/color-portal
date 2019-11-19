@@ -42,12 +42,12 @@
       height: 40px;
       padding: 6px 12px;
       transition: all 0.25s;
+      transition-property: background-color, border;
 
       &:hover,
       &:focus {
         background-color: darken($background-color-blue-two, $amount: 7.5%);
         border: darken($background-color-blue-two, $amount: 7.5%);
-        transition: all 0.25s;
       }
     }
     // SECONDARY
@@ -58,6 +58,8 @@
       height: 40px;
       box-shadow: none !important;
       padding: 6px 12px;
+      transition: all 0.25s;
+      transition-property: background-color, border, color;
 
       &:hover,
       &:focus {
