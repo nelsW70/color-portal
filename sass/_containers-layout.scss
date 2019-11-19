@@ -96,10 +96,8 @@
     }
   }
 
-  & .go-to-page {
-    display: flex;
+  & .pagination-search {
     justify-content: flex-end;
-    align-items: baseline;
     width: 33.333%;
     text-align: right;
   }

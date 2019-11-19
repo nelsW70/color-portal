@@ -34,8 +34,10 @@ input[type='search']::-webkit-search-cancel-button {
   }
 }
 
-/* GO-TO PAGE SECTION INPUT */
-.go-to-page {
+/* PAGINATION SEARCH SMALL INPUT WITH INLINE LABEL AND LINK */
+.pagination-search {
+  display: flex;
+  align-items: baseline;
   & .ui.input input {
     width: 42px;
     height: 35px;
