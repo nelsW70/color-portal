@@ -219,6 +219,12 @@ a:hover {
   color: #ffffff;
 }
 
+.accessibly-hidden {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
 /** PADDING AND MARGIN CLASSES **/
 .mt-1 {
   margin-top: 0.5rem !important;
@@ -498,12 +504,6 @@ a:hover {
 .ppg-custom-radio.ui.radio.checkbox label:before, .ppg-custom-radio.ui.radio.checkbox label:after {
   width: 20px;
   height: 20px;
-}
-
-.accessibly-hidden {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
 }
 
 /** CUSTOM CHECKBOX **/
