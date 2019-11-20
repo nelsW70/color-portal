@@ -509,7 +509,7 @@ a:hover {
   width: 20px;
   border-radius: 50%;
   box-sizing: border-box;
-  box-shadow: inset white 0 0 0 10px;
+  box-shadow: inset #ffffff 0 0 0 10px;
   transition: all ease 0.2s;
 }
 
