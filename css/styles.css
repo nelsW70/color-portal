@@ -813,7 +813,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   background: rgba(25, 102, 236, 0.1);
 }
 
-/** SMALL DROPDOWN (GRAY BACKGROUND) **/
+/** SMALL DROPDOWN SELECT (GRAY BACKGROUND) **/
 .ui.fluid.selection.dropdown {
   background-color: #e7ebed;
   border-radius: 1px;
