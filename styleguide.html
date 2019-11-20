@@ -32,64 +32,6 @@
     <title>ColorPortal Styleguide</title>
   </head>
   <body>
-    <h3 class="styleguide">radio button w/hidden label</h3>
-    <!-- RADIO BUTTON WITH HIDDEN LABEL -->
-    <div class="ppg-custom-radio ui radio checkbox">
-      <input type="radio" name="radio" id="radio" class="demo-radio" />
-      <label for="radio"
-        ><div class="accessibly-hidden">radio choice</div></label
-      >
-    </div>
-    <!-- RADIO BUTTON WITH HIDDEN LABEL -->
-    <div class="ui styled accordion">
-      <div class="title">
-        <i class="dropdown icon"></i>
-        view html
-      </div>
-      <div class="content">
-        <p class="transition visible" style="display: block !important;">
-          <code>
-            &lt;div&nbsp;class=&quot;ppg-custom-radio&nbsp;ui&nbsp;radio&nbsp;checkbox&quot;&gt;<br />
-            &nbsp;&nbsp;&lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;radio&quot;&nbsp;id=&quot;radio&quot;&nbsp;/&gt;<br />
-            &nbsp;&nbsp;&lt;label&nbsp;for=&quot;radio&quot;<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&gt;&lt;div&nbsp;class=&quot;accessibly-hidden&quot;&gt;radio&nbsp;choice&lt;/div&gt;&lt;/label<br />
-            &nbsp;&nbsp;&gt;<br />&lt;/div&gt;
-          </code>
-        </p>
-      </div>
-    </div>
-    <hr />
-    <h3 class="styleguide">pagination search input w/inline label and link</h3>
-    <!-- PAGINATION SEARCH SMALL INPUT WITH INLINE LABEL AND LINK  -->
-    <div class="pagination-search">
-      <label for="goToPage" class="label label--large mr-1">Go to page</label>
-      <div class="ui input">
-        <input type="text" id="goToPage" />
-      </div>
-      <div class="label label--large ml-1">
-        <a href="">Go <span>&rsaquo;</span></a>
-      </div>
-    </div>
-    <!-- PAGINATION SEARCH SMALL INPUT WITH INLINE LABEL AND LINK  -->
-    <div class="ui styled accordion">
-      <div class="title">
-        <i class="dropdown icon"></i>
-        view html
-      </div>
-      <div class="content">
-        <p class="transition visible" style="display: block !important;">
-          &lt;div&nbsp;class=&quot;pagination-search&quot;&gt;<br />
-          &nbsp;&nbsp;&lt;label&nbsp;for=&quot;goToPage&quot;&nbsp;class=&quot;label&nbsp;label--large&nbsp;mr-1&quot;&gt;Go&nbsp;to&nbsp;page&lt;/label&gt;<br />
-          &nbsp;&nbsp;&lt;div&nbsp;class=&quot;ui&nbsp;input&quot;&gt;<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;type=&quot;text&quot;&nbsp;id=&quot;goToPage&quot;&nbsp;/&gt;<br />
-          &nbsp;&nbsp;&lt;/div&gt;<br />
-          &nbsp;&nbsp;&lt;div&nbsp;class=&quot;label&nbsp;label--large&nbsp;ml-1&quot;&gt;<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&quot;&quot;&gt;Go&nbsp;&lt;span&gt;&amp;rsaquo;&lt;/span&gt;&lt;/a&gt;<br />
-          &nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
-        </p>
-      </div>
-    </div>
-    <hr />
     <h3 class="styleguide">breadcrumbs</h3>
     <!-- BREADCRUMBS -->
     <div class="breadcrumbs-row">
@@ -126,7 +68,7 @@
       </div>
     </div>
     <hr />
-    <h3 class="styleguide">dropdown w/inline label (grey background)</h3>
+    <h3 class="styleguide">dropdown select w/inline label (grey background)</h3>
     <!-- DROPDOWN W/INLINE LABEL -->
     <div class="inline-dropdown">
       <div class="label label--large mr-1">Items per page</div>
@@ -172,7 +114,38 @@
       //&nbsp;intialize&nbsp;semantic&nbsp;ui&nbsp;dropdown<br />$('.ui.dropdown').dropdown();
     </code>
     <hr />
-    <h3 class="styleguide">pagination</h3>
+    <h3 class="styleguide">pagination search input w/inline label and link</h3>
+    <!-- PAGINATION SEARCH SMALL INPUT WITH INLINE LABEL AND LINK  -->
+    <div class="pagination-search">
+      <label for="goToPage" class="label label--large mr-1">Go to page</label>
+      <div class="ui input">
+        <input type="text" id="goToPage" />
+      </div>
+      <div class="label label--large ml-1">
+        <a href="">Go <span>&rsaquo;</span></a>
+      </div>
+    </div>
+    <!-- PAGINATION SEARCH SMALL INPUT WITH INLINE LABEL AND LINK  -->
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view html
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          &lt;div&nbsp;class=&quot;pagination-search&quot;&gt;<br />
+          &nbsp;&nbsp;&lt;label&nbsp;for=&quot;goToPage&quot;&nbsp;class=&quot;label&nbsp;label--large&nbsp;mr-1&quot;&gt;Go&nbsp;to&nbsp;page&lt;/label&gt;<br />
+          &nbsp;&nbsp;&lt;div&nbsp;class=&quot;ui&nbsp;input&quot;&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;type=&quot;text&quot;&nbsp;id=&quot;goToPage&quot;&nbsp;/&gt;<br />
+          &nbsp;&nbsp;&lt;/div&gt;<br />
+          &nbsp;&nbsp;&lt;div&nbsp;class=&quot;label&nbsp;label--large&nbsp;ml-1&quot;&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&quot;&quot;&gt;Go&nbsp;&lt;span&gt;&amp;rsaquo;&lt;/span&gt;&lt;/a&gt;<br />
+          &nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+        </p>
+      </div>
+    </div>
+    <hr />
+    <h3 class="styleguide">pagination navigation</h3>
     <!-- PAGINATION BUTTONS -->
     <div class="pagination-buttons">
       <div class="ui pagination menu">
@@ -511,6 +484,35 @@
             &nbsp;&nbsp;/&gt;<br />
             &nbsp;&nbsp;&lt;label&nbsp;class=&quot;custom-checkbox__label&nbsp;label&quot;&nbsp;for=&quot;checkbox1&quot;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&gt;Check&nbsp;me&lt;/label<br />&nbsp;&nbsp;&gt;<br />&lt;/div&gt;
+          </code>
+        </p>
+      </div>
+    </div>
+    <hr />
+    <h3 class="styleguide">radio button w/hidden label</h3>
+    <!-- RADIO BUTTON WITH HIDDEN LABEL -->
+    <div class="ppg-custom-radio ui radio checkbox">
+      <input type="radio" name="radio" id="radio" class="demo-radio" />
+      <label for="radio"
+        ><div class="accessibly-hidden">
+          whatever the value of this checkbox is should go here
+        </div></label
+      >
+    </div>
+    <!-- RADIO BUTTON WITH HIDDEN LABEL -->
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view html
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <code>
+            &lt;div&nbsp;class=&quot;ppg-custom-radio&nbsp;ui&nbsp;radio&nbsp;checkbox&quot;&gt;<br />
+            &nbsp;&nbsp;&lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;radio&quot;&nbsp;id=&quot;radio&quot;&nbsp;/&gt;<br />
+            &nbsp;&nbsp;&lt;label&nbsp;for=&quot;radio&quot;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&gt;&lt;div&nbsp;class=&quot;accessibly-hidden&quot;&gt;radio&nbsp;choice&lt;/div&gt;&lt;/label<br />
+            &nbsp;&nbsp;&gt;<br />&lt;/div&gt;
           </code>
         </p>
       </div>

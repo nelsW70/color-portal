@@ -813,7 +813,14 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   background: rgba(25, 102, 236, 0.1);
 }
 
-/** SMALL DROPDOWN SELECT (GRAY BACKGROUND) **/
+/** DROPDOWN SELECT W/INLINE LABEL*/
+.inline-dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/** SMALL DROPDOWN SELECT (GREY BACKGROUND) **/
 .ui.fluid.selection.dropdown {
   background-color: #e7ebed;
   border-radius: 1px;
@@ -833,13 +840,6 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 .ui.fluid.selection.dropdown .menu > .item {
   padding: 0.5rem !important;
   text-align: left;
-}
-
-/** DROPDOWN W/INLINE LABEL*/
-.inline-dropdown {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 /** PAGINATION **/

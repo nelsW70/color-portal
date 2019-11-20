@@ -1,4 +1,11 @@
-/** SMALL DROPDOWN SELECT (GRAY BACKGROUND) **/
+/** DROPDOWN SELECT W/INLINE LABEL*/
+.inline-dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/** SMALL DROPDOWN SELECT (GREY BACKGROUND) **/
 .ui.fluid.selection.dropdown {
   background-color: $background-color-gray-one;
   border-radius: 1px;
@@ -21,11 +28,4 @@
     padding: 0.5rem !important;
     text-align: left;
   }
-}
-
-/** DROPDOWN W/INLINE LABEL*/
-.inline-dropdown {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
