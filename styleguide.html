@@ -32,7 +32,7 @@
     <title>ColorPortal Styleguide</title>
   </head>
   <body>
-    <h3 class="styleguide">radio button</h3>
+    <h3 class="styleguide">radio button w/hidden label</h3>
     <!-- RADIO BUTTON WITH HIDDEN LABEL -->
     <div class="ppg-custom-radio ui radio checkbox">
       <input type="radio" name="radio" id="radio" />
@@ -48,7 +48,13 @@
       </div>
       <div class="content">
         <p class="transition visible" style="display: block !important;">
-          <code> </code>
+          <code>
+            &lt;div&nbsp;class=&quot;ppg-custom-radio&nbsp;ui&nbsp;radio&nbsp;checkbox&quot;&gt;<br />
+            &nbsp;&nbsp;&lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;radio&quot;&nbsp;id=&quot;radio&quot;&nbsp;/&gt;<br />
+            &nbsp;&nbsp;&lt;label&nbsp;for=&quot;radio&quot;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&gt;&lt;div&nbsp;class=&quot;accessibly-hidden&quot;&gt;radio&nbsp;choice&lt;/div&gt;&lt;/label<br />
+            &nbsp;&nbsp;&gt;<br />&lt;/div&gt;
+          </code>
         </p>
       </div>
     </div>

@@ -489,7 +489,11 @@ a:hover {
   background-color: rgba(25, 102, 236, 0.1) !important;
 }
 
-.ppg-custom-radio.ui.checkbox input[type=radio] {
+.ppg-custom-radio.ui.radio.checkbox {
+  min-height: 22px;
+  line-height: 22px;
+}
+.ppg-custom-radio.ui.radio.checkbox input[type=radio] {
   width: 22px;
   height: 22px;
 }
@@ -504,6 +508,9 @@ a:hover {
 .ppg-custom-radio.ui.radio.checkbox label:before, .ppg-custom-radio.ui.radio.checkbox label:after {
   width: 20px;
   height: 20px;
+}
+.ppg-custom-radio.ui.radio.checkbox label:before {
+  border: 1px solid #b3c1cc;
 }
 
 /** CUSTOM CHECKBOX **/

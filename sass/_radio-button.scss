@@ -1,10 +1,11 @@
 .ppg-custom-radio {
-  &.ui.checkbox input[type='radio'] {
-    width: 22px;
-    height: 22px;
-  }
-
   &.ui.radio.checkbox {
+    min-height: 22px;
+    line-height: 22px;
+    & input[type='radio'] {
+      width: 22px;
+      height: 22px;
+    }
     & input:checked ~ label {
       &:before {
         background-color: $background-color-blue-one;
@@ -20,6 +21,9 @@
       &:after {
         width: 20px;
         height: 20px;
+      }
+      &:before {
+        border: 1px solid $background-color-gray-three;
       }
     }
   }
