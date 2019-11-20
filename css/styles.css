@@ -6,6 +6,7 @@
 /* BACKGROUND & BORDER COLORS */
 /* UTILITY COLORS */
 /* BORDER-RADIUS */
+/* ANIMATION TRANSITION */
 /** FONT IMPORTS **/
 @font-face {
   font-family: "Suisse Intl";
@@ -497,20 +498,27 @@ a:hover {
   width: 22px;
   height: 22px;
 }
-.ppg-custom-radio.ui.radio.checkbox input:checked ~ label:before {
-  background-color: #1966ec;
-  transition: all ease 0.2s;
-}
-.ppg-custom-radio.ui.radio.checkbox input:checked ~ label:after {
-  background-color: #ffffff;
-  transition: all ease 0.2s;
-}
 .ppg-custom-radio.ui.radio.checkbox label:before, .ppg-custom-radio.ui.radio.checkbox label:after {
   width: 20px;
   height: 20px;
 }
 .ppg-custom-radio.ui.radio.checkbox label:before {
-  border: 1px solid #b3c1cc;
+  border: 1px solid #b3c1cc !important;
+  transition: all ease 0.25s;
+}
+.ppg-custom-radio.ui.radio.checkbox label:after {
+  background-color: #ffffff !important;
+  transition: all ease 0.25s;
+}
+.ppg-custom-radio.ui.radio.checkbox input:checked ~ label:before {
+  background-color: #1966ec;
+  border: 1px solid #1966ec !important;
+  transition: all ease 0.25s;
+}
+.ppg-custom-radio.ui.radio.checkbox input:checked ~ label:after {
+  background-color: #ffffff !important;
+  border: 1px solid #1966ec !important;
+  transition: all ease 0.25s;
 }
 
 /** CUSTOM CHECKBOX **/
@@ -526,8 +534,8 @@ a:hover {
 }
 .custom-checkbox__input:checked + .custom-checkbox__label:after {
   border-color: #ffffff;
-  -webkit-animation: check 0.35s;
-  animation: check 0.35s;
+  -webkit-animation: check 0.25s;
+  animation: check 0.25s;
   opacity: 1;
 }
 .custom-checkbox__input:checked + .custom-checkbox__label:before {
@@ -811,7 +819,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   border-radius: 1px;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
   text-align: left;
-  width: 4rem;
+  width: 3.75rem;
   min-height: 36px;
   height: 36px;
   line-height: 1.1rem;
@@ -820,7 +828,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   color: #334756;
 }
 .ui.fluid.selection.dropdown .dropdown.icon {
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.25rem;
 }
 .ui.fluid.selection.dropdown .menu > .item {
   padding: 0.5rem !important;

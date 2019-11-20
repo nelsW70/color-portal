@@ -11,8 +11,8 @@
     &:checked + .custom-checkbox__label {
       &:after {
         border-color: $background-color-white-one;
-        -webkit-animation: check 0.35s;
-        animation: check 0.35s;
+        -webkit-animation: check 0.25s;
+        animation: check 0.25s;
         opacity: 1;
       }
       &:before {
