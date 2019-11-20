@@ -1,34 +1,33 @@
-.ppg-radio-button {
-  display: flex;
-
-  label {
-    cursor: pointer;
+.ppg-custom-radio {
+  &.ui.checkbox input[type='radio'] {
+    width: 22px;
+    height: 22px;
   }
-  input {
-    &[type='radio'] {
-      display: none;
-      &:checked + span {
-        &:before {
-          background-color: white;
-          border: 1px solid $background-color-blue-one;
-          box-shadow: inset $background-color-blue-one 0 0 0 4px;
-          transition: all ease 0.2s;
-        }
+
+  &.ui.radio.checkbox {
+    & input:checked ~ label {
+      &:before {
+        background-color: $background-color-blue-one;
+        transition: all ease 0.2s;
+      }
+      &:after {
+        background-color: $background-color-white-one;
+        transition: all ease 0.2s;
+      }
+    }
+    & label {
+      &:before,
+      &:after {
+        width: 20px;
+        height: 20px;
       }
     }
   }
-  span {
-    display: flex;
-    &:before {
-      border: 1px solid $background-color-gray-three;
-      content: '';
-      display: flex;
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-      box-sizing: border-box;
-      box-shadow: inset $background-color-white-one 0 0 0 10px;
-      transition: all ease 0.2s;
-    }
-  }
+}
+
+// Accessibility Content (hides content while keeping it available to screenreaders)
+.accessibly-hidden {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }

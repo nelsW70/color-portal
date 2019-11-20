@@ -483,34 +483,27 @@ a:hover {
   background-color: rgba(25, 102, 236, 0.1) !important;
 }
 
-.ppg-radio-button {
-  display: flex;
+.ppg-custom-radio.ui.checkbox input[type=radio] {
+  width: 22px;
+  height: 22px;
 }
-.ppg-radio-button label {
-  cursor: pointer;
-}
-.ppg-radio-button input[type=radio] {
-  display: none;
-}
-.ppg-radio-button input[type=radio]:checked + span:before {
-  background-color: white;
-  border: 1px solid #1966ec;
-  box-shadow: inset #1966ec 0 0 0 4px;
+.ppg-custom-radio.ui.radio.checkbox input:checked ~ label:before {
+  background-color: #1966ec;
   transition: all ease 0.2s;
 }
-.ppg-radio-button span {
-  display: flex;
+.ppg-custom-radio.ui.radio.checkbox input:checked ~ label:after {
+  background-color: #ffffff;
+  transition: all ease 0.2s;
 }
-.ppg-radio-button span:before {
-  border: 1px solid #b3c1cc;
-  content: "";
-  display: flex;
-  height: 20px;
+.ppg-custom-radio.ui.radio.checkbox label:before, .ppg-custom-radio.ui.radio.checkbox label:after {
   width: 20px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  box-shadow: inset #ffffff 0 0 0 10px;
-  transition: all ease 0.2s;
+  height: 20px;
+}
+
+.accessibly-hidden {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 
 /** CUSTOM CHECKBOX **/
