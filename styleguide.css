@@ -19,7 +19,17 @@ p.styleguide {
 }
 
 .requires-comment:before {
-  content: ' *';
+  content: '* ';
+  color: rgb(180, 3, 3);
+}
+
+.requires-urgent:before {
+  content: ' ***';
+  color: rgb(180, 3, 3);
+}
+
+.requires-urgent:after {
+  content: ' ***';
   color: rgb(180, 3, 3);
 }
 
@@ -35,4 +45,8 @@ p.styleguide {
 
 .accordion .title:hover {
   color: rgba(0, 0, 0, 0.95) !important;
+}
+
+.documentation-section hr {
+  width: 50%;
 }
