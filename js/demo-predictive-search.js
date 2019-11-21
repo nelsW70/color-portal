@@ -13,6 +13,6 @@ var content = [
   { title: 'Wanlong Suzhou' },
   { title: 'Wick, John' }
 ];
-$('.ui.search').search({
+$('.ui.search.search-one').search({
   source: content
 });
