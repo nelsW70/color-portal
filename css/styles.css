@@ -945,6 +945,10 @@ table.ui.very.basic.striped.padded.table thead tr:first-child > th:first-child, 
 table.ui.very.basic.striped.padded.table thead th {
   border-top: solid 1px rgba(17, 35, 48, 0.25);
   border-bottom: solid 1px rgba(17, 35, 48, 0.25);
+  border-left: none;
+}
+table.ui.very.basic.striped.padded.table thead th.sorted {
+  background-color: transparent;
 }
 table.ui.very.basic.striped.padded.table tbody tr {
   cursor: pointer;

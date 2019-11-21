@@ -13,9 +13,13 @@ h1.styleguide {
 }
 
 h2.styleguide {
-  font-weight: 500;
+  font-size: 1.25rem;
   margin-bottom: 3rem;
   text-decoration: underline;
+}
+
+.header-detail {
+  margin-bottom: 1rem !important;
 }
 
 p.styleguide {
@@ -24,6 +28,10 @@ p.styleguide {
 
 .requires-comment.requires-urgent {
   font-weight: 500;
+}
+
+.requires-comment.requires-comment--detail {
+  margin-bottom: 3rem;
 }
 
 .requires-comment:before {
@@ -56,5 +64,5 @@ p.styleguide {
 }
 
 .documentation-section hr {
-  width: 50%;
+  /* width: 50%; */
 }

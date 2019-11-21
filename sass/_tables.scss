@@ -12,6 +12,10 @@ table.ui.very.basic.striped.padded.table {
     & th {
       border-top: solid 1px $background-color-gray-six;
       border-bottom: solid 1px $background-color-gray-six;
+      border-left: none;
+      &.sorted {
+        background-color: transparent;
+      }
     }
   }
 
