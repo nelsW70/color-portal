@@ -265,6 +265,43 @@
       </div>
     </div>
     <hr />
+    <h2 class="styleguide" style="margin-bottom: 1rem;">blackout screen</h2>
+    <p class="requires-comment" style="margin-bottom: 3rem">
+      prevents ColorPortal site being viewed on screens below 960px
+    </p>
+    <!-- FULL SCREEN OVERLAY TO PREVENT SITE BEING VIEWED IN A BROKEN STATE ON SMALLER SCREENS: 
+         SHOULD BE FIRST ELEMENT IN PAGE CONTENT FOR ACCESSIBILITY PURPOSES-->
+    <div id="blackout-overlay">
+      <div id="blackout-overlay__text">
+        <h1>
+          This site is best viewed on screens wider than 960px.
+        </h1>
+        <h1>
+          Please adjust the width of your screen.
+        </h1>
+      </div>
+    </div>
+    <!-- FULL SCREEN OVERLAY TO PREVENT SITE BEING VIEWED IN A BROKEN STATE ON SMALLER SCREENS: 
+         SHOULD BE FIRST ELEMENT IN PAGE CONTENT FOR ACCESSIBILITY PURPOSES-->
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view html
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <code>
+            &lt;div&nbsp;id=&quot;blackout-overlay&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;id=&quot;blackout-overlay__text&quot;&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;site&nbsp;is&nbsp;best&nbsp;viewed&nbsp;on&nbsp;screens&nbsp;wider&nbsp;than&nbsp;960px.<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please&nbsp;adjust&nbsp;the&nbsp;width&nbsp;of&nbsp;your&nbsp;screen.<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/h1&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+          </code>
+        </p>
+      </div>
+    </div>
+    <hr />
     <h2 class="styleguide">breadcrumbs</h2>
     <!-- BREADCRUMBS -->
     <div class="breadcrumbs-row">
