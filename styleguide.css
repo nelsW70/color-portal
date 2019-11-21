@@ -8,6 +8,10 @@ hr {
   margin: 1.5rem 0;
 }
 
+h1.styleguide {
+  margin-bottom: 1rem;
+}
+
 h2.styleguide {
   font-weight: 500;
   margin-bottom: 3rem;
@@ -16,6 +20,10 @@ h2.styleguide {
 
 p.styleguide {
   margin-bottom: 2rem;
+}
+
+.requires-comment.requires-urgent {
+  font-weight: 500;
 }
 
 .requires-comment:before {
