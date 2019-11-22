@@ -10,10 +10,13 @@ table.ui.sortable.very.basic.striped.padded.table {
       border-radius: 0;
     }
     & th {
+      position: relative;
       border-top: solid 1px $background-color-gray-six;
       border-bottom: solid 1px $background-color-gray-six;
       border-left: none;
       &:after {
+        position: absolute;
+        top: 13px;
         content: '';
         display: inline-block;
         width: 12px;
