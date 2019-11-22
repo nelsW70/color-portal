@@ -67,76 +67,37 @@
           <p>-Material Icons</p>
           <p>-Custom CSS (compiled from SASS)</p>
           <p>-Semantic UI min.js</p>
+          <p>-Semantic UI table sort js</p>
           <hr>
           <p>
             <h5 class="requires-comment">insert in header tag</h5>
             <code>
-                &lt;head&gt;<br/>&nbsp;&nbsp;&lt;!--&nbsp;Semantic&nbsp;UI&nbsp;CSS&nbsp;CDN&nbsp;version&nbsp;if&nbsp;needed&nbsp;--&gt;<br/>&nbsp;&nbsp;&lt;link<br/>&nbsp;&nbsp;&nbsp;&nbsp;rel=&quot;stylesheet&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;href=&quot;https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css&quot;<br/>&nbsp;&nbsp;/&gt;<br/><br/>&nbsp;&nbsp;&lt;!--&nbsp;JQuery&nbsp;for&nbsp;Semantic&nbsp;UI&nbsp;--&gt;<br/>&nbsp;&nbsp;&lt;script<br/>&nbsp;&nbsp;&nbsp;&nbsp;src=&quot;https://code.jquery.com/jquery-3.1.1.min.js&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;integrity=&quot;sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;crossorigin=&quot;anonymous&quot;<br/>&nbsp;&nbsp;&gt;&lt;/script&gt;<br/><br/>&nbsp;&nbsp;&lt;!--&nbsp;Material&nbsp;Icons&nbsp;--&gt;<br/>&nbsp;&nbsp;&lt;link<br/>&nbsp;&nbsp;&nbsp;&nbsp;rel=&quot;stylesheet&quot;<br/>&nbsp;&nbsp;&nbsp;&nbsp;href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;<br/>&nbsp;&nbsp;/&gt;<br/><br/>&nbsp;&nbsp;&lt;!--&nbsp;Custom&nbsp;CSS&nbsp;--&gt;<br/>&nbsp;&nbsp;&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;css/styles.css&quot;&nbsp;/&gt;<br/>&lt;/head&gt;
+                &lt;head&gt;<br/>&nbsp;&nbsp;&lt;!--&nbsp;Semantic&nbsp;UI&nbsp;CSS&nbsp;CDN&nbsp;version&nbsp;if&nbsp;needed&nbsp;--&gt;<br/>
+                &nbsp;&nbsp;&lt;link<br/>&nbsp;&nbsp;&nbsp;&nbsp;rel=&quot;stylesheet&quot;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;href=&quot;https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css&quot;<br/>
+                &nbsp;&nbsp;/&gt;<br/><br/>&nbsp;&nbsp;&lt;!--&nbsp;JQuery&nbsp;for&nbsp;Semantic&nbsp;UI&nbsp;--&gt;<br/>
+                &nbsp;&nbsp;&lt;script<br/>&nbsp;&nbsp;&nbsp;&nbsp;src=&quot;https://code.jquery.com/jquery-3.1.1.min.js&quot;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;integrity=&quot;sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=&quot;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;crossorigin=&quot;anonymous&quot;<br/>&nbsp;&nbsp;&gt;&lt;/script&gt;<br/>
+                <br/>&nbsp;&nbsp;&lt;!--&nbsp;Material&nbsp;Icons&nbsp;--&gt;<br/>&nbsp;&nbsp;&lt;link<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;rel=&quot;stylesheet&quot;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot;<br/>
+                &nbsp;&nbsp;/&gt;<br/><br/>&nbsp;&nbsp;&lt;!--&nbsp;Custom&nbsp;CSS&nbsp;--&gt;<br/>
+                &nbsp;&nbsp;&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;css/styles.css&quot;&nbsp;/&gt;<br/>&lt;/head&gt;
             </code>
           </p>
           <hr>
           <h5 class="requires-comment">insert just before closing body tag</h5>
           <p>
             <code>
-                &lt;body&gt;<br/>&nbsp;&nbsp;&lt;!--&nbsp;Semantic&nbsp;UI&nbsp;JS&nbsp;--&gt;<br/>&nbsp;&nbsp;&lt;script&nbsp;src=&quot;https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js&quot;&gt;&lt;/script&gt;<br/>&lt;/body&gt;
+              &lt;!--&nbsp;Semantic&nbsp;UI&nbsp;--&gt;<br/>&lt;script&nbsp;src=&quot;https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js&quot;&gt;&lt;/script&gt;<br/>
+              <br/>&lt;!--&nbsp;Semantic&nbsp;UI&nbsp;Table&nbsp;Sort&nbsp;--&gt;<br/>
+              &lt;script&nbsp;src=&quot;https://semantic-ui.com/javascript/library/tablesort.js&quot;&gt;&lt;/script&gt;
             </code>
           </p>
         </p>
       </div>
     </div>
-    <hr>
-    <h2 class="styleguide">sortable table</h2>
-    <table class="ui sortable very basic striped padded table">
-      <thead>
-        <tr>
-          <th scope="col">Project Name</th>
-          <th scope="col">Customer</th>
-          <th scope="col">Color Name</th>
-          <th scope="col">Program Name</th>
-          <th scope="col">Designer</th>
-          <th scope="col">Status</th>
-          <th scope="col">Comments</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="">ALE19379</a></td>
-          <td>Nissan</td>
-          <td>A Flash</td>
-          <td><a href="">Dissan MXQ29 MY 2019</a></td>
-          <td>Hallie Ferguson</td>
-          <td><span class="dot dot--approved"></span>Approved</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td><a href="">BLE19379</a></td>
-          <td>Olympic</td>
-          <td>B Flash</td>
-          <td><a href="">Eissan MXQ29 MY 2019</a></td>
-          <td>Alvin Vega</td>
-          <td><span class="dot dot--approved"></span>Approved</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td><a href="">CLE19379</a></td>
-          <td>Paint</td>
-          <td>C Flash</td>
-          <td><a href="">Fissan MXQ29 MY 2019</a></td>
-          <td>Jared Luna</td>
-          <td><span class="dot dot--rejected"></span>Rejected</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td><a href="">DLE19379</a></td>
-          <td>Qbert</td>
-          <td>D Flash</td>
-          <td><a href="">Gissan MXQ29 MY 2019</a></td>
-          <td>Elijah Porter</td>
-          <td><span class="dot dot--pending"></span>Pending</td>
-          <td>4</td>
-        </tr>
-      </tbody>
-    </table>
     <hr>
     <h2 class="styleguide header-detail">
       colorportal header
@@ -443,6 +404,114 @@
       </div>
     </div>
     <hr />
+    <h2 class="styleguide">sortable table</h2>
+    <table class="ui sortable very basic striped padded table">
+      <thead>
+        <tr>
+          <th scope="col">Project Name</th>
+          <th scope="col">Customer</th>
+          <th scope="col">Color Name</th>
+          <th scope="col">Program Name</th>
+          <th scope="col">Designer</th>
+          <th scope="col">Status</th>
+          <th scope="col">Comments</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="">ALE19379</a></td>
+          <td>Nissan</td>
+          <td>A Flash</td>
+          <td><a href="">Dissan MXQ29 MY 2019</a></td>
+          <td>Hallie Ferguson</td>
+          <td><span class="dot dot--approved"></span>Approved</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td><a href="">BLE19379</a></td>
+          <td>Olympic</td>
+          <td>B Flash</td>
+          <td><a href="">Eissan MXQ29 MY 2019</a></td>
+          <td>Alvin Vega</td>
+          <td><span class="dot dot--approved"></span>Approved</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td><a href="">CLE19379</a></td>
+          <td>Paint</td>
+          <td>C Flash</td>
+          <td><a href="">Fissan MXQ29 MY 2019</a></td>
+          <td>Jared Luna</td>
+          <td><span class="dot dot--rejected"></span>Rejected</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td><a href="">DLE19379</a></td>
+          <td>Qbert</td>
+          <td>D Flash</td>
+          <td><a href="">Gissan MXQ29 MY 2019</a></td>
+          <td>Elijah Porter</td>
+          <td><span class="dot dot--pending"></span>Pending</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view html
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          &lt;table&nbsp;class=&quot;ui&nbsp;sortable&nbsp;very&nbsp;basic&nbsp;striped&nbsp;padded&nbsp;table&quot;&gt;<br/>
+          &nbsp;&nbsp;&lt;thead&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Project&nbsp;Name&lt;/th&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Customer&lt;/th&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Color&nbsp;Name&lt;/th&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Program&nbsp;Name&lt;/th&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Designer&lt;/th&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Status&lt;/th&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Comments&lt;/th&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>&nbsp;&nbsp;&lt;/thead&gt;<br/>&nbsp;&nbsp;&lt;tbody&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;ALE19379&lt;/a&gt;&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Nissan&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;A&nbsp;Flash&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;Dissan&nbsp;MXQ29&nbsp;MY&nbsp;2019&lt;/a&gt;&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Hallie&nbsp;Ferguson&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;span&nbsp;class=&quot;dot&nbsp;dot--approved&quot;&gt;&lt;/span&gt;Approved&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;BLE19379&lt;/a&gt;&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Olympic&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;B&nbsp;Flash&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;Eissan&nbsp;MXQ29&nbsp;MY&nbsp;2019&lt;/a&gt;&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Alvin&nbsp;Vega&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;span&nbsp;class=&quot;dot&nbsp;dot--approved&quot;&gt;&lt;/span&gt;Approved&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;2&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;CLE19379&lt;/a&gt;&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Paint&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;C&nbsp;Flash&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;Fissan&nbsp;MXQ29&nbsp;MY&nbsp;2019&lt;/a&gt;&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jared&nbsp;Luna&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;span&nbsp;class=&quot;dot&nbsp;dot--rejected&quot;&gt;&lt;/span&gt;Rejected&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;DLE19379&lt;/a&gt;&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Qbert&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;D&nbsp;Flash&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;Gissan&nbsp;MXQ29&nbsp;MY&nbsp;2019&lt;/a&gt;&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Elijah&nbsp;Porter&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;span&nbsp;class=&quot;dot&nbsp;dot--pending&quot;&gt;&lt;/span&gt;Pending&lt;/td&gt;<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;4&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>&nbsp;&nbsp;&lt;/tbody&gt;<br/>&lt;/table&gt;
+        </p>
+      </div>
+    </div>
+    <p class="requires-comment">requires js script to initialize</p>
+    <code>
+      //&nbsp;table&nbsp;sort&nbsp;initialize&nbsp;<br/>$('table').tablesort();
+    </code>
+    <hr>
     <h2 class="styleguide">dropdown select w/inline label (grey background)</h2>
     <!-- DROPDOWN W/INLINE LABEL -->
     <div class="inline-dropdown">
@@ -920,11 +989,9 @@
       // styleguide accordion initialize
       $('.ui.accordion').accordion();
     </script>
-    <!-- table sort initialize -->
     <script>
-      $( document ).ready(function() {
-          $('table').tablesort() 
-      });
+      // table sort initialize 
+      $('table').tablesort();
     </script>
   </body>
 </html>
