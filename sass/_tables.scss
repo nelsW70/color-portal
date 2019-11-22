@@ -21,18 +21,18 @@ table.ui.sortable.very.basic.striped.padded.table {
         display: inline-block;
         width: 12px;
       }
-      // &.ascending:after {
-      //   content: '\f0d8';
-      // }
-      // &.descending:after {
-      //   content: '\f0d7';
-      // }
       &.ascending:after {
-        content: '↑';
+        content: '\f0d8';
       }
       &.descending:after {
-        content: '↓';
+        content: '\f0d7';
       }
+      // &.ascending:after {
+      //   content: '↑';
+      // }
+      // &.descending:after {
+      //   content: '↓';
+      // }
       &.sorted {
         background-color: transparent;
       }
