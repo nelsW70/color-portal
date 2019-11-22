@@ -1,6 +1,6 @@
 /** TABLES **/
 
-table.ui.very.basic.striped.padded.table {
+table.ui.sortable.very.basic.striped.padded.table {
   border-bottom: solid 1px $background-color-gray-six;
   border-radius: 0;
 
@@ -13,6 +13,17 @@ table.ui.very.basic.striped.padded.table {
       border-top: solid 1px $background-color-gray-six;
       border-bottom: solid 1px $background-color-gray-six;
       border-left: none;
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 12px;
+      }
+      &.ascending:after {
+        content: '\f0d8';
+      }
+      &.descending:after {
+        content: '\f0d7';
+      }
       &.sorted {
         background-color: transparent;
       }

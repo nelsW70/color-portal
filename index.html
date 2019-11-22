@@ -262,7 +262,7 @@
       <!-- CUSTOMER INFO -->
       <!-- PROJECTS TABLE -->
       <div class="projects-table">
-        <table class="ui very basic striped padded table">
+        <table class="ui sortable very basic striped padded table">
           <thead>
             <tr>
               <th scope="col">Project Name</th>
@@ -456,6 +456,8 @@
 
     <!-- Semantic UI -->
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <!-- Semantic UI Table Sort -->
+    <script src="https://semantic-ui.com/javascript/library/tablesort.js"></script>
 
     <!-- JS scripts -->
     <!-- navbar hamburger animation -->
@@ -472,5 +474,11 @@
     <script src="js/demo-predictive-search.js"></script>
     <!-- toggle active state on breadcrumb links -->
     <script src="js/breadcrumb-link.js"></script>
+    <!-- table sort initialize -->
+    <script>
+      $(document).ready(function() {
+        $('table').tablesort();
+      });
+    </script>
   </body>
 </html>
