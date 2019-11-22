@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** IMPORTS **/
 /** VARIABLES **/
 /* FONTFAMILY */
@@ -773,9 +774,9 @@ table.ui.sortable.very.basic.striped.padded.table {
       display: inline-block;
       width: 12px; }
     table.ui.sortable.very.basic.striped.padded.table thead th.ascending:after {
-      content: '\f0d8'; }
+      content: '↑'; }
     table.ui.sortable.very.basic.striped.padded.table thead th.descending:after {
-      content: '\f0d7'; }
+      content: '↓'; }
     table.ui.sortable.very.basic.striped.padded.table thead th.sorted {
       background-color: transparent; }
   table.ui.sortable.very.basic.striped.padded.table tbody tr {

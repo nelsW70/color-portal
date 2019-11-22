@@ -21,11 +21,17 @@ table.ui.sortable.very.basic.striped.padded.table {
         display: inline-block;
         width: 12px;
       }
+      // &.ascending:after {
+      //   content: '\f0d8';
+      // }
+      // &.descending:after {
+      //   content: '\f0d7';
+      // }
       &.ascending:after {
-        content: '\f0d8';
+        content: '↑';
       }
       &.descending:after {
-        content: '\f0d7';
+        content: '↓';
       }
       &.sorted {
         background-color: transparent;
