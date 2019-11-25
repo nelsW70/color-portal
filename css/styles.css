@@ -1025,6 +1025,23 @@ footer img {
 .ppg-modal.ui.modal {
   border-radius: 3px;
 }
+.ppg-modal.ui.modal * {
+  font-family: "Suisse Intl", sans-serif;
+}
+.ppg-modal.ui.modal .header {
+  background-color: #334756;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #ffffff;
+  font-size: 1.125rem !important;
+  font-weight: 300;
+  padding: 0.675rem 1.25rem;
+}
+@media only screen and (min-width: 960px) {
+  .ppg-modal.ui.mini.modal {
+    width: 500px;
+  }
+}
 
 /** FULL SCREEN BLACKOUT OVERLAY VISIBLE BELOW 960PX **/
 #blackout-overlay {

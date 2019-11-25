@@ -3,6 +3,26 @@
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-.ppg-modal.ui.modal {
-  border-radius: 3px;
+// modal
+.ppg-modal.ui {
+  &.modal {
+    border-radius: $border-radius-three;
+    * {
+      font-family: $font-family-primary;
+    }
+    & .header {
+      background-color: $background-color-gray-four;
+      border-top-left-radius: $border-radius-three;
+      border-top-right-radius: $border-radius-three;
+      color: $font-color-white-one;
+      font-size: 1.125rem !important;
+      font-weight: 300;
+      padding: 0.675rem 1.25rem;
+    }
+  }
+  @media only screen and (min-width: 960px) {
+    &.mini.modal {
+      width: 500px;
+    }
+  }
 }
