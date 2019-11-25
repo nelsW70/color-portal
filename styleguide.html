@@ -1198,10 +1198,41 @@
       </div>
       <div class="content">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nulla atque quam molestias, 
-          reprehenderit sed aliquam provident est voluptate laborum!</p>
+          reprehenderit sed aliquam provident est voluptate laborum!
+        </p>
       </div>
     </div>
     <!-- mini modal -->
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view html
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <code>
+              &lt;div&nbsp;class=&quot;ppg&nbsp;ui&nbsp;mini&nbsp;modal&quot;&gt;<br/>
+              &nbsp;&nbsp;&lt;div&nbsp;class=&quot;header&quot;&gt;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;modal-header&quot;&gt;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Header<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;i&nbsp;class=&quot;material-icons&quot;&nbsp;id=&quot;mini-modal-close&quot;&gt;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;close<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/i&gt;<br/>
+              &nbsp;&nbsp;&lt;/div&gt;<br/>&nbsp;&nbsp;&lt;div&nbsp;class=&quot;content&quot;&gt;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem&nbsp;ipsum,&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Hic&nbsp;nulla&nbsp;atque&nbsp;quam&nbsp;molestias,&nbsp;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reprehenderit&nbsp;sed&nbsp;aliquam&nbsp;provident&nbsp;est&nbsp;voluptate&nbsp;laborum!<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br/>&nbsp;&nbsp;&lt;/div&gt;<br/>&lt;/div&gt;
+          </code>
+        </p>
+      </div>
+    </div>
+    <p class="requires-comment">
+      requires script to close modal using 'x' icon
+    </p>
+    <code>
+        &lt;script&gt;<br/>&nbsp;&nbsp;//&nbsp;close&nbsp;mini&nbsp;modal&nbsp;with&nbsp;modal&nbsp;'x'&nbsp;icon<br/>
+        &nbsp;&nbsp;$('#mini-modal-close').click(function()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;$('.ui.mini.modal').modal('hide');<br/>
+        &nbsp;&nbsp;})<br/>&lt;/script&gt;
+    </code>
     <hr>
     <p class="styleguide">tiny</p>
     <hr>
