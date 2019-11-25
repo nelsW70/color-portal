@@ -1183,14 +1183,14 @@
     <hr />
     <h2 class="styleguide">modals</h2>
     <p class="styleguide">mini</p>
-    <button class="ppg ui primary button" id="miniModal">
+    <button class="ppg ui secondary button" id="miniModal">
       <span class="button-text">open modal</span>
     </button>
     <!-- mini modal -->
     <div class="ppg ui mini modal">
       <div class="header">
         <div class="modal-header">
-          Header
+          Mini Modal Header
         </div>
         <i class="material-icons" id="mini-modal-close">
          close
@@ -1235,6 +1235,55 @@
     </code>
     <hr>
     <p class="styleguide">tiny</p>
+    <button class="ppg ui secondary button" id="tinyModal">
+      <span class="button-text">open modal</span>
+    </button>
+    <!-- tiny modal -->
+    <div class="ppg ui tiny modal">
+      <div class="header">
+        <div class="modal-header">
+          Tiny Modal Header
+        </div>
+        <i class="material-icons" id="tiny-modal-close">
+          close
+        </i>
+      </div>
+      <div class="content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nulla atque quam molestias, 
+          reprehenderit sed aliquam provident est voluptate laborum!
+        </p>
+      </div>
+    </div>
+    <!-- tiny modal -->
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view html
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <code>
+              &lt;div&nbsp;class=&quot;ppg&nbsp;ui&nbsp;tiny&nbsp;modal&quot;&gt;<br/>
+              &nbsp;&nbsp;&lt;div&nbsp;class=&quot;header&quot;&gt;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;modal-header&quot;&gt;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tiny&nbsp;Modal&nbsp;Header<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;i&nbsp;class=&quot;material-icons&quot;&nbsp;id=&quot;tiny-modal-close&quot;&gt;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;close<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/i&gt;<br/>
+              &nbsp;&nbsp;&lt;/div&gt;<br/>&nbsp;&nbsp;&lt;div&nbsp;class=&quot;content&quot;&gt;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem&nbsp;ipsum,&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Hic&nbsp;nulla&nbsp;atque&nbsp;quam&nbsp;molestias,&nbsp;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reprehenderit&nbsp;sed&nbsp;aliquam&nbsp;provident&nbsp;est&nbsp;voluptate&nbsp;laborum!<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br/>&nbsp;&nbsp;&lt;/div&gt;<br/>&lt;/div&gt;
+          </code>
+        </p>
+      </div>
+    </div>
+    <p class="requires-comment">
+      requires script to close modal using 'x' icon
+    </p>
+    <code>
+        &lt;script&gt;<br/>&nbsp;&nbsp;//&nbsp;close&nbsp;tiny&nbsp;modal&nbsp;with&nbsp;modal&nbsp;'x'&nbsp;icon<br/>&nbsp;&nbsp;$('#tiny-modal-close').click(function()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;$('.ui.tiny.modal').modal('hide');<br/>&nbsp;&nbsp;})<br/>&lt;/script&gt;
+    </code>
     <hr>
     <p class="styleguide">small</p>
     <hr>
@@ -1295,15 +1344,31 @@
         $('.ui.mini.modal').modal('hide');
       })
     </script>
+    <script>
+      // styleguide: open tiny modal show with button
+      $('#tinyModal').click(function() {
+        $('.ui.tiny.modal').modal('show');
+      })
+    </script>
+    <script>
+      // close tiny modal with modal 'x' icon
+      $('#tiny-modal-close').click(function() {
+        $('.ui.tiny.modal').modal('hide');
+      })
+    </script>
   </body>
 </html>
 
 <!-- <div class="ui styled accordion">
-  <div class="title">
-    <i class="dropdown icon"></i>
-    view html
-  </div>
-  <div class="content">
-    <p class="transition visible" style="display: block !important;"></p>
-  </div>
-</div> -->
+    <div class="title">
+      <i class="dropdown icon"></i>
+      view html
+    </div>
+    <div class="content">
+      <p class="transition visible" style="display: block !important;">
+        <code>
+          
+        </code>
+      </p>
+    </div>
+  </div> -->
