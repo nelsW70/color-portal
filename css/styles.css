@@ -1045,11 +1045,6 @@ footer img {
 .ppg.ui.modal .header .material-icons {
   cursor: pointer;
 }
-@media only screen and (min-width: 960px) {
-  .ppg.ui.modal.mini.modal {
-    width: 500px;
-  }
-}
 
 /** FULL SCREEN BLACKOUT OVERLAY VISIBLE BELOW 960PX **/
 #blackout-overlay {

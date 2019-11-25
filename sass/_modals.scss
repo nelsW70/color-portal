@@ -27,10 +27,5 @@
         cursor: pointer;
       }
     }
-    @media only screen and (min-width: 960px) {
-      &.mini.modal {
-        width: 500px;
-      }
-    }
   }
 }
