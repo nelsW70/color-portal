@@ -22,17 +22,13 @@ table.ui.sortable.very.basic.striped.padded.table {
         width: 12px;
       }
       &.ascending:after {
-        content: '\f0d8';
+        font-family: 'Material Icons';
+        content: 'arrow_downward';
       }
       &.descending:after {
-        content: '\f0d7';
+        font-family: 'Material Icons';
+        content: 'arrow_upward';
       }
-      // &.ascending:after {
-      //   content: '↑';
-      // }
-      // &.descending:after {
-      //   content: '↓';
-      // }
       &.sorted {
         background-color: transparent;
       }
