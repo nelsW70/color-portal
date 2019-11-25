@@ -1018,6 +1018,14 @@ footer img {
   cursor: pointer;
 }
 
+.ui.dimmer.modals {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.ppg-modal.ui.modal {
+  border-radius: 3px;
+}
+
 /** FULL SCREEN BLACKOUT OVERLAY VISIBLE BELOW 960PX **/
 #blackout-overlay {
   position: fixed;

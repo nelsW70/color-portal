@@ -1181,6 +1181,36 @@
       </div>
     </div>
     <hr />
+    <h2 class="styleguide">modals</h2>
+    <p class="styleguide">mini</p>
+    <button class="ppg ui secondary button" id="miniModal">
+      <span class="button-text">view modal</span>
+    </button>
+    <!-- mini modal -->
+    <div class="ppg-modal ui mini modal">
+      <div class="header">
+        Header
+      </div>
+      <div class="content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nulla atque quam molestias, 
+          reprehenderit sed aliquam provident est voluptate laborum!</p>
+      </div>
+    </div>
+    <!-- mini modal -->
+    <hr>
+    <p class="styleguide">tiny</p>
+    <hr>
+    <p class="styleguide">small</p>
+    <hr>
+    <p class="styleguide">medium</p>
+    <hr>
+    <p class="styleguide">large</p>
+    <hr>
+    <p class="styleguide">fullscreen</p>
+    <hr>
+    <p class="styleguide">scrolling content</p>
+
+    <hr>
 
     <!-- Semantic UI -->
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
@@ -1217,6 +1247,13 @@
       // drag/drop table initialize
       $('tbody.drag-drop').sortable();
     </script>
+    <!-- modals -->
+    <script>
+      // mini modal initialize
+      $('#miniModal').click(function() {
+        $('.ui.mini.modal').modal('show');
+      })
+      </script>
   </body>
 </html>
 
