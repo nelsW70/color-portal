@@ -1076,7 +1076,6 @@
     <!-- Semantic UI -->
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 
-    <!-- JS scripts -->
     <!-- navbar hamburger animation -->
     <script src="js/navbar-menu-hamburger-animation.js"></script>
     <!-- toggles active state on project status buttons -->
@@ -1100,8 +1099,14 @@
       $('.ui.accordion').accordion();
     </script>
     <script>
-      // table sort initialize 
+      // sortable table initialize 
       $('table').tablesort();
+    </script>
+    <!-- jQuery-UI min.js for drag and drop table -->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script> 
+    <script>
+      // drag/drop table initialize
+      $('tbody').sortable();
     </script>
   </body>
 </html>
