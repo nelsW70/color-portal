@@ -62,12 +62,11 @@
           </p>
           <hr>
           <h4>Dependencies:</h4>
-          <p>-Semantic UI min.css</p>
-          <p>-jQuery min.js</p>
-          <p>-Material Icons</p>
-          <p>-Custom CSS (compiled from SASS)</p>
-          <p>-Semantic UI min.js</p>
-          <p>-Semantic UI table sort js</p>
+          <p>Semantic UI min.css</p>
+          <p>jQuery min.js</p>
+          <p>Material Icons</p>
+          <p>Custom CSS (compiled from SASS)</p>
+          <p>Semantic UI min.js</p>
           <hr>
           <p>
             <h5 class="requires-comment">insert in header tag</h5>
@@ -91,8 +90,6 @@
           <p>
             <code>
               &lt;!--&nbsp;Semantic&nbsp;UI&nbsp;--&gt;<br/>&lt;script&nbsp;src=&quot;https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js&quot;&gt;&lt;/script&gt;<br/>
-              <br/>&lt;!--&nbsp;Semantic&nbsp;UI&nbsp;Table&nbsp;Sort&nbsp;--&gt;<br/>
-              &lt;script&nbsp;src=&quot;https://semantic-ui.com/javascript/library/tablesort.js&quot;&gt;&lt;/script&gt;
             </code>
           </p>
         </p>
@@ -511,6 +508,119 @@
     <code>
       //&nbsp;table&nbsp;sort&nbsp;initialize&nbsp;<br/>$('table').tablesort();
     </code>
+    <p class="requires-comment" style="margin-top:3rem;">requires js script to sort</p>
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view js
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <code>
+            /*<br/>	A&nbsp;simple,&nbsp;lightweight&nbsp;jQuery&nbsp;plugin&nbsp;for&nbsp;creating&nbsp;sortable&nbsp;tables.<br/>
+              https://github.com/kylefox/jquery-tablesort<br/>	Version&nbsp;0.0.11<br/>*/<br/>
+              <br/>(function($)&nbsp;{<br/>&nbsp;&nbsp;$.tablesort&nbsp;=&nbsp;function($table,&nbsp;settings)&nbsp;{<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;self&nbsp;=&nbsp;this;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;this.$table&nbsp;=&nbsp;$table;<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;this.$thead&nbsp;=&nbsp;this.$table.find('thead');<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;this.settings&nbsp;=&nbsp;$.extend({},&nbsp;$.tablesort.defaults,&nbsp;settings);<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;this.$sortCells&nbsp;=<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.$thead.length&nbsp;&gt;&nbsp;0<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;this.$thead.find('th:not(.no-sort)')<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;this.$table.find('th:not(.no-sort)');<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;this.$sortCells.on('click.tablesort',&nbsp;function()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.sort($(this));<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;});<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.index&nbsp;=&nbsp;null;<br/>&nbsp;&nbsp;&nbsp;&nbsp;this.$th&nbsp;=&nbsp;null;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;this.direction&nbsp;=&nbsp;null;<br/>&nbsp;&nbsp;};<br/><br/>
+                  &nbsp;&nbsp;$.tablesort.prototype&nbsp;=&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;sort:&nbsp;function(th,&nbsp;direction)&nbsp;{<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;start&nbsp;=&nbsp;new&nbsp;Date(),<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self&nbsp;=&nbsp;this,<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table&nbsp;=&nbsp;this.$table,<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rowsContainer&nbsp;=<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table.find('tbody').length&nbsp;&gt;&nbsp;0&nbsp;?&nbsp;table.find('tbody')&nbsp;:&nbsp;table,<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rows&nbsp;=&nbsp;rowsContainer.find('tr').has('td,&nbsp;th'),<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cells&nbsp;=&nbsp;rows<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.find(':nth-child('&nbsp;+&nbsp;(th.index()&nbsp;+&nbsp;1)&nbsp;+&nbsp;')')<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.filter('td,&nbsp;th'),<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortBy&nbsp;=&nbsp;th.data().sortBy,<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortedMap&nbsp;=&nbsp;[];<br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;unsortedValues&nbsp;=&nbsp;cells.map(function(idx,&nbsp;cell)&nbsp;{<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(sortBy)<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;typeof&nbsp;sortBy&nbsp;===&nbsp;'function'<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;sortBy($(th),&nbsp;$(cell),&nbsp;self)<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;sortBy;<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$(this).data().sortValue&nbsp;!=&nbsp;null<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?&nbsp;$(this).data().sortValue<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;$(this).text();<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(unsortedValues.length&nbsp;===&nbsp;0)&nbsp;return;<br/>
+                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//click&nbsp;on&nbsp;a&nbsp;different&nbsp;column<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(this.index&nbsp;!==&nbsp;th.index())&nbsp;{<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.direction&nbsp;=&nbsp;'asc';<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.index&nbsp;=&nbsp;th.index();<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if&nbsp;(direction&nbsp;!==&nbsp;'asc'&nbsp;&amp;&amp;&nbsp;direction&nbsp;!==&nbsp;'desc')<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.direction&nbsp;=&nbsp;this.direction&nbsp;===&nbsp;'asc'&nbsp;?&nbsp;'desc'&nbsp;:&nbsp;'asc';<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;this.direction&nbsp;=&nbsp;direction;<br/><br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direction&nbsp;=&nbsp;this.direction&nbsp;==&nbsp;'asc'&nbsp;?&nbsp;1&nbsp;:&nbsp;-1;<br/>
+                        <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.$table.trigger('tablesort:start',&nbsp;[self]);<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.log('Sorting&nbsp;by&nbsp;'&nbsp;+&nbsp;this.index&nbsp;+&nbsp;'&nbsp;'&nbsp;+&nbsp;this.direction);<br/>
+                        <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Try&nbsp;to&nbsp;force&nbsp;a&nbsp;browser&nbsp;redraw<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.$table.css('display');<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Run&nbsp;sorting&nbsp;asynchronously&nbsp;on&nbsp;a&nbsp;timeout&nbsp;to&nbsp;force&nbsp;browser&nbsp;redraw&nbsp;after<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;`tablesort:start`&nbsp;callback.&nbsp;Also&nbsp;avoids&nbsp;locking&nbsp;up&nbsp;the&nbsp;browser&nbsp;too&nbsp;much.<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function()&nbsp;{<br/>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.$sortCells.removeClass(<br/>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.settings.asc&nbsp;+&nbsp;'&nbsp;'&nbsp;+&nbsp;self.settings.desc<br/>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);<br/>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(var&nbsp;i&nbsp;=&nbsp;0,&nbsp;length&nbsp;=&nbsp;unsortedValues.length;&nbsp;i&nbsp;&lt;&nbsp;length;&nbsp;i++)&nbsp;{<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortedMap.push({<br/>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index:&nbsp;i,<br/>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cell:&nbsp;cells[i],<br/>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;row:&nbsp;rows[i],<br/>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value:&nbsp;unsortedValues[i]<br/>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sortedMap.sort(function(a,&nbsp;b)&nbsp;{<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;self.settings.compare(a.value,&nbsp;b.value)&nbsp;*&nbsp;direction;<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/><br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$.each(sortedMap,&nbsp;function(i,&nbsp;entry)&nbsp;{<br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rowsContainer.append(entry.row);<br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br/><br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;th.addClass(self.settings[self.direction]);<br/><br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.log(<br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sort&nbsp;finished&nbsp;in&nbsp;'&nbsp;+<br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(new&nbsp;Date().getTime()&nbsp;-&nbsp;start.getTime())&nbsp;+<br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'ms'<br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);<br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.$table.trigger('tablesort:complete',&nbsp;[self]);<br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Try&nbsp;to&nbsp;force&nbsp;a&nbsp;browser&nbsp;redraw<br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.$table.css('display');<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unsortedValues.length&nbsp;&gt;&nbsp;2000&nbsp;?&nbsp;200&nbsp;:&nbsp;10<br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;},<br/><br/>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;log:&nbsp;function(msg)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;($.tablesort.DEBUG&nbsp;||&nbsp;this.settings.debug)&nbsp;&amp;&amp;<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console&nbsp;&amp;&amp;<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)&nbsp;{<br/>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log('[tablesort]&nbsp;'&nbsp;+&nbsp;msg);<br/>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;},<br/><br/>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;destroy:&nbsp;function()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.$sortCells.off('click.tablesort');<br/>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.$table.data('tablesort',&nbsp;null);<br/>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;null;<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;};<br/><br/>
+                                      &nbsp;&nbsp;$.tablesort.DEBUG&nbsp;=&nbsp;false;<br/><br/>&nbsp;&nbsp;$.tablesort.defaults&nbsp;=&nbsp;{<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;debug:&nbsp;$.tablesort.DEBUG,<br/>&nbsp;&nbsp;&nbsp;&nbsp;asc:&nbsp;'sorted&nbsp;ascending',<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;desc:&nbsp;'sorted&nbsp;descending',<br/>&nbsp;&nbsp;&nbsp;&nbsp;compare:&nbsp;function(a,&nbsp;b)&nbsp;{<br/>
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(a&nbsp;&gt;&nbsp;b)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;1;<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if&nbsp;(a&nbsp;&lt;&nbsp;b)&nbsp;{<br/>
+                                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;-1;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br/>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;0;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                                                &nbsp;&nbsp;};<br/><br/>&nbsp;&nbsp;$.fn.tablesort&nbsp;=&nbsp;function(settings)&nbsp;{<br/>
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;table,&nbsp;sortable,&nbsp;previous;<br/>
+                                                  &nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;this.each(function()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table&nbsp;=&nbsp;$(this);<br/>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;previous&nbsp;=&nbsp;table.data('tablesort');<br/>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(previous)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;previous.destroy();<br/>
+                                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table.data('tablesort',&nbsp;new&nbsp;$.tablesort(table,&nbsp;settings));<br/>
+                                                      &nbsp;&nbsp;&nbsp;&nbsp;});<br/>&nbsp;&nbsp;};<br/>})(window.Zepto&nbsp;||&nbsp;window.jQuery);<br/><br/>
+          </code>
+        </p>
+      </div>
+    </div>
     <hr>
     <h2 class="styleguide">dropdown select w/inline label (grey background)</h2>
     <!-- DROPDOWN W/INLINE LABEL -->
