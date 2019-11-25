@@ -622,6 +622,115 @@
       </div>
     </div>
     <hr>
+    <h2 class="styleguide">sortable table w/drag and drop rows</h2>
+    <table class="ui sortable very basic striped padded table">
+      <thead>
+        <tr>
+          <th scope="col">Project Name</th>
+          <th scope="col">Customer</th>
+          <th scope="col">Color Name</th>
+          <th scope="col">Program Name</th>
+          <th scope="col">Designer</th>
+          <th scope="col">Status</th>
+          <th scope="col">Comments</th>
+        </tr>
+      </thead>
+      <tbody class="drag-drop">
+        <tr>
+          <td><a href="">ALE19379</a></td>
+          <td>Nissan</td>
+          <td>A Flash</td>
+          <td><a href="">Dissan MXQ29 MY 2019</a></td>
+          <td>Hallie Ferguson</td>
+          <td><span class="dot dot--approved"></span>Approved</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td><a href="">BLE19379</a></td>
+          <td>Olympic</td>
+          <td>B Flash</td>
+          <td><a href="">Eissan MXQ29 MY 2019</a></td>
+          <td>Alvin Vega</td>
+          <td><span class="dot dot--approved"></span>Approved</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td><a href="">CLE19379</a></td>
+          <td>Paint</td>
+          <td>C Flash</td>
+          <td><a href="">Fissan MXQ29 MY 2019</a></td>
+          <td>Jared Luna</td>
+          <td><span class="dot dot--rejected"></span>Rejected</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td><a href="">DLE19379</a></td>
+          <td>Qbert</td>
+          <td>D Flash</td>
+          <td><a href="">Gissan MXQ29 MY 2019</a></td>
+          <td>Elijah Porter</td>
+          <td><span class="dot dot--pending"></span>Pending</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view html
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <code>
+            &lt;table&nbsp;class=&quot;ui&nbsp;sortable&nbsp;very&nbsp;basic&nbsp;striped&nbsp;padded&nbsp;table&quot;&gt;<br/>
+            &nbsp;&nbsp;&lt;thead&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Project&nbsp;Name&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Customer&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Color&nbsp;Name&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Program&nbsp;Name&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Designer&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Status&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Comments&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>&nbsp;&nbsp;&lt;/thead&gt;<br/>
+            &nbsp;&nbsp;&lt;tbody&nbsp;class=&quot;drag-drop&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;ALE19379&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Nissan&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;A&nbsp;Flash&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;Dissan&nbsp;MXQ29&nbsp;MY&nbsp;2019&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Hallie&nbsp;Ferguson&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;span&nbsp;class=&quot;dot&nbsp;dot--approved&quot;&gt;&lt;/span&gt;Approved&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;BLE19379&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Olympic&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;B&nbsp;Flash&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;Eissan&nbsp;MXQ29&nbsp;MY&nbsp;2019&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Alvin&nbsp;Vega&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;span&nbsp;class=&quot;dot&nbsp;dot--approved&quot;&gt;&lt;/span&gt;Approved&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;2&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;CLE19379&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Paint&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;C&nbsp;Flash&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;Fissan&nbsp;MXQ29&nbsp;MY&nbsp;2019&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jared&nbsp;Luna&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;span&nbsp;class=&quot;dot&nbsp;dot--rejected&quot;&gt;&lt;/span&gt;Rejected&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;DLE19379&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Qbert&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;D&nbsp;Flash&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;Gissan&nbsp;MXQ29&nbsp;MY&nbsp;2019&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Elijah&nbsp;Porter&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;span&nbsp;class=&quot;dot&nbsp;dot--pending&quot;&gt;&lt;/span&gt;Pending&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;4&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>&nbsp;&nbsp;&lt;/tbody&gt;<br/>&lt;/table&gt;
+          </code>
+        </p>
+      </div>
+    </div>
+    <p class="requires-comment">requires jQuery UI min.js and js script to initialize drag/drop </p>
+    <code>
+        &lt;!--&nbsp;jQuery-UI&nbsp;min.js&nbsp;for&nbsp;drag&nbsp;and&nbsp;drop&nbsp;table&nbsp;--&gt;<br/>&lt;script&nbsp;src=&quot;https://code.jquery.com/ui/1.12.0/jquery-ui.min.js&quot;&gt;&lt;/script&gt;&nbsp;<br/>
+        <br/>&lt;script&gt;<br/>&nbsp;&nbsp;//&nbsp;drag/drop&nbsp;table&nbsp;initialize<br/>&nbsp;&nbsp;$('tbody.drag-drop').sortable();<br/>&lt;/script&gt;
+    </code>
+    <hr>
     <h2 class="styleguide">dropdown select w/inline label (grey background)</h2>
     <!-- DROPDOWN W/INLINE LABEL -->
     <div class="inline-dropdown">
@@ -1106,7 +1215,7 @@
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script> 
     <script>
       // drag/drop table initialize
-      $('tbody').sortable();
+      $('tbody.drag-drop').sortable();
     </script>
   </body>
 </html>
