@@ -1037,10 +1037,13 @@ footer img {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   color: #ffffff;
+  padding: 0.675rem 0.75rem 0.675rem 1.25rem;
+  height: 48px;
+  line-height: 1;
+}
+.ppg.ui.modal .header .modal-header {
   font-size: 1.125rem !important;
   font-weight: 300;
-  padding: 0.675rem 1rem 0.675rem 1.25rem;
-  height: 48px;
 }
 .ppg.ui.modal .header .material-icons {
   cursor: pointer;

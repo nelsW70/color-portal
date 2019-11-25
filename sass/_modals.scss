@@ -1,9 +1,9 @@
-// background overlay for modal
+// background overlay for modals
 .ui.dimmer.modals {
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-// modal
+// modals
 .ppg.ui {
   &.modal {
     border-radius: $border-radius-three;
@@ -19,10 +19,13 @@
       border-top-left-radius: $border-radius-three;
       border-top-right-radius: $border-radius-three;
       color: $font-color-white-one;
-      font-size: 1.125rem !important;
-      font-weight: 300;
-      padding: 0.675rem 1rem 0.675rem 1.25rem;
+      padding: 0.675rem 0.75rem 0.675rem 1.25rem;
       height: 48px;
+      line-height: 1;
+      & .modal-header {
+        font-size: 1.125rem !important;
+        font-weight: 300;
+      }
       & .material-icons {
         cursor: pointer;
       }
