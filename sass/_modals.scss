@@ -4,25 +4,33 @@
 }
 
 // modal
-.ppg-modal.ui {
+.ppg.ui {
   &.modal {
     border-radius: $border-radius-three;
-    * {
+    & .modal-header,
+    p {
       font-family: $font-family-primary;
     }
     & .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       background-color: $background-color-gray-four;
       border-top-left-radius: $border-radius-three;
       border-top-right-radius: $border-radius-three;
       color: $font-color-white-one;
       font-size: 1.125rem !important;
       font-weight: 300;
-      padding: 0.675rem 1.25rem;
+      padding: 0.675rem 1rem 0.675rem 1.25rem;
+      height: 48px;
+      & .material-icons {
+        cursor: pointer;
+      }
     }
-  }
-  @media only screen and (min-width: 960px) {
-    &.mini.modal {
-      width: 500px;
+    @media only screen and (min-width: 960px) {
+      &.mini.modal {
+        width: 500px;
+      }
     }
   }
 }

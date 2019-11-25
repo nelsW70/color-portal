@@ -1183,13 +1183,18 @@
     <hr />
     <h2 class="styleguide">modals</h2>
     <p class="styleguide">mini</p>
-    <button class="ppg ui secondary button" id="miniModal">
-      <span class="button-text">view modal</span>
+    <button class="ppg ui primary button" id="miniModal">
+      <span class="button-text">open modal</span>
     </button>
     <!-- mini modal -->
-    <div class="ppg-modal ui mini modal">
+    <div class="ppg ui mini modal">
       <div class="header">
-        Header
+        <div class="modal-header">
+          Header
+        </div>
+        <i class="material-icons" id="mini-modal-close">
+         close
+        </i>
       </div>
       <div class="content">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nulla atque quam molestias, 
@@ -1249,9 +1254,15 @@
     </script>
     <!-- modals -->
     <script>
-      // mini modal initialize
+      // demo: open mini modal show
       $('#miniModal').click(function() {
         $('.ui.mini.modal').modal('show');
+      })
+      </script>
+      <script>
+      // demo: close mini modal with modal icon
+      $('#mini-modal-close').click(function() {
+        $('.ui.mini.modal').modal('hide');
       })
       </script>
   </body>

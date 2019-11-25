@@ -1022,23 +1022,31 @@ footer img {
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-.ppg-modal.ui.modal {
+.ppg.ui.modal {
   border-radius: 3px;
 }
-.ppg-modal.ui.modal * {
+.ppg.ui.modal .modal-header,
+.ppg.ui.modal p {
   font-family: "Suisse Intl", sans-serif;
 }
-.ppg-modal.ui.modal .header {
+.ppg.ui.modal .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #334756;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   color: #ffffff;
   font-size: 1.125rem !important;
   font-weight: 300;
-  padding: 0.675rem 1.25rem;
+  padding: 0.675rem 1rem 0.675rem 1.25rem;
+  height: 48px;
+}
+.ppg.ui.modal .header .material-icons {
+  cursor: pointer;
 }
 @media only screen and (min-width: 960px) {
-  .ppg-modal.ui.mini.modal {
+  .ppg.ui.modal.mini.modal {
     width: 500px;
   }
 }
