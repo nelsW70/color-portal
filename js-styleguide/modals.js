@@ -7,3 +7,13 @@ $('#miniModal').click(function() {
 $('#tinyModal').click(function() {
   $('.ui.tiny.modal').modal('show');
 });
+
+// styleguide: open small modal show with button
+$('#smallModal').click(function() {
+  $('.ui.small.modal').modal('show');
+});
+
+// styleguide: open medium modal show with button
+$('#mediumModal').click(function() {
+  $('.ui.medium.modal').modal('show');
+});

@@ -1287,15 +1287,88 @@
         &nbsp;&nbsp;})<br/>&lt;/script&gt;
     </code>
     <hr>
-    <p class="styleguide">small</p>
+    <p class="styleguide">small modal</p>
+    <button class="ppg ui secondary button" id="smallModal">
+      <span class="button-text">open modal</span>
+    </button>
+    <!-- small modal -->
+    <div class="ppg ui small modal">
+      <div class="header">
+        <div class="modal-header">
+          Small Modal Header
+        </div>
+        <i class="material-icons" id="small-modal-close">
+          close
+        </i>
+      </div>
+      <div class="content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nulla atque quam molestias, 
+          reprehenderit sed aliquam provident est voluptate laborum!
+        </p>
+      </div>
+    </div>
+    <!-- small modal -->
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view html
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <code>
+            &lt;div&nbsp;class=&quot;ppg&nbsp;ui&nbsp;small&nbsp;modal&quot;&gt;<br/>
+            &nbsp;&nbsp;&lt;div&nbsp;class=&quot;header&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;modal-header&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Small&nbsp;Modal&nbsp;Header<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;i&nbsp;class=&quot;material-icons&quot;&nbsp;id=&quot;small-modal-close&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;close<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/i&gt;<br/>
+            &nbsp;&nbsp;&lt;/div&gt;<br/>
+            &nbsp;&nbsp;&lt;div&nbsp;class=&quot;content&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Lorem&nbsp;ipsum,&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Hic&nbsp;nulla&nbsp;atque&nbsp;quam&nbsp;molestias,&nbsp;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reprehenderit&nbsp;sed&nbsp;aliquam&nbsp;provident&nbsp;est&nbsp;voluptate&nbsp;laborum!<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br/>&nbsp;&nbsp;&lt;/div&gt;<br/>&lt;/div&gt;
+          </code>
+        </p>
+      </div>
+    </div>
+    <p class="requires-comment">
+      requires script to close modal using 'x' icon
+    </p>
+    <code>
+      &lt;script&gt;<br/>&nbsp;&nbsp;//&nbsp;close&nbsp;small&nbsp;modal&nbsp;with&nbsp;modal&nbsp;'x'&nbsp;icon<br/>
+      &nbsp;&nbsp;$('#small-modal-close').click(function()&nbsp;{<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;$('.ui.small.modal').modal('hide');<br/>&nbsp;&nbsp;});<br/>&lt;/script&gt;
+    </code>
     <hr>
-    <p class="styleguide">medium</p>
+    <p class="styleguide">medium modal</p>
+    <button class="ppg ui secondary button" id="mediumModal">
+      <span class="button-text">open modal</span>
+    </button>
+    <!-- medium modal -->
+    <div class="ppg ui medium modal">
+      <div class="header">
+        <div class="modal-header">
+          Medium Modal Header
+        </div>
+        <i class="material-icons" id="medium-modal-close">
+          close
+        </i>
+      </div>
+      <div class="content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nulla atque quam molestias, 
+          reprehenderit sed aliquam provident est voluptate laborum!
+        </p>
+      </div>
+    </div>
+    <!-- medium modal -->
     <hr>
-    <p class="styleguide">large</p>
+    <p class="styleguide">large modal</p>
     <hr>
-    <p class="styleguide">fullscreen</p>
+    <p class="styleguide">fullscreen modal</p>
     <hr>
-    <p class="styleguide">scrolling content</p>
+    <p class="styleguide">scrolling content modal</p>
     <hr>
 
     <!-- Semantic UI -->
@@ -1328,7 +1401,7 @@
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script> 
     <!-- Table Drag/Drop Initialize -->
     <script src="js/table-drag-drop-initialize.js"></script>
-    <!-- modals --> 
+    <!-- Modals --> 
     <script src="js/modals/modals.js"></script>
   </body>
 </html>
