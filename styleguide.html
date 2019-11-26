@@ -1300,7 +1300,6 @@
 
     <!-- Semantic UI -->
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-
     <!-- navbar hamburger animation -->
     <script src="js/navbar-menu-hamburger-animation.js"></script>
     <!-- toggles active state on project status buttons -->
@@ -1321,33 +1320,16 @@
     <script src="js/table-sort.js"></script>
     <!-- Styleguide Modals -->
     <script src="js-styleguide/modals.js"></script>
-    <script>
-      // styleguide accordion initialize
-      $('.ui.accordion').accordion();
-    </script>
-    <script>
-      // sortable table initialize 
-      $('table').tablesort();
-    </script>
+    <!-- Styleguide Accordion -->
+    <script src="js-styleguide/accordion.js"></script>
+    <!-- Table Sort Initialize -->
+    <script src="js/table-sort-initialize.js"></script>
     <!-- jQuery-UI min.js for drag and drop table -->
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script> 
-    <script>
-      // drag/drop table initialize
-      $('tbody.drag-drop').sortable();
-    </script>
+    <!-- Table Drag/Drop Initialize -->
+    <script src="js/table-drag-drop-initialize.js"></script>
     <!-- modals --> 
-    <script>
-      // close mini modal with modal 'x' icon
-      $('#mini-modal-close').click(function() {
-        $('.ui.mini.modal').modal('hide');
-      })
-    </script>
-    <script>
-      // close tiny modal with modal 'x' icon
-      $('#tiny-modal-close').click(function() {
-        $('.ui.tiny.modal').modal('hide');
-      })
-    </script>
+    <script src="js/modals/modals.js"></script>
   </body>
 </html>
 
