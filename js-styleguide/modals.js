@@ -17,3 +17,18 @@ $('#smallModal').click(function() {
 $('#mediumModal').click(function() {
   $('.ui.medium.modal').modal('show');
 });
+
+// styleguide: open large modal show with button
+$('#largeModal').click(function() {
+  $('.ui.large.modal').modal('show');
+});
+
+// styleguide: open fullscreen modal show with button
+$('#fullscreenModal').click(function() {
+  $('.ui.fullscreen.modal').modal('show');
+});
+
+// styleguide: open scrolling content modal show with button
+$('#longerModal').click(function() {
+  $('.ui.longer.modal').modal('show');
+});
