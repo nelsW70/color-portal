@@ -1,14 +1,8 @@
 /** TABLES **/
 
-table.ui.sortable.very.basic.striped.padded.table {
-  border-bottom: solid 1px $background-color-gray-six;
-  border-radius: 0;
-
-  & thead {
-    & tr:first-child > th:first-child,
-    & tr:first-child > th:last-child {
-      border-radius: 0;
-    }
+table.ui {
+  // sortable header w/icons
+  &.sortable.very.basic.striped.padded.table {
     & th {
       position: relative;
       border-top: solid 1px $background-color-gray-six;
@@ -36,42 +30,57 @@ table.ui.sortable.very.basic.striped.padded.table {
       }
     }
   }
+  // basic header without icons
+  &.very.basic.striped.padded.table {
+    border-bottom: solid 1px $background-color-gray-six;
+    border-radius: 0;
 
-  & tbody tr {
-    cursor: pointer;
-
-    &:nth-child(1n) {
-      background-color: $background-color-gray-five !important;
+    & thead {
+      & tr:first-child > th:first-child,
+      & tr:first-child > th:last-child {
+        border-radius: 0;
+      }
+      & th {
+        border-top: solid 1px $background-color-gray-six;
+        border-bottom: solid 1px $background-color-gray-six;
+        border-left: none;
+      }
     }
 
-    &:nth-child(2n) {
-      background-color: transparent !important;
-    }
+    & tbody tr {
+      cursor: pointer;
 
-    &:hover {
-      background-color: $background-color-blue-six !important;
-    }
+      &:nth-child(1n) {
+        background-color: $background-color-gray-five !important;
+      }
+      &:nth-child(2n) {
+        background-color: transparent !important;
+      }
+      &:hover {
+        background-color: $background-color-blue-six !important;
+      }
 
-    & td {
-      border-top: 1px solid transparent;
+      & td {
+        border-top: 1px solid transparent;
 
-      /* TABLE STATUS INDICATOR DOTS */
-      & .dot {
-        height: 9px;
-        width: 9px;
-        background-color: $background-color-white-three;
-        border-radius: 50%;
-        display: inline-block;
-        margin-right: 6px;
+        /* TABLE STATUS INDICATOR DOTS */
+        & .dot {
+          height: 9px;
+          width: 9px;
+          background-color: $background-color-white-three;
+          border-radius: 50%;
+          display: inline-block;
+          margin-right: 6px;
 
-        &--approved {
-          background-color: $background-color-green-one;
-        }
-        &--pending {
-          background-color: $background-color-orange-one;
-        }
-        &--rejected {
-          background-color: $background-color-red-one;
+          &--approved {
+            background-color: $background-color-green-one;
+          }
+          &--pending {
+            background-color: $background-color-orange-one;
+          }
+          &--rejected {
+            background-color: $background-color-red-one;
+          }
         }
       }
     }
