@@ -35,6 +35,7 @@ p.styleguide.subheader {
 
 .requires-comment.requires-comment--detail {
   margin-bottom: 3rem;
+  max-width: 35rem;
 }
 
 .requires-comment:before {
@@ -66,7 +67,7 @@ p.styleguide.subheader {
   color: rgba(0, 0, 0, 0.95) !important;
 }
 
-.documentation-section hr {
+.half-width-hr {
   width: 50%;
 }
 
