@@ -32,7 +32,7 @@
     <title>ColorPortal Styleguide</title>
   </head>
   <body>
-    <h1 class="styleguide">Components</h1>
+    <h1>Components</h1>
     <div class="ui styled accordion documentation-section">
       <div class="title">
         <i class="dropdown icon"></i>
@@ -96,9 +96,9 @@
       </div>
     </div>
     <hr>
-    <h2 class="styleguide header-detail">
+    <h3 class="header-detail">
       colorportal header
-    </h2>
+    </h3>
     <p class="requires-comment requires-comment--detail">
       will break below 960px so use blackoutscreen component on all pages
     </p>
@@ -301,7 +301,7 @@
       </div>
     </div>
     <hr />
-    <h2 class="styleguide">footer</h2>
+    <h3 class="styleguide">footer</h3>
     <!-- FOOTER -->
     <footer>
       <img src="assets/PPG_Blue_Bug.png" alt="PPG Logo" />
@@ -327,7 +327,7 @@
       </div>
     </div>
     <hr />
-    <h2 class="styleguide header-detail">blackout screen</h2>
+    <h3 class="header-detail">blackout screen</h3>
     <p class="requires-comment">prevents ColorPortal site being viewed on screens below 960px</p>
     <p class="requires-comment requires-comment--detail">
       collapse browser window to view blackout screen
@@ -365,7 +365,7 @@
       </div>
     </div>
     <hr />
-    <h2 class="styleguide">breadcrumbs</h2>
+    <h3 class="styleguide">breadcrumbs</h3>
     <!-- BREADCRUMBS -->
     <div class="breadcrumbs-row">
       <nav aria-label="breadcrumb">
@@ -401,7 +401,7 @@
       </div>
     </div>
     <hr />
-    <h2 class="styleguide">basic table</h2>
+    <h3 class="styleguide">basic table</h3>
     <table class="ui very basic striped padded table">
       <thead>
         <tr>
@@ -453,7 +453,62 @@
         </tr>
       </tbody>
     </table>
-    <h2 class="styleguide">sortable table</h2>
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view html
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <code>
+            &lt;table&nbsp;class=&quot;ui&nbsp;very&nbsp;basic&nbsp;striped&nbsp;padded&nbsp;table&quot;&gt;<br/>
+            &nbsp;&nbsp;&lt;thead&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Project&nbsp;Name&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Customer&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Color&nbsp;Name&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Program&nbsp;Name&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Designer&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Status&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&nbsp;scope=&quot;col&quot;&gt;Comments&lt;/th&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>&nbsp;&nbsp;&lt;/thead&gt;<br/>&nbsp;&nbsp;&lt;tbody&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;ALE19379&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Nissan&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;A&nbsp;Flash&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;Dissan&nbsp;MXQ29&nbsp;MY&nbsp;2019&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Hallie&nbsp;Ferguson&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;span&nbsp;class=&quot;dot&nbsp;dot--approved&quot;&gt;&lt;/span&gt;Approved&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;BLE19379&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Olympic&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;B&nbsp;Flash&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;Eissan&nbsp;MXQ29&nbsp;MY&nbsp;2019&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Alvin&nbsp;Vega&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;span&nbsp;class=&quot;dot&nbsp;dot--approved&quot;&gt;&lt;/span&gt;Approved&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;2&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;CLE19379&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Paint&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;C&nbsp;Flash&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;Fissan&nbsp;MXQ29&nbsp;MY&nbsp;2019&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jared&nbsp;Luna&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;span&nbsp;class=&quot;dot&nbsp;dot--rejected&quot;&gt;&lt;/span&gt;Rejected&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;DLE19379&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Qbert&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;D&nbsp;Flash&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;a&nbsp;href=&quot;&quot;&gt;Gissan&nbsp;MXQ29&nbsp;MY&nbsp;2019&lt;/a&gt;&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Elijah&nbsp;Porter&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;span&nbsp;class=&quot;dot&nbsp;dot--pending&quot;&gt;&lt;/span&gt;Pending&lt;/td&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;4&lt;/td&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>&nbsp;&nbsp;&lt;/tbody&gt;<br/>&lt;/table&gt;
+          </code>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <h3 class="styleguide">sortable table</h3>
     <table class="ui sortable very basic striped padded table">
       <thead>
         <tr>
@@ -674,7 +729,7 @@
       </div>
     </div>
     <hr>
-    <h2 class="styleguide">sortable table w/drag and drop rows</h2>
+    <h3 class="styleguide">sortable table w/drag and drop rows</h3>
     <table class="ui sortable very basic striped padded table">
       <thead>
         <tr>
@@ -783,7 +838,7 @@
         <br/>&lt;script&gt;<br/>&nbsp;&nbsp;//&nbsp;drag/drop&nbsp;table&nbsp;initialize<br/>&nbsp;&nbsp;$('tbody.drag-drop').sortable();<br/>&lt;/script&gt;
     </code>
     <hr>
-    <h2 class="styleguide">dropdown select w/inline label (grey background)</h2>
+    <h3 class="styleguide">dropdown select w/inline label (grey background)</h3>
     <!-- DROPDOWN W/INLINE LABEL -->
     <div class="inline-dropdown">
       <div class="label label--large mr-1">Items per page</div>
@@ -829,7 +884,7 @@
       //&nbsp;intialize&nbsp;semantic&nbsp;ui&nbsp;dropdown<br />$('.ui.dropdown').dropdown();
     </code>
     <hr />
-    <h2 class="styleguide">pagination search input w/inline label and link</h2>
+    <h3 class="styleguide">pagination search input w/inline label and link</h3>
     <!-- PAGINATION SEARCH SMALL INPUT WITH INLINE LABEL AND LINK  -->
     <div class="pagination-search">
       <label for="goToPage" class="label label--large mr-1">Go to page</label>
@@ -860,7 +915,7 @@
       </div>
     </div>
     <hr />
-    <h2 class="styleguide">pagination navigation</h2>
+    <h3 class="styleguide">pagination navigation</h3>
     <!-- PAGINATION BUTTONS -->
     <div class="pagination-buttons">
       <div class="ui pagination menu">
@@ -927,7 +982,7 @@
       </div>
     </div>
     <hr />
-    <h2 class="styleguide">buttons</h2>
+    <h3 class="styleguide">buttons</h3>
     <p class="styleguide">primary</p>
     <!-- PRIMARY BUTTON -->
     <button class="ppg ui primary button">
@@ -975,7 +1030,6 @@
         </p>
       </div>
     </div>
-
     <hr />
     <p class="styleguide">tertiary w/icon</p>
     <!-- TERTIARY W/ICON -->
@@ -1069,7 +1123,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;});
     </code>
     <hr />
-    <h2 class="styleguide">inputs</h2>
+    <h3 class="styleguide">inputs</h3>
     <p class="styleguide">default input</p>
     <!-- INPUT -->
     <div class="ui icon input">
@@ -1168,7 +1222,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;source:&nbsp;content<br />&nbsp;&nbsp;&nbsp;&nbsp;});
     </code>
     <hr />
-    <h2 class="styleguide">checkbox</h2>
+    <h3 class="styleguide">checkbox</h3>
     <!-- CHECKBOX -->
     <div class="custom-checkbox">
       <input
@@ -1204,7 +1258,7 @@
       </div>
     </div>
     <hr />
-    <h2 class="styleguide">radio button w/hidden label</h2>
+    <h3 class="styleguide">radio button w/accessibly hidden label</h3>
     <!-- RADIO BUTTON WITH HIDDEN LABEL -->
     <div class="ppg-custom-radio ui radio checkbox">
       <input type="radio" name="radio" id="radio" class="demo-radio" />
@@ -1233,7 +1287,7 @@
       </div>
     </div>
     <hr />
-    <h2 class="styleguide">modals</h2>
+    <h3 class="styleguide">modals</h3>
     <p class="styleguide">mini modal</p>
     <button class="ppg ui secondary button" id="miniModal">
       <span class="button-text">open modal</span>

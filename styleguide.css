@@ -8,14 +8,13 @@ hr {
   margin: 1.5rem 0;
 }
 
-h1.styleguide {
-  margin-bottom: 1rem;
-}
-
-h2.styleguide {
+/* h2.styleguide {
   font-size: 1.25rem;
   margin-bottom: 3rem;
   text-decoration: underline;
+} */
+h3.styleguide {
+  margin-bottom: 2.5rem;
 }
 
 .header-detail {
