@@ -72,4 +72,6 @@ p.styleguide.subheader {
 
 .typography-display-code {
   margin-top: 0.75rem;
+  background-color: #d3d3d391;
+  width: fit-content;
 }
