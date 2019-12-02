@@ -69,3 +69,7 @@ p.styleguide.subheader {
 .documentation-section hr {
   width: 50%;
 }
+
+.typography-display-code {
+  margin-top: 0.75rem;
+}
