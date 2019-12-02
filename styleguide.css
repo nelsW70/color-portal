@@ -16,19 +16,6 @@ h3.styleguide {
   margin-bottom: 2.5rem;
 }
 
-.header-detail {
-  margin-bottom: 1rem !important;
-}
-
-p.styleguide {
-  margin-bottom: 2rem;
-}
-
-p.styleguide.subheader {
-  font-weight: 600;
-  text-decoration: underline;
-}
-
 .requires-comment.requires-urgent {
   font-weight: 500;
 }
