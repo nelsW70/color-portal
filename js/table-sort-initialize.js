@@ -1,2 +1,2 @@
 // sortable table initialize
-$('table').tablesort();
+$('.sortable.table').tablesort();
