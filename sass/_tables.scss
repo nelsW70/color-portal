@@ -18,12 +18,12 @@ table.ui {
       &.ascending:after {
         font-family: 'Material Icons';
         content: 'arrow_downward';
-        -webkit-font-feature-settings: 'liga';
+        font-feature-settings: 'liga';
       }
       &.descending:after {
         font-family: 'Material Icons';
         content: 'arrow_upward';
-        -webkit-font-feature-settings: 'liga';
+        font-feature-settings: 'liga';
       }
       &.sorted {
         background-color: transparent;
