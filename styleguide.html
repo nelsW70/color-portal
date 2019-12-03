@@ -98,18 +98,17 @@
     <hr>
     <h2 class="styleguide mb-2">Typography</h2>
     <p class="requires-comment requires-comment--detail">
-      The styleguide uses Suisse Intl so if a different font is used font-weights will 
+      The styleguide uses Suisse Intl. If a different font is used font-weights will 
       need to be adjusted in variables.scss as all fonts may not have the same weights 
       available
     </p>
     <div class="ui styled accordion typography">
       <div class="title">
         <i class="dropdown icon"></i>
-        view typography
+        font-weight classes
       </div>
-      <div class="content">
+      <div class="content mt-2">
         <div class="transition visible" style="display: block !important;">
-          <h3 class="styleguide mt-3">font weight utility classes</h3>
         <h1 class="font-weight-light">h1 font-weight-light (100)</h1>
         <div class="typography-display-code">
           <code>
@@ -676,7 +675,7 @@
     </div>
     <hr />
     <h3 class="styleguide">tables</h3>
-    <h4 class="mb-4 font-weight-normal">basic table</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">basic table</h4>
     <table class="ui very basic striped padded table">
       <thead>
         <tr>
@@ -783,7 +782,7 @@
       </div>
     </div>
     <hr>
-    <h4 class="mb-4 font-weight-normal">sortable table</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">sortable table</h4>
     <table class="ui sortable very basic striped padded table">
       <thead>
         <tr>
@@ -1004,7 +1003,7 @@
       </div>
     </div>
     <hr>
-    <h4 class="mb-4 font-weight-normal">sortable table w/drag and drop rows</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">sortable table w/drag and drop rows</h4>
     <table class="ui sortable very basic striped padded table">
       <thead>
         <tr>
@@ -1258,7 +1257,7 @@
     </div>
     <hr />
     <h3 class="styleguide">buttons</h3>
-    <h4 class="mb-4 font-weight-normal">primary</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">primary</h4>
     <!-- PRIMARY BUTTON -->
     <button class="ppg ui primary button">
       <i class="material-icons mr-1">add_box</i>
@@ -1282,7 +1281,7 @@
       </div>
     </div>
     <hr />
-    <h4 class="mb-4 font-weight-normal">secondary</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">secondary</h4>
     <!-- SECONDARY BUTTON -->
     <button class="ppg ui secondary button">
       <i class="material-icons mr-1">list</i>
@@ -1306,7 +1305,7 @@
       </div>
     </div>
     <hr />
-    <h4 class="mb-4 font-weight-normal">tertiary w/icon</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">tertiary w/icon</h4>
     <!-- TERTIARY W/ICON -->
     <button class="ppg ui small button btn-print">
       <i class="material-icons material-icons--print mr-1">print</i>
@@ -1330,7 +1329,7 @@
     </div>
 
     <hr />
-    <h4 class="mb-4 font-weight-normal">small button group w/stacked label</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">small button group w/stacked label</h4>
     <!-- SMALL BUTTON GROUP W/LABEL-->
     <div class="buttons-container">
       <div class="label label--stacked">Show:</div>
@@ -1399,7 +1398,7 @@
     </code>
     <hr />
     <h3 class="styleguide">inputs</h3>
-    <h4 class="mb-4 font-weight-normal">default input</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">input search</h4>
     <!-- INPUT -->
     <div class="ui icon input">
       <input
@@ -1430,7 +1429,24 @@
       </div>
     </div>
     <hr />
-    <h4 class="mb-4 font-weight-normal">input w/predictive search and label</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">input required w/error message</h4>
+    <!-- REQUIRED INPUT W/ERROR MESSAGE -->
+    <div class="search-container required-field">
+      <label for="requiredInput" class="label label--stacked label--required">Customer</label>
+        <div class="ui icon input">
+          <input
+            id="requiredInput"
+            type="search"
+            placeholder="Placeholder"
+            class='required-input'
+            required
+          />
+        </div>
+        <div class="required-error-message">Required error message</div>
+    </div>
+    <!-- REQUIRED INPUT W/ERROR MESSAGE -->
+    <hr>
+    <h4 class="mb-4 font-weight-semi-bold italic">input w/predictive search and label</h4>
     <!-- INPUT W/PREDICTIVE SEARCH AND LABEL -->
     <div class="search-container">
       <label for="inputID" class="label label--stacked">Customer</label>
@@ -1563,7 +1579,7 @@
     </div>
     <hr />
     <h3 class="styleguide">modals</h3>
-    <h4 class="mb-4 font-weight-normal">mini modal</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">mini modal</h4>
     <button class="ppg ui secondary button" id="miniModal">
       <span class="button-text">open modal</span>
     </button>
@@ -1619,7 +1635,7 @@
         &nbsp;&nbsp;})<br/>&lt;/script&gt;
     </code>
     <hr>
-    <h4 class="mb-4 font-weight-normal">tiny modal</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">tiny modal</h4>
     <button class="ppg ui secondary button" id="tinyModal">
       <span class="button-text">open modal</span>
     </button>
@@ -1676,7 +1692,7 @@
         &nbsp;&nbsp;})<br/>&lt;/script&gt;
     </code>
     <hr>
-    <h4 class="mb-4 font-weight-normal">small modal</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">small modal</h4>
     <button class="ppg ui secondary button" id="smallModal">
       <span class="button-text">open modal</span>
     </button>
@@ -1720,7 +1736,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;$('.ui.small.modal').modal('hide');<br/>&nbsp;&nbsp;});<br/>&lt;/script&gt;
     </code>
     <hr>
-    <h4 class="mb-4 font-weight-normal">medium modal</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">medium modal</h4>
     <button class="ppg ui secondary button" id="mediumModal">
       <span class="button-text">open modal</span>
     </button>
@@ -1764,7 +1780,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;$('.ui.medium.modal').modal('hide');<br/>&nbsp;&nbsp;});<br/>&lt;/script&gt;
     </code>
     <hr>
-    <h4 class="mb-4 font-weight-normal">large modal</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">large modal</h4>
     <button class="ppg ui secondary button" id="largeModal">
       <span class="button-text">open modal</span>
     </button>
@@ -1808,7 +1824,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;$('.ui.large.modal').modal('hide');<br/>&nbsp;&nbsp;});<br/>&lt;/script&gt;
     </code>
     <hr>
-    <h4 class="mb-4 font-weight-normal">fullscreen modal</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">fullscreen modal</h4>
     <button class="ppg ui secondary button" id="fullscreenModal">
       <span class="button-text">open modal</span>
     </button>
@@ -1852,7 +1868,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;$('.ui.fullscreen.modal').modal('hide');<br/>&nbsp;&nbsp;});<br/>&lt;/script&gt;
     </code>
     <hr>
-    <h4 class="mb-4 font-weight-normal">scrolling content modal</h4>
+    <h4 class="mb-4 font-weight-semi-bold italic">scrolling content modal</h4>
     <button class="ppg ui secondary button" id="longerModal">
       <span class="button-text">open modal</span>
     </button>
@@ -2083,6 +2099,8 @@
     <script src="js/table-drag-drop-initialize.js"></script>
     <!-- Modals --> 
     <script src="js/modals.js"></script>
+    <!-- Fake Validation Demo -->
+    <script src="js-styleguide/fake-validation.js"></script>
   </body>
 </html>
 

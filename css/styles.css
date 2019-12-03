@@ -218,7 +218,7 @@ a:hover {
   color: #ffffff;
 }
 
-/** TYPOGRAPHY UTILITY CLASSES**/
+/** TYPOGRAPHY UTILITY CLASSES **/
 /* FONT WEIGHT */
 .font-weight-light {
   font-weight: 100;
@@ -241,6 +241,19 @@ a:hover {
 }
 
 /* TEXT TRANSFORM */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+/* FONT STYLE */
+.italic {
+  font-style: italic;
+}
+
 /* FONT COLORS*/
 .accessibly-hidden {
   position: absolute !important;
@@ -359,6 +372,54 @@ a:hover {
 
 .pl-2 {
   padding-left: 1rem !important;
+}
+
+.pt-3 {
+  padding-top: 1.5rem !important;
+}
+
+.pr-3 {
+  padding-right: 1.5rem !important;
+}
+
+.pb-3 {
+  padding-bottom: 1.5rem !important;
+}
+
+.pl-3 {
+  padding-left: 1.5rem !important;
+}
+
+.pt-4 {
+  padding-top: 2rem !important;
+}
+
+.pr-4 {
+  padding-right: 2rem !important;
+}
+
+.pb-4 {
+  padding-bottom: 2rem !important;
+}
+
+.pl-4 {
+  padding-left: 2rem !important;
+}
+
+.pt-5 {
+  padding-top: 5rem !important;
+}
+
+.pr-5 {
+  padding-right: 5rem !important;
+}
+
+.pb-5 {
+  padding-bottom: 5rem !important;
+}
+
+.pl-5 {
+  padding-left: 5rem !important;
 }
 
 /** CONTAINERS AND LAYOUT **/
@@ -979,6 +1040,30 @@ input[type=search]::-webkit-search-cancel-button {
 }
 .search-container .ui.search .prompt:focus {
   border: 1px solid #1966ec;
+}
+
+/* REQUIRED INPUT W/ERROR MESSAGE */
+.search-container.required-field {
+  min-height: 94px;
+}
+.search-container.required-field .ui.icon.input input {
+  padding: 0.59375rem 0.75rem 0.59375rem 0.875rem !important;
+}
+.search-container.required-field .ui.icon.input input.input-invalid {
+  border: 1px solid #ce3f11;
+}
+.search-container.required-field .label--required:before {
+  content: "* ";
+  color: #ce3f11;
+}
+.search-container.required-field .required-error-message {
+  color: #ce3f11;
+  font-size: 0.875rem;
+  margin-top: 0.35rem;
+  visibility: hidden;
+}
+.search-container.required-field .required-error-message.show-error-message {
+  visibility: visible;
 }
 
 /* PAGINATION SEARCH SMALL INPUT WITH INLINE LABEL AND LINK */

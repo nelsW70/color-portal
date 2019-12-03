@@ -1,4 +1,4 @@
-/** TYPOGRAPHY UTILITY CLASSES**/
+/** TYPOGRAPHY UTILITY CLASSES **/
 
 /* FONT WEIGHT */
 .font-weight-light {
@@ -18,6 +18,17 @@
 }
 
 /* TEXT TRANSFORM */
-// add vars to sass file
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+/* FONT STYLE */
+.italic {
+  font-style: italic;
+}
 
 /* FONT COLORS*/

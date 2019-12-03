@@ -28,17 +28,17 @@ h3.styleguide {
 
 .requires-comment:before {
   content: '* ';
-  color: rgb(180, 3, 3);
+  color: #ce3f11;
 }
 
 .requires-urgent:before {
   content: ' ***';
-  color: rgb(180, 3, 3);
+  color: #ce3f11;
 }
 
 .requires-urgent:after {
   content: ' ***';
-  color: rgb(180, 3, 3);
+  color: #ce3f11;
 }
 
 .ui.styled.accordion {
