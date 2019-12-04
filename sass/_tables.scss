@@ -91,7 +91,8 @@ table.ui.table {
             }
             & .comment {
               &--no {
-                color: $font-color-gray-four;
+                // darkended for accessibility contrast
+                color: darken($font-color-gray-four, $amount: 20%);
               }
               &--yes {
                 color: $font-color-blue-one;
