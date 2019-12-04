@@ -66,10 +66,14 @@ table.ui {
         /* COMMENT ICON/COUNT CONTAINER */
         & .comment-container {
           display: flex;
+          padding-left: 1rem;
 
           &__icon {
             line-height: 8px;
             margin-right: 0.25rem;
+            & .material-icons {
+              font-size: 21px;
+            }
             & .comment {
               &--no {
                 color: $font-color-gray-four;

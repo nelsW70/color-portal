@@ -1139,10 +1139,14 @@ table.ui.very.basic.striped.padded.table tbody tr td {
 }
 table.ui.very.basic.striped.padded.table tbody tr td .comment-container {
   display: flex;
+  padding-left: 1rem;
 }
 table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon {
   line-height: 8px;
   margin-right: 0.25rem;
+}
+table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon .material-icons {
+  font-size: 21px;
 }
 table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon .comment--no {
   color: #90a8ba;
