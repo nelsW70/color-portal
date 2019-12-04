@@ -36,23 +36,6 @@ a {
   }
 }
 
-.ui.table {
-  & thead th {
-    font-size: 0.8125rem;
-    font-weight: $font-weight-semi-bold;
-    color: $font-color-primary;
-  }
-  & td {
-    font-size: 0.8125rem;
-    color: $font-color-gray-one;
-
-    & a {
-      color: $font-color-blue-one;
-      cursor: pointer;
-    }
-  }
-}
-
 /* USER INFO */
 .user-info__text {
   font-weight: $font-weight-medium;
@@ -96,6 +79,7 @@ a {
   font-size: 0.875rem;
 }
 
+// move to pagination!!!
 .pagination-row .ui.fluid.selection.dropdown {
   & .text,
   & .item {
@@ -104,6 +88,7 @@ a {
 }
 
 /* ITEM COUNT */
+// move to pagination!!!
 .item-count {
   font-size: 0.875rem;
   color: $font-color-primary;

@@ -1,6 +1,21 @@
 /** TABLES **/
 
-table.ui {
+table.ui.table {
+  // all tables
+  & thead th {
+    font-size: 0.8125rem;
+    font-weight: $font-weight-semi-bold;
+    color: $font-color-primary;
+  }
+  & td {
+    font-size: 0.8125rem;
+    color: $font-color-gray-one;
+
+    & a {
+      color: $font-color-blue-one;
+      cursor: pointer;
+    }
+  }
   // sortable header w/icons
   &.sortable.very.basic.striped.padded.table {
     & th {

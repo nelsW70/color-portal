@@ -78,20 +78,6 @@ a:hover {
   color: #194eaa;
 }
 
-.ui.table thead th {
-  font-size: 0.8125rem;
-  font-weight: 500;
-  color: #193040;
-}
-.ui.table td {
-  font-size: 0.8125rem;
-  color: rgba(25, 48, 64, 0.7);
-}
-.ui.table td a {
-  color: #1966ec;
-  cursor: pointer;
-}
-
 /* USER INFO */
 .user-info__text {
   font-weight: 300;
@@ -1065,83 +1051,96 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 /** TABLES **/
-table.ui.sortable.very.basic.striped.padded.table th {
+table.ui.table thead th {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #193040;
+}
+table.ui.table td {
+  font-size: 0.8125rem;
+  color: rgba(25, 48, 64, 0.7);
+}
+table.ui.table td a {
+  color: #1966ec;
+  cursor: pointer;
+}
+table.ui.table.sortable.very.basic.striped.padded.table th {
   position: relative;
   border-top: solid 1px rgba(17, 35, 48, 0.25);
   border-bottom: solid 1px rgba(17, 35, 48, 0.25);
   border-left: none;
 }
-table.ui.sortable.very.basic.striped.padded.table th:after {
+table.ui.table.sortable.very.basic.striped.padded.table th:after {
   position: absolute;
   top: 13px;
   content: "";
   display: inline-block;
   width: 12px;
 }
-table.ui.sortable.very.basic.striped.padded.table th.ascending:after {
+table.ui.table.sortable.very.basic.striped.padded.table th.ascending:after {
   font-family: "Material Icons";
   content: "arrow_downward";
   font-feature-settings: "liga";
 }
-table.ui.sortable.very.basic.striped.padded.table th.descending:after {
+table.ui.table.sortable.very.basic.striped.padded.table th.descending:after {
   font-family: "Material Icons";
   content: "arrow_upward";
   font-feature-settings: "liga";
 }
-table.ui.sortable.very.basic.striped.padded.table th.sorted {
+table.ui.table.sortable.very.basic.striped.padded.table th.sorted {
   background-color: transparent;
 }
-table.ui.very.basic.striped.padded.table {
+table.ui.table.very.basic.striped.padded.table {
   border-bottom: solid 1px rgba(17, 35, 48, 0.25);
   border-radius: 0;
 }
-table.ui.very.basic.striped.padded.table thead tr:first-child > th:first-child, table.ui.very.basic.striped.padded.table thead tr:first-child > th:last-child {
+table.ui.table.very.basic.striped.padded.table thead tr:first-child > th:first-child, table.ui.table.very.basic.striped.padded.table thead tr:first-child > th:last-child {
   border-radius: 0;
 }
-table.ui.very.basic.striped.padded.table thead th {
+table.ui.table.very.basic.striped.padded.table thead th {
   border-top: solid 1px rgba(17, 35, 48, 0.25);
   border-bottom: solid 1px rgba(17, 35, 48, 0.25);
   border-left: none;
 }
-table.ui.very.basic.striped.padded.table tbody tr {
+table.ui.table.very.basic.striped.padded.table tbody tr {
   cursor: pointer;
 }
-table.ui.very.basic.striped.padded.table tbody tr:nth-child(1n) {
+table.ui.table.very.basic.striped.padded.table tbody tr:nth-child(1n) {
   background-color: rgba(17, 35, 48, 0.03) !important;
 }
-table.ui.very.basic.striped.padded.table tbody tr:nth-child(2n) {
+table.ui.table.very.basic.striped.padded.table tbody tr:nth-child(2n) {
   background-color: transparent !important;
 }
-table.ui.very.basic.striped.padded.table tbody tr:hover {
+table.ui.table.very.basic.striped.padded.table tbody tr:hover {
   background-color: rgba(25, 102, 236, 0.1) !important;
 }
-table.ui.very.basic.striped.padded.table tbody tr td {
+table.ui.table.very.basic.striped.padded.table tbody tr td {
   border-top: 1px solid transparent;
   /* COMMENT ICON/COUNT CONTAINER */
   /* TABLE STATUS INDICATOR DOTS */
 }
-table.ui.very.basic.striped.padded.table tbody tr td .comment-container {
+table.ui.table.very.basic.striped.padded.table tbody tr td .comment-container {
   display: flex;
   padding-left: 1rem;
 }
-table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon {
+table.ui.table.very.basic.striped.padded.table tbody tr td .comment-container__icon {
   line-height: 8px;
   margin-right: 0.25rem;
 }
-table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon .material-icons {
+table.ui.table.very.basic.striped.padded.table tbody tr td .comment-container__icon .material-icons {
   font-size: 22px;
 }
-table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon .comment--no {
+table.ui.table.very.basic.striped.padded.table tbody tr td .comment-container__icon .comment--no {
   color: #90a8ba;
 }
-table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon .comment--yes {
+table.ui.table.very.basic.striped.padded.table tbody tr td .comment-container__icon .comment--yes {
   color: #1966ec;
 }
-table.ui.very.basic.striped.padded.table tbody tr td .comment-container__count {
+table.ui.table.very.basic.striped.padded.table tbody tr td .comment-container__count {
   color: #193040;
   font-weight: 600;
 }
-table.ui.very.basic.striped.padded.table tbody tr td .dot {
+table.ui.table.very.basic.striped.padded.table tbody tr td .dot {
   height: 9px;
   width: 9px;
   background-color: #bbb;
@@ -1149,13 +1148,13 @@ table.ui.very.basic.striped.padded.table tbody tr td .dot {
   display: inline-block;
   margin-right: 6px;
 }
-table.ui.very.basic.striped.padded.table tbody tr td .dot--approved {
+table.ui.table.very.basic.striped.padded.table tbody tr td .dot--approved {
   background-color: #02a154;
 }
-table.ui.very.basic.striped.padded.table tbody tr td .dot--pending {
+table.ui.table.very.basic.striped.padded.table tbody tr td .dot--pending {
   background-color: #ff9a00;
 }
-table.ui.very.basic.striped.padded.table tbody tr td .dot--rejected {
+table.ui.table.very.basic.striped.padded.table tbody tr td .dot--rejected {
   background-color: #ce3f11;
 }
 
