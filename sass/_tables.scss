@@ -1,7 +1,7 @@
 /** TABLES **/
 
 table.ui.table {
-  // all tables
+  // ALL TABLES
   & thead th {
     font-size: 0.8125rem;
     font-weight: $font-weight-semi-bold;
@@ -16,7 +16,7 @@ table.ui.table {
       cursor: pointer;
     }
   }
-  // sortable header w/icons
+  // SORTABLE HEADER W/ICON
   &.sortable.very.basic.striped.padded.table {
     & th {
       position: relative;
@@ -45,7 +45,7 @@ table.ui.table {
       }
     }
   }
-  // basic header without icons
+  // BASIC HEADER WITHOUT ICONS
   &.very.basic.striped.padded.table {
     border-bottom: solid 1px $background-color-gray-six;
     border-radius: 0;
@@ -78,7 +78,7 @@ table.ui.table {
       & td {
         border-top: 1px solid transparent;
 
-        /* COMMENT ICON/COUNT CONTAINER */
+        // COMMENT ICON/COUNT CONTAINER
         & .comment-container {
           display: flex;
           padding-left: 1rem;
@@ -104,7 +104,7 @@ table.ui.table {
           }
         }
 
-        /* TABLE STATUS INDICATOR DOTS */
+        // TABLE STATUS INDICATOR DOTS
         & .dot {
           height: 9px;
           width: 9px;

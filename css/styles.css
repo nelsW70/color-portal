@@ -1116,8 +1116,6 @@ table.ui.table.very.basic.striped.padded.table tbody tr:hover {
 }
 table.ui.table.very.basic.striped.padded.table tbody tr td {
   border-top: 1px solid transparent;
-  /* COMMENT ICON/COUNT CONTAINER */
-  /* TABLE STATUS INDICATOR DOTS */
 }
 table.ui.table.very.basic.striped.padded.table tbody tr td .comment-container {
   display: flex;
