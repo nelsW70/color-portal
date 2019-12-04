@@ -36,20 +36,10 @@ a {
   }
 }
 
+// what is this doing????
 /* USER INFO */
 .user-info__text {
   font-weight: $font-weight-medium;
-}
-
-// move to inputs!!!
-/* INPUT TEXT */
-.ui.icon.input input {
-  font-family: $font-family-primary;
-  &::placeholder {
-    font-family: $font-family-primary;
-    font-size: 0.875rem;
-    color: $font-color-input-placeholder;
-  }
 }
 
 /* LABELS */
@@ -63,14 +53,4 @@ a {
   &--stacked {
     margin-bottom: 0.25rem;
   }
-}
-
-// move to inputs!!!!
-/* SEARCH RESULTS 'No Results' HEADER */
-.ui.search > .results > .message .header,
-.ui.search > .results .result .content .title {
-  font-family: $font-family-primary;
-  font-size: 0.875rem;
-  font-weight: $font-weight-normal;
-  color: $font-color-primary;
 }

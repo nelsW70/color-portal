@@ -83,16 +83,6 @@ a:hover {
   font-weight: 300;
 }
 
-/* INPUT TEXT */
-.ui.icon.input input {
-  font-family: "Suisse Intl", sans-serif;
-}
-.ui.icon.input input::placeholder {
-  font-family: "Suisse Intl", sans-serif;
-  font-size: 0.875rem;
-  color: #9ba6ae !important;
-}
-
 /* LABELS */
 .label {
   color: #193040;
@@ -103,15 +93,6 @@ a:hover {
 }
 .label--stacked {
   margin-bottom: 0.25rem;
-}
-
-/* SEARCH RESULTS 'No Results' HEADER */
-.ui.search > .results > .message .header,
-.ui.search > .results .result .content .title {
-  font-family: "Suisse Intl", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: #193040;
 }
 
 /** TYPOGRAPHY UTILITY CLASSES **/
@@ -975,15 +956,18 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 /* GENERAL */
-.ui.icon.input > input {
-  border: solid 1px #b3c1cc;
-  font-size: 0.875rem !important;
-  padding: 0.59375rem 2.34375rem 0.59375rem 0.875rem !important;
-}
-
 .ui.icon.input input {
+  font-family: "Suisse Intl", sans-serif;
+  font-size: 0.875rem !important;
+  border: solid 1px #b3c1cc;
   border-radius: 2px;
+  padding: 0.59375rem 2.34375rem 0.59375rem 0.875rem !important;
   height: 40px;
+}
+.ui.icon.input input::placeholder {
+  font-family: "Suisse Intl", sans-serif;
+  font-size: 0.875rem;
+  color: #9ba6ae !important !important;
 }
 
 /* PREDICTIVE SEARCH WITH LABEL */
@@ -998,6 +982,13 @@ input[type=search]::-webkit-search-cancel-button {
 }
 .search-container .ui.search .prompt:focus {
   border: 1px solid #1966ec;
+}
+.search-container .ui.search > .results > .message .header,
+.search-container .ui.search > .results .result .content .title {
+  font-family: "Suisse Intl", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #193040;
 }
 
 /* REQUIRED INPUT W/ERROR MESSAGE */
