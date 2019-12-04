@@ -10,18 +10,24 @@ input[type='search']::-webkit-search-cancel-button {
 }
 
 /* GENERAL */
-.ui.icon.input input {
-  font-family: $font-family-primary;
-  font-size: 0.875rem !important;
-  border: solid 1px $background-color-gray-three;
-  border-radius: $border-radius-two;
-  padding: 0.59375rem 2.34375rem 0.59375rem 0.875rem !important;
-  height: 40px;
-
-  &::placeholder {
+.ui.icon.input {
+  // SEARCH MAGNIFYING GLASS ICON
+  & .search.icon {
+    color: $font-color-blue-one;
+  }
+  & input {
     font-family: $font-family-primary;
-    font-size: 0.875rem;
-    color: $font-color-input-placeholder !important;
+    font-size: 0.875rem !important;
+    border: solid 1px $background-color-gray-three;
+    border-radius: $border-radius-two;
+    padding: 0.59375rem 2.34375rem 0.59375rem 0.875rem !important;
+    height: 40px;
+
+    &::placeholder {
+      font-family: $font-family-primary;
+      font-size: 0.875rem;
+      color: $font-color-input-placeholder !important;
+    }
   }
 }
 

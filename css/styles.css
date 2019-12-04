@@ -394,19 +394,6 @@ a:hover {
   text-align: right;
 }
 
-/** ICONS **/
-.material-icons {
-  /* PRINT BUTTON ICON */
-}
-.material-icons--print {
-  color: #4e6576;
-}
-
-/* SEARCH MAGNIFYING GLASS ICON */
-.ui.icon.input .search {
-  color: #1966ec;
-}
-
 /* BREADCRUMBS */
 .ui.breadcrumb .divider {
   color: #334756;
@@ -443,6 +430,9 @@ a:hover {
   font-family: "Suisse Intl", sans-serif;
   font-weight: 400;
   border-radius: 2px;
+}
+.ppg.ui.button .material-icons--print {
+  color: #4e6576;
 }
 .ppg.ui.button.btn-print {
   background-color: #e7ebed;
@@ -956,6 +946,9 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 /* GENERAL */
+.ui.icon.input .search.icon {
+  color: #1966ec;
+}
 .ui.icon.input input {
   font-family: "Suisse Intl", sans-serif;
   font-size: 0.875rem !important;

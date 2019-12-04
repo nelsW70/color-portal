@@ -21,6 +21,14 @@
     font-family: $font-family-primary;
     font-weight: $font-weight-normal;
     border-radius: $border-radius-two;
+
+    & .material-icons {
+      // PRINT BUTTON ICON
+      &--print {
+        // color adjusted for accessibility
+        color: darken($color: $font-color-gray-three, $amount: 20);
+      }
+    }
     // PRINT BUTTON
     &.btn-print {
       background-color: $background-color-gray-one;
