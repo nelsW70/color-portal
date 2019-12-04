@@ -938,7 +938,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   max-width: fit-content;
 }
 .previous-page__icon .material-icons {
-  font-size: 20px;
+  font-size: 18px;
   padding-right: 0.25rem;
   vertical-align: sub;
 }
