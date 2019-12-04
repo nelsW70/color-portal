@@ -74,33 +74,3 @@ a {
   font-weight: $font-weight-normal;
   color: $font-color-primary;
 }
-
-/* SEARCH INPUT RESULTS */
-.search-container .ui.search .prompt {
-  font-family: $font-family-primary;
-  font-size: 0.875rem;
-}
-
-// move to pagination!!!
-.pagination-row .ui.fluid.selection.dropdown {
-  & .text,
-  & .item {
-    color: $font-color-gray-two;
-  }
-}
-
-/* ITEM COUNT */
-// move to pagination!!!
-.item-count {
-  font-size: 0.875rem;
-  color: $font-color-primary;
-  & span {
-    font-weight: $font-weight-bold;
-  }
-}
-
-/* PAGINATION BUTTONS */
-.pagination .item {
-  font-size: 0.875rem;
-  color: $font-color-gray-two;
-}

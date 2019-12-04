@@ -6,7 +6,10 @@
     height: 28px;
     box-shadow: none;
     border: none;
+    // PAGINATION BUTTONS
     & .item {
+      font-size: 0.875rem;
+      color: $font-color-gray-two;
       min-width: 32px;
       & > i.icon {
         margin: 0 0 0 2px;
@@ -42,5 +45,15 @@
         }
       }
     }
+  }
+}
+
+/* COLORPORTAL */
+// ITEM COUNT
+.item-count {
+  font-size: 0.875rem;
+  color: $font-color-primary;
+  & span {
+    font-weight: $font-weight-bold;
   }
 }

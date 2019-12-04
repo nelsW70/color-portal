@@ -26,7 +26,10 @@ input[type='search']::-webkit-search-cancel-button {
   & .ui.icon.input {
     min-width: 18rem;
   }
+  // SEARCH INPUT RESULTS
   & .ui.search .prompt {
+    font-family: $font-family-primary;
+    font-size: 0.875rem;
     border-radius: $border-radius-two;
     height: 40px;
     &:focus {

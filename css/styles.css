@@ -114,31 +114,6 @@ a:hover {
   color: #193040;
 }
 
-/* SEARCH INPUT RESULTS */
-.search-container .ui.search .prompt {
-  font-family: "Suisse Intl", sans-serif;
-  font-size: 0.875rem;
-}
-
-.pagination-row .ui.fluid.selection.dropdown .text, .pagination-row .ui.fluid.selection.dropdown .item {
-  color: #334756;
-}
-
-/* ITEM COUNT */
-.item-count {
-  font-size: 0.875rem;
-  color: #193040;
-}
-.item-count span {
-  font-weight: 600;
-}
-
-/* PAGINATION BUTTONS */
-.pagination .item {
-  font-size: 0.875rem;
-  color: #334756;
-}
-
 /** TYPOGRAPHY UTILITY CLASSES **/
 /* FONT WEIGHT */
 .font-weight-light {
@@ -912,7 +887,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   align-items: center;
 }
 
-/** SMALL DROPDOWN SELECT (GREY BACKGROUND) **/
+/** SMALL DROPDOWN SELECT **/
 .ui.fluid.selection.dropdown {
   background-color: #e7ebed;
   border-radius: 1px;
@@ -930,6 +905,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   padding: 0.5rem 0.5rem 0.5rem 0.25rem;
 }
 .ui.fluid.selection.dropdown .menu > .item {
+  color: #334756;
   padding: 0.5rem !important;
   text-align: left;
 }
@@ -942,6 +918,8 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   border: none;
 }
 .pagination-buttons .ui.pagination.menu .item {
+  font-size: 0.875rem;
+  color: #334756;
   min-width: 32px;
 }
 .pagination-buttons .ui.pagination.menu .item > i.icon {
@@ -976,6 +954,15 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   background-color: #1966ec;
 }
 
+/* COLORPORTAL */
+.item-count {
+  font-size: 0.875rem;
+  color: #193040;
+}
+.item-count span {
+  font-weight: 600;
+}
+
 /** INPUTS **/
 /* SHOWS 'x' FOR CLEARING INPUT FIELD IN CHROME THAT IS HIDDEN OTHERWISE */
 input[type=search] {
@@ -1004,6 +991,8 @@ input[type=search]::-webkit-search-cancel-button {
   min-width: 18rem;
 }
 .search-container .ui.search .prompt {
+  font-family: "Suisse Intl", sans-serif;
+  font-size: 0.875rem;
   border-radius: 2px;
   height: 40px;
 }

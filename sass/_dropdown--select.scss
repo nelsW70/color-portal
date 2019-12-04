@@ -5,8 +5,9 @@
   align-items: center;
 }
 
-/** SMALL DROPDOWN SELECT (GREY BACKGROUND) **/
+/** SMALL DROPDOWN SELECT **/
 .ui.fluid.selection.dropdown {
+  // DEFAULT GREY BACKGROUND
   background-color: $background-color-gray-one;
   border-radius: 1px;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
@@ -25,6 +26,7 @@
   }
 
   & .menu > .item {
+    color: $font-color-gray-two;
     padding: 0.5rem !important;
     text-align: left;
   }
