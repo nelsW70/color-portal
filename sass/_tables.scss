@@ -63,6 +63,28 @@ table.ui {
       & td {
         border-top: 1px solid transparent;
 
+        /* COMMENT ICON/COUNT CONTAINER */
+        & .comment-container {
+          display: flex;
+
+          &__icon {
+            line-height: 8px;
+            margin-right: 0.25rem;
+            & .comment {
+              &--no {
+                color: $font-color-gray-four;
+              }
+              &--yes {
+                color: $font-color-blue-one;
+              }
+            }
+          }
+          &__count {
+            color: $font-color-primary;
+            font-weight: $font-weight-bold;
+          }
+        }
+
         /* TABLE STATUS INDICATOR DOTS */
         & .dot {
           height: 9px;

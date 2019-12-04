@@ -1,7 +1,7 @@
 /** IMPORTS **/
 /** VARIABLES **/
 /* FONTFAMILY */
-/* FONT COLORS */
+/* FONT/ICON COLORS */
 /* FONT WEIGHT */
 /* BACKGROUND & BORDER COLORS */
 /* UTILITY COLORS */
@@ -1134,7 +1134,25 @@ table.ui.very.basic.striped.padded.table tbody tr:hover {
 }
 table.ui.very.basic.striped.padded.table tbody tr td {
   border-top: 1px solid transparent;
+  /* COMMENT ICON/COUNT CONTAINER */
   /* TABLE STATUS INDICATOR DOTS */
+}
+table.ui.very.basic.striped.padded.table tbody tr td .comment-container {
+  display: flex;
+}
+table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon {
+  line-height: 8px;
+  margin-right: 0.25rem;
+}
+table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon .comment--no {
+  color: #90a8ba;
+}
+table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon .comment--yes {
+  color: #1966ec;
+}
+table.ui.very.basic.striped.padded.table tbody tr td .comment-container__count {
+  color: #193040;
+  font-weight: 600;
 }
 table.ui.very.basic.striped.padded.table tbody tr td .dot {
   height: 9px;
