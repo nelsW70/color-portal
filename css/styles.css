@@ -942,7 +942,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   align-items: center;
 }
 .previous-page__icon .material-icons {
-  font-size: 18px;
+  font-size: 1.125rem;
   padding-right: 0.35rem;
 }
 .previous-page__text {
