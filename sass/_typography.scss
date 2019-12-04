@@ -95,20 +95,6 @@ a {
   }
 }
 
-/* NAVBAR LINKS */
-.ui-nav.ui.menu .item {
-  color: $font-color-white-one;
-  font-weight: $font-weight-medium;
-  letter-spacing: 0.0275rem;
-  padding: 8px;
-  &:focus,
-  &:hover {
-    color: $font-color-white-one;
-    font-weight: $font-weight-semi-bold;
-    letter-spacing: normal;
-  }
-}
-
 /* LABELS */
 .label {
   color: $font-color-primary;

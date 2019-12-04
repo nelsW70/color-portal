@@ -134,19 +134,6 @@ a:hover {
   color: #9ba6ae !important;
 }
 
-/* NAVBAR LINKS */
-.ui-nav.ui.menu .item {
-  color: #ffffff;
-  font-weight: 300;
-  letter-spacing: 0.0275rem;
-  padding: 8px;
-}
-.ui-nav.ui.menu .item:focus, .ui-nav.ui.menu .item:hover {
-  color: #ffffff;
-  font-weight: 500;
-  letter-spacing: normal;
-}
-
 /* LABELS */
 .label {
   color: #193040;
@@ -875,8 +862,13 @@ header .ui-nav.ui.menu .ui.icon.input {
 header .ui-nav.ui.menu .menu-links-container {
   display: flex;
   width: 75%;
+  /* NAVBAR LINKS */
 }
 header .ui-nav.ui.menu .menu-links-container .item {
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 0.0275rem;
+  padding: 8px;
   justify-content: center;
   font-weight: 300;
   /* NAVLINK UNDERLINE ANIMATION */
@@ -903,6 +895,9 @@ header .ui-nav.ui.menu .menu-links-container .item:nth-child(7) {
   width: 10%;
 }
 header .ui-nav.ui.menu .menu-links-container .item:hover, header .ui-nav.ui.menu .menu-links-container .item:focus {
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: normal;
   position: relative;
   font-weight: 500;
   /* NAVLINK UNDERLINE ANIMATION */

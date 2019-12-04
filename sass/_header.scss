@@ -172,7 +172,12 @@ header {
       display: flex;
       width: 75%;
 
+      /* NAVBAR LINKS */
       & .item {
+        color: $font-color-white-one;
+        font-weight: $font-weight-medium;
+        letter-spacing: 0.0275rem;
+        padding: 8px;
         justify-content: center;
         font-weight: $font-weight-medium;
 
@@ -200,6 +205,9 @@ header {
 
         &:hover,
         &:focus {
+          color: $font-color-white-one;
+          font-weight: $font-weight-semi-bold;
+          letter-spacing: normal;
           position: relative;
           font-weight: $font-weight-semi-bold;
 
