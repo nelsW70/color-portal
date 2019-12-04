@@ -109,27 +109,6 @@ a {
   }
 }
 
-/* BREADCRUMBS */
-.ui.breadcrumb {
-  & .divider {
-    color: $breadcrumb-divider;
-    font-size: 0.8125rem;
-  }
-  & a.section {
-    color: $breadcrumb-divider;
-    font-size: 0.8125rem;
-
-    &.active {
-      color: $font-color-blue-one;
-      font-weight: $font-weight-normal;
-    }
-    &:hover {
-      color: darken($font-color-blue-two, $amount: 7.5%);
-      font-weight: $font-weight-normal;
-    }
-  }
-}
-
 /* LABELS */
 .label {
   color: $font-color-primary;

@@ -147,24 +147,6 @@ a:hover {
   letter-spacing: normal;
 }
 
-/* BREADCRUMBS */
-.ui.breadcrumb .divider {
-  color: #334756;
-  font-size: 0.8125rem;
-}
-.ui.breadcrumb a.section {
-  color: #334756;
-  font-size: 0.8125rem;
-}
-.ui.breadcrumb a.section.active {
-  color: #1966ec;
-  font-weight: 400;
-}
-.ui.breadcrumb a.section:hover {
-  color: #194eaa;
-  font-weight: 400;
-}
-
 /* LABELS */
 .label {
   color: #193040;
@@ -528,6 +510,24 @@ a:hover {
 /* SEARCH MAGNIFYING GLASS ICON */
 .ui.icon.input .search {
   color: #1966ec;
+}
+
+/* BREADCRUMBS */
+.ui.breadcrumb .divider {
+  color: #334756;
+  font-size: 0.8125rem;
+}
+.ui.breadcrumb a.section {
+  color: #334756;
+  font-size: 0.8125rem;
+}
+.ui.breadcrumb a.section.active {
+  color: #1966ec;
+  font-weight: 400;
+}
+.ui.breadcrumb a.section:hover {
+  color: #194eaa;
+  font-weight: 400;
 }
 
 /** BUTTONS **/
@@ -1146,7 +1146,7 @@ table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon {
   margin-right: 0.25rem;
 }
 table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon .material-icons {
-  font-size: 21px;
+  font-size: 22px;
 }
 table.ui.very.basic.striped.padded.table tbody tr td .comment-container__icon .comment--no {
   color: #90a8ba;
