@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Semantic UI CSS CDN version if needed -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+
+    <!-- JQuery for Semantic UI -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Material Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>ColorPortal</title>
+  </head>
+
+  <!-- FULL SCREEN OVERLAY TO PREVENT SITE BEING VIEWED IN A BROKEN STATE ON SMALLER SCREENS: 
+       SHOULD BE FIRST ELEMENT IN PAGE CONTENT FOR ACCESSIBILITY PURPOSES-->
+  <div id="blackout-overlay">
+    <div id="blackout-overlay__text">
+      <h1 class="font-weight-semi-bold">
+        This site is best viewed on screens wider than 960px.
+      </h1>
+      <h1 class="font-weight-semi-bold">
+        Please adjust the width of your screen.
+      </h1>
+    </div>
+  </div>
+  <!-- FULL SCREEN OVERLAY TO PREVENT SITE BEING VIEWED IN A BROKEN STATE ON SMALLER SCREENS: 
+       SHOULD BE FIRST ELEMENT IN PAGE CONTENT FOR ACCESSIBILITY PURPOSES-->
+  <header>
+    <!-- FIRST ROW HEADER -->
+    <div class="color-strip"></div>
+    <div class="header-menu">
+      <div class="ppg-logo">
+        <img src="assets/PPG_Blue_Bug.png" alt="PPG Logo" />
+      </div>
+      <div class="dropdown">
+        <div class="ui buttons" id="nav-icon-container">
+          <div class="ui floating dropdown icon button">
+            <div class="nav-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="dropdown__label">
+              Menu
+            </div>
+            <div class="menu">
+              <div class="item">
+                <i class="material-icons">settings_input_component</i>
+                <div class="item__text">
+                  Register Instrument
+                </div>
+              </div>
+              <div class="item">
+                <i class="material-icons">build</i>
+                <div class="item__text">
+                  Customer Maintenance
+                </div>
+              </div>
+              <div class="item">
+                <i class="material-icons">palette</i>
+                <div class="item__text">
+                  Color Search
+                </div>
+              </div>
+              <div class="item">
+                <i class="material-icons">account_box</i>
+                <div class="item__text">
+                  Login as User
+                </div>
+              </div>
+              <div class="item">
+                <i class="material-icons">help</i>
+                <div class="item__text">
+                  Help
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title">
+        <h2 class="font-weight-semi-bold">
+          Color<span class="title__span">Portal</span
+          ><span class="title__tm">&trade;</span>
+        </h2>
+      </div>
+      <div class="user-info">
+        <i class="material-icons material-icons--account">
+          account_circle
+        </i>
+        <div class="user-info__text">
+          Darrell Johnston
+        </div>
+      </div>
+    </div>
+    <!-- FIRST ROW HEADER -->
+    <!-- SECOND ROW HEADER W/SEARCH -->
+    <nav class="ui-nav ui menu">
+      <div class="menu-links-container">
+        <a class="item" href="#">
+          Stylist
+        </a>
+        <a class="item" href="#">
+          Pigments
+        </a>
+        <a class="item" href="#">
+          Dispersion
+        </a>
+        <a class="item" href="#">
+          Color Development
+        </a>
+        <a class="item" href="#">
+          Production
+        </a>
+        <a class="item" href="#">
+          Line Results
+        </a>
+        <a class="item" href="#">
+          ATSEL
+        </a>
+      </div>
+      <div class="ui icon input">
+        <input
+          aria-label="Search ColorPortal"
+          type="search"
+          placeholder="Search ColorPortal"
+        />
+        <i class="search link icon"></i>
+      </div>
+    </nav>
+    <!-- SECOND ROW HEADER W/SEARCH -->
+  </header>
+  <body>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <!-- BREADCRUMBS -->
+      <div class="breadcrumbs-row">
+        <nav aria-label="breadcrumb">
+          <div class="ui breadcrumb">
+            <a class="section breadcrumb-link active">Home</a>
+            <div class="divider">/</div>
+            <a class="section breadcrumb-link active">Stylist</a>
+            <div class="divider">/</div>
+            <a class="section breadcrumb-link">Styling Programs</a>
+          </div>
+        </nav>
+        <button
+          class="ppg ui small button btn-print"
+          role="button"
+          aria-label="print"
+        >
+          <i class="material-icons material-icons--print mr-1">print</i>
+          <span class="button-text">Print</span>
+        </button>
+      </div>
+      <!-- BREADCRUMBS -->
+    </main>
+
+    <!-- MAIN CONTENT -->
+    <!-- FOOTER -->
+    <footer>
+      <img src="assets/PPG_Blue_Bug.png" alt="PPG Logo" />
+      <p class="footer-trademark">
+        &copy;2019 PPG Industries, Inc. All Rights Reserved.
+      </p>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- Semantic UI -->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    <!-- JS scripts -->
+    <!-- Table Sort -->
+    <script src="js/table-sort.js"></script>
+    <!-- navbar hamburger animation -->
+    <script src="js/navbar-menu-hamburger-animation.js"></script>
+    <!-- toggles active state on project status buttons -->
+    <script src="js/project-status-btns.js"></script>
+    <!-- toggles active state on project show buttons -->
+    <script src="js/project-show-btns.js"></script>
+    <!-- toggles active state on pagination buttons -->
+    <script src="js/pagination-btn.js"></script>
+    <!-- initialize dropdown -->
+    <script src="js/dropdown-intialize.js"></script>
+    <!-- demo: local predictive search -->
+    <script src="js/demo-predictive-search.js"></script>
+    <!-- toggle active state on breadcrumb links -->
+    <script src="js/breadcrumb-link.js"></script>
+    <!-- Table Sort Initialize -->
+    <script src="js/table-sort-initialize.js"></script>
+  </body>
+</html>
