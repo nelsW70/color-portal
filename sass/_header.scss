@@ -47,6 +47,10 @@ header {
       width: 20rem;
       text-align: right;
 
+      &__text {
+        font-weight: $font-weight-medium;
+      }
+
       & .material-icons--account {
         padding-right: 0.5rem;
       }

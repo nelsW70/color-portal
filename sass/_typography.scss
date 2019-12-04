@@ -35,22 +35,3 @@ a {
     color: darken($background-color-blue-two, $amount: 7.5%);
   }
 }
-
-// what is this doing????
-/* USER INFO */
-.user-info__text {
-  font-weight: $font-weight-medium;
-}
-
-/* LABELS */
-.label {
-  color: $font-color-primary;
-  font-size: 0.8125rem;
-
-  &--large {
-    font-size: 0.875rem;
-  }
-  &--stacked {
-    margin-bottom: 0.25rem;
-  }
-}

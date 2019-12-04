@@ -1,0 +1,12 @@
+/** LABELS **/
+.label {
+  color: $font-color-primary;
+  font-size: 0.8125rem;
+
+  &--large {
+    font-size: 0.875rem;
+  }
+  &--stacked {
+    margin-bottom: 0.25rem;
+  }
+}
