@@ -51,7 +51,6 @@ body {
   color: #193040;
 }
 
-/* the increased hierarchy overrides the library fonts */
 h1,
 h2,
 h3,
@@ -93,35 +92,9 @@ a:hover {
   cursor: pointer;
 }
 
-/* MENU LABEL */
-.dropdown__label {
-  color: #ffffff;
-  font-family: "Suisse Intl", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 300;
-}
-
-/* TITLE SPAN */
-.title__span {
-  font-weight: 100;
-}
-
-/* TITLE TM */
-.title__tm {
-  font-weight: 100;
-  font-size: 1.25rem;
-  vertical-align: text-top;
-}
-
 /* USER INFO */
 .user-info__text {
   font-weight: 300;
-}
-
-/* HEADER DROPDOWN MENU TEXT */
-.item__text {
-  color: #193040;
-  font-size: 0.875rem;
 }
 
 /* INPUT TEXT */
@@ -178,13 +151,6 @@ a:hover {
 .pagination .item {
   font-size: 0.875rem;
   color: #334756;
-}
-
-/* FOOTER TRADEMARK  */
-.footer-trademark {
-  font-size: 0.875rem;
-  font-weight: 300;
-  color: #ffffff;
 }
 
 /** TYPOGRAPHY UTILITY CLASSES **/
@@ -738,6 +704,16 @@ header .header-menu {
 header .header-menu .title {
   flex: 1;
   text-align: center;
+  /* TITLE SPAN */
+  /* TITLE TM */
+}
+header .header-menu .title__span {
+  font-weight: 100;
+}
+header .header-menu .title__tm {
+  font-weight: 100;
+  font-size: 1.25rem;
+  vertical-align: text-top;
 }
 header .header-menu .user-info {
   display: flex;
@@ -761,6 +737,13 @@ header .header-menu .dropdown {
   display: flex;
   align-items: center;
   width: 15rem;
+  /* MENU LABEL */
+}
+header .header-menu .dropdown__label {
+  color: #ffffff;
+  font-family: "Suisse Intl", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
 }
 header .header-menu .dropdown .ui.floating.dropdown {
   background-color: transparent;
@@ -839,6 +822,11 @@ header .header-menu .dropdown .ui.floating.dropdown .menu .item {
   display: flex;
   align-items: center;
   padding: 0.525rem 1.14285714rem !important;
+  /* HEADER DROPDOWN MENU TEXT */
+}
+header .header-menu .dropdown .ui.floating.dropdown .menu .item__text {
+  color: #193040;
+  font-size: 0.875rem;
 }
 header .header-menu .dropdown .ui.floating.dropdown .menu .item .material-icons {
   color: #334756;
@@ -1179,12 +1167,18 @@ footer {
   background-color: #112330;
   display: flex;
   align-items: center;
+  /* FOOTER TRADEMARK  */
 }
 footer img {
   height: 40px;
   margin-left: 25px;
   margin-right: 24px;
   cursor: pointer;
+}
+footer .footer-trademark {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #ffffff;
 }
 
 .ui.dimmer.modals {

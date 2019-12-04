@@ -8,7 +8,6 @@ body {
   color: $font-color-primary;
 }
 
-/* the increased hierarchy overrides the library fonts */
 h1,
 h2,
 h3,
@@ -54,35 +53,9 @@ a {
   }
 }
 
-/* MENU LABEL */
-.dropdown__label {
-  color: $font-color-white-one;
-  font-family: $font-family-primary;
-  font-size: 1.125rem;
-  font-weight: $font-weight-medium;
-}
-
-/* TITLE SPAN */
-.title__span {
-  font-weight: $font-weight-light;
-}
-
-/* TITLE TM */
-.title__tm {
-  font-weight: $font-weight-light;
-  font-size: 1.25rem;
-  vertical-align: text-top;
-}
-
 /* USER INFO */
 .user-info__text {
   font-weight: $font-weight-medium;
-}
-
-/* HEADER DROPDOWN MENU TEXT */
-.item__text {
-  color: $font-color-primary;
-  font-size: 0.875rem;
 }
 
 /* INPUT TEXT */
@@ -143,11 +116,4 @@ a {
 .pagination .item {
   font-size: 0.875rem;
   color: $font-color-gray-two;
-}
-
-/* FOOTER TRADEMARK  */
-.footer-trademark {
-  font-size: 0.875rem;
-  font-weight: $font-weight-medium;
-  color: $font-color-white-one;
 }

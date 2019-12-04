@@ -27,6 +27,17 @@ header {
     & .title {
       flex: 1;
       text-align: center;
+
+      /* TITLE SPAN */
+      &__span {
+        font-weight: $font-weight-light;
+      }
+      /* TITLE TM */
+      &__tm {
+        font-weight: $font-weight-light;
+        font-size: 1.25rem;
+        vertical-align: text-top;
+      }
     }
 
     & .user-info {
@@ -55,6 +66,13 @@ header {
       display: flex;
       align-items: center;
       width: 15rem;
+      /* MENU LABEL */
+      &__label {
+        color: $font-color-white-one;
+        font-family: $font-family-primary;
+        font-size: 1.125rem;
+        font-weight: $font-weight-medium;
+      }
 
       & .ui.floating.dropdown {
         background-color: transparent;
@@ -140,7 +158,11 @@ header {
             display: flex;
             align-items: center;
             padding: 0.525rem 1.14285714rem !important;
-
+            /* HEADER DROPDOWN MENU TEXT */
+            &__text {
+              color: $font-color-primary;
+              font-size: 0.875rem;
+            }
             & .material-icons {
               color: $font-color-gray-two;
               font-size: 1.25rem;

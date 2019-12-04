@@ -13,4 +13,10 @@ footer {
     margin-right: 24px;
     cursor: pointer;
   }
+  /* FOOTER TRADEMARK  */
+  & .footer-trademark {
+    font-size: 0.875rem;
+    font-weight: $font-weight-medium;
+    color: $font-color-white-one;
+  }
 }
