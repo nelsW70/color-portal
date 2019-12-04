@@ -1,0 +1,17 @@
+/* PREVIOUS PAGE ICON/TEXT */
+.previous-page {
+  display: flex;
+  max-width: fit-content;
+
+  &__icon {
+    & .material-icons {
+      font-size: 18px;
+      padding-right: 0.25rem;
+      // vertical align because IE.
+      vertical-align: sub;
+    }
+  }
+  &__text {
+    font-size: 0.875rem;
+  }
+}

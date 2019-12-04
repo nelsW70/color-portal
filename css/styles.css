@@ -407,23 +407,6 @@ a:hover {
   font-weight: 400;
 }
 
-/* PREVIOUS PAGE ICON/TEXT */
-.previous-page {
-  display: flex;
-  max-width: fit-content;
-}
-.previous-page__icon {
-  display: flex;
-  align-items: center;
-}
-.previous-page__icon .material-icons {
-  font-size: 18px;
-  padding-right: 0.25rem;
-}
-.previous-page__text {
-  font-size: 0.875rem;
-}
-
 /** BUTTONS **/
 /* NORMAL BUTTON TEXT */
 .button-text {
@@ -947,6 +930,20 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 .item-count span {
   font-weight: 600;
+}
+
+/* PREVIOUS PAGE ICON/TEXT */
+.previous-page {
+  display: flex;
+  max-width: fit-content;
+}
+.previous-page__icon .material-icons {
+  font-size: 18px;
+  padding-right: 0.25rem;
+  vertical-align: sub;
+}
+.previous-page__text {
+  font-size: 0.875rem;
 }
 
 /** INPUTS **/
