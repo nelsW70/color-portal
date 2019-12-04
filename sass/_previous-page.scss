@@ -6,9 +6,8 @@
   &__icon {
     & .material-icons {
       font-size: 18px;
+      line-height: 20px;
       padding-right: 0.25rem;
-      // vertical align because IE.
-      vertical-align: sub;
     }
   }
   &__text {

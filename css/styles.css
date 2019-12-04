@@ -939,8 +939,8 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 .previous-page__icon .material-icons {
   font-size: 18px;
+  line-height: 20px;
   padding-right: 0.25rem;
-  vertical-align: sub;
 }
 .previous-page__text {
   font-size: 0.875rem;
