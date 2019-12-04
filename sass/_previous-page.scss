@@ -4,9 +4,10 @@
   max-width: fit-content;
 
   &__icon {
+    display: flex;
+    align-items: center;
     & .material-icons {
       font-size: 18px;
-      line-height: 20px;
       padding-right: 0.25rem;
     }
   }

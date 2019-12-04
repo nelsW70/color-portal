@@ -937,9 +937,12 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   display: flex;
   max-width: fit-content;
 }
+.previous-page__icon {
+  display: flex;
+  align-items: center;
+}
 .previous-page__icon .material-icons {
   font-size: 18px;
-  line-height: 20px;
   padding-right: 0.25rem;
 }
 .previous-page__text {
