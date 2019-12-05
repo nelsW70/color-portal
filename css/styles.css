@@ -935,6 +935,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 /* PREVIOUS PAGE ICON/TEXT */
 .previous-page {
   display: flex;
+  line-height: 20px;
   max-width: fit-content;
 }
 .previous-page__icon {
