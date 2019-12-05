@@ -1,14 +1,19 @@
 /** STYLIST PROJECT DETAILS ACCORDION  **/
 .project-details-accordion-container {
-  margin-top: 2rem;
+  margin: 1.25rem -25px 0 -25px;
+  padding: 0.75rem 25px;
+  background-color: rgba(231, 235, 237, 0.5);
 
-  & .title {
-    display: flex;
-    align-items: center;
-  }
-  h1 {
-    margin-top: 0;
-    font-weight: $font-weight-semi-bold;
-    color: $font-color-primary;
+  & .ui.fluid.accordion {
+    & .title {
+      display: flex;
+      align-items: center;
+      cursor: default;
+    }
+    h1 {
+      margin-top: 0;
+      font-weight: $font-weight-semi-bold;
+      color: $font-color-primary;
+    }
   }
 }

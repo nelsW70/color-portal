@@ -192,6 +192,7 @@
           <div class="title">
             <i class="dropdown icon"></i>
             <h1>CLE13384</h1>
+            <button>green</button>
           </div>
           <div class="content">
             <p>
@@ -234,7 +235,12 @@
     <script src="js/breadcrumb-link.js"></script>
     <!-- initilialize main accordion -->
     <script>
-      $('.ui.accordion.stylist-project-details').accordion();
+      // selects target for main accordion click event
+      $('.ui.accordion.stylist-project-details').accordion({
+        selector: {
+          trigger: '.icon'
+        }
+      });
     </script>
   </body>
 </html>
