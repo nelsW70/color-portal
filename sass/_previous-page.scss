@@ -1,17 +1,13 @@
 /* PREVIOUS PAGE ICON/TEXT */
 .previous-page {
   display: flex;
-  // line-height: 20px;
+  line-height: 20px;
   max-width: fit-content;
 
   &__icon {
-    // display: flex;
-    // align-items: center;
-    // & .material-icons {
     font-size: 1.125rem;
     line-height: 20px;
     padding-right: 0.35rem;
-    // }
   }
   &__text {
     font-size: 0.875rem;
