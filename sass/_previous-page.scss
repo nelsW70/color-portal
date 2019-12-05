@@ -1,17 +1,26 @@
 /* PREVIOUS PAGE ICON/TEXT */
 .previous-page {
   display: flex;
-  height: 22px;
+  // height: 22px;
   max-width: fit-content;
 
-  &__icon {
-    display: flex;
-    align-items: center;
-    & .material-icons {
-      font-size: 1.125rem;
-      padding-right: 0.35rem;
-    }
+  // &__icon {
+  //   display: flex;
+  //   align-items: center;
+  //   & .material-icons {
+  //     font-size: 1.125rem;
+  //     padding-right: 0.35rem;
+  //   }
+  // }
+
+  // &__icon {
+  //   display: flex;
+  //   align-items: center;
+  & .material-icons {
+    font-size: 1.125rem;
+    padding-right: 0.35rem;
   }
+  // }
   &__text {
     font-size: 0.875rem;
   }
