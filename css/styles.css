@@ -935,15 +935,11 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 /* PREVIOUS PAGE ICON/TEXT */
 .previous-page {
   display: flex;
-  line-height: 20px;
   max-width: fit-content;
 }
 .previous-page__icon {
-  display: flex;
-  align-items: center;
-}
-.previous-page__icon .material-icons {
   font-size: 1.125rem;
+  line-height: 20px;
   padding-right: 0.35rem;
 }
 .previous-page__text {
