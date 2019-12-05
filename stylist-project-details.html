@@ -190,9 +190,15 @@
       <div class="project-details-accordion-container">
         <div class="ui fluid accordion stylist-project-details">
           <div class="title">
-            <i class="dropdown icon"></i>
-            <h1>CLE13384</h1>
-            <button>green</button>
+            <div class="title__icon-text">
+              <i class="dropdown icon accordion-toggle"></i>
+              <h1 class="accordion-toggle">CLE13384</h1>
+              <button>green</button>
+            </div>
+            <div class="title__buttons-container">
+              <button>secondary</button>
+              <button>primary</button>
+            </div>
           </div>
           <div class="content">
             <p>
@@ -238,7 +244,7 @@
       // selects target for main accordion click event
       $('.ui.accordion.stylist-project-details').accordion({
         selector: {
-          trigger: '.icon'
+          trigger: '.accordion-toggle'
         }
       });
     </script>

@@ -1237,7 +1237,15 @@ footer .footer-trademark {
 .project-details-accordion-container .ui.fluid.accordion .title {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   cursor: default;
+}
+.project-details-accordion-container .ui.fluid.accordion .title__icon-text {
+  display: flex;
+  align-items: center;
+}
+.project-details-accordion-container .ui.fluid.accordion .title__icon-text .accordion-toggle {
+  cursor: pointer;
 }
 .project-details-accordion-container .ui.fluid.accordion h1 {
   margin-top: 0;
