@@ -1244,16 +1244,16 @@ footer .footer-trademark {
   display: flex;
   align-items: center;
 }
+.color-portal-accordion--project-details .ui.fluid.accordion .title__icon-text h1 {
+  margin-top: 0;
+  font-weight: 500;
+  color: #193040;
+}
 .color-portal-accordion--project-details .ui.fluid.accordion .title__icon-text .accordion-toggle {
   cursor: pointer;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .title__buttons-container {
   display: flex;
-}
-.color-portal-accordion--project-details .ui.fluid.accordion h1 {
-  margin-top: 0;
-  font-weight: 500;
-  color: #193040;
 }
 
 /*# sourceMappingURL=styles.css.map */
