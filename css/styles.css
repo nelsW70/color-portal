@@ -1273,7 +1273,7 @@ footer .footer-trademark {
   font-weight: 500;
   color: #193040;
 }
-.color-portal-accordion--project-details .ui.fluid.accordion .title__icon-text .accordion-toggle {
+.color-portal-accordion--project-details .ui.fluid.accordion .title__icon-text.accordion-toggle {
   cursor: pointer;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .title__buttons-container {
