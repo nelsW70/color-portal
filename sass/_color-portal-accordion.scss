@@ -1,6 +1,9 @@
 /** COLORPORTAL ACCORDION **/
 
 .color-portal-accordion {
+  & .accordion-toggle {
+    cursor: pointer;
+  }
   // STYLIST PROJECT DETAILS
   &--project-details {
     margin: 1.25rem 0 0 0;
@@ -22,9 +25,6 @@
             margin-top: 0;
             font-weight: $font-weight-semi-bold;
             color: $font-color-primary;
-          }
-          &.accordion-toggle {
-            cursor: pointer;
           }
         }
         &__buttons-container {

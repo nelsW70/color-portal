@@ -1252,6 +1252,9 @@ footer .footer-trademark {
 }
 
 /** COLORPORTAL ACCORDION **/
+.color-portal-accordion .accordion-toggle {
+  cursor: pointer;
+}
 .color-portal-accordion--project-details {
   margin: 1.25rem 0 0 0;
   padding: 0.75rem 25px;
@@ -1272,9 +1275,6 @@ footer .footer-trademark {
   margin-top: 0;
   font-weight: 500;
   color: #193040;
-}
-.color-portal-accordion--project-details .ui.fluid.accordion .title__icon-text.accordion-toggle {
-  cursor: pointer;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .title__buttons-container {
   display: flex;
