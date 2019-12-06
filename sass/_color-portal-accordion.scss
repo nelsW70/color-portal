@@ -6,7 +6,7 @@
   }
   // STYLIST PROJECT DETAILS
   &--project-details {
-    margin: 1.25rem 0 0 0;
+    margin: 0;
     padding: 0.75rem 25px;
     background-color: rgba(231, 235, 237, 0.5);
 
@@ -29,6 +29,32 @@
         }
         &__buttons-container {
           display: flex;
+        }
+      }
+      & .content {
+        padding-bottom: 1rem;
+        &__row-one {
+          display: flex !important;
+          &--section-one {
+            display: flex;
+            width: 35%;
+            & .item {
+              min-width: 12.5rem;
+            }
+          }
+          &--section-two {
+            display: flex;
+            width: 65%;
+            & .item {
+              min-width: 12.5rem;
+            }
+          }
+        }
+        &__row-two {
+          display: flex !important;
+          &--section-one {
+            display: flex;
+          }
         }
       }
     }
