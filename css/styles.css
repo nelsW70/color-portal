@@ -473,6 +473,26 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  max-width: fit-content;
+  min-height: 30px;
+}
+.ppg.tiny.ui.button.btn-green {
+  color: #0a8d4d;
+  border: solid 1px #02a154;
+  background-color: rgba(2, 161, 84, 0.1);
+}
+.ppg.tiny.ui.button.btn-green:hover, .ppg.tiny.ui.button.btn-green.active {
+  color: #076939;
+  border: solid 1px #027b40;
+  background-color: rgba(2, 123, 64, 0.1);
+}
+.ppg.tiny.ui.button.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #334756 !important;
   padding: 0.375rem 0.75rem;
   border: solid 1px #b3c1cc;
@@ -482,15 +502,15 @@ a:hover {
   max-width: fit-content;
   min-height: 30px;
 }
-.ppg.tiny.ui.button:first-child {
+.ppg.tiny.ui.button.btn-group:first-child {
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }
-.ppg.tiny.ui.button:last-child {
+.ppg.tiny.ui.button.btn-group:last-child {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-.ppg.tiny.ui.button:hover, .ppg.tiny.ui.button.active {
+.ppg.tiny.ui.button.btn-group:hover, .ppg.tiny.ui.button.btn-group.active {
   color: #1e5dcb !important;
   border: solid 1px #1966ec;
   background-color: rgba(25, 102, 236, 0.1) !important;
@@ -1241,6 +1261,7 @@ footer .footer-trademark {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 0.25rem;
   cursor: default;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .title__icon-text {

@@ -77,35 +77,66 @@
       }
     }
   }
-  // PROJECT STATUS/SHOW
+  // SMALL BUTTON
   &.tiny.ui.button {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $font-color-gray-two !important;
     padding: 0.375rem 0.75rem;
-    border: solid 1px $background-color-gray-three;
-    background-color: $background-color-white-one;
-    font-size: 0.8125rem;
-    min-width: 70px;
+    font-size: 0.875rem;
+    font-weight: $font-weight-semi-bold;
     max-width: fit-content;
     min-height: 30px;
 
-    &:first-child {
-      border-top-left-radius: 2px;
-      border-bottom-left-radius: 2px;
+    // SMALL GREEN BUTTON
+    &.btn-green {
+      color: $font-color-green-one;
+      border: solid 1px $background-color-green-one;
+      background-color: $background-color-green-two;
+      &:hover,
+      &.active {
+        color: darken($color: $font-color-green-one, $amount: 7.5%);
+        border: solid 1px
+          darken($color: $background-color-green-one, $amount: 7.5%);
+        background-color: darken(
+          $color: $background-color-green-two,
+          $amount: 7.5%
+        );
+      }
     }
 
-    &:last-child {
-      border-top-right-radius: 2px;
-      border-bottom-right-radius: 2px;
-    }
+    // SMALL BUTTON GROUP
+    &.btn-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $font-color-gray-two !important;
+      padding: 0.375rem 0.75rem;
+      border: solid 1px $background-color-gray-three;
+      background-color: $background-color-white-one;
+      font-size: 0.8125rem;
+      min-width: 70px;
+      max-width: fit-content;
+      min-height: 30px;
 
-    &:hover,
-    &.active {
-      color: $background-color-blue-two !important;
-      border: solid 1px $background-color-blue-one;
-      background-color: rgba(25, 102, 236, 0.1) !important;
+      // SMALL BUTTON GROUP
+      &:first-child {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+      }
+
+      // SMALL BUTTON GROUP
+      &:last-child {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+      }
+      // SMALL BUTTON GROUP
+      &:hover,
+      &.active {
+        color: $background-color-blue-two !important;
+        border: solid 1px $background-color-blue-one;
+        background-color: $background-color-blue-six !important;
+      }
     }
   }
 }
