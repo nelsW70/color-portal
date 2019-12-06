@@ -33,20 +33,37 @@
       }
       & .content {
         padding-bottom: 1rem;
+        & .label--large {
+          color: $font-color-gray-five;
+          text-transform: capitalize;
+        }
         &__row-one {
           display: flex !important;
           &--section-one {
             display: flex;
-            width: 35%;
+            width: 40%;
+            max-width: 400px;
             & .item {
-              min-width: 12.5rem;
+              min-width: 10rem;
+              &__bottom {
+                color: $font-color-primary;
+                font-size: 1.125rem;
+                font-weight: $font-weight-normal;
+                text-transform: capitalize;
+              }
             }
           }
           &--section-two {
             display: flex;
-            width: 65%;
+            width: 60%;
             & .item {
-              min-width: 12.5rem;
+              min-width: 10rem;
+              &__bottom {
+                color: $font-color-primary;
+                font-size: 1.125rem;
+                font-weight: $font-weight-normal;
+                text-transform: capitalize;
+              }
             }
           }
         }
@@ -54,6 +71,16 @@
           display: flex !important;
           &--section-one {
             display: flex;
+            width: 35%;
+            & .item {
+              min-width: 10rem;
+              &__bottom {
+                color: $font-color-primary;
+                font-size: 1.125rem;
+                font-weight: $font-weight-normal;
+                text-transform: capitalize;
+              }
+            }
           }
         }
       }
