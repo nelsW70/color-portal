@@ -78,18 +78,6 @@ a:hover {
   color: #194eaa;
 }
 
-/** LABELS **/
-.label {
-  color: #193040;
-  font-size: 0.8125rem;
-}
-.label--large {
-  font-size: 0.875rem;
-}
-.label--stacked {
-  margin-bottom: 0.25rem;
-}
-
 /** TYPOGRAPHY UTILITY CLASSES **/
 /* FONT WEIGHT */
 .font-weight-light {
@@ -127,6 +115,18 @@ a:hover {
 }
 
 /* FONT COLORS*/
+/** LABELS **/
+.label {
+  color: #193040;
+  font-size: 0.8125rem;
+}
+.label--large {
+  font-size: 0.875rem;
+}
+.label--stacked {
+  margin-bottom: 0.25rem;
+}
+
 .accessibly-hidden {
   position: absolute !important;
   top: -9999px !important;
@@ -298,6 +298,9 @@ a:hover {
 /* BODY */
 .main-content {
   min-height: calc(100vh - 195px);
+}
+
+.wrapper-one {
   padding: 25px;
 }
 
