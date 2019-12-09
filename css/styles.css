@@ -482,6 +482,8 @@ a:hover {
   color: #0a8d4d;
   border: solid 1px #02a154;
   background-color: rgba(2, 161, 84, 0.1);
+  padding: 0.175rem 0.375rem;
+  min-height: 26px;
 }
 .ppg.tiny.ui.button.btn-green:hover, .ppg.tiny.ui.button.btn-green.active {
   color: #076939;
@@ -1390,6 +1392,7 @@ footer .footer-trademark {
 table.ui.sortable.very.basic.striped.padded.table .icon-text-container {
   display: flex;
   align-items: center;
+  padding-left: 1.5rem;
 }
 table.ui.sortable.very.basic.striped.padded.table .icon-text-container__icon {
   display: flex;
