@@ -40,13 +40,20 @@
         }
         &__row-one {
           display: flex !important;
-          padding: 0.5rem 0 1.5rem 0;
+          padding: 0.75rem 0 1.75rem 0;
           &--section-one {
             display: flex;
             width: 40%;
             max-width: 400px;
+            @media only screen and (min-width: 1200px) {
+              max-width: 500px;
+            }
+
             & .item {
               min-width: 12rem;
+              @media only screen and (min-width: 1200px) {
+                min-width: 14rem;
+              }
               &__bottom {
                 color: $font-color-primary;
                 font-size: 1.125rem;
@@ -60,6 +67,9 @@
             width: 60%;
             & .item {
               min-width: 10rem;
+              @media only screen and (min-width: 1200px) {
+                min-width: 11rem;
+              }
               &__bottom {
                 color: $font-color-primary;
                 font-size: 1.125rem;
@@ -71,12 +81,19 @@
         }
         &__row-two {
           display: flex !important;
-          padding-bottom: 0.75rem;
+          padding-bottom: 0.5rem;
           &--section-one {
             display: flex;
-            width: 35%;
+            width: 40%;
+            max-width: 400px;
+            @media only screen and (min-width: 1200px) {
+              max-width: 500px;
+            }
             & .item {
               min-width: 12rem;
+              @media only screen and (min-width: 1200px) {
+                min-width: 14rem;
+              }
               &__bottom {
                 color: $font-color-primary;
                 font-size: 1.125rem;

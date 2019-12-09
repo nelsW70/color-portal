@@ -1289,15 +1289,25 @@ footer .footer-trademark {
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one {
   display: flex !important;
-  padding: 0.5rem 0 1.5rem 0;
+  padding: 0.75rem 0 1.75rem 0;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-one {
   display: flex;
   width: 40%;
   max-width: 400px;
 }
+@media only screen and (min-width: 1200px) {
+  .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-one {
+    max-width: 500px;
+  }
+}
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-one .item {
   min-width: 12rem;
+}
+@media only screen and (min-width: 1200px) {
+  .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-one .item {
+    min-width: 14rem;
+  }
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-one .item__bottom {
   color: #193040;
@@ -1312,6 +1322,11 @@ footer .footer-trademark {
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-two .item {
   min-width: 10rem;
 }
+@media only screen and (min-width: 1200px) {
+  .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-two .item {
+    min-width: 11rem;
+  }
+}
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-two .item__bottom {
   color: #193040;
   font-size: 1.125rem;
@@ -1320,14 +1335,25 @@ footer .footer-trademark {
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-two {
   display: flex !important;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-two--section-one {
   display: flex;
-  width: 35%;
+  width: 40%;
+  max-width: 400px;
+}
+@media only screen and (min-width: 1200px) {
+  .color-portal-accordion--project-details .ui.fluid.accordion .content__row-two--section-one {
+    max-width: 500px;
+  }
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-two--section-one .item {
   min-width: 12rem;
+}
+@media only screen and (min-width: 1200px) {
+  .color-portal-accordion--project-details .ui.fluid.accordion .content__row-two--section-one .item {
+    min-width: 14rem;
+  }
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-two--section-one .item__bottom {
   color: #193040;
