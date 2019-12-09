@@ -1450,13 +1450,7 @@ footer .footer-trademark {
   width: 16%;
 }
 
-.linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(2) {
-  width: 16%;
-}
-.linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(3) {
-  width: 16.5%;
-}
-.linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(4) {
+.linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(2), .linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(3), .linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(4) {
   width: 16%;
 }
 
