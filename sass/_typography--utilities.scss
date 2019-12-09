@@ -31,4 +31,7 @@
   font-style: italic;
 }
 
-/* FONT COLORS*/
+/* ERROR MESSAGE TEXT */
+.danger-message {
+  color: $font-color-error-message !important;
+}

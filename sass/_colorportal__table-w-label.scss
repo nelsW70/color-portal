@@ -11,3 +11,18 @@
     text-transform: capitalize;
   }
 }
+
+table.ui.sortable.very.basic.striped.padded.table {
+  & .icon-text-container {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      display: flex;
+      & .material-icons {
+        font-size: 16px;
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}

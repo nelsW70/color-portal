@@ -114,7 +114,11 @@ a:hover {
   font-style: italic;
 }
 
-/* FONT COLORS*/
+/* ERROR MESSAGE TEXT */
+.danger-message {
+  color: #ce3f11 !important;
+}
+
 /** LABELS **/
 .label {
   color: #193040;
@@ -1381,6 +1385,18 @@ footer .footer-trademark {
   font-size: 1.125rem;
   font-weight: 400;
   text-transform: capitalize;
+}
+
+table.ui.sortable.very.basic.striped.padded.table .icon-text-container {
+  display: flex;
+  align-items: center;
+}
+table.ui.sortable.very.basic.striped.padded.table .icon-text-container__icon {
+  display: flex;
+}
+table.ui.sortable.very.basic.striped.padded.table .icon-text-container__icon .material-icons {
+  font-size: 16px;
+  margin-right: 0.25rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
