@@ -1,7 +1,8 @@
-// STYLIST PROJECT DETAILS TABLES
+// STYLIST - PROJECT DETAILS TABLES
 
 .table-description {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   &__title {
     color: $font-color-primary;

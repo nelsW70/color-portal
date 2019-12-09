@@ -1069,6 +1069,10 @@ table.ui.table thead th {
   font-size: 0.8125rem;
   font-weight: 500;
   color: #193040;
+  text-transform: capitalize;
+}
+table.ui.table thead th:after {
+  text-transform: none;
 }
 table.ui.table td {
   font-size: 0.8125rem;
@@ -1369,6 +1373,7 @@ footer .footer-trademark {
 
 .table-description {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .table-description__title {

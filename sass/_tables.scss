@@ -6,6 +6,10 @@ table.ui.table {
     font-size: 0.8125rem;
     font-weight: $font-weight-semi-bold;
     color: $font-color-primary;
+    text-transform: capitalize;
+    &:after {
+      text-transform: none;
+    }
   }
   & td {
     font-size: 0.8125rem;

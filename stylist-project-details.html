@@ -266,9 +266,42 @@
               styling inspirations
             </div>
             <div>
-              button
+              <button class="ppg ui secondary button">
+                <i class="material-icons mr-1">add_box</i>
+                <span class="button-text">Add Inspiration</span>
+              </button>
             </div>
           </div>
+          <table class="ui sortable very basic striped padded table">
+            <thead>
+              <tr>
+                <th scope="col">project name</th>
+                <th scope="col">color readings</th>
+                <th scope="col">tolerances</th>
+                <th scope="col">created by</th>
+                <th scope="col">created date</th>
+                <th scope="col">action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CLE13367 4367-03-01</td>
+                <td>Nissan</td>
+                <td><a href="">Add Tolerance</a></td>
+                <td>Rosa Horton</td>
+                <td>11 Aug 2019</td>
+                <td><span></span>Delete</td>
+              </tr>
+              <tr>
+                <td>CLE13367 4367-03-02</td>
+                <td>Olympic</td>
+                <td><a href="">Add Tolerance</a></td>
+                <td>Bertha Campbell</td>
+                <td>03 Apr 2019</td>
+                <td><span></span>Delete</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
         <!-- FIRST TABLE -->
         <!-- SECOND TABLE -->
@@ -297,6 +330,8 @@
     <!-- JS scripts -->
     <!-- Table Sort -->
     <script src="js/table-sort.js"></script>
+    <!-- Table Sort Initialize -->
+    <script src="js/table-sort-initialize.js"></script>
     <!-- navbar hamburger animation -->
     <script src="js/navbar-menu-hamburger-animation.js"></script>
     <!-- toggles active state on project status buttons -->
