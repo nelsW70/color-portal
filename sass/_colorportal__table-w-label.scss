@@ -1,0 +1,12 @@
+// STYLIST PROJECT DETAILS TABLES
+
+.table-description {
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    color: $font-color-primary;
+    font-size: 1.125rem;
+    font-weight: $font-weight-normal;
+    text-transform: capitalize;
+  }
+}

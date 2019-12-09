@@ -1261,7 +1261,7 @@ footer .footer-trademark {
   cursor: pointer;
 }
 .color-portal-accordion--project-details {
-  margin: 0;
+  margin: 0 0 0.5rem 0;
   padding: 0.75rem 25px;
   background-color: rgba(231, 235, 237, 0.5);
 }
@@ -1361,6 +1361,17 @@ footer .footer-trademark {
   }
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-two--section-one .item__bottom {
+  color: #193040;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.table-description {
+  display: flex;
+  justify-content: space-between;
+}
+.table-description__title {
   color: #193040;
   font-size: 1.125rem;
   font-weight: 400;
