@@ -9,6 +9,7 @@
   min-height: calc(100vh - 195px);
 }
 
+/* GENERAL WRAPPER */
 .wrapper-one {
   padding: 25px;
 }
@@ -45,13 +46,6 @@
       margin-top: 1.25rem;
     }
   }
-}
-
-// SEARCH CONTAINER
-.search-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 /* PROJECTS TABLE */

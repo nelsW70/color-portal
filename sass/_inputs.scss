@@ -33,6 +33,10 @@ input[type='search']::-webkit-search-cancel-button {
 
 /* PREDICTIVE SEARCH WITH LABEL */
 .search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   & .ui.icon.input {
     min-width: 18rem;
   }
@@ -60,6 +64,10 @@ input[type='search']::-webkit-search-cancel-button {
 
 /* REQUIRED INPUT W/ERROR MESSAGE */
 .search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   &.required-field {
     min-height: 94px;
     & .ui.icon.input input {

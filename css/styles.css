@@ -300,6 +300,7 @@ a:hover {
   min-height: calc(100vh - 195px);
 }
 
+/* GENERAL WRAPPER */
 .wrapper-one {
   padding: 25px;
 }
@@ -336,12 +337,6 @@ a:hover {
   .customer-info__col-two {
     margin-top: 1.25rem;
   }
-}
-
-.search-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 /* PROJECTS TABLE */
@@ -1000,6 +995,11 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 /* PREDICTIVE SEARCH WITH LABEL */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .search-container .ui.icon.input {
   min-width: 18rem;
 }
@@ -1021,6 +1021,11 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 /* REQUIRED INPUT W/ERROR MESSAGE */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .search-container.required-field {
   min-height: 94px;
 }
