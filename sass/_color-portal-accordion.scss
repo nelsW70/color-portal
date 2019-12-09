@@ -46,13 +46,13 @@
             width: 40%;
             max-width: 400px;
             @media only screen and (min-width: 1200px) {
-              max-width: 500px;
+              max-width: 510px;
             }
 
             & .item {
               min-width: 12rem;
               @media only screen and (min-width: 1200px) {
-                min-width: 14rem;
+                min-width: 15rem;
               }
               &__bottom {
                 color: $font-color-primary;
@@ -87,12 +87,12 @@
             width: 40%;
             max-width: 400px;
             @media only screen and (min-width: 1200px) {
-              max-width: 500px;
+              max-width: 510px;
             }
             & .item {
               min-width: 12rem;
               @media only screen and (min-width: 1200px) {
-                min-width: 14rem;
+                min-width: 15rem;
               }
               &__bottom {
                 color: $font-color-primary;
