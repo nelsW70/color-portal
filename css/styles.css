@@ -1284,10 +1284,12 @@ footer .footer-trademark {
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content .label--large {
   color: #7f98ab;
+  margin-bottom: 0.25rem;
   text-transform: capitalize;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one {
   display: flex !important;
+  padding: 0.5rem 0 1.5rem 0;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-one {
   display: flex;
@@ -1295,7 +1297,7 @@ footer .footer-trademark {
   max-width: 400px;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-one .item {
-  min-width: 10rem;
+  min-width: 12rem;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-one .item__bottom {
   color: #193040;
@@ -1318,13 +1320,14 @@ footer .footer-trademark {
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-two {
   display: flex !important;
+  padding-bottom: 0.75rem;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-two--section-one {
   display: flex;
   width: 35%;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-two--section-one .item {
-  min-width: 10rem;
+  min-width: 12rem;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-two--section-one .item__bottom {
   color: #193040;
