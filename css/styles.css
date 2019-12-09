@@ -1308,7 +1308,7 @@ footer .footer-trademark {
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-one {
   display: flex;
-  width: 40%;
+  width: 45%;
   max-width: 400px;
 }
 @media only screen and (min-width: 1200px) {
@@ -1332,7 +1332,7 @@ footer .footer-trademark {
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-two {
   display: flex;
-  width: 60%;
+  width: 55%;
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .content__row-one--section-two .item {
   min-width: 10rem;
