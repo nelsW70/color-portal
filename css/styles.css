@@ -1377,6 +1377,11 @@ footer .footer-trademark {
   text-transform: capitalize;
 }
 
+/** STYLIST - PROJECT DETAILS TABLES **/
+.styling-iterations {
+  margin-top: 2rem;
+}
+
 .table-description {
   display: flex;
   align-items: center;
@@ -1389,6 +1394,9 @@ footer .footer-trademark {
   text-transform: capitalize;
 }
 
+table.ui.sortable.very.basic.striped.padded.table thead tr th {
+  width: 20%;
+}
 table.ui.sortable.very.basic.striped.padded.table .icon-text-container {
   display: flex;
   align-items: center;

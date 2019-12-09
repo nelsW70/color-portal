@@ -1,5 +1,11 @@
-// STYLIST - PROJECT DETAILS TABLES
+/** STYLIST - PROJECT DETAILS TABLES **/
 
+// TABLE SECTION SPACING
+.styling-iterations {
+  margin-top: 2rem;
+}
+
+// TABLE DESCRIPTION WITH CTA
 .table-description {
   display: flex;
   align-items: center;
@@ -12,7 +18,12 @@
   }
 }
 
+// TABLE CELL W/ICON AND OFFSET LAYOUT
 table.ui.sortable.very.basic.striped.padded.table {
+  & thead tr th {
+    width: 20%;
+  }
+
   & .icon-text-container {
     display: flex;
     align-items: center;
