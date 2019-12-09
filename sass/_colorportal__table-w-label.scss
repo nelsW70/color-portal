@@ -20,11 +20,17 @@
       font-weight: $font-weight-normal;
       text-transform: capitalize;
     }
+    &__search-cta {
+      display: flex;
+      align-items: flex-end;
+      & .search-container {
+        margin-right: 1rem;
+      }
+    }
   }
   // TABLE CELL W/ICON AND OFFSET LAYOUT
   & table.ui.sortable.very.basic.striped.padded.table {
-    // keeps table columns aligned
-    & thead tr th {
+    & thead tr th:first-child {
       width: 20%;
     }
     & .icon-text-container {
@@ -38,6 +44,44 @@
           font-size: 16px;
           margin-right: 0.25rem;
         }
+      }
+    }
+  }
+  & .no-info-text {
+    color: #9ba6ae;
+    font-size: 1rem;
+    margin-top: 1.25rem;
+  }
+}
+
+// MAINTAINS EQUAL COLUMN SPACING FOR TABLE WITH LESS COLUMNS
+.styling-inspirations,
+.styling-iterations {
+  & .ui.sortable.very.basic.striped.padded.table {
+    & thead tr th {
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        width: calc(80% / 5);
+      }
+    }
+  }
+}
+
+// MAINTAINS EQUAL COLUMN SPACING FOR THIS TABLE WITH LESS COLUMNS
+.linked-colors {
+  & .ui.sortable.very.basic.striped.padded.table {
+    & thead tr th {
+      &:nth-child(2) {
+        width: 16%;
+      }
+      &:nth-child(3) {
+        width: 16.5%;
+      }
+      &:nth-child(4) {
+        width: 16%;
       }
     }
   }

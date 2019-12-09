@@ -259,8 +259,8 @@
 
       <!-- TABLES -->
       <div class="wrapper-one">
-        <!-- FIRST TABLE -->
         <section class="styling-inspirations">
+          <!-- TABLE DESCRIPTION -->
           <div class="table-description">
             <div class="table-description__title">
               styling inspirations
@@ -272,6 +272,8 @@
               </button>
             </div>
           </div>
+          <!-- TABLE DESCRIPTION -->
+          <!-- FIRST TABLE -->
           <table class="ui sortable very basic striped padded table">
             <thead>
               <tr>
@@ -320,10 +322,10 @@
               </tr>
             </tbody>
           </table>
+          <!-- FIRST TABLE -->
         </section>
-        <!-- FIRST TABLE -->
-        <!-- SECOND TABLE -->
         <section class="styling-iterations">
+          <!-- TABLE DESCRIPTION -->
           <div class="table-description">
             <div class="table-description__title">
               styling iterations
@@ -335,6 +337,8 @@
               </button>
             </div>
           </div>
+          <!-- TABLE DESCRIPTION -->
+          <!-- SECOND TABLE -->
           <table class="ui sortable very basic striped padded table">
             <thead>
               <tr>
@@ -434,11 +438,59 @@
               </tr>
             </tbody>
           </table>
+          <!-- SECOND TABLE -->
         </section>
-        <!-- SECOND TABLE -->
-        <!-- THIRD TABLE -->
-        <section class="linked-colors"></section>
-        <!-- THIRD TABLE -->
+        <section class="linked-colors">
+          <!-- TABLE DESCRIPTION -->
+          <div class="table-description">
+            <div class="table-description__title">
+              linked colors
+            </div>
+            <div class="table-description__search-cta">
+              <div class="search-container">
+                <label for="inputID" class="label label--stacked"
+                  >Product Code</label
+                >
+                <div class="ui fluid search linked-colors-search">
+                  <div class="ui icon input">
+                    <input
+                      id="inputID"
+                      class="prompt"
+                      type="search"
+                      placeholder="Placeholder"
+                    />
+                    <i class="search link icon"></i>
+                  </div>
+                  <div class="results"></div>
+                </div>
+              </div>
+              <button class="ppg ui secondary button">
+                <i class="material-icons mr-1">add_box</i>
+                <span class="button-text">Add color code</span>
+              </button>
+            </div>
+          </div>
+          <!-- THIRD TABLE -->
+          <table class="ui sortable very basic striped padded table">
+            <thead>
+              <tr>
+                <th scope="col">project code</th>
+                <th scope="col">color / iteration name</th>
+                <th scope="col">color readings</th>
+                <th scope="col">created by</th>
+                <th scope="col">created date</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <!-- THIRD TABLE -->
+          <!-- TABLE DESCRIPTION -->
+          <!-- IF NO PROJECTS ASSOCIATED WITH TABLE -->
+          <div class="no-info-text italic">
+            You have no linked color codes
+          </div>
+          <!-- IF NO PROJECTS ASSOCIATED WITH TABLE -->
+        </section>
       </div>
       <!-- TABLES -->
     </main>
@@ -480,6 +532,26 @@
         selector: {
           trigger: '.accordion-toggle'
         }
+      });
+    </script>
+    <script>
+      // fake local data implementation of predictive results for product code search
+      // documentation for semantic ui is here
+      // https://semantic-ui.com/modules/search.html#/definition
+      var content = [
+        { title: 'Isuzu' },
+        { title: 'Jiangnan Mosu' },
+        { title: 'Jiulong Jiansu' },
+        { title: 'Mitsubishi' },
+        { title: 'Ron Swanson' },
+        { title: 'Subaru' },
+        { title: 'Suzuki' },
+        { title: 'Uknown OEM - Sumaré' },
+        { title: 'Wanlong Suzhou' },
+        { title: 'Wick, John' }
+      ];
+      $('.ui.search.linked-colors-search').search({
+        source: content
       });
     </script>
   </body>

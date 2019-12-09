@@ -1398,9 +1398,20 @@ footer .footer-trademark {
   font-weight: 400;
   text-transform: capitalize;
 }
-.styling-inspirations table.ui.sortable.very.basic.striped.padded.table thead tr th,
-.styling-iterations table.ui.sortable.very.basic.striped.padded.table thead tr th,
-.linked-colors table.ui.sortable.very.basic.striped.padded.table thead tr th {
+.styling-inspirations .table-description__search-cta,
+.styling-iterations .table-description__search-cta,
+.linked-colors .table-description__search-cta {
+  display: flex;
+  align-items: flex-end;
+}
+.styling-inspirations .table-description__search-cta .search-container,
+.styling-iterations .table-description__search-cta .search-container,
+.linked-colors .table-description__search-cta .search-container {
+  margin-right: 1rem;
+}
+.styling-inspirations table.ui.sortable.very.basic.striped.padded.table thead tr th:first-child,
+.styling-iterations table.ui.sortable.very.basic.striped.padded.table thead tr th:first-child,
+.linked-colors table.ui.sortable.very.basic.striped.padded.table thead tr th:first-child {
   width: 20%;
 }
 .styling-inspirations table.ui.sortable.very.basic.striped.padded.table .icon-text-container,
@@ -1420,6 +1431,32 @@ footer .footer-trademark {
 .linked-colors table.ui.sortable.very.basic.striped.padded.table .icon-text-container__icon .material-icons {
   font-size: 16px;
   margin-right: 0.25rem;
+}
+.styling-inspirations .no-info-text,
+.styling-iterations .no-info-text,
+.linked-colors .no-info-text {
+  color: #9ba6ae;
+  font-size: 1rem;
+  margin-top: 1.25rem;
+}
+
+.styling-inspirations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(2), .styling-inspirations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(3), .styling-inspirations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(4), .styling-inspirations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(5), .styling-inspirations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(6),
+.styling-iterations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(2),
+.styling-iterations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(3),
+.styling-iterations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(4),
+.styling-iterations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(5),
+.styling-iterations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(6) {
+  width: calc(80% / 5);
+}
+
+.linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(2) {
+  width: 16%;
+}
+.linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(3) {
+  width: 16.5%;
+}
+.linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(4) {
+  width: 16%;
 }
 
 /*# sourceMappingURL=styles.css.map */
