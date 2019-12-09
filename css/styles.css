@@ -483,6 +483,7 @@ a:hover {
   border: solid 1px #02a154;
   background-color: rgba(2, 161, 84, 0.1);
   padding: 0.175rem 0.375rem;
+  line-height: 1.25;
   min-height: 26px;
 }
 .ppg.tiny.ui.button.btn-green:hover, .ppg.tiny.ui.button.btn-green.active {
