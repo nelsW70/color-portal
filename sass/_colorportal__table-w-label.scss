@@ -1,39 +1,43 @@
 /** STYLIST - PROJECT DETAILS TABLES **/
 
 // TABLE SECTION SPACING
-.styling-iterations {
+.styling-iterations,
+.linked-colors {
   margin-top: 2rem;
 }
 
-// TABLE DESCRIPTION WITH CTA
-.table-description {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  &__title {
-    color: $font-color-primary;
-    font-size: 1.125rem;
-    font-weight: $font-weight-normal;
-    text-transform: capitalize;
-  }
-}
-
-// TABLE CELL W/ICON AND OFFSET LAYOUT
-table.ui.sortable.very.basic.striped.padded.table {
-  & thead tr th {
-    width: 20%;
-  }
-
-  & .icon-text-container {
+.styling-inspirations,
+.styling-iterations,
+.linked-colors {
+  // TABLE DESCRIPTION WITH CTA
+  & .table-description {
     display: flex;
     align-items: center;
-    padding-left: 1.5rem;
-
-    &__icon {
+    justify-content: space-between;
+    &__title {
+      color: $font-color-primary;
+      font-size: 1.125rem;
+      font-weight: $font-weight-normal;
+      text-transform: capitalize;
+    }
+  }
+  // TABLE CELL W/ICON AND OFFSET LAYOUT
+  & table.ui.sortable.very.basic.striped.padded.table {
+    // keeps table columns aligned
+    & thead tr th {
+      width: 20%;
+    }
+    & .icon-text-container {
       display: flex;
-      & .material-icons {
-        font-size: 16px;
-        margin-right: 0.25rem;
+      align-items: center;
+      padding-left: 1.5rem;
+
+      &__icon {
+        display: flex;
+        & .material-icons {
+          font-size: 16px;
+          margin-right: 0.25rem;
+        }
       }
     }
   }

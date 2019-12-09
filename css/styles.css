@@ -1378,34 +1378,46 @@ footer .footer-trademark {
 }
 
 /** STYLIST - PROJECT DETAILS TABLES **/
-.styling-iterations {
+.styling-iterations,
+.linked-colors {
   margin-top: 2rem;
 }
 
-.table-description {
+.styling-inspirations .table-description,
+.styling-iterations .table-description,
+.linked-colors .table-description {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.table-description__title {
+.styling-inspirations .table-description__title,
+.styling-iterations .table-description__title,
+.linked-colors .table-description__title {
   color: #193040;
   font-size: 1.125rem;
   font-weight: 400;
   text-transform: capitalize;
 }
-
-table.ui.sortable.very.basic.striped.padded.table thead tr th {
+.styling-inspirations table.ui.sortable.very.basic.striped.padded.table thead tr th,
+.styling-iterations table.ui.sortable.very.basic.striped.padded.table thead tr th,
+.linked-colors table.ui.sortable.very.basic.striped.padded.table thead tr th {
   width: 20%;
 }
-table.ui.sortable.very.basic.striped.padded.table .icon-text-container {
+.styling-inspirations table.ui.sortable.very.basic.striped.padded.table .icon-text-container,
+.styling-iterations table.ui.sortable.very.basic.striped.padded.table .icon-text-container,
+.linked-colors table.ui.sortable.very.basic.striped.padded.table .icon-text-container {
   display: flex;
   align-items: center;
   padding-left: 1.5rem;
 }
-table.ui.sortable.very.basic.striped.padded.table .icon-text-container__icon {
+.styling-inspirations table.ui.sortable.very.basic.striped.padded.table .icon-text-container__icon,
+.styling-iterations table.ui.sortable.very.basic.striped.padded.table .icon-text-container__icon,
+.linked-colors table.ui.sortable.very.basic.striped.padded.table .icon-text-container__icon {
   display: flex;
 }
-table.ui.sortable.very.basic.striped.padded.table .icon-text-container__icon .material-icons {
+.styling-inspirations table.ui.sortable.very.basic.striped.padded.table .icon-text-container__icon .material-icons,
+.styling-iterations table.ui.sortable.very.basic.striped.padded.table .icon-text-container__icon .material-icons,
+.linked-colors table.ui.sortable.very.basic.striped.padded.table .icon-text-container__icon .material-icons {
   font-size: 16px;
   margin-right: 0.25rem;
 }
