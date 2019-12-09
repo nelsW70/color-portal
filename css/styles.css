@@ -1446,7 +1446,7 @@ footer .footer-trademark {
 .styling-iterations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(4),
 .styling-iterations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(5),
 .styling-iterations .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(6) {
-  width: calc(80% / 5);
+  width: 16%;
 }
 
 .linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(2) {
