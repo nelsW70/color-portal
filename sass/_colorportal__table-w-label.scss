@@ -12,12 +12,13 @@
   // TABLE DESCRIPTION WITH CTA
   & .table-description {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     &__title {
       color: $font-color-primary;
       font-size: 1.125rem;
       font-weight: $font-weight-normal;
+      margin-bottom: 0.5rem;
       text-transform: capitalize;
     }
     &__search-cta {

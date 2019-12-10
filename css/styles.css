@@ -1388,7 +1388,7 @@ footer .footer-trademark {
 .styling-iterations .table-description,
 .linked-colors .table-description {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 .styling-inspirations .table-description__title,
@@ -1397,6 +1397,7 @@ footer .footer-trademark {
   color: #193040;
   font-size: 1.125rem;
   font-weight: 400;
+  margin-bottom: 0.5rem;
   text-transform: capitalize;
 }
 .styling-inspirations .table-description__search-cta,
