@@ -1451,9 +1451,6 @@ footer .footer-trademark {
   width: 16%;
 }
 
-.linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:first-child {
-  width: 20% !important;
-}
 .linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(2) {
   width: 16%;
 }

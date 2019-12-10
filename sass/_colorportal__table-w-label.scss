@@ -75,9 +75,6 @@
 .linked-colors {
   & .ui.sortable.very.basic.striped.padded.table {
     & thead tr th {
-      &:first-child {
-        width: 20% !important;
-      }
       &:nth-child(2) {
         width: 16%;
       }
