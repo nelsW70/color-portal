@@ -1411,6 +1411,13 @@ footer .footer-trademark {
 .linked-colors .table-description__search-cta .search-container {
   margin-right: 1rem;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .styling-inspirations .table-description__search-cta .search-container,
+.styling-iterations .table-description__search-cta .search-container,
+.linked-colors .table-description__search-cta .search-container {
+    margin-bottom: -6px;
+  }
+}
 .styling-inspirations table.ui.sortable.very.basic.striped.padded.table thead tr th:first-child,
 .styling-iterations table.ui.sortable.very.basic.striped.padded.table thead tr th:first-child,
 .linked-colors table.ui.sortable.very.basic.striped.padded.table thead tr th:first-child {
