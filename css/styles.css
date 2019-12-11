@@ -883,14 +883,16 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 
 /** SMALL DROPDOWN SELECT **/
 .ui.fluid.selection.dropdown {
-  background-color: #e7ebed;
   border-radius: 1px;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
   text-align: left;
-  width: 3.75rem;
   min-height: 36px;
   height: 36px;
   line-height: 1.1rem;
+}
+.ui.fluid.selection.dropdown.dropdown--grey {
+  background-color: #e7ebed;
+  width: 3.75rem;
 }
 .ui.fluid.selection.dropdown:not(.button) > .default.text {
   color: #334756;

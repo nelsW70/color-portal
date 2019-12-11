@@ -7,15 +7,18 @@
 
 /** SMALL DROPDOWN SELECT **/
 .ui.fluid.selection.dropdown {
-  // DEFAULT GREY BACKGROUND
-  background-color: $background-color-gray-one;
   border-radius: 1px;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
   text-align: left;
-  width: 3.75rem;
   min-height: 36px;
   height: 36px;
   line-height: 1.1rem;
+
+  // GREY BACKGROUND
+  &.dropdown--grey {
+    background-color: $background-color-gray-one;
+    width: 3.75rem;
+  }
 
   &:not(.button) > .default.text {
     color: $font-color-gray-two;
