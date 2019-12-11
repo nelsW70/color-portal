@@ -10,22 +10,24 @@
   // SMALL
   &.small-select {
     font-size: 0.875rem;
-    & .menu > .item {
-      font-size: 0.875rem;
-    }
     border-radius: $border-radius-two;
     padding: 0.5rem 1.25rem 0.5rem 0.5rem;
     text-align: left;
     min-height: 35px;
     height: 35px;
+    width: 10rem;
     line-height: 1.1rem;
 
+    & .menu > .item {
+      font-size: 0.875rem;
+    }
     &:not(.button) > .default.text {
       color: $font-color-gray-two;
     }
 
     & .dropdown.icon {
-      padding: 0.5rem 0.5rem 0.5rem 0.25rem;
+      padding: 0.575rem 0.575rem 0.575rem 0.575rem;
+      right: 10px;
     }
 
     & .menu > .item {
@@ -40,6 +42,9 @@
       font-size: 1rem;
       & .menu > .item {
         font-size: 1rem;
+      }
+      & .dropdown.icon {
+        padding: 0.5rem 0.65rem 0.5rem 0.25rem;
       }
     }
   }
