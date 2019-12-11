@@ -7,11 +7,15 @@
 
 /** SMALL DROPDOWN SELECT **/
 .ui.fluid.selection.dropdown.small-select {
+  font-size: 0.875rem;
+  & .menu > .item {
+    font-size: 0.875rem;
+  }
   border-radius: $border-radius-two;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
   text-align: left;
-  min-height: 36px;
-  height: 36px;
+  min-height: 35px;
+  height: 35px;
   line-height: 1.1rem;
 
   &:not(.button) > .default.text {
