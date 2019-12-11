@@ -1120,6 +1120,11 @@ table.ui.table.sortable.very.basic.striped.padded.table th:after {
   display: inline-block;
   width: 12px;
 }
+@media screen and (max-width: 959px) {
+  table.ui.table.sortable.very.basic.striped.padded.table th:after {
+    top: 3px;
+  }
+}
 table.ui.table.sortable.very.basic.striped.padded.table th.ascending:after {
   font-family: "Material Icons";
   content: "arrow_downward";

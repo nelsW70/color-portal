@@ -33,6 +33,10 @@ table.ui.table {
         content: '';
         display: inline-block;
         width: 12px;
+
+        @media screen and (max-width: 959px) {
+          top: 3px;
+        }
       }
       &.ascending:after {
         font-family: 'Material Icons';
