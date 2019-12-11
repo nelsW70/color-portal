@@ -2,9 +2,11 @@
 .label {
   color: $font-color-primary;
   font-size: 0.8125rem;
+  font-weight: $font-weight-semi-bold;
 
   &--large {
     font-size: 0.875rem;
+    font-weight: $font-weight-normal;
   }
   &--stacked {
     margin-bottom: 0.25rem;

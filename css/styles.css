@@ -123,9 +123,11 @@ a:hover {
 .label {
   color: #193040;
   font-size: 0.8125rem;
+  font-weight: 500;
 }
 .label--large {
   font-size: 0.875rem;
+  font-weight: 400;
 }
 .label--stacked {
   margin-bottom: 0.25rem;
