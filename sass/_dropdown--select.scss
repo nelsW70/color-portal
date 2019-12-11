@@ -31,5 +31,9 @@
   &--grey {
     background-color: $background-color-gray-one;
     width: 3.75rem;
+    font-size: 1rem;
+    & .menu > .item {
+      font-size: 1rem;
+    }
   }
 }

@@ -904,6 +904,10 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 .ui.fluid.selection.dropdown.small-select--grey {
   background-color: #e7ebed;
   width: 3.75rem;
+  font-size: 1rem;
+}
+.ui.fluid.selection.dropdown.small-select--grey .menu > .item {
+  font-size: 1rem;
 }
 
 /** PAGINATION **/
