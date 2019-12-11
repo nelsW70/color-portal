@@ -22,7 +22,7 @@
       font-size: 0.875rem;
     }
     &:not(.button) > .default.text {
-      color: $font-color-gray-two;
+      color: $font-color-primary;
     }
 
     & .dropdown.icon {
@@ -31,7 +31,8 @@
     }
 
     & .menu > .item {
-      color: $font-color-gray-two;
+      color: $font-color-primary;
+
       padding: 0.5rem !important;
       text-align: left;
     }
@@ -42,6 +43,9 @@
       font-size: 1rem;
       & .menu > .item {
         font-size: 1rem;
+      }
+      &:not(.button) > .default.text {
+        color: $font-color-gray-two;
       }
       & .dropdown.icon {
         padding: 0.5rem 0.65rem 0.5rem 0.25rem;

@@ -898,14 +898,14 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   font-size: 0.875rem;
 }
 .ui.fluid.selection.dropdown.small-select:not(.button) > .default.text {
-  color: #334756;
+  color: #193040;
 }
 .ui.fluid.selection.dropdown.small-select .dropdown.icon {
   padding: 0.575rem 0.575rem 0.575rem 0.575rem;
   right: 10px;
 }
 .ui.fluid.selection.dropdown.small-select .menu > .item {
-  color: #334756;
+  color: #193040;
   padding: 0.5rem !important;
   text-align: left;
 }
@@ -916,6 +916,9 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 .ui.fluid.selection.dropdown.small-select--grey .menu > .item {
   font-size: 1rem;
+}
+.ui.fluid.selection.dropdown.small-select--grey:not(.button) > .default.text {
+  color: #334756;
 }
 .ui.fluid.selection.dropdown.small-select--grey .dropdown.icon {
   padding: 0.5rem 0.65rem 0.5rem 0.25rem;
