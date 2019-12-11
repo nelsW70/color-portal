@@ -877,7 +877,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 
 /** DROPDOWN SELECT W/INLINE LABEL*/
-.inline-dropdown {
+.dropdown-inline {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
