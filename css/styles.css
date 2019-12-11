@@ -881,7 +881,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   align-items: center;
 }
 
-/** SMALL DROPDOWN SELECT **/
+/** DROPDOWN SELECT **/
 .ui.fluid.selection.dropdown.small-select {
   font-size: 0.875rem;
   border-radius: 2px;
