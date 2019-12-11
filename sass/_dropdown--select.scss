@@ -6,19 +6,13 @@
 }
 
 /** SMALL DROPDOWN SELECT **/
-.ui.fluid.selection.dropdown {
-  border-radius: 1px;
+.ui.fluid.selection.dropdown.small-select {
+  border-radius: $border-radius-two;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
   text-align: left;
   min-height: 36px;
   height: 36px;
   line-height: 1.1rem;
-
-  // GREY BACKGROUND
-  &.dropdown--grey {
-    background-color: $background-color-gray-one;
-    width: 3.75rem;
-  }
 
   &:not(.button) > .default.text {
     color: $font-color-gray-two;
@@ -32,5 +26,10 @@
     color: $font-color-gray-two;
     padding: 0.5rem !important;
     text-align: left;
+  }
+  // GREY BACKGROUND
+  &--grey {
+    background-color: $background-color-gray-one;
+    width: 3.75rem;
   }
 }

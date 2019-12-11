@@ -882,28 +882,28 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 
 /** SMALL DROPDOWN SELECT **/
-.ui.fluid.selection.dropdown {
-  border-radius: 1px;
+.ui.fluid.selection.dropdown.small-select {
+  border-radius: 2px;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
   text-align: left;
   min-height: 36px;
   height: 36px;
   line-height: 1.1rem;
 }
-.ui.fluid.selection.dropdown.dropdown--grey {
-  background-color: #e7ebed;
-  width: 3.75rem;
-}
-.ui.fluid.selection.dropdown:not(.button) > .default.text {
+.ui.fluid.selection.dropdown.small-select:not(.button) > .default.text {
   color: #334756;
 }
-.ui.fluid.selection.dropdown .dropdown.icon {
+.ui.fluid.selection.dropdown.small-select .dropdown.icon {
   padding: 0.5rem 0.5rem 0.5rem 0.25rem;
 }
-.ui.fluid.selection.dropdown .menu > .item {
+.ui.fluid.selection.dropdown.small-select .menu > .item {
   color: #334756;
   padding: 0.5rem !important;
   text-align: left;
+}
+.ui.fluid.selection.dropdown.small-select--grey {
+  background-color: #e7ebed;
+  width: 3.75rem;
 }
 
 /** PAGINATION **/
