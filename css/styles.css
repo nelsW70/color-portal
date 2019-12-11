@@ -367,7 +367,7 @@ a:hover {
   margin-bottom: 0 !important;
 }
 @media only screen and (max-width: 1200px) {
-  .pagination-row .items-per-page .inline-dropdown {
+  .pagination-row .items-per-page .dropdown-inline {
     width: 100%;
   }
   .pagination-row .items-per-page .item-count {
@@ -896,18 +896,16 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 .ui.fluid.selection.dropdown.small-select .menu > .item {
   font-size: 0.875rem;
+  color: #193040;
+  padding: 0.5rem !important;
+  text-align: left;
 }
-.ui.fluid.selection.dropdown.small-select:not(.button) > .default.text {
+.ui.fluid.selection.dropdown.small-select:not(.button) > .default.text, .ui.fluid.selection.dropdown.small-select .text {
   color: #193040;
 }
 .ui.fluid.selection.dropdown.small-select .dropdown.icon {
   padding: 0.575rem 0.575rem 0.575rem 0.575rem;
   right: 10px;
-}
-.ui.fluid.selection.dropdown.small-select .menu > .item {
-  color: #193040;
-  padding: 0.5rem !important;
-  text-align: left;
 }
 .ui.fluid.selection.dropdown.small-select--grey {
   background-color: #e7ebed;

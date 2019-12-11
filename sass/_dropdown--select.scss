@@ -20,8 +20,13 @@
 
     & .menu > .item {
       font-size: 0.875rem;
+      color: $font-color-primary;
+      padding: 0.5rem !important;
+      text-align: left;
     }
-    &:not(.button) > .default.text {
+
+    &:not(.button) > .default.text,
+    & .text {
       color: $font-color-primary;
     }
 
@@ -30,17 +35,12 @@
       right: 10px;
     }
 
-    & .menu > .item {
-      color: $font-color-primary;
-
-      padding: 0.5rem !important;
-      text-align: left;
-    }
     // GREY BACKGROUND
     &--grey {
       background-color: $background-color-gray-one;
       width: 3.75rem;
       font-size: 1rem;
+
       & .menu > .item {
         font-size: 1rem;
       }
