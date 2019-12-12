@@ -1,11 +1,11 @@
-/** DROPDOWN SELECT W/INLINE LABEL*/
+/** SELECT W/INLINE LABEL*/
 .dropdown-inline {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-/** DROPDOWN SELECT **/
+/** SELECT **/
 .ui.fluid.selection.dropdown {
   // SMALL
   &.select-small {
@@ -14,7 +14,7 @@
     padding: 0.5rem 1.25rem 0.5rem 0.5rem;
     text-align: left;
     min-height: 35px;
-    height: 35px;
+    // height: 35px;
     width: 10rem;
     line-height: 1.1rem;
 
@@ -23,6 +23,9 @@
       color: $font-color-primary;
       padding: 0.5rem !important;
       text-align: left;
+      &:hover {
+        background-color: $background-color-blue-six;
+      }
     }
 
     &:not(.button) > .default.text,
@@ -35,7 +38,7 @@
       right: 10px;
     }
 
-    // GREY BACKGROUND
+    // SMALL GREY BACKGROUND
     &--grey {
       background-color: $background-color-gray-one;
       width: 3.75rem;
@@ -49,6 +52,13 @@
       }
       & .dropdown.icon {
         padding: 0.5rem 0.65rem 0.5rem 0.25rem;
+      }
+    }
+    // SMALL W/SEARCH
+    &--search {
+      width: 10rem;
+      & > input.search {
+        padding: 0.5rem 1.25rem 0.5rem 0.5rem;
       }
     }
   }

@@ -876,21 +876,20 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   background: rgba(25, 102, 236, 0.1);
 }
 
-/** DROPDOWN SELECT W/INLINE LABEL*/
+/** SELECT W/INLINE LABEL*/
 .dropdown-inline {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-/** DROPDOWN SELECT **/
+/** SELECT **/
 .ui.fluid.selection.dropdown.select-small {
   font-size: 0.875rem;
   border-radius: 2px;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
   text-align: left;
   min-height: 35px;
-  height: 35px;
   width: 10rem;
   line-height: 1.1rem;
 }
@@ -899,6 +898,9 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   color: #193040;
   padding: 0.5rem !important;
   text-align: left;
+}
+.ui.fluid.selection.dropdown.select-small .menu > .item:hover {
+  background-color: rgba(25, 102, 236, 0.1);
 }
 .ui.fluid.selection.dropdown.select-small:not(.button) > .default.text, .ui.fluid.selection.dropdown.select-small .text {
   color: #193040;
@@ -920,6 +922,12 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 .ui.fluid.selection.dropdown.select-small--grey .dropdown.icon {
   padding: 0.5rem 0.65rem 0.5rem 0.25rem;
+}
+.ui.fluid.selection.dropdown.select-small--search {
+  width: 10rem;
+}
+.ui.fluid.selection.dropdown.select-small--search > input.search {
+  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
 }
 
 /** PAGINATION **/
