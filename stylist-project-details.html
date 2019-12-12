@@ -203,7 +203,10 @@
               </button>
             </div>
             <div class="title__buttons-container">
-              <button class="ppg ui secondary button mr-2" id="smallModal">
+              <button
+                class="ppg ui secondary button mr-2"
+                id="compare-data-modal-btn"
+              >
                 <i class="material-icons mr-1">insert_chart</i>
                 <span class="button-text">Compare Data</span>
               </button>
@@ -493,21 +496,37 @@
       </div>
       <!-- TABLES -->
       <!-- MODAL DIALOG -->
-      <div class="ppg ui small modal">
-        <div class="header">
+      <div class="ppg colorportal ui medium modal compare-data-modal">
+        <div class="header modal-header-container">
           <div class="modal-header">
-            Small Modal Header
+            Compare Data
           </div>
-          <i class="material-icons" id="small-modal-close">
+          <i class="material-icons" id="compare-data-modal-close">
             close
           </i>
         </div>
         <div class="content">
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nulla
-            atque quam molestias, reprehenderit sed aliquam provident est
-            voluptate laborum!
+            Add a spectrophometer reading or search for an existing reading
+            using only the search field.
           </p>
+          <div class="search-container">
+            <label for="inputID" class="label label--stacked"
+              >Find a reading</label
+            >
+            <div class="ui fluid search search-one">
+              <div class="ui icon input">
+                <input
+                  id="inputID"
+                  class="prompt"
+                  type="search"
+                  placeholder="Search for customer name"
+                />
+                <i class="search link icon"></i>
+              </div>
+              <div class="results"></div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- MODAL DIALOG -->
@@ -572,15 +591,38 @@
       });
     </script>
     <script>
-      // open modal with 'compare data' button
-      $('#smallModal').click(function() {
-        $('.ui.small.modal').modal('show');
+      // open 'compare data' modal with 'compare data' button
+      $('#compare-data-modal-btn').click(function() {
+        $('.compare-data-modal').modal('show');
       });
     </script>
     <script>
-      // close modal with modal 'x' icon
-      $('#small-modal-close').click(function() {
-        $('.ui.small.modal').modal('hide');
+      // close 'compare data' modal with modal 'x' icon
+      $('#compare-data-modal-close').click(function() {
+        $('.compare-data-modal').modal('hide');
+      });
+    </script>
+    <script>
+      // intialize semantic ui dropdown
+      $('.ui.dropdown').dropdown();
+
+      // fake local data implementation of predictive results for customer search
+      // documentation for semantic ui is here
+      // https://semantic-ui.com/modules/search.html#/definition
+      var content = [
+        { title: 'Isuzu' },
+        { title: 'Jiangnan Mosu' },
+        { title: 'Jiulong Jiansu' },
+        { title: 'Mitsubishi' },
+        { title: 'Ron Swanson' },
+        { title: 'Subaru' },
+        { title: 'Suzuki' },
+        { title: 'Uknown OEM - Sumaré' },
+        { title: 'Wanlong Suzhou' },
+        { title: 'Wick, John' }
+      ];
+      $('.ui.search').search({
+        source: content
       });
     </script>
   </body>

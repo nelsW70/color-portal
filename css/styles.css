@@ -1245,7 +1245,7 @@ footer .footer-trademark {
 .ppg.ui.modal p {
   font-family: "Suisse Intl", sans-serif;
 }
-.ppg.ui.modal .header {
+.ppg.ui.modal .modal-header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1257,11 +1257,11 @@ footer .footer-trademark {
   height: 48px;
   line-height: 1;
 }
-.ppg.ui.modal .header .modal-header {
+.ppg.ui.modal .modal-header-container .modal-header {
   font-size: 1.125rem !important;
   font-weight: 300;
 }
-.ppg.ui.modal .header .material-icons {
+.ppg.ui.modal .modal-header-container .material-icons {
   cursor: pointer;
 }
 
@@ -1501,5 +1501,7 @@ footer .footer-trademark {
 .linked-colors .ui.sortable.very.basic.striped.padded.table thead tr th:nth-child(5) {
   max-width: 16%;
 }
+
+/** COLORPORTAL MODALS **/
 
 /*# sourceMappingURL=styles.css.map */
