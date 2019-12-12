@@ -203,7 +203,7 @@
               </button>
             </div>
             <div class="title__buttons-container">
-              <button class="ppg ui secondary button mr-2">
+              <button class="ppg ui secondary button mr-2" id="smallModal">
                 <i class="material-icons mr-1">insert_chart</i>
                 <span class="button-text">Compare Data</span>
               </button>
@@ -256,7 +256,6 @@
         </div>
       </div>
       <!-- PROJECT DETAILS ACCORDION -->
-
       <!-- TABLES -->
       <div class="wrapper-one">
         <section class="styling-inspirations">
@@ -493,8 +492,26 @@
         </section>
       </div>
       <!-- TABLES -->
+      <!-- MODAL DIALOG -->
+      <div class="ppg ui small modal">
+        <div class="header">
+          <div class="modal-header">
+            Small Modal Header
+          </div>
+          <i class="material-icons" id="small-modal-close">
+            close
+          </i>
+        </div>
+        <div class="content">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nulla
+            atque quam molestias, reprehenderit sed aliquam provident est
+            voluptate laborum!
+          </p>
+        </div>
+      </div>
+      <!-- MODAL DIALOG -->
     </main>
-
     <!-- MAIN CONTENT -->
     <!-- FOOTER -->
     <footer>
@@ -552,6 +569,18 @@
       ];
       $('.ui.search.linked-colors-search').search({
         source: content
+      });
+    </script>
+    <script>
+      // open modal with 'compare data' button
+      $('#smallModal').click(function() {
+        $('.ui.small.modal').modal('show');
+      });
+    </script>
+    <script>
+      // close modal with modal 'x' icon
+      $('#small-modal-close').click(function() {
+        $('.ui.small.modal').modal('hide');
       });
     </script>
   </body>
