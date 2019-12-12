@@ -884,7 +884,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 
 /** DROPDOWN SELECT **/
-.ui.fluid.selection.dropdown.small-select {
+.ui.fluid.selection.dropdown.select-small {
   font-size: 0.875rem;
   border-radius: 2px;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
@@ -894,31 +894,31 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   width: 10rem;
   line-height: 1.1rem;
 }
-.ui.fluid.selection.dropdown.small-select .menu > .item {
+.ui.fluid.selection.dropdown.select-small .menu > .item {
   font-size: 0.875rem;
   color: #193040;
   padding: 0.5rem !important;
   text-align: left;
 }
-.ui.fluid.selection.dropdown.small-select:not(.button) > .default.text, .ui.fluid.selection.dropdown.small-select .text {
+.ui.fluid.selection.dropdown.select-small:not(.button) > .default.text, .ui.fluid.selection.dropdown.select-small .text {
   color: #193040;
 }
-.ui.fluid.selection.dropdown.small-select .dropdown.icon {
+.ui.fluid.selection.dropdown.select-small .dropdown.icon {
   padding: 0.575rem 0.575rem 0.575rem 0.575rem;
   right: 10px;
 }
-.ui.fluid.selection.dropdown.small-select--grey {
+.ui.fluid.selection.dropdown.select-small--grey {
   background-color: #e7ebed;
   width: 3.75rem;
   font-size: 1rem;
 }
-.ui.fluid.selection.dropdown.small-select--grey .menu > .item {
+.ui.fluid.selection.dropdown.select-small--grey .menu > .item {
   font-size: 1rem;
 }
-.ui.fluid.selection.dropdown.small-select--grey:not(.button) > .default.text {
+.ui.fluid.selection.dropdown.select-small--grey:not(.button) > .default.text {
   color: #334756;
 }
-.ui.fluid.selection.dropdown.small-select--grey .dropdown.icon {
+.ui.fluid.selection.dropdown.select-small--grey .dropdown.icon {
   padding: 0.5rem 0.65rem 0.5rem 0.25rem;
 }
 
