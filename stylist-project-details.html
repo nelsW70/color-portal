@@ -514,7 +514,7 @@
             <label for="inputID" class="label label--stacked"
               >Find a reading</label
             >
-            <div class="ui fluid search search-one">
+            <div class="ui fluid search search-readings">
               <div class="ui icon input">
                 <input
                   id="inputID"
@@ -607,6 +607,8 @@
       });
     </script>
     <script>
+      // SCRIPTS FOR COMPARE MODAL SEARCH
+
       // intialize semantic ui dropdown
       $('.ui.dropdown').dropdown();
 
@@ -625,7 +627,7 @@
         { title: 'Wanlong Suzhou' },
         { title: 'Wick, John' }
       ];
-      $('.ui.search').search({
+      $('.ui.search.search-readings').search({
         source: content
       });
     </script>
