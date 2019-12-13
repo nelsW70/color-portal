@@ -460,6 +460,7 @@ a:hover {
   background-color: #e7ebed;
   color: #193040;
   font-weight: 500;
+  min-height: 36px;
   padding: 6px 12px;
 }
 .ppg.ui.small:hover {
