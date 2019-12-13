@@ -1,9 +1,17 @@
 /** COLORPORTAL MODALS **/
 
-// .ppg.colorportal.ui {
-//   &.small.modal {
-//   }
-// }
+.ppg.colorportal.ui {
+  &.medium.modal {
+    & .button-container {
+      display: flex;
+      justify-content: space-between;
+      &__column-one,
+      &__column-two {
+        display: flex;
+      }
+    }
+  }
+}
 
 // Laura's modal sizes:
 // 500 (mini), 650 (tiny), 700 (small), 910 (medium), 950 (large), 1070 (fullscreen)

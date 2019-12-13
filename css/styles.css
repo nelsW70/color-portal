@@ -430,20 +430,6 @@ a:hover {
   font-weight: 400;
   border-radius: 2px;
 }
-.ppg.ui.button .material-icons--print {
-  color: #4e6576;
-}
-.ppg.ui.button.btn-print {
-  background-color: #e7ebed;
-  color: #193040;
-  font-weight: 500;
-  border-radius: 3px;
-  padding: 6px 12px;
-}
-.ppg.ui.button.btn-print:hover {
-  background-color: #d6dadc;
-  transition: all 0.25s;
-}
 .ppg.ui.primary.button {
   background-color: #1e5dcb;
   height: 40px;
@@ -469,6 +455,19 @@ a:hover {
   background-color: #194eaa;
   border: 1px solid #194eaa;
   color: #ffffff;
+}
+.ppg.ui.small {
+  background-color: #e7ebed;
+  color: #193040;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+.ppg.ui.small:hover {
+  background-color: #d6dadc;
+  transition: all 0.25s;
+}
+.ppg.ui.small .material-icons--print {
+  color: #4e6576;
 }
 .ppg.tiny.ui.button {
   display: flex;
@@ -1503,5 +1502,12 @@ footer .footer-trademark {
 }
 
 /** COLORPORTAL MODALS **/
+.ppg.colorportal.ui.medium.modal .button-container {
+  display: flex;
+  justify-content: space-between;
+}
+.ppg.colorportal.ui.medium.modal .button-container__column-one, .ppg.colorportal.ui.medium.modal .button-container__column-two {
+  display: flex;
+}
 
 /*# sourceMappingURL=styles.css.map */
