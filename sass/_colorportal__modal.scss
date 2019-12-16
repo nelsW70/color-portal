@@ -2,12 +2,44 @@
 
 .ppg.colorportal.ui {
   &.medium.modal {
+    max-width: 650px;
+
+    & .content {
+      &__modal-description {
+        font-size: 0.875rem;
+        margin-bottom: 1.5rem;
+      }
+    }
     & .button-container {
       display: flex;
       justify-content: space-between;
       &__column-one,
       &__column-two {
         display: flex;
+      }
+    }
+    .standard-sample {
+      border-bottom: solid 1px rgba(17, 35, 48, 0.25);
+      margin: 1rem 0;
+      &__header {
+        display: flex;
+        padding: 0.75rem 1rem;
+        border-top: solid 1px rgba(17, 35, 48, 0.25);
+        border-bottom: solid 1px rgba(17, 35, 48, 0.25);
+        & .title {
+          font-size: 0.8125rem;
+          font-weight: $font-weight-semi-bold;
+          text-transform: capitalize;
+        }
+        & .col-one {
+          width: 80%;
+        }
+        & .col-two {
+          width: 20%;
+        }
+        & .col-three {
+          // width: 10%;
+        }
       }
     }
     & .select-large--export {
