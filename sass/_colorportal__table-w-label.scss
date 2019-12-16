@@ -55,7 +55,8 @@
     }
   }
   & .no-info-text {
-    color: #9ba6ae;
+    // darkened for accessiblity
+    color: darken($color: #9ba6ae, $amount: 20%);
     font-size: 1rem;
     margin-top: 1.25rem;
   }
