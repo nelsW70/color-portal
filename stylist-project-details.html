@@ -446,9 +446,9 @@
             </div>
             <div class="table-description__search-cta">
               <div class="search-container">
-                <label for="inputID" class="label label--stacked"
-                  >Product Code</label
-                >
+                <div id="inputID" class="label label--stacked">
+                  Product Code
+                </div>
                 <div class="ui fluid search linked-colors-search">
                   <div class="ui icon input">
                     <input
@@ -456,6 +456,7 @@
                       class="prompt"
                       type="search"
                       placeholder="Placeholder"
+                      aria-labelledby="inputID"
                     />
                     <i class="search link icon"></i>
                   </div>
@@ -507,9 +508,7 @@
             using only the search field.
           </p>
           <div class="search-container">
-            <label for="inputID" class="label label--stacked"
-              >Find a reading</label
-            >
+            <div id="inputID" class="label label--stacked">Find a reading</div>
             <div class="ui fluid search search-readings">
               <div class="ui icon input">
                 <input
@@ -517,6 +516,7 @@
                   class="prompt"
                   type="search"
                   placeholder="Search for a reading"
+                  aria-labelledby="inputID"
                 />
                 <i class="search link icon"></i>
               </div>
