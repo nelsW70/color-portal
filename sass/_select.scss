@@ -7,6 +7,34 @@
 
 /** SELECT **/
 .ui.fluid.selection.dropdown {
+  // LARGE
+  &.select-large {
+    font-size: 0.875rem;
+    border-radius: $border-radius-two;
+    padding: 0.6875rem 1.5rem 0.6875rem 0.625rem;
+    text-align: left;
+    min-height: 40px;
+    width: 10rem;
+    line-height: 1rem;
+
+    & .dropdown.icon {
+      right: 0.575rem;
+      line-height: 1rem;
+    }
+    & .menu > .item {
+      font-size: 0.875rem;
+      color: $font-color-primary;
+      padding: 0.6875rem !important;
+      text-align: left;
+      &:hover {
+        background-color: $background-color-blue-six;
+      }
+    }
+    &:not(.button) > .default.text,
+    & .text {
+      color: $font-color-primary;
+    }
+  }
   // SMALL
   &.select-small {
     font-size: 0.875rem;
@@ -14,7 +42,6 @@
     padding: 0.5rem 1.25rem 0.5rem 0.5rem;
     text-align: left;
     min-height: 35px;
-    // height: 35px;
     width: 10rem;
     line-height: 1.1rem;
 

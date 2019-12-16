@@ -884,6 +884,31 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 
 /** SELECT **/
+.ui.fluid.selection.dropdown.select-large {
+  font-size: 0.875rem;
+  border-radius: 2px;
+  padding: 0.6875rem 1.5rem 0.6875rem 0.625rem;
+  text-align: left;
+  min-height: 40px;
+  width: 10rem;
+  line-height: 1rem;
+}
+.ui.fluid.selection.dropdown.select-large .dropdown.icon {
+  right: 0.575rem;
+  line-height: 1rem;
+}
+.ui.fluid.selection.dropdown.select-large .menu > .item {
+  font-size: 0.875rem;
+  color: #193040;
+  padding: 0.6875rem !important;
+  text-align: left;
+}
+.ui.fluid.selection.dropdown.select-large .menu > .item:hover {
+  background-color: rgba(25, 102, 236, 0.1);
+}
+.ui.fluid.selection.dropdown.select-large:not(.button) > .default.text, .ui.fluid.selection.dropdown.select-large .text {
+  color: #193040;
+}
 .ui.fluid.selection.dropdown.select-small {
   font-size: 0.875rem;
   border-radius: 2px;
