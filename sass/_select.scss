@@ -13,7 +13,7 @@
     border-radius: $border-radius-two;
     padding: 0.6875rem 1.5rem 0.6875rem 0.625rem;
     text-align: left;
-    min-height: 40px;
+    height: 40px;
     width: 10rem;
     line-height: 1rem;
 
@@ -26,6 +26,7 @@
       color: $font-color-primary;
       padding: 0.6875rem !important;
       text-align: left;
+      word-break: break-all;
       &:hover {
         background-color: $background-color-blue-six;
       }
@@ -33,6 +34,10 @@
     &:not(.button) > .default.text,
     & .text {
       color: $font-color-primary;
+      white-space: nowrap;
+      width: 95%;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
   // SMALL
@@ -41,15 +46,18 @@
     border-radius: $border-radius-two;
     padding: 0.5rem 1.25rem 0.5rem 0.5rem;
     text-align: left;
+    height: 35px;
     min-height: 35px;
     width: 10rem;
-    line-height: 1.1rem;
+    line-height: 1rem;
 
     & .menu > .item {
       font-size: 0.875rem;
       color: $font-color-primary;
       padding: 0.5rem !important;
       text-align: left;
+      text-align: left;
+      word-break: break-all;
       &:hover {
         background-color: $background-color-blue-six;
       }
@@ -58,6 +66,10 @@
     &:not(.button) > .default.text,
     & .text {
       color: $font-color-primary;
+      white-space: nowrap;
+      width: 95%;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     & .dropdown.icon {

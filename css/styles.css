@@ -889,7 +889,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   border-radius: 2px;
   padding: 0.6875rem 1.5rem 0.6875rem 0.625rem;
   text-align: left;
-  min-height: 40px;
+  height: 40px;
   width: 10rem;
   line-height: 1rem;
 }
@@ -902,33 +902,45 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   color: #193040;
   padding: 0.6875rem !important;
   text-align: left;
+  word-break: break-all;
 }
 .ui.fluid.selection.dropdown.select-large .menu > .item:hover {
   background-color: rgba(25, 102, 236, 0.1);
 }
 .ui.fluid.selection.dropdown.select-large:not(.button) > .default.text, .ui.fluid.selection.dropdown.select-large .text {
   color: #193040;
+  white-space: nowrap;
+  width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .ui.fluid.selection.dropdown.select-small {
   font-size: 0.875rem;
   border-radius: 2px;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
   text-align: left;
+  height: 35px;
   min-height: 35px;
   width: 10rem;
-  line-height: 1.1rem;
+  line-height: 1rem;
 }
 .ui.fluid.selection.dropdown.select-small .menu > .item {
   font-size: 0.875rem;
   color: #193040;
   padding: 0.5rem !important;
   text-align: left;
+  text-align: left;
+  word-break: break-all;
 }
 .ui.fluid.selection.dropdown.select-small .menu > .item:hover {
   background-color: rgba(25, 102, 236, 0.1);
 }
 .ui.fluid.selection.dropdown.select-small:not(.button) > .default.text, .ui.fluid.selection.dropdown.select-small .text {
   color: #193040;
+  white-space: nowrap;
+  width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .ui.fluid.selection.dropdown.select-small .dropdown.icon {
   padding: 0.575rem 0.575rem 0.575rem 0.575rem;
@@ -1534,6 +1546,15 @@ footer .footer-trademark {
 }
 .ppg.colorportal.ui.medium.modal .button-container__column-one, .ppg.colorportal.ui.medium.modal .button-container__column-two {
   display: flex;
+}
+.ppg.colorportal.ui.medium.modal .select-large--export {
+  border: 1px solid #1966ec;
+}
+.ppg.colorportal.ui.medium.modal .select-large--export .default.text {
+  color: #1e5dcb;
+}
+.ppg.colorportal.ui.medium.modal .select-large--export .menu {
+  border-color: #1966ec;
 }
 
 /*# sourceMappingURL=styles.css.map */

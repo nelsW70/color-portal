@@ -529,10 +529,29 @@
           </div>
           <div class="button-container">
             <div class="button-container__column-one">
-              <button class="ppg ui secondary button mr-2">
-                <i class="material-icons mr-1">list</i>
-                <span class="button-text">View Styling Programs</span>
-              </button>
+              <div
+                class="ui fluid selection dropdown select-large select-large--export mr-2"
+              >
+                <input type="hidden" name="gender" />
+                <i class="dropdown icon"></i>
+                <div class="default text">Export as</div>
+                <div class="menu">
+                  <div class="item" data-value="12">Custom</div>
+                  <div class="item" data-value="0">.ASC</div>
+                  <div class="item" data-value="1">.CSV</div>
+                  <div class="item" data-value="2">.CXF</div>
+                  <div class="item" data-value="3">.MIF</div>
+                  <div class="item" data-value="4">.WSV</div>
+                  <div class="item" data-value="5">.XTF</div>
+                  <div class="item" data-value="5">.XLSX</div>
+                  <div class="item" data-value="6">.CPB</div>
+                  <div class="item" data-value="7">2.0.6.Standard.XML</div>
+                  <div class="item" data-value="8">2.0.6.Project.XML</div>
+                  <div class="item" data-value="9">2.1.2.Standard.XML</div>
+                  <div class="item" data-value="10">2.1.2.Project.XML</div>
+                  <div class="item" data-value="11">3.Standard.XML</div>
+                </div>
+              </div>
               <button class="ppg ui secondary button">
                 <span class="button-text">Tolerance Tool</span>
               </button>
@@ -627,7 +646,9 @@
       // COMPARE MODAL SEARCH
 
       // intialize semantic ui dropdown
-      $('.ui.dropdown').dropdown();
+      $('.ui.dropdown.select-large--export').dropdown({
+        direction: 'upward'
+      });
 
       // fake local data implementation of predictive results for customer search
       // documentation for semantic ui is here
