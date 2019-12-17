@@ -20,6 +20,19 @@
     }
     & .custom-checkbox {
       width: 25px;
+      &__label {
+        padding: 0;
+      }
+    }
+    & .ppg-custom-radio {
+      & label {
+        &:before,
+        &:after {
+          top: 1px;
+          width: 24px;
+          height: 24px;
+        }
+      }
     }
     .standard-sample {
       border-bottom: solid 1px rgba(17, 35, 48, 0.25);
@@ -114,6 +127,35 @@
                   color: $font-color-primary;
                 }
               }
+            }
+          }
+          & .content--third {
+            padding: 0.25rem 0;
+
+            & .ui.accordion {
+              margin: 0;
+            }
+            &__main {
+              display: flex;
+              margin-top: 1.25rem;
+              &:first-of-type {
+                margin-top: 0.5rem;
+              }
+            }
+            & .col-one {
+              padding-left: 1.25rem;
+              width: 70%;
+              font-size: 0.875rem;
+            }
+            & .col-two {
+              width: 15%;
+              display: flex;
+              justify-content: center;
+            }
+            & .col-three {
+              width: 15%;
+              display: flex;
+              justify-content: center;
             }
           }
         }

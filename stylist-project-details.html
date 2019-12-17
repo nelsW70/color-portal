@@ -599,12 +599,65 @@
                         </div>
                       </div>
                     </div>
-                    <div class="content">
-                      <p class="transition hidden">
-                        A dog is a type of domesticated animal. Known for its
-                        loyalty and faithfulness, it can be found as a welcome
-                        guest in many households across the world.
-                      </p>
+                    <div class="content content--third">
+                      <div class="content--third__main">
+                        <div class="col-one">
+                          STY INSP - 1 (1, A)
+                        </div>
+                        <div class="col-two">
+                          <div class="ppg-custom-radio ui radio checkbox">
+                            <input type="radio" name="radio" id="radio" />
+                            <label for="radio"
+                              ><div class="accessibly-hidden">
+                                radio choice
+                              </div></label
+                            >
+                          </div>
+                        </div>
+                        <div class="col-three">
+                          <div class="custom-checkbox">
+                            <input
+                              type="checkbox"
+                              id="checkbox5"
+                              name="checkbox"
+                              class="custom-checkbox__input"
+                            />
+                            <label
+                              class="custom-checkbox__label label"
+                              for="checkbox5"
+                            ></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content--third__main">
+                          <div class="col-one">
+                            STY INSP - 1 (1, B)
+                          </div>
+                          <div class="col-two">
+                            <div class="ppg-custom-radio ui radio checkbox">
+                              <input type="radio" name="radio" id="radio" />
+                              <label for="radio"
+                                ><div class="accessibly-hidden">
+                                  radio choice
+                                </div></label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-three">
+                            <div class="custom-checkbox">
+                              <input
+                                type="checkbox"
+                                id="checkbox6"
+                                name="checkbox"
+                                class="custom-checkbox__input"
+                              />
+                              <label
+                                class="custom-checkbox__label label"
+                                for="checkbox6"
+                              ></label>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -834,6 +887,19 @@
       $('.ui.accordion.accordion--secondary').accordion({
         selector: {
           trigger: '.accordion-toggle--secondary'
+        }
+      });
+    </script>
+    <script>
+      // this is fake and just for demo purposes to toggle the radio buttons
+      var radioState;
+
+      $('#radio').on('click', function(e) {
+        if (radioState === this) {
+          this.checked = false;
+          radioState = null;
+        } else {
+          radioState = this;
         }
       });
     </script>
