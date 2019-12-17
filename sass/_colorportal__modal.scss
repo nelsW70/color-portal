@@ -18,6 +18,9 @@
         display: flex;
       }
     }
+    & .custom-checkbox {
+      width: 25px;
+    }
     .standard-sample {
       border-bottom: solid 1px rgba(17, 35, 48, 0.25);
       margin: 1rem 0;
@@ -47,7 +50,7 @@
       &__content {
         // padding: 0 1rem;
         & .standard-sample__accordion {
-          & .title {
+          & .title-primary {
             display: flex;
             align-items: center;
             background-color: rgba(231, 235, 237, 0.5);
@@ -79,6 +82,40 @@
               margin-right: 0.75rem;
             }
           }
+          & .content--secondary {
+            padding: 0.25rem 0.75rem;
+            & .ui.accordion {
+              margin: 0;
+              & .dropdown.icon {
+                width: 0.5rem;
+                margin-right: 0.75rem;
+              }
+              & .title-secondary {
+                display: flex;
+                & .col-one {
+                  display: flex;
+                  align-items: center;
+                  width: 70%;
+                }
+                & .col-two {
+                  width: 15%;
+                  display: flex;
+                  justify-content: center;
+                }
+                & .col-three {
+                  width: 15%;
+                  display: flex;
+                  justify-content: center;
+                }
+                &__name {
+                  font-family: $font-family-primary;
+                  font-size: 0.875rem;
+                  font-weight: $font-weight-bold;
+                  color: $font-color-primary;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -94,6 +131,3 @@
     }
   }
 }
-
-// Laura's modal sizes:
-// 500 (mini), 650 (tiny), 700 (small), 910 (medium), 950 (large), 1070 (fullscreen)

@@ -1,7 +1,7 @@
 /** CUSTOM CHECKBOX **/
 
 .custom-checkbox {
-  max-width: fit-content;
+  width: fit-content;
   &__input {
     display: none;
     &:disabled ~ .custom-checkbox__label {

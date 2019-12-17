@@ -541,10 +541,10 @@
             </div>
             <div class="standard-sample__content">
               <div class="ui accordion standard-sample__accordion">
-                <div class="title">
+                <div class="title title-primary">
                   <div class="col-one accordion-toggle">
                     <i class="dropdown icon"></i>
-                    <div class="title__name">
+                    <div class="title-primary__name">
                       Styling Inspirations
                     </div>
                   </div>
@@ -564,17 +564,54 @@
                     </div>
                   </div>
                 </div>
-                <div class="content">
-                  <p class="transition hidden">
-                    A dog is a type of domesticated animal. Known for its
-                    loyalty and faithfulness, it can be found as a welcome guest
-                    in many households across the world.
-                  </p>
+                <div class="content content--secondary">
+                  <div class="ui accordion accordion--secondary">
+                    <div class="title title-secondary">
+                      <div class="col-one accordion-toggle--secondary">
+                        <i class="dropdown icon"></i>
+                        <div class="title-secondary__name">
+                          Dawn Purple MXQ29 From Nissan Design Group
+                        </div>
+                      </div>
+                      <div class="col-two">
+                        <div class="ppg-custom-radio ui radio checkbox">
+                          <input type="radio" name="radio" id="radio" />
+                          <label for="radio"
+                            ><div class="accessibly-hidden">
+                              radio choice
+                            </div></label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-three">
+                        <div class="custom-checkbox">
+                          <input
+                            type="checkbox"
+                            id="checkbox4"
+                            name="checkbox"
+                            class="custom-checkbox__input"
+                            unchecked
+                          />
+                          <label
+                            class="custom-checkbox__label label"
+                            for="checkbox4"
+                          ></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <p class="transition hidden">
+                        A dog is a type of domesticated animal. Known for its
+                        loyalty and faithfulness, it can be found as a welcome
+                        guest in many households across the world.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="title">
+                <div class="title title-primary">
                   <div class="col-one accordion-toggle">
                     <i class="dropdown icon"></i>
-                    <div class="title__name">
+                    <div class="title-primary__name">
                       Styling Iterations
                     </div>
                   </div>
@@ -602,10 +639,10 @@
                     from a companion.
                   </p>
                 </div>
-                <div class="title">
+                <div class="title title-primary">
                   <div class="col-one accordion-toggle">
                     <i class="dropdown icon"></i>
-                    <div class="title__name">
+                    <div class="title-primary__name">
                       Product History
                     </div>
                   </div>
@@ -789,6 +826,14 @@
       $('.ui.accordion.standard-sample__accordion').accordion({
         selector: {
           trigger: '.accordion-toggle'
+        }
+      });
+    </script>
+    <script>
+      // INITIALIZE STANDARD-SAMPLE SECONDARY ACCORDIONS
+      $('.ui.accordion.accordion--secondary').accordion({
+        selector: {
+          trigger: '.accordion-toggle--secondary'
         }
       });
     </script>

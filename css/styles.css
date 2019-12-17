@@ -525,12 +525,13 @@ a:hover {
   line-height: 22px;
 }
 .ppg-custom-radio.ui.radio.checkbox input[type=radio] {
-  width: 22px;
+  width: 28px;
   height: 22px;
 }
 .ppg-custom-radio.ui.radio.checkbox label:before, .ppg-custom-radio.ui.radio.checkbox label:after {
   width: 20px;
   height: 20px;
+  left: 4px;
 }
 .ppg-custom-radio.ui.radio.checkbox label:before {
   border: 1px solid #b3c1cc !important;
@@ -541,11 +542,13 @@ a:hover {
   transition: all ease 0.25s;
 }
 .ppg-custom-radio.ui.radio.checkbox input:checked ~ label:before {
+  left: 4px;
   background-color: #1966ec;
   border: 1px solid #1966ec !important;
   transition: all ease 0.25s;
 }
 .ppg-custom-radio.ui.radio.checkbox input:checked ~ label:after {
+  left: 4px;
   background-color: #ffffff !important;
   border: 1px solid #1966ec !important;
   transition: all ease 0.25s;
@@ -553,7 +556,7 @@ a:hover {
 
 /** CUSTOM CHECKBOX **/
 .custom-checkbox {
-  max-width: fit-content;
+  width: fit-content;
 }
 .custom-checkbox__input {
   display: none;
@@ -1555,6 +1558,9 @@ footer .footer-trademark {
 .ppg.colorportal.ui.medium.modal .button-container__column-one, .ppg.colorportal.ui.medium.modal .button-container__column-two {
   display: flex;
 }
+.ppg.colorportal.ui.medium.modal .custom-checkbox {
+  width: 25px;
+}
 .ppg.colorportal.ui.medium.modal .standard-sample {
   border-bottom: solid 1px rgba(17, 35, 48, 0.25);
   margin: 1rem 0;
@@ -1581,37 +1587,71 @@ footer .footer-trademark {
   width: 15%;
   text-align: center;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title-primary {
   display: flex;
   align-items: center;
   background-color: rgba(231, 235, 237, 0.5);
   padding: 0.75rem;
   border-top: solid 1px rgba(17, 35, 48, 0.25);
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title .col-one {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title-primary .col-one {
   display: flex;
   align-items: baseline;
   width: 70%;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title .col-two {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title-primary .col-two {
   width: 15%;
   display: flex;
   justify-content: center;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title .col-three {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title-primary .col-three {
   width: 15%;
   display: flex;
   justify-content: center;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title__name {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title-primary__name {
   font-family: "Suisse Intl", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: #193040;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title .dropdown.icon {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title-primary .dropdown.icon {
   width: 0.5rem;
   margin-right: 0.75rem;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary {
+  padding: 0.25rem 0.75rem;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion {
+  margin: 0;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion .dropdown.icon {
+  width: 0.5rem;
+  margin-right: 0.75rem;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion .title-secondary {
+  display: flex;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion .title-secondary .col-one {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion .title-secondary .col-two {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion .title-secondary .col-three {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion .title-secondary__name {
+  font-family: "Suisse Intl", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #193040;
 }
 .ppg.colorportal.ui.medium.modal .select-large--export {
   width: 10.75rem;
