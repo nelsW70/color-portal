@@ -33,13 +33,15 @@
           text-transform: capitalize;
         }
         & .col-one {
-          width: 80%;
+          width: 70%;
         }
         & .col-two {
-          width: 20%;
+          width: 15%;
+          text-align: center;
         }
         & .col-three {
-          // width: 10%;
+          width: 15%;
+          text-align: center;
         }
       }
       &__content {
@@ -47,10 +49,25 @@
         & .standard-sample__accordion {
           & .title {
             display: flex;
-            align-items: baseline;
+            align-items: center;
             background-color: rgba(231, 235, 237, 0.5);
-            padding: 0.75rem 1rem;
+            padding: 0.75rem;
             border-top: solid 1px rgba(17, 35, 48, 0.25);
+            & .col-one {
+              display: flex;
+              align-items: baseline;
+              width: 70%;
+            }
+            & .col-two {
+              width: 15%;
+              display: flex;
+              justify-content: center;
+            }
+            & .col-three {
+              width: 15%;
+              display: flex;
+              justify-content: center;
+            }
             &__name {
               font-family: $font-family-primary;
               font-size: 1rem;

@@ -542,9 +542,26 @@
             <div class="standard-sample__content">
               <div class="ui accordion standard-sample__accordion">
                 <div class="title">
-                  <i class="dropdown icon"></i>
-                  <div class="title__name">
-                    Styling Inspirations
+                  <div class="col-one accordion-toggle">
+                    <i class="dropdown icon"></i>
+                    <div class="title__name">
+                      Styling Inspirations
+                    </div>
+                  </div>
+                  <div class="col-two"></div>
+                  <div class="col-three">
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        id="checkbox1"
+                        name="checkbox"
+                        class="custom-checkbox__input"
+                      />
+                      <label
+                        class="custom-checkbox__label label"
+                        for="checkbox1"
+                      ></label>
+                    </div>
                   </div>
                 </div>
                 <div class="content">
@@ -555,9 +572,26 @@
                   </p>
                 </div>
                 <div class="title">
-                  <i class="dropdown icon"></i>
-                  <div class="title__name">
-                    Styling Iterations
+                  <div class="col-one accordion-toggle">
+                    <i class="dropdown icon"></i>
+                    <div class="title__name">
+                      Styling Iterations
+                    </div>
+                  </div>
+                  <div class="col-two"></div>
+                  <div class="col-three">
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        id="checkbox2"
+                        name="checkbox"
+                        class="custom-checkbox__input"
+                      />
+                      <label
+                        class="custom-checkbox__label label"
+                        for="checkbox2"
+                      ></label>
+                    </div>
                   </div>
                 </div>
                 <div class="content">
@@ -569,9 +603,26 @@
                   </p>
                 </div>
                 <div class="title">
-                  <i class="dropdown icon"></i>
-                  <div class="title__name">
-                    Product History
+                  <div class="col-one accordion-toggle">
+                    <i class="dropdown icon"></i>
+                    <div class="title__name">
+                      Product History
+                    </div>
+                  </div>
+                  <div class="col-two"></div>
+                  <div class="col-three">
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        id="checkbox3"
+                        name="checkbox"
+                        class="custom-checkbox__input"
+                      />
+                      <label
+                        class="custom-checkbox__label label"
+                        for="checkbox3"
+                      ></label>
+                    </div>
                   </div>
                 </div>
                 <div class="content">
@@ -735,7 +786,11 @@
     </script>
     <script>
       // INITIALIZE STANDARD-SAMPLE MAIN ACCORDIONS
-      $('.ui.accordion.standard-sample__accordion').accordion();
+      $('.ui.accordion.standard-sample__accordion').accordion({
+        selector: {
+          trigger: '.accordion-toggle'
+        }
+      });
     </script>
   </body>
 </html>
