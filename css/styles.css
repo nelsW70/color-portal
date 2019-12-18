@@ -1547,6 +1547,9 @@ footer .footer-trademark {
 .ppg.colorportal.ui.medium.modal {
   max-width: 650px;
 }
+.ppg.colorportal.ui.medium.modal .scrolling.content {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
 .ppg.colorportal.ui.medium.modal .content__modal-description {
   font-size: 0.875rem;
   margin-bottom: 1.5rem;
@@ -1554,7 +1557,7 @@ footer .footer-trademark {
 .ppg.colorportal.ui.medium.modal .button-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 1.25rem 1.25rem 1.25rem;
+  padding: 1.25rem;
 }
 .ppg.colorportal.ui.medium.modal .button-container__column-one, .ppg.colorportal.ui.medium.modal .button-container__column-two {
   display: flex;
