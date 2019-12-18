@@ -18,7 +18,6 @@
         display: flex;
       }
     }
-
     .standard-sample {
       border-bottom: solid 1px rgba(17, 35, 48, 0.25);
       margin: 1rem 0;
@@ -60,7 +59,6 @@
             width: 32px;
             height: 25px;
           }
-
           & label {
             &:before,
             &:after {
@@ -70,7 +68,6 @@
             }
           }
         }
-
         & .standard-sample__accordion {
           & .title-primary {
             display: flex;
@@ -105,7 +102,7 @@
               margin-right: 0.75rem;
             }
           }
-          & .content--secondary {
+          & .content--second {
             padding: 0.25rem 0.75rem;
             & .ui.accordion {
               margin: 0;

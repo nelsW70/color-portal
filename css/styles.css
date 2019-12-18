@@ -1636,35 +1636,35 @@ footer .footer-trademark {
   width: 0.5rem;
   margin-right: 0.75rem;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--second {
   padding: 0.25rem 0.75rem;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--second .ui.accordion {
   margin: 0;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion .dropdown.icon {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--second .ui.accordion .dropdown.icon {
   width: 0.5rem;
   margin-right: 0.75rem;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion .title-secondary {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--second .ui.accordion .title-secondary {
   display: flex;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion .title-secondary .col-one {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--second .ui.accordion .title-secondary .col-one {
   display: flex;
   align-items: center;
   width: 70%;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion .title-secondary .col-two {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--second .ui.accordion .title-secondary .col-two {
   width: 15%;
   display: flex;
   justify-content: center;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion .title-secondary .col-three {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--second .ui.accordion .title-secondary .col-three {
   width: 15%;
   display: flex;
   justify-content: center;
 }
-.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--secondary .ui.accordion .title-secondary__name {
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--second .ui.accordion .title-secondary__name {
   font-family: "Suisse Intl", sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
