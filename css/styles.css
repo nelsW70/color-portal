@@ -1558,24 +1558,13 @@ footer .footer-trademark {
 .ppg.colorportal.ui.medium.modal .button-container__column-one, .ppg.colorportal.ui.medium.modal .button-container__column-two {
   display: flex;
 }
-.ppg.colorportal.ui.medium.modal .custom-checkbox {
-  width: 25px;
-}
-.ppg.colorportal.ui.medium.modal .custom-checkbox__label {
-  padding: 0;
-}
-.ppg.colorportal.ui.medium.modal .ppg-custom-radio label:before, .ppg.colorportal.ui.medium.modal .ppg-custom-radio label:after {
-  top: 1px;
-  width: 24px;
-  height: 24px;
-}
 .ppg.colorportal.ui.medium.modal .standard-sample {
   border-bottom: solid 1px rgba(17, 35, 48, 0.25);
   margin: 1rem 0;
 }
 .ppg.colorportal.ui.medium.modal .standard-sample__header {
   display: flex;
-  padding: 0.75rem;
+  padding: 0.85rem 0.75rem;
   border-top: solid 1px rgba(17, 35, 48, 0.25);
 }
 .ppg.colorportal.ui.medium.modal .standard-sample__header .title {
@@ -1595,11 +1584,30 @@ footer .footer-trademark {
   width: 15%;
   text-align: center;
 }
+.ppg.colorportal.ui.medium.modal .standard-sample__content .custom-checkbox {
+  width: 25px;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .custom-checkbox__label {
+  padding: 0;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .ppg-custom-radio {
+  min-height: 25px;
+  line-height: 25px;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .ppg-custom-radio.ui.radio.checkbox input[type=radio] {
+  width: 32px;
+  height: 25px;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .ppg-custom-radio label:before, .ppg.colorportal.ui.medium.modal .standard-sample__content .ppg-custom-radio label:after {
+  top: 1px;
+  width: 24px;
+  height: 24px;
+}
 .ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title-primary {
   display: flex;
   align-items: center;
   background-color: rgba(231, 235, 237, 0.5);
-  padding: 0.75rem;
+  padding: 0.65rem 0.75rem;
   border-top: solid 1px rgba(17, 35, 48, 0.25);
 }
 .ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title-primary .col-one {
@@ -1622,6 +1630,7 @@ footer .footer-trademark {
   font-size: 1rem;
   font-weight: 500;
   color: #193040;
+  text-transform: capitalize;
 }
 .ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .title-primary .dropdown.icon {
   width: 0.5rem;
@@ -1669,6 +1678,7 @@ footer .footer-trademark {
 }
 .ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--third__main {
   display: flex;
+  align-items: center;
   margin-top: 1.25rem;
 }
 .ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion .content--third__main:first-of-type {
@@ -1688,6 +1698,9 @@ footer .footer-trademark {
   width: 15%;
   display: flex;
   justify-content: center;
+}
+.ppg.colorportal.ui.medium.modal .standard-sample__content .standard-sample__accordion:last-of-type .content--third__main:last-of-type {
+  margin-bottom: 1rem;
 }
 .ppg.colorportal.ui.medium.modal .select-large--export {
   width: 10.75rem;

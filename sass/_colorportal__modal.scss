@@ -18,28 +18,13 @@
         display: flex;
       }
     }
-    & .custom-checkbox {
-      width: 25px;
-      &__label {
-        padding: 0;
-      }
-    }
-    & .ppg-custom-radio {
-      & label {
-        &:before,
-        &:after {
-          top: 1px;
-          width: 24px;
-          height: 24px;
-        }
-      }
-    }
+
     .standard-sample {
       border-bottom: solid 1px rgba(17, 35, 48, 0.25);
       margin: 1rem 0;
       &__header {
         display: flex;
-        padding: 0.75rem;
+        padding: 0.85rem 0.75rem;
         border-top: solid 1px rgba(17, 35, 48, 0.25);
 
         & .title {
@@ -61,12 +46,37 @@
         }
       }
       &__content {
+        & .custom-checkbox {
+          width: 25px;
+          &__label {
+            padding: 0;
+          }
+        }
+        & .ppg-custom-radio {
+          min-height: 25px;
+          line-height: 25px;
+
+          &.ui.radio.checkbox input[type='radio'] {
+            width: 32px;
+            height: 25px;
+          }
+
+          & label {
+            &:before,
+            &:after {
+              top: 1px;
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+
         & .standard-sample__accordion {
           & .title-primary {
             display: flex;
             align-items: center;
             background-color: rgba(231, 235, 237, 0.5);
-            padding: 0.75rem;
+            padding: 0.65rem 0.75rem;
             border-top: solid 1px rgba(17, 35, 48, 0.25);
             & .col-one {
               display: flex;
@@ -88,6 +98,7 @@
               font-size: 1rem;
               font-weight: $font-weight-semi-bold;
               color: $font-color-primary;
+              text-transform: capitalize;
             }
             & .dropdown.icon {
               width: 0.5rem;
@@ -136,6 +147,7 @@
             }
             &__main {
               display: flex;
+              align-items: center;
               margin-top: 1.25rem;
               &:first-of-type {
                 margin-top: 0.5rem;
@@ -155,6 +167,11 @@
               width: 15%;
               display: flex;
               justify-content: center;
+            }
+          }
+          &:last-of-type {
+            & .content--third__main:last-of-type {
+              margin-bottom: 1rem;
             }
           }
         }
