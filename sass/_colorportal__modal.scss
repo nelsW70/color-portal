@@ -4,10 +4,6 @@
   &.medium.modal {
     max-width: 650px;
 
-    &.scrolling.content {
-      padding: 1.5rem 1.5rem 0 1.5rem;
-    }
-
     & .content {
       &__modal-description {
         font-size: 0.875rem;
@@ -17,7 +13,7 @@
     & .button-container {
       display: flex;
       justify-content: space-between;
-      padding: 1.25rem;
+      padding: 0 1.25rem 1.25rem 1.25rem;
       &__column-one,
       &__column-two {
         display: flex;
