@@ -902,7 +902,10 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .subheader-tabs .ui-nav.ui.menu .menu-links-container .item:nth-child(2) {
-    width: 5rem;
+    min-width: 78px;
+  }
+  .subheader-tabs .ui-nav.ui.menu .menu-links-container .item:nth-child(7) {
+    min-width: 136px;
   }
 }
 .subheader-tabs .ui-nav.ui.menu .menu-links-container .item:hover {

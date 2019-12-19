@@ -32,7 +32,10 @@
         @media screen and (-ms-high-contrast: active),
           (-ms-high-contrast: none) {
           &:nth-child(2) {
-            width: 5rem;
+            min-width: 78px;
+          }
+          &:nth-child(7) {
+            min-width: 136px;
           }
         }
 
