@@ -896,7 +896,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   letter-spacing: 0.0275rem;
   padding: 8px;
   justify-content: center;
-  flex: 1;
+  flex: 1 1 100%;
   min-width: fit-content;
   /* NAVLINK UNDERLINE ANIMATION */
 }
