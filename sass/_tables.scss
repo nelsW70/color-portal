@@ -20,7 +20,7 @@ table.ui.table {
       cursor: pointer;
     }
   }
-  // ICON AND SPACING FOR DRAG/DROP ROWS
+  // ICON AND HEADER SPACING FOR DRAG/DROP ROWS
   &.draggable-droppable {
     & th:first-of-type {
       padding-left: 32px;
