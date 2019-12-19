@@ -28,6 +28,14 @@
         flex: 1 1 auto;
         min-width: fit-content;
 
+        // because IE is garbage
+        @media screen and (-ms-high-contrast: active),
+          (-ms-high-contrast: none) {
+          &:nth-child(2) {
+            width: 5rem;
+          }
+        }
+
         &:hover {
           color: $font-color-white-one;
           font-weight: $font-weight-semi-bold;

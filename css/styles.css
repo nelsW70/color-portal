@@ -900,6 +900,11 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   min-width: fit-content;
   /* NAVLINK UNDERLINE ANIMATION */
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .subheader-tabs .ui-nav.ui.menu .menu-links-container .item:nth-child(2) {
+    width: 5rem;
+  }
+}
 .subheader-tabs .ui-nav.ui.menu .menu-links-container .item:hover {
   color: #ffffff;
   font-weight: 500;
