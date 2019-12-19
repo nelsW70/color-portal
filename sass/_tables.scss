@@ -20,6 +20,25 @@ table.ui.table {
       cursor: pointer;
     }
   }
+  // ICON AND SPACING FOR DRAG/DROP ROWS
+  &.draggable-droppable {
+    & th:first-of-type {
+      padding-left: 32px;
+    }
+    & td:first-of-type {
+      &:before {
+        position: relative;
+        top: 2px;
+        width: 12px;
+        font-size: 14px;
+        margin-right: 6px;
+        font-family: 'Material Icons';
+        content: 'drag_indicator';
+        color: darken($color: #9ba6ae, $amount: 20%);
+        font-feature-settings: 'liga';
+      }
+    }
+  }
   // SORTABLE HEADER W/ICON
   &.sortable.very.basic.striped.padded.table {
     & th {

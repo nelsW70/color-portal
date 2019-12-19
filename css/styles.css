@@ -1156,6 +1156,20 @@ table.ui.table td a {
   color: #1966ec;
   cursor: pointer;
 }
+table.ui.table.draggable-droppable th:first-of-type {
+  padding-left: 32px;
+}
+table.ui.table.draggable-droppable td:first-of-type:before {
+  position: relative;
+  top: 2px;
+  width: 12px;
+  font-size: 14px;
+  margin-right: 6px;
+  font-family: "Material Icons";
+  content: "drag_indicator";
+  color: #66737d;
+  font-feature-settings: "liga";
+}
 table.ui.table.sortable.very.basic.striped.padded.table th {
   position: relative;
   border-top: solid 1px rgba(17, 35, 48, 0.25);
@@ -1333,7 +1347,7 @@ footer .footer-trademark {
   font-weight: 300;
   line-height: 2rem;
 }
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 960px) {
   #blackout-overlay {
     display: none;
   }
