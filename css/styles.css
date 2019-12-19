@@ -900,20 +900,33 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   min-width: fit-content;
   /* NAVLINK UNDERLINE ANIMATION */
 }
-.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:hover, .subheader-tabs .ui-nav.ui.menu .menu-links-container .item:focus {
+.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:hover {
   color: #ffffff;
   font-weight: 500;
   letter-spacing: normal;
   position: relative;
   /* NAVLINK UNDERLINE ANIMATION */
 }
-.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:hover:before, .subheader-tabs .ui-nav.ui.menu .menu-links-container .item:focus:before {
+.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+  background-color: #fcc22f;
+}
+.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:focus {
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: normal;
+  position: relative;
+  /* NAVLINK UNDERLINE ANIMATION */
+}
+.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:focus:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  background-color: #3ec7f4;
 }
 .subheader-tabs .ui-nav.ui.menu .menu-links-container .item:before {
-  background-color: #3ec7f4;
   content: "";
   height: 5px;
   position: absolute;
