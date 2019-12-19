@@ -205,7 +205,6 @@ header {
         letter-spacing: 0.0275rem;
         padding: 8px;
         justify-content: center;
-        font-weight: $font-weight-medium;
 
         &:first-of-type {
           width: 9%;
@@ -235,7 +234,6 @@ header {
           font-weight: $font-weight-semi-bold;
           letter-spacing: normal;
           position: relative;
-          font-weight: $font-weight-semi-bold;
 
           /* NAVLINK UNDERLINE ANIMATION */
           &:before {

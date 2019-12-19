@@ -1,0 +1,85 @@
+/** SUBHEADER TABS **/
+
+.subheader-tabs {
+  /* NAVBAR ROW  */
+  .ui-nav.ui.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0.5rem 8px;
+    background-color: #000000;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+
+    & .menu-links-container {
+      display: flex;
+      width: 75%;
+
+      /* NAVBAR LINKS */
+      & .item {
+        color: $font-color-white-one;
+        font-size: 0.875rem;
+        font-weight: $font-weight-medium;
+        letter-spacing: 0.0275rem;
+        padding: 8px;
+        justify-content: center;
+        flex: 1;
+        min-width: fit-content;
+
+        // &:first-of-type {
+        //   width: 9%;
+        // }
+        // &:nth-child(2) {
+        //   width: 12%;
+        // }
+        // &:nth-child(3) {
+        //   width: 14%;
+        // }
+        // &:nth-child(4) {
+        //   width: 23%;
+        // }
+        // &:nth-child(5) {
+        //   width: 14%;
+        // }
+        // &:nth-child(6) {
+        //   width: 16%;
+        // }
+        // &:nth-child(7) {
+        //   width: 10%;
+        // }
+
+        &:hover,
+        &:focus {
+          color: $font-color-white-one;
+          font-weight: $font-weight-semi-bold;
+          letter-spacing: normal;
+          position: relative;
+
+          /* NAVLINK UNDERLINE ANIMATION */
+          &:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+          }
+        }
+        /* NAVLINK UNDERLINE ANIMATION */
+        &:before {
+          background-color: $background-color-blue-four;
+          content: '';
+          height: 5px;
+          position: absolute;
+          top: 40px;
+          left: 0;
+          width: 100%;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
+        }
+      }
+    }
+  }
+}

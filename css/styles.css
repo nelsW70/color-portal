@@ -819,7 +819,6 @@ header .ui-nav.ui.menu .menu-links-container .item {
   letter-spacing: 0.0275rem;
   padding: 8px;
   justify-content: center;
-  font-weight: 300;
   /* NAVLINK UNDERLINE ANIMATION */
 }
 header .ui-nav.ui.menu .menu-links-container .item:first-of-type {
@@ -848,7 +847,6 @@ header .ui-nav.ui.menu .menu-links-container .item:hover, header .ui-nav.ui.menu
   font-weight: 500;
   letter-spacing: normal;
   position: relative;
-  font-weight: 500;
   /* NAVLINK UNDERLINE ANIMATION */
 }
 header .ui-nav.ui.menu .menu-links-container .item:hover:before, header .ui-nav.ui.menu .menu-links-container .item:focus:before {
@@ -862,6 +860,64 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   height: 5px;
   position: absolute;
   top: 46px;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/** SUBHEADER TABS **/
+.subheader-tabs {
+  /* NAVBAR ROW  */
+}
+.subheader-tabs .ui-nav.ui.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0.5rem 8px;
+  background-color: #000000;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+.subheader-tabs .ui-nav.ui.menu .menu-links-container {
+  display: flex;
+  width: 75%;
+  /* NAVBAR LINKS */
+}
+.subheader-tabs .ui-nav.ui.menu .menu-links-container .item {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: 0.0275rem;
+  padding: 8px;
+  justify-content: center;
+  flex: 1;
+  min-width: fit-content;
+  /* NAVLINK UNDERLINE ANIMATION */
+}
+.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:hover, .subheader-tabs .ui-nav.ui.menu .menu-links-container .item:focus {
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: normal;
+  position: relative;
+  /* NAVLINK UNDERLINE ANIMATION */
+}
+.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:hover:before, .subheader-tabs .ui-nav.ui.menu .menu-links-container .item:focus:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:before {
+  background-color: #3ec7f4;
+  content: "";
+  height: 5px;
+  position: absolute;
+  top: 40px;
   left: 0;
   width: 100%;
   visibility: hidden;
