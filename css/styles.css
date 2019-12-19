@@ -1333,7 +1333,7 @@ footer .footer-trademark {
   font-weight: 300;
   line-height: 2rem;
 }
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1040px) {
   #blackout-overlay {
     display: none;
   }
