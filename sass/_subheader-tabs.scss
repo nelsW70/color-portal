@@ -27,10 +27,7 @@
         justify-content: center;
         flex: 1;
         min-width: fit-content;
-
-        &:nth-child(7) {
-          min-width: 136px;
-        }
+        word-wrap: none;
 
         &:hover {
           color: $font-color-white-one;
