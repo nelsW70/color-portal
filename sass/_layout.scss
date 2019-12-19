@@ -37,6 +37,12 @@
   &__col-one {
     display: flex;
     align-items: flex-end;
+    & .search-container {
+      // because IE is garbage
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        max-height: 68px;
+      }
+    }
   }
   &__col-two {
     display: flex;
