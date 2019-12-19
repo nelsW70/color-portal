@@ -28,6 +28,10 @@
         flex: 1;
         min-width: fit-content;
 
+        &:nth-child(7) {
+          min-width: 136px;
+        }
+
         &:hover {
           color: $font-color-white-one;
           font-weight: $font-weight-semi-bold;
