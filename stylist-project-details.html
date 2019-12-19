@@ -603,7 +603,6 @@
                             id="checkbox1.1"
                             name="checkbox"
                             class="custom-checkbox__input"
-                            unchecked
                           />
                           <label
                             class="custom-checkbox__label label"
@@ -1069,19 +1068,6 @@
       $('.ui.accordion.accordion--secondary').accordion({
         selector: {
           trigger: '.accordion-toggle-three'
-        }
-      });
-    </script>
-    <script>
-      // this is fake and just for demo purposes to toggle the radio buttons
-      var radioState;
-
-      $('#radio1').on('click', function(e) {
-        if (radioState === this) {
-          this.checked = false;
-          radioState = null;
-        } else {
-          radioState = this;
         }
       });
     </script>
