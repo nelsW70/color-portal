@@ -898,7 +898,6 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   justify-content: center;
   flex: 1;
   min-width: fit-content;
-  word-wrap: none;
   /* NAVLINK UNDERLINE ANIMATION */
 }
 .subheader-tabs .ui-nav.ui.menu .menu-links-container .item:hover {
