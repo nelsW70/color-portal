@@ -337,7 +337,7 @@ a:hover {
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .customer-info__col-one .search-container {
-    max-height: 67px;
+    max-height: 68px;
   }
 }
 .customer-info__col-two {
@@ -1583,7 +1583,7 @@ footer .footer-trademark {
   .styling-inspirations .table-description__search-cta .search-container,
 .styling-iterations .table-description__search-cta .search-container,
 .linked-colors .table-description__search-cta .search-container {
-    max-height: 67px;
+    max-height: 68px;
   }
 }
 .styling-inspirations table.ui.sortable.very.basic.striped.padded.table thead tr th:first-child,
