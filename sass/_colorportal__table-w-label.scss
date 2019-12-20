@@ -30,7 +30,7 @@
       // because IE is garbage
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         .search-container {
-          margin-bottom: -6px;
+          max-height: 67px;
         }
       }
     }

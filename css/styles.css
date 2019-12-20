@@ -1583,7 +1583,7 @@ footer .footer-trademark {
   .styling-inspirations .table-description__search-cta .search-container,
 .styling-iterations .table-description__search-cta .search-container,
 .linked-colors .table-description__search-cta .search-container {
-    margin-bottom: -6px;
+    max-height: 67px;
   }
 }
 .styling-inspirations table.ui.sortable.very.basic.striped.padded.table thead tr th:first-child,
