@@ -205,28 +205,30 @@ header {
         letter-spacing: 0.0275rem;
         padding: 8px;
         justify-content: center;
+        flex: 1 1 auto;
+        min-width: fit-content;
 
-        &:first-of-type {
-          width: 9%;
-        }
-        &:nth-child(2) {
-          width: 12%;
-        }
-        &:nth-child(3) {
-          width: 14%;
-        }
-        &:nth-child(4) {
-          width: 23%;
-        }
-        &:nth-child(5) {
-          width: 14%;
-        }
-        &:nth-child(6) {
-          width: 16%;
-        }
-        &:nth-child(7) {
-          width: 10%;
-        }
+        // &:first-of-type {
+        //   width: 10%;
+        // }
+        // &:nth-child(2) {
+        //   width: 12%;
+        // }
+        // &:nth-child(3) {
+        //   width: 14%;
+        // }
+        // &:nth-child(4) {
+        //   width: 23%;
+        // }
+        // &:nth-child(5) {
+        //   width: 14%;
+        // }
+        // &:nth-child(6) {
+        //   width: 16%;
+        // }
+        // &:nth-child(7) {
+        //   width: 10%;
+        // }
 
         &:hover,
         &:focus {
