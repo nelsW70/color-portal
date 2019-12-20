@@ -824,9 +824,28 @@ header .ui-nav.ui.menu .menu-links-container .item {
   letter-spacing: 0.0275rem;
   padding: 8px;
   justify-content: center;
-  flex: 1 1 auto;
-  min-width: fit-content;
   /* NAVLINK UNDERLINE ANIMATION */
+}
+header .ui-nav.ui.menu .menu-links-container .item:first-of-type {
+  width: 10%;
+}
+header .ui-nav.ui.menu .menu-links-container .item:nth-child(2) {
+  width: 12%;
+}
+header .ui-nav.ui.menu .menu-links-container .item:nth-child(3) {
+  width: 14%;
+}
+header .ui-nav.ui.menu .menu-links-container .item:nth-child(4) {
+  width: 23%;
+}
+header .ui-nav.ui.menu .menu-links-container .item:nth-child(5) {
+  width: 14%;
+}
+header .ui-nav.ui.menu .menu-links-container .item:nth-child(6) {
+  width: 16%;
+}
+header .ui-nav.ui.menu .menu-links-container .item:nth-child(7) {
+  width: 10%;
 }
 header .ui-nav.ui.menu .menu-links-container .item:hover, header .ui-nav.ui.menu .menu-links-container .item:focus {
   color: #ffffff;
