@@ -1672,7 +1672,7 @@
     <div class="dropdown-stacked">
       <div class="label label--stacked">Pick some skills</div>
       <select name="skills" multiple="" class="multi-select ui dropdown">
-        <option value="">Skills</option>
+        <option value="">Select...</option>
         <option value="angular">Angular</option>
         <option value="css">CSS</option>
         <option value="design">Graphic Design</option>
@@ -1725,6 +1725,51 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value=&quot;ui&quot;&gt;UI&nbsp;Design&lt;/option&gt;<br/>
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;option&nbsp;value=&quot;ux&quot;&gt;User&nbsp;Experience&lt;/option&gt;<br/>
             &nbsp;&nbsp;&lt;/select&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>&lt;/div&gt;
+          </code>
+        </p>
+      </div>
+    </div>
+    <p class="requires-comment">requires js script to initialize dropdown</p>
+    <code>
+      //&nbsp;intialize&nbsp;semantic&nbsp;ui&nbsp;dropdown<br />$('.ui.dropdown').dropdown();
+    </code>
+    <hr>
+    <h4 class="mb-4 font-weight-semi-bold italic">small select w/multi-select stacked label and search</h4>
+    <!-- SMALL SELECT W/MULTI-SELECT STACKED LABEL AND SEARCH -->
+    <div class="dropdown-stacked">
+      <div class="label label--stacked">Pick some skills</div>
+      <select name="skills" multiple="" class="multi-select ui search dropdown">
+        <option value="">Select/Search...</option>
+        <option value="angular">Angular</option>
+        <option value="css">CSS</option>
+        <option value="design">Graphic Design</option>
+        <option value="ember">Ember</option>
+        <option value="html">HTML</option>
+        <option value="ia">Information Architecture</option>
+        <option value="javascript">Javascript</option>
+        <option value="mech">Mechanical Engineering</option>
+        <option value="meteor">Meteor</option>
+        <option value="node">NodeJS</option>
+        <option value="plumbing">Plumbing</option>
+        <option value="python">Python</option>
+        <option value="rails">Rails</option>
+        <option value="react">React</option>
+        <option value="repair">Kitchen Repair</option>
+        <option value="ruby">Ruby</option>
+        <option value="ui">UI Design</option>
+        <option value="ux">User Experience</option>
+      </select>      
+    </div>
+    <!-- SMALL SELECT W/MULTI-SELECT STACKED LABEL AND SEARCH -->
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view html
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <code>
+           
           </code>
         </p>
       </div>

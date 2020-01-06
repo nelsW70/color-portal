@@ -3,14 +3,25 @@
 .multi-select.ui.dropdown {
   border-radius: $border-radius-two;
   min-height: 35px;
+  max-width: 16rem;
+  padding: 0.175rem 2.1rem 0.125rem 0.35714286rem !important;
+
+  //SEARCH
+  & input.search {
+    font-size: 0.8125rem;
+    margin: 0.25rem !important;
+    max-width: 90%;
+  }
 
   & .default.text {
-    margin: 0.25rem 1.25rem 0.25rem 0.5rem;
+    font-size: 0.8125rem;
+    margin-left: 0.25rem;
   }
 
   & .dropdown.icon {
     padding: 0.575rem 0.575rem 0.575rem 0.575rem;
     right: 10px;
+    top: 10px;
   }
 
   & .menu.transition {
@@ -33,5 +44,10 @@
     background-color: $background-color-gray-one;
     font-size: 0.8125rem;
     font-weight: $font-weight-normal;
+  }
+
+  & .message:not(.ui) {
+    font-size: 0.8125rem;
+    padding: 0.5rem !important;
   }
 }

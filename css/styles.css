@@ -1060,13 +1060,22 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 .multi-select.ui.dropdown {
   border-radius: 2px;
   min-height: 35px;
+  max-width: 16rem;
+  padding: 0.175rem 2.1rem 0.125rem 0.35714286rem !important;
+}
+.multi-select.ui.dropdown input.search {
+  font-size: 0.8125rem;
+  margin: 0.25rem !important;
+  max-width: 90%;
 }
 .multi-select.ui.dropdown .default.text {
-  margin: 0.25rem 1.25rem 0.25rem 0.5rem;
+  font-size: 0.8125rem;
+  margin-left: 0.25rem;
 }
 .multi-select.ui.dropdown .dropdown.icon {
   padding: 0.575rem 0.575rem 0.575rem 0.575rem;
   right: 10px;
+  top: 10px;
 }
 .multi-select.ui.dropdown .menu.transition .item {
   font-family: "Suisse Intl", sans-serif;
@@ -1085,6 +1094,10 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   background-color: #e7ebed;
   font-size: 0.8125rem;
   font-weight: 400;
+}
+.multi-select.ui.dropdown .message:not(.ui) {
+  font-size: 0.8125rem;
+  padding: 0.5rem !important;
 }
 
 /** PAGINATION **/
