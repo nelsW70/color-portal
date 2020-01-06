@@ -1056,6 +1056,33 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   padding: 0.5rem 1.65rem 0.5rem 0.5rem;
 }
 
+/** MULTI-SELECT **/
+.multi-select.ui.dropdown {
+  border-radius: 2px;
+  min-height: 35px;
+}
+.multi-select.ui.dropdown .default.text {
+  margin: 0.25rem 1.25rem 0.25rem 0.5rem;
+}
+.multi-select.ui.dropdown .dropdown.icon {
+  padding: 0.575rem 0.575rem 0.575rem 0.575rem;
+  right: 10px;
+}
+.multi-select.ui.dropdown .menu.transition .item {
+  font-family: "Suisse Intl", sans-serif;
+  color: #334756;
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+.multi-select.ui.dropdown .ui.label.transition {
+  border-radius: 1px;
+  font-family: "Suisse Intl", sans-serif;
+  color: #334756;
+  background-color: #e7ebed;
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+
 /** PAGINATION **/
 .pagination-buttons .ui.pagination.menu {
   min-height: 28px;

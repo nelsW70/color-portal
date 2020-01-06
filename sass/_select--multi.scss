@@ -1,0 +1,33 @@
+/** MULTI-SELECT **/
+
+.multi-select.ui.dropdown {
+  border-radius: $border-radius-two;
+  min-height: 35px;
+
+  & .default.text {
+    margin: 0.25rem 1.25rem 0.25rem 0.5rem;
+  }
+
+  & .dropdown.icon {
+    padding: 0.575rem 0.575rem 0.575rem 0.575rem;
+    right: 10px;
+  }
+
+  & .menu.transition {
+    & .item {
+      font-family: $font-family-primary;
+      color: $font-color-gray-two;
+      font-size: 0.8125rem;
+      font-weight: $font-weight-normal;
+    }
+  }
+
+  & .ui.label.transition {
+    border-radius: $border-radius-one;
+    font-family: $font-family-primary;
+    color: $font-color-gray-two;
+    background-color: $background-color-gray-one;
+    font-size: 0.8125rem;
+    font-weight: $font-weight-normal;
+  }
+}
