@@ -976,7 +976,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   padding: 0.6875rem 1.5rem 0.6875rem 0.625rem;
   text-align: left;
   height: 40px;
-  width: 10rem;
+  width: 12rem;
   line-height: 1rem;
 }
 .ui.fluid.selection.dropdown.select-large .dropdown.icon {
@@ -999,6 +999,9 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   width: 95%;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.ui.fluid.selection.dropdown.select-large--search > input.search {
+  padding: 0.6875rem 1.75rem 0.6875rem 0.625rem;
 }
 .ui.fluid.selection.dropdown.select-small {
   font-size: 0.875rem;
@@ -1050,7 +1053,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   width: 10rem;
 }
 .ui.fluid.selection.dropdown.select-small--search > input.search {
-  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+  padding: 0.5rem 1.65rem 0.5rem 0.5rem;
 }
 
 /** PAGINATION **/

@@ -14,7 +14,7 @@
     padding: 0.6875rem 1.5rem 0.6875rem 0.625rem;
     text-align: left;
     height: 40px;
-    width: 10rem;
+    width: 12rem;
     line-height: 1rem;
 
     & .dropdown.icon {
@@ -38,6 +38,11 @@
       width: 95%;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+    &--search {
+      & > input.search {
+        padding: 0.6875rem 1.75rem 0.6875rem 0.625rem;
+      }
     }
   }
   // SMALL
@@ -97,7 +102,7 @@
     &--search {
       width: 10rem;
       & > input.search {
-        padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+        padding: 0.5rem 1.65rem 0.5rem 0.5rem;
       }
     }
   }
