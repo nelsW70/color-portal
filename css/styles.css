@@ -398,6 +398,11 @@ a:hover {
   text-align: right;
 }
 
+.travel-filter-row {
+  display: flex;
+  align-items: flex-end;
+}
+
 /* BREADCRUMBS */
 .ui.breadcrumb .divider {
   color: #334756;
@@ -972,6 +977,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 /** SELECT **/
 .ui.fluid.selection.dropdown.select-large {
   font-size: 0.875rem;
+  border: 1px solid #b3c1cc;
   border-radius: 2px;
   padding: 0.6875rem 1.5rem 0.6875rem 0.625rem;
   text-align: left;
@@ -1005,6 +1011,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 }
 .ui.fluid.selection.dropdown.select-small {
   font-size: 0.875rem;
+  border: 1px solid #b3c1cc;
   border-radius: 2px;
   padding: 0.5rem 1.25rem 0.5rem 0.5rem;
   text-align: left;
@@ -1059,6 +1066,7 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
 /** MULTI-SELECT **/
 .multi-select.ui.dropdown {
   border-radius: 2px;
+  border: 1px solid #b3c1cc;
   min-height: 35px;
   max-width: 16rem;
   padding: 0.175rem 2.1rem 0.125rem 0.35714286rem !important;
@@ -1484,6 +1492,7 @@ footer .footer-trademark {
 
 /** CARD **/
 .ppg-card {
+  border-radius: 3px;
   box-shadow: 0 1px 4px 0 rgba(51, 71, 86, 0.4);
   padding: 1rem;
 }
@@ -1492,6 +1501,10 @@ footer .footer-trademark {
 h1.section-title {
   font-weight: 500;
   color: #193040;
+}
+
+p.title-description {
+  font-size: 0.875rem;
 }
 
 /** COLORPORTAL ACCORDION **/
@@ -1871,6 +1884,12 @@ h1.section-title {
 }
 .ppg.colorportal.ui.medium.modal .select-large--export .menu {
   border-color: #1966ec;
+}
+
+/** COLORPORTAL CARD **/
+.ppg-card.color-portal {
+  padding: 20px;
+  margin: 0 4px;
 }
 
 /*# sourceMappingURL=styles.css.map */

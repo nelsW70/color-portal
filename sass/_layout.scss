@@ -14,6 +14,8 @@
   padding: 25px;
 }
 
+// PROJECT SPECIFIC LAYOUT FOR COLORPORTAL
+
 /* BREADCRUMBS ROW */
 .breadcrumbs-row {
   display: flex;
@@ -104,4 +106,10 @@
     width: 33.333%;
     text-align: right;
   }
+}
+
+// TRAVEL FILTER ROW
+.travel-filter-row {
+  display: flex;
+  align-items: flex-end;
 }

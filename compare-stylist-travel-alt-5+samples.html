@@ -788,40 +788,92 @@
         </nav>
       </div>
       <!-- SUBHEADER TABS -->
-      <div class="wrapper-one">
-        <!-- SUBHEADER TABS CONTENT -->
-        <div class="ui attached tab active" data-tab="travel">
-          travel
+      <!-- SUBHEADER TABS CONTENT -->
+      <div class="ui attached tab active" data-tab="travel">
+        <div class="wrapper-one">
+          <h1 class="section-title">Travel</h1>
+          <p class="title-description mt-1">
+            Use the filters below to select the data and tables you want to see.
+          </p>
         </div>
-        <div class="ui attached tab" data-tab="data-grid">
-          data grid
+        <!-- CARD -->
+        <div class="ppg-card color-portal">
+          <div class="travel-filter-row">
+            <div class="buttons-container">
+              <div class="label label--stacked">Show:</div>
+              <div class="ui basic buttons">
+                <div
+                  class="ppg tiny ui button btn-group btn-project--show active"
+                  aria-label="select my projects"
+                  role="button"
+                >
+                  Default
+                </div>
+                <div
+                  class="ppg tiny ui button btn-group btn-project--show"
+                  aria-label="select team projects"
+                  role="button"
+                >
+                  MaxScale
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-stacked">
+            <div class="label label--stacked">Pick some skills</div>
+                <select name="skills" multiple="" class="multi-select ui dropdown">
+                    <option value="">Skills</option>
+                    <option value="angular">Angular</option>
+                    <option value="css">CSS</option>
+                    <option value="design">Graphic Design</option>
+                    <option value="ember">Ember</option>
+                    <option value="html">HTML</option>
+                    <option value="ia">Information Architecture</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="mech">Mechanical Engineering</option>
+                    <option value="meteor">Meteor</option>
+                    <option value="node">NodeJS</option>
+                    <option value="plumbing">Plumbing</option>
+                    <option value="python">Python</option>
+                    <option value="rails">Rails</option>
+                    <option value="react">React</option>
+                    <option value="repair">Kitchen Repair</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="ui">UI Design</option>
+                    <option value="ux">User Experience</option>
+                </select>      
+            </div>
+          </div>
         </div>
-        <div class="ui attached tab" data-tab="scatter">
-          scatter
-        </div>
-        <div class="ui attached tab" data-tab="delta">
-          delta
-        </div>
-        <div class="ui attached tab" data-tab="convergence">
-          convergence
-        </div>
-        <div class="ui attached tab" data-tab="spectral">
-          spectral
-        </div>
-        <div class="ui attached tab" data-tab="effect">
-          effect
-        </div>
-        <div class="ui attached tab" data-tab="angle-attribute">
-          angle-attribute
-        </div>
-        <div class="ui attached tab" data-tab="3d">
-          3d
-        </div>
-        <div class="ui attached tab" data-tab="pigment">
-          pigment
-        </div>
-        <!-- SUBHEADER TABS CONTENT -->
+        <!-- CARD -->
       </div>
+      <div class="ui attached tab" data-tab="data-grid">
+        data grid
+      </div>
+      <div class="ui attached tab" data-tab="scatter">
+        scatter
+      </div>
+      <div class="ui attached tab" data-tab="delta">
+        delta
+      </div>
+      <div class="ui attached tab" data-tab="convergence">
+        convergence
+      </div>
+      <div class="ui attached tab" data-tab="spectral">
+        spectral
+      </div>
+      <div class="ui attached tab" data-tab="effect">
+        effect
+      </div>
+      <div class="ui attached tab" data-tab="angle-attribute">
+        angle-attribute
+      </div>
+      <div class="ui attached tab" data-tab="3d">
+        3d
+      </div>
+      <div class="ui attached tab" data-tab="pigment">
+        pigment
+      </div>
+      <!-- SUBHEADER TABS CONTENT -->
     </main>
     <!-- MAIN CONTENT -->
     <!-- FOOTER -->
