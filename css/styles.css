@@ -1482,6 +1482,12 @@ footer .footer-trademark {
   }
 }
 
+/** COLORPORTAL TYPOGRAPHY **/
+h1.section-title {
+  font-weight: 500;
+  color: #193040;
+}
+
 /** COLORPORTAL ACCORDION **/
 .color-portal-accordion .accordion-toggle-one {
   cursor: pointer;
