@@ -1494,7 +1494,7 @@ h1.section-title {
 }
 .color-portal-accordion--project-details {
   margin: 0;
-  padding: 0.75rem 25px 1.25rem 25px;
+  padding: 0.75rem 25px;
   background-color: rgba(231, 235, 237, 0.5);
 }
 .color-portal-accordion--project-details .ui.fluid.accordion .title {
@@ -1578,6 +1578,7 @@ h1.section-title {
   display: flex;
   width: 40%;
   max-width: 400px;
+  padding-bottom: 0.5rem;
 }
 @media only screen and (min-width: 1200px) {
   .color-portal-accordion--project-details .ui.fluid.accordion .content__row-two--section-one {
