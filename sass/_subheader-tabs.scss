@@ -54,21 +54,7 @@
           }
         }
 
-        &:focus {
-          color: $font-color-white-one;
-          font-weight: $font-weight-semi-bold;
-          letter-spacing: normal;
-          position: relative;
-
-          /* NAVLINK UNDERLINE ANIMATION */
-          &:before {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-            background-color: $background-color-blue-four;
-          }
-        }
-
+        &:focus,
         &.active {
           color: $font-color-white-one;
           font-weight: $font-weight-semi-bold;
@@ -83,9 +69,9 @@
             background-color: $background-color-blue-four;
           }
         }
+
         /* NAVLINK UNDERLINE ANIMATION */
         &:before {
-          //   background-color: $background-color-blue-four;
           content: '';
           height: 5px;
           position: absolute;

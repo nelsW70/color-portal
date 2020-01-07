@@ -926,27 +926,14 @@ header .ui-nav.ui.menu .menu-links-container .item:before {
   transform: scaleX(1);
   background-color: #fcc22f;
 }
-.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:focus {
+.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:focus, .subheader-tabs .ui-nav.ui.menu .menu-links-container .item.active {
   color: #ffffff;
   font-weight: 500;
   letter-spacing: normal;
   position: relative;
   /* NAVLINK UNDERLINE ANIMATION */
 }
-.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:focus:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  background-color: #3ec7f4;
-}
-.subheader-tabs .ui-nav.ui.menu .menu-links-container .item.active {
-  color: #ffffff;
-  font-weight: 500;
-  letter-spacing: normal;
-  position: relative;
-  /* NAVLINK UNDERLINE ANIMATION */
-}
-.subheader-tabs .ui-nav.ui.menu .menu-links-container .item.active:before {
+.subheader-tabs .ui-nav.ui.menu .menu-links-container .item:focus:before, .subheader-tabs .ui-nav.ui.menu .menu-links-container .item.active:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
