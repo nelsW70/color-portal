@@ -750,44 +750,78 @@
         <!-- BUTTON ROW -->
       </div>
       <!-- MODAL DIALOG -->
+      <!-- SUBHEADER TABS -->
       <div class="subheader-tabs">
         <nav class="ui-nav ui menu">
           <div class="menu-links-container">
-            <a class="item" href="#">
+            <a class="item" data-tab="travel">
               Travel
             </a>
-            <a class="item" href="#">
+            <a class="item" data-tab="data-grid">
               Data Grid
             </a>
-            <a class="item" href="#">
+            <a class="item" data-tab="scatter">
               Scatter
             </a>
-            <a class="item" href="#">
+            <a class="item" data-tab="delta">
               Delta
             </a>
-            <a class="item" href="#">
+            <a class="item" data-tab="convergence">
               Convergence
             </a>
-            <a class="item" href="#">
+            <a class="item" data-tab="spectral">
               Spectral
             </a>
-            <a class="item" href="#">
-              Angle vs. Attribute
-            </a>
-            <a class="item" href="#">
+            <a class="item" data-tab="effect">
               Effect
             </a>
-            <a class="item" href="#">
+            <a class="item" data-tab="angle-attribute">
+              Angle vs. Attribute
+            </a>
+            <a class="item" data-tab="3d">
               3D
             </a>
-            <a class="item" href="#">
+            <a class="item" data-tab="pigment">
               Pigment
             </a>
           </div>
         </nav>
       </div>
-
-      <div class="wrapper-one"></div>
+      <!-- SUBHEADER TABS -->
+      <div class="wrapper-one">
+        <!-- SUBHEADER TABS CONTENT -->
+        <div class="ui attached tab active" data-tab="travel">
+          travel
+        </div>
+        <div class="ui attached tab" data-tab="data-grid">
+          data grid
+        </div>
+        <div class="ui attached tab" data-tab="scatter">
+          scatter
+        </div>
+        <div class="ui attached tab" data-tab="delta">
+          delta
+        </div>
+        <div class="ui attached tab" data-tab="convergence">
+          convergence
+        </div>
+        <div class="ui attached tab" data-tab="spectral">
+          spectral
+        </div>
+        <div class="ui attached tab" data-tab="effect">
+          effect
+        </div>
+        <div class="ui attached tab" data-tab="angle-attribute">
+          angle-attribute
+        </div>
+        <div class="ui attached tab" data-tab="3d">
+          3d
+        </div>
+        <div class="ui attached tab" data-tab="pigment">
+          pigment
+        </div>
+        <!-- SUBHEADER TABS CONTENT -->
+      </div>
     </main>
     <!-- MAIN CONTENT -->
     <!-- FOOTER -->
@@ -902,6 +936,10 @@
           trigger: '.accordion-toggle-three'
         }
       });
+    </script>
+    <script>
+      // INTIALIZE SECONDARY TABS
+      $('.menu .item').tab();
     </script>
   </body>
 </html>
