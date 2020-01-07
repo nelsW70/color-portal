@@ -403,6 +403,7 @@ a:hover {
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
+  max-width: 1300px;
 }
 
 /* BREADCRUMBS */
@@ -1889,7 +1890,7 @@ p.title-description {
 }
 
 /** COLORPORTAL CARD **/
-.ppg-card.color-portal {
+.ppg-card.color-portal--travel {
   padding: 20px;
   margin: 0 4px;
 }
