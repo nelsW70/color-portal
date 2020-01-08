@@ -887,6 +887,61 @@
               </select>
             </div>
           </div>
+          <section>
+            <h2 class="sample-legend">Sample Legend</h2>
+            <p class="item-count mt-2">Showing <span>1-20 of 20</span> items.</p>
+            <table class="ui very basic striped padded table draggable-droppable">
+                <thead>
+                    <tr>
+                    <th scope="col">Project Name</th>
+                    <th scope="col">Customer</th>
+                    <th scope="col">Color Name</th>
+                    <th scope="col">Program Name</th>
+                    <th scope="col">Designer</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Comments</th>
+                    </tr>
+                </thead>
+                <tbody class="drag-drop">
+                    <tr>
+                    <td><a href="">ALE19379</a></td>
+                    <td>Nissan</td>
+                    <td>A Flash</td>
+                    <td><a href="">Dissan MXQ29 MY 2019</a></td>
+                    <td>Hallie Ferguson</td>
+                    <td><span class="dot dot--approved"></span>Approved</td>
+                    <td>1</td>
+                    </tr>
+                    <tr>
+                    <td><a href="">BLE19379</a></td>
+                    <td>Olympic</td>
+                    <td>B Flash</td>
+                    <td><a href="">Eissan MXQ29 MY 2019</a></td>
+                    <td>Alvin Vega</td>
+                    <td><span class="dot dot--approved"></span>Approved</td>
+                    <td>2</td>
+                    </tr>
+                    <tr>
+                    <td><a href="">CLE19379</a></td>
+                    <td>Paint</td>
+                    <td>C Flash</td>
+                    <td><a href="">Fissan MXQ29 MY 2019</a></td>
+                    <td>Jared Luna</td>
+                    <td><span class="dot dot--rejected"></span>Rejected</td>
+                    <td>3</td>
+                    </tr>
+                    <tr>
+                    <td><a href="">DLE19379</a></td>
+                    <td>Qbert</td>
+                    <td>D Flash</td>
+                    <td><a href="">Gissan MXQ29 MY 2019</a></td>
+                    <td>Elijah Porter</td>
+                    <td><span class="dot dot--pending"></span>Pending</td>
+                    <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+          </section>
         </div>
         <!-- CARD -->
       </div>
@@ -1036,6 +1091,12 @@
     <script>
       // INTIALIZE SECONDARY TABS
       $('.menu .item').tab();
+    </script>
+    <!-- jQuery-UI min.js for drag and drop table -->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script> 
+    <script>
+      // drag/drop table initialize
+      $('tbody.drag-drop').sortable();
     </script>
   </body>
 </html>

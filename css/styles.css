@@ -402,6 +402,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin-bottom: 1.5rem;
 }
 
 /* BREADCRUMBS */
@@ -1502,6 +1503,12 @@ footer .footer-trademark {
 h1.section-title {
   font-weight: 500;
   color: #193040;
+}
+
+h2.sample-legend {
+  font-weight: 500;
+  color: #193040;
+  font-size: 1.3125rem;
 }
 
 p.title-description {
