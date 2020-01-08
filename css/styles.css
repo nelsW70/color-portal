@@ -427,6 +427,7 @@ a:hover {
 /* NORMAL BUTTON TEXT */
 .button-text {
   font-size: 0.875rem;
+  white-space: nowrap;
 }
 
 /* REMOVES BORDER FROM TINY BUTTON CONTAINER*/
