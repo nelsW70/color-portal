@@ -1721,6 +1721,56 @@ p.title-description {
   max-width: 16%;
 }
 
+/** COLORPORTAL SCROLLABLE TABLE **/
+.scrollable-table-container {
+  height: 300px;
+  overflow-x: auto;
+}
+.scrollable-table-container table {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+}
+.scrollable-table-container table thead,
+.scrollable-table-container table tbody tr {
+  display: table;
+  table-layout: fixed;
+}
+.scrollable-table-container table thead {
+  flex: 0 0 auto;
+  width: calc(100% - 8px);
+}
+.scrollable-table-container table tbody {
+  flex: 1 1 auto;
+  display: block;
+  overflow-y: scroll;
+}
+.scrollable-table-container table tbody tr {
+  width: 100%;
+}
+.scrollable-table-container ::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+  -webkit-border-radius: 0;
+}
+.scrollable-table-container ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scrollable-table-container ::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #999;
+  -webkit-border-radius: 4px;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+  border: 2px solid #fff;
+}
+.scrollable-table-container ::-webkit-scrollbar-thumb:hover {
+  height: 50px;
+  background-color: #9f9f9f;
+  -webkit-border-radius: 4px;
+}
+
 /** COLORPORTAL MODALS **/
 .ppg.colorportal.ui.medium.modal {
   max-width: 650px;

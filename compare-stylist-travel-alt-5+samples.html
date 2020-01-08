@@ -890,75 +890,265 @@
           <section>
             <h2 class="sample-legend">Sample Legend</h2>
             <p class="item-count mt-2">Showing <span>1-20 of 20</span> items.</p>
-            <table class="ui very basic striped padded table draggable-droppable">
-              <thead>
-                <tr>
-                <th scope="col">Sample Number</th>
-                <th scope="col">Sample Name</th>
-                <th scope="col">Sample Type</th>
-                <th scope="col">Instrument</th>
-                <th scope="col">UPID</th>
-                <th scope="col">Date</th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                </tr>
-            </thead>
-            <tbody class="drag-drop">
-                <tr>
-                  <td>1</td>
-                  <td>1-4367-02-01 Standard Film(1,A)</td>
-                  <td>Styling Inspiration</td>
-                  <td>XRITE MA68</td>
-                  <td>Sample text</td>
-                  <td>04 Dec 2019</td>
-                  <td></td>
-                  <td>
-                    <button class="ppg ui secondary button">
-                      <span class="button-text">Additional standard</span>
-                    </button>
-                  </td>
-                  <td>
-                    <button class="ppg ui primary button">
-                      <span class="button-text">Set standard</span>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Olympic</td>
-                  <td>B Flash</td>
-                  <td><a href="">Eissan MXQ29 MY 2019</a></td>
-                  <td>Alvin Vega</td>
-                  <td><span class="dot dot--approved"></span>Approved</td>
-                  <td>2</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Paint</td>
-                  <td>C Flash</td>
-                  <td><a href="">Fissan MXQ29 MY 2019</a></td>
-                  <td>Jared Luna</td>
-                  <td><span class="dot dot--rejected"></span>Rejected</td>
-                  <td>3</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Qbert</td>
-                  <td>D Flash</td>
-                  <td><a href="">Gissan MXQ29 MY 2019</a></td>
-                  <td>Elijah Porter</td>
-                  <td><span class="dot dot--pending"></span>Pending</td>
-                  <td>4</td>
-                  <td></td>
-                  <td></td>
-                </tr>
+            <div class="scrollable-table-container"> 
+              <table class="ui very basic striped padded table draggable-droppable fixed_header">
+                <thead>
+                  <tr>
+                  <th scope="col">Sample Number</th>
+                  <th scope="col">Sample Name</th>
+                  <th scope="col">Sample Type</th>
+                  <th scope="col">Instrument</th>
+                  <th scope="col">UPID</th>
+                  <th scope="col">Date</th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  </tr>
+              </thead>
+              <tbody class="drag-drop">
+                  <tr>
+                    <td>1</td>
+                    <td>1 - 4367 -02-01 Standard Film(1,A)</td>
+                    <td>Styling Inspiration</td>
+                    <td>XRITE MA68</td>
+                    <td>Sample text</td>
+                    <td>04 Dec 2019</td>
+                    <td>
+                      <button class="ppg ui small button">
+                        <i class="material-icons material-icons--print mr-1">file_copy</i>
+                        <span class="button-text">Copy</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui secondary button">
+                        <span class="button-text">Additional standard</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui primary button">
+                        <span class="button-text">Set standard</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2 - 4367 -02-01 -4</td>
+                    <td>Styling Iteration</td>
+                    <td>XRITE MA68</td>
+                    <td>Sample text</td>
+                    <td>27 Dec 2019</td>
+                    <td>
+                      <button class="ppg ui small button">
+                        <i class="material-icons material-icons--print mr-1">file_copy</i>
+                        <span class="button-text">Copy</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui secondary button">
+                        <span class="button-text">Additional standard</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui primary button">
+                        <span class="button-text">Set standard</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>3 - 4367 -02-01 -4</td>
+                    <td>Styling Iteration</td>
+                    <td>XRITE MA68</td>
+                    <td>Sample text</td>
+                    <td>26 May 2019</td>
+                    <td>
+                      <button class="ppg ui small button">
+                        <i class="material-icons material-icons--print mr-1">file_copy</i>
+                        <span class="button-text">Copy</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui secondary button">
+                        <span class="button-text">Additional standard</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui primary button">
+                        <span class="button-text">Set standard</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>4 - 4367 -02-01 -4</td>
+                    <td>Styling Iteration</td>
+                    <td>XRITE MA68</td>
+                    <td>Sample text</td>
+                    <td>17 May 2019</td>
+                    <td>
+                      <button class="ppg ui small button">
+                        <i class="material-icons material-icons--print mr-1">file_copy</i>
+                        <span class="button-text">Copy</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui secondary button">
+                        <span class="button-text">Additional standard</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui primary button">
+                        <span class="button-text">Set standard</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>4 - 4367 -02-01 -4</td>
+                    <td>Styling Iteration</td>
+                    <td>XRITE MA68</td>
+                    <td>Sample text</td>
+                    <td>26 April 2019</td>
+                    <td>
+                      <button class="ppg ui small button">
+                        <i class="material-icons material-icons--print mr-1">file_copy</i>
+                        <span class="button-text">Copy</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui secondary button">
+                        <span class="button-text">Additional standard</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui primary button">
+                        <span class="button-text">Set standard</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>5 - 4367 -02-01 -4</td>
+                    <td>Styling Iteration</td>
+                    <td>XRITE MA68</td>
+                    <td>Sample text</td>
+                    <td>26 March 2019</td>
+                    <td>
+                      <button class="ppg ui small button">
+                        <i class="material-icons material-icons--print mr-1">file_copy</i>
+                        <span class="button-text">Copy</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui secondary button">
+                        <span class="button-text">Additional standard</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui primary button">
+                        <span class="button-text">Set standard</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>6 - 4367 -02-01 -4</td>
+                    <td>Styling Iteration</td>
+                    <td>XRITE MA68</td>
+                    <td>Sample text</td>
+                    <td>6 March 2019</td>
+                    <td>
+                      <button class="ppg ui small button">
+                        <i class="material-icons material-icons--print mr-1">file_copy</i>
+                        <span class="button-text">Copy</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui secondary button">
+                        <span class="button-text">Additional standard</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui primary button">
+                        <span class="button-text">Set standard</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>7 - 4367 -02-01 -4</td>
+                    <td>Styling Iteration</td>
+                    <td>XRITE MA68</td>
+                    <td>Sample text</td>
+                    <td>3 March 2019</td>
+                    <td>
+                      <button class="ppg ui small button">
+                        <i class="material-icons material-icons--print mr-1">file_copy</i>
+                        <span class="button-text">Copy</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui secondary button">
+                        <span class="button-text">Additional standard</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui primary button">
+                        <span class="button-text">Set standard</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>8 - 4367 -02-01 -4</td>
+                    <td>Styling Iteration</td>
+                    <td>XRITE MA68</td>
+                    <td>Sample text</td>
+                    <td>1 March 2019</td>
+                    <td>
+                      <button class="ppg ui small button">
+                        <i class="material-icons material-icons--print mr-1">file_copy</i>
+                        <span class="button-text">Copy</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui secondary button">
+                        <span class="button-text">Additional standard</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui primary button">
+                        <span class="button-text">Set standard</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>9 - 4367 -02-01 -4</td>
+                    <td>Styling Iteration</td>
+                    <td>XRITE MA68</td>
+                    <td>Sample text</td>
+                    <td>23 February 2019</td>
+                    <td>
+                      <button class="ppg ui small button">
+                        <i class="material-icons material-icons--print mr-1">file_copy</i>
+                        <span class="button-text">Copy</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui secondary button">
+                        <span class="button-text">Additional standard</span>
+                      </button>
+                    </td>
+                    <td>
+                      <button class="ppg ui primary button">
+                        <span class="button-text">Set standard</span>
+                      </button>
+                    </td>
+                  </tr>
               </tbody>
-            </table>
+              </table>
+            </div>
           </section>
         </div>
         <!-- CARD -->
