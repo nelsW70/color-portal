@@ -1744,9 +1744,6 @@ p.title-description {
 .scrollable-table-container table thead tr {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-.scrollable-table-container table thead tr th {
-  width: calc(100% - 1px);
-}
 .scrollable-table-container table tbody {
   flex: 1 1 auto;
   display: block;
