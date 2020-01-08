@@ -1739,7 +1739,13 @@ p.title-description {
 }
 .scrollable-table-container table thead {
   flex: 0 0 auto;
-  width: calc(100% - 8px);
+  width: 100%;
+}
+.scrollable-table-container table thead tr {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.scrollable-table-container table thead tr th {
+  width: calc(100% - 1px);
 }
 .scrollable-table-container table tbody {
   flex: 1 1 auto;
@@ -1749,26 +1755,9 @@ p.title-description {
 .scrollable-table-container table tbody tr {
   width: 100%;
 }
-.scrollable-table-container ::-webkit-scrollbar-track-piece {
-  background-color: #fff;
-  -webkit-border-radius: 0;
-}
 .scrollable-table-container ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-}
-.scrollable-table-container ::-webkit-scrollbar-thumb {
-  height: 50px;
-  background-color: #999;
-  -webkit-border-radius: 4px;
-  outline: 2px solid #fff;
-  outline-offset: -2px;
-  border: 2px solid #fff;
-}
-.scrollable-table-container ::-webkit-scrollbar-thumb:hover {
-  height: 50px;
-  background-color: #9f9f9f;
-  -webkit-border-radius: 4px;
 }
 
 /** COLORPORTAL MODALS **/
