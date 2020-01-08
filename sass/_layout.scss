@@ -108,11 +108,9 @@
   }
 }
 
-// TRAVEL FILTER ROW
+// TRAVEL FILTER ROW (compare-stylist-travel-alt5+samples)
 .travel-filter-row {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
-  max-width: 1300px;
+  align-items: flex-start;
 }

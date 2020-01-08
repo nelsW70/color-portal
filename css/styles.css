@@ -401,9 +401,7 @@ a:hover {
 .travel-filter-row {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
-  max-width: 1300px;
+  align-items: flex-start;
 }
 
 /* BREADCRUMBS */
@@ -1893,6 +1891,10 @@ p.title-description {
 .ppg-card.color-portal--travel {
   padding: 20px;
   margin: 0 4px;
+}
+
+.travel-filter-row .multi-select.ui.dropdown {
+  width: 16rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
