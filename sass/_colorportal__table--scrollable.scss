@@ -9,17 +9,6 @@
     height: 100%;
     width: 100%;
 
-    @supports (-ms-ime-align: auto) {
-      thead {
-        width: 98.5%;
-      }
-    }
-
-    @supports (display: -ms-grid) {
-      thead {
-        width: 98.5%;
-      }
-    }
     &.compare-stylist-travel {
       @media only screen and (max-width: 1600px) {
         & tbody tr td:nth-child(7),
@@ -50,6 +39,18 @@
       box-shadow: 0 1px 4px 0 rgba(51, 71, 86, 0.4) !important;
 
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        width: 98.5%;
+      }
+    }
+
+    @supports (-ms-ime-align: auto) {
+      thead {
+        width: 98.5%;
+      }
+    }
+
+    @supports (display: -ms-grid) {
+      thead {
         width: 98.5%;
       }
     }
@@ -91,10 +92,4 @@
     width: 4px;
     height: 4px;
   }
-}
-
-_:-ms-lang(x),
-_:-webkit-full-screen,
-thead {
-  width: 85%;
 }
