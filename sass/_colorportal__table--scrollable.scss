@@ -85,3 +85,9 @@
     height: 4px;
   }
 }
+
+@supports (-ms-ime-align: auto) {
+  thead {
+    width: 98.5% !important;
+  }
+}
