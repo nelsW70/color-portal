@@ -35,6 +35,8 @@
     & thead {
       flex: 0 0 auto;
       width: calc(100% - 12px);
+      // because ie
+      width: 99.125%;
     }
 
     & tbody {
