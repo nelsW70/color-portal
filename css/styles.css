@@ -1762,11 +1762,6 @@ p.title-description {
     width: 98.5%;
   }
 }
-@supports (-ms-ime-align: auto) {
-  .scrollable-table-container table thead {
-    width: 98.5%;
-  }
-}
 @supports (display: -ms-grid) {
   .scrollable-table-container table thead {
     width: 98.5%;
@@ -1799,6 +1794,12 @@ p.title-description {
 .scrollable-table-container ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
+}
+@supports (display: -ms-grid) {
+  .scrollable-table-container ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
 }
 
 /** COLORPORTAL MODALS **/

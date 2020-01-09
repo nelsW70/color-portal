@@ -43,12 +43,6 @@
       }
     }
 
-    @supports (-ms-ime-align: auto) {
-      thead {
-        width: 98.5%;
-      }
-    }
-
     @supports (display: -ms-grid) {
       thead {
         width: 98.5%;
@@ -91,5 +85,11 @@
   ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
+  }
+  @supports (display: -ms-grid) {
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
   }
 }
