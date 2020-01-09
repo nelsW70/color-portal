@@ -1764,6 +1764,22 @@ p.title-description {
 .scrollable-table-container table tbody tr {
   width: 100%;
 }
+.scrollable-table-container table tbody td {
+  font-size: 0.75rem !important;
+}
+.scrollable-table-container table tbody td button.ppg.ui.primary.button, .scrollable-table-container table tbody td button.ppg.ui.secondary.button {
+  height: 25px;
+  padding: 4px 12px;
+}
+.scrollable-table-container table tbody td button .button-text {
+  font-size: 0.75rem !important;
+}
+.scrollable-table-container table tbody td button .material-icons {
+  font-size: 0.85rem;
+}
+.scrollable-table-container table tbody td button.ppg.ui.small {
+  min-height: 25px;
+}
 .scrollable-table-container ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
