@@ -1726,35 +1726,11 @@ p.title-description {
   height: 300px;
   overflow-x: auto;
 }
-.scrollable-table-container table {
-  display: flex;
-  flex-flow: column;
-  height: 100%;
-  width: 100%;
-}
-.scrollable-table-container table thead,
-.scrollable-table-container table tbody tr {
-  display: table;
-  table-layout: fixed;
-}
-.scrollable-table-container table thead {
-  flex: 0 0 auto;
-  width: 100%;
-}
-.scrollable-table-container table thead tr {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-.scrollable-table-container table tbody {
-  flex: 1 1 auto;
-  display: block;
-  overflow-y: scroll;
-}
-.scrollable-table-container table tbody tr {
-  width: 100%;
-}
-.scrollable-table-container ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+.scrollable-table-container th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #ffffff !important;
 }
 
 /** COLORPORTAL MODALS **/
