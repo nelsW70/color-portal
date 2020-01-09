@@ -40,6 +40,9 @@
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         width: 98.5%;
       }
+      @supports (-ms-ime-align: auto) {
+        width: 98.5%;
+      }
     }
 
     & tbody {
