@@ -1753,7 +1753,7 @@ p.title-description {
 }
 .scrollable-table-container table thead {
   flex: 0 0 auto;
-  width: calc(100% - 8px);
+  width: calc(100% - 12px);
 }
 .scrollable-table-container table tbody {
   flex: 1 1 auto;
@@ -1765,8 +1765,8 @@ p.title-description {
   width: 100%;
 }
 .scrollable-table-container ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
 }
 
 /** COLORPORTAL MODALS **/
