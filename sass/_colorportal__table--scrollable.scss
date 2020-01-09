@@ -40,10 +40,15 @@
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         width: 98.5%;
       }
-      @supports (-ms-ime-align: auto) {
+    }
+
+    @supports (-ms-ime-align: auto) {
+      thead {
         width: 98.5%;
       }
-      @supports (-ms-ime-align: auto) and (-webkit-text-stroke: initial) {
+    }
+    @supports (-ms-ime-align: auto) and (-webkit-text-stroke: initial) {
+      thead {
         width: 98.5%;
       }
     }
