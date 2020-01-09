@@ -1802,6 +1802,11 @@ thead {
   width: 85%;
 }
 
+@supports (display: -ms-grid) {
+  thead {
+    width: 85%;
+  }
+}
 /** COLORPORTAL MODALS **/
 .ppg.colorportal.ui.medium.modal {
   max-width: 650px;

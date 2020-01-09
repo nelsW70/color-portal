@@ -92,3 +92,9 @@ _:-webkit-full-screen,
 thead {
   width: 85%;
 }
+
+@supports (display: -ms-grid) {
+  thead {
+    width: 85%;
+  }
+}
