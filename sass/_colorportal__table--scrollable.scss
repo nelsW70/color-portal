@@ -1,89 +1,93 @@
-/** COLORPORTAL SCROLLABLE TABLE **/
+// /** COLORPORTAL SCROLLABLE TABLE **/
+// .scrollable-table-container {
+//   height: 300px;
+//   overflow-x: auto;
+
+//   & table {
+//     display: flex;
+//     flex-flow: column;
+//     height: 100%;
+//     width: 100%;
+
+//     &.compare-stylist-travel {
+//       @media only screen and (max-width: 1600px) {
+//         & tbody tr td:nth-child(7),
+//         thead tr th:nth-child(7) {
+//           width: 120px;
+//         }
+//         & tbody tr td:nth-child(8),
+//         thead tr th:nth-child(8) {
+//           width: 174px;
+//         }
+//         & tbody tr td:nth-child(9),
+//         thead tr th:nth-child(9) {
+//           width: 130px;
+//         }
+//       }
+//     }
+
+//     & thead,
+//     tbody tr {
+//       display: table;
+//       table-layout: fixed;
+//     }
+
+//     & thead {
+//       flex: 0 0 auto;
+//       width: calc(100% - 4px);
+//       z-index: 2;
+//       box-shadow: 0 1px 4px 0 rgba(51, 71, 86, 0.4) !important;
+
+//       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+//         width: 98.5%;
+//       }
+//     }
+
+//     @supports (display: -ms-grid) {
+//       thead {
+//         width: 98.5%;
+//       }
+//     }
+
+//     & tbody {
+//       flex: 1 1 auto;
+//       display: block;
+//       overflow-y: scroll;
+
+//       & tr {
+//         width: 100%;
+//       }
+
+//       & td {
+//         font-size: 0.75rem !important;
+
+//         & button {
+//           &.ppg.ui.primary.button,
+//           &.ppg.ui.secondary.button {
+//             height: 25px;
+//             padding: 4px 12px;
+//           }
+//           & .button-text {
+//             font-size: 0.75rem !important;
+//           }
+//           & .material-icons {
+//             font-size: 0.85rem;
+//           }
+//           &.ppg.ui.small {
+//             min-height: 25px;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   ::-webkit-scrollbar {
+//     width: 4px;
+//     height: 4px;
+//   }
+// }
+
 .scrollable-table-container {
-  height: 300px;
-  overflow-x: auto;
-
-  & table {
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-    width: 100%;
-
-    &.compare-stylist-travel {
-      @media only screen and (max-width: 1600px) {
-        & tbody tr td:nth-child(7),
-        thead tr th:nth-child(7) {
-          width: 120px;
-        }
-        & tbody tr td:nth-child(8),
-        thead tr th:nth-child(8) {
-          width: 174px;
-        }
-        & tbody tr td:nth-child(9),
-        thead tr th:nth-child(9) {
-          width: 130px;
-        }
-      }
-    }
-
-    & thead,
-    tbody tr {
-      display: table;
-      table-layout: fixed;
-    }
-
-    & thead {
-      flex: 0 0 auto;
-      width: calc(100% - 4px);
-      z-index: 2;
-      box-shadow: 0 1px 4px 0 rgba(51, 71, 86, 0.4) !important;
-
-      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        width: 98.5%;
-      }
-    }
-
-    @supports (display: -ms-grid) {
-      thead {
-        width: 98.5%;
-      }
-    }
-
-    & tbody {
-      flex: 1 1 auto;
-      display: block;
-      overflow-y: scroll;
-      // box-shadow: inset 0 1px 4px 0 rgba(51, 71, 86, 0.4);
-
-      & tr {
-        width: 100%;
-      }
-
-      & td {
-        font-size: 0.75rem !important;
-
-        & button {
-          &.ppg.ui.primary.button,
-          &.ppg.ui.secondary.button {
-            height: 25px;
-            padding: 4px 12px;
-          }
-          & .button-text {
-            font-size: 0.75rem !important;
-          }
-          & .material-icons {
-            font-size: 0.85rem;
-          }
-          &.ppg.ui.small {
-            min-height: 25px;
-          }
-        }
-      }
-    }
-  }
-
-  ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-  }
+  height: 400px;
+  overflow: auto;
 }
