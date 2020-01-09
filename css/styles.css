@@ -1758,11 +1758,8 @@ p.title-description {
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .scrollable-table-container table thead {
-    width: 99.25%;
+    width: 98.5%;
   }
-}
-.scrollable-table-container table thead tr {
-  box-shadow: 0 1px 4px 0 rgba(51, 71, 86, 0.4);
 }
 .scrollable-table-container table tbody {
   flex: 1 1 auto;
