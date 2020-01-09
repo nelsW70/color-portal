@@ -35,6 +35,10 @@
     & thead {
       flex: 0 0 auto;
       width: calc(100% - 4px);
+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        width: 99.25%;
+      }
     }
 
     & tbody {

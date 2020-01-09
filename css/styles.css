@@ -1755,6 +1755,11 @@ p.title-description {
   flex: 0 0 auto;
   width: calc(100% - 4px);
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .scrollable-table-container table thead {
+    width: 99.25%;
+  }
+}
 .scrollable-table-container table tbody {
   flex: 1 1 auto;
   display: block;
