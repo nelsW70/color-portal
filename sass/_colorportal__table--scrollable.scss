@@ -9,6 +9,11 @@
     height: 100%;
     width: 100%;
 
+    @supports (-ms-ime-align: auto) {
+      thead {
+        width: 98.5%;
+      }
+    }
     &.compare-stylist-travel {
       @media only screen and (max-width: 1600px) {
         & tbody tr td:nth-child(7),
@@ -38,17 +43,6 @@
       z-index: 2;
 
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        width: 98.5%;
-      }
-    }
-
-    @supports (-ms-ime-align: auto) {
-      thead {
-        width: 98.5%;
-      }
-    }
-    @supports (-ms-ime-align: auto) and (-webkit-text-stroke: initial) {
-      thead {
         width: 98.5%;
       }
     }
@@ -90,10 +84,4 @@
     width: 4px;
     height: 4px;
   }
-}
-
-_:-ms-lang(x),
-_:-webkit-full-screen,
-thead {
-  width: 98.5%;
 }
