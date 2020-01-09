@@ -1732,6 +1732,20 @@ p.title-description {
   height: 100%;
   width: 100%;
 }
+@media only screen and (max-width: 1600px) {
+  .scrollable-table-container table.compare-stylist-travel tbody tr td:nth-child(7),
+.scrollable-table-container table.compare-stylist-travel thead tr th:nth-child(7) {
+    width: 120px;
+  }
+  .scrollable-table-container table.compare-stylist-travel tbody tr td:nth-child(8),
+.scrollable-table-container table.compare-stylist-travel thead tr th:nth-child(8) {
+    width: 174px;
+  }
+  .scrollable-table-container table.compare-stylist-travel tbody tr td:nth-child(9),
+.scrollable-table-container table.compare-stylist-travel thead tr th:nth-child(9) {
+    width: 130px;
+  }
+}
 .scrollable-table-container table thead,
 .scrollable-table-container table tbody tr {
   display: table;
