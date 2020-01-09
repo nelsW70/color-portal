@@ -1737,6 +1737,11 @@ p.title-description {
     width: 98.5%;
   }
 }
+@supports (display: -ms-grid) {
+  .scrollable-table-container table thead {
+    width: 98.5%;
+  }
+}
 @media only screen and (max-width: 1600px) {
   .scrollable-table-container table.compare-stylist-travel tbody tr td:nth-child(7),
 .scrollable-table-container table.compare-stylist-travel thead tr th:nth-child(7) {
@@ -1802,11 +1807,6 @@ thead {
   width: 85%;
 }
 
-@supports (display: -ms-grid) {
-  thead {
-    width: 85%;
-  }
-}
 /** COLORPORTAL MODALS **/
 .ppg.colorportal.ui.medium.modal {
   max-width: 650px;
