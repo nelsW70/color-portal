@@ -1795,12 +1795,6 @@ p.title-description {
   width: 4px;
   height: 4px;
 }
-@supports (display: -ms-grid) {
-  .scrollable-table-container ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-  }
-}
 
 /** COLORPORTAL MODALS **/
 .ppg.colorportal.ui.medium.modal {

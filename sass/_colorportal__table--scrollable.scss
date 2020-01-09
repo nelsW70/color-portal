@@ -86,10 +86,4 @@
     width: 4px;
     height: 4px;
   }
-  @supports (display: -ms-grid) {
-    ::-webkit-scrollbar {
-      width: 4px;
-      height: 4px;
-    }
-  }
 }
