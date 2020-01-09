@@ -1471,7 +1471,7 @@ footer .footer-trademark {
   right: 0;
   bottom: 0;
   background-color: #15232f;
-  z-index: 2;
+  z-index: 10000000000000;
   cursor: pointer;
 }
 #blackout-overlay__text {
@@ -1721,9 +1721,34 @@ p.title-description {
   max-width: 16%;
 }
 
+/** COLORPORTAL SCROLLABLE TABLE **/
 .scrollable-table-container {
-  height: 400px;
+  height: 300px;
   overflow: auto;
+}
+.scrollable-table-container table thead {
+  z-index: 2;
+  box-shadow: 0 1px 4px 0 rgba(51, 71, 86, 0.4) !important;
+}
+.scrollable-table-container table tbody td {
+  font-size: 0.75rem !important;
+}
+.scrollable-table-container table tbody td button.ppg.ui.primary.button, .scrollable-table-container table tbody td button.ppg.ui.secondary.button {
+  height: 25px;
+  padding: 4px 12px;
+}
+.scrollable-table-container table tbody td button .button-text {
+  font-size: 0.75rem !important;
+}
+.scrollable-table-container table tbody td button .material-icons {
+  font-size: 0.85rem;
+}
+.scrollable-table-container table tbody td button.ppg.ui.small {
+  min-height: 25px;
+}
+
+.compare-stylist-travel thead tr {
+  background-color: #ffffff;
 }
 
 /** COLORPORTAL MODALS **/
