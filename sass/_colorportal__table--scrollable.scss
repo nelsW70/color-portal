@@ -3,47 +3,38 @@
   height: 300px;
   overflow-x: auto;
 
-  & th {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background-color: $background-color-white-one !important;
+  & table {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+
+    & thead,
+    tbody tr {
+      display: table;
+      table-layout: fixed;
+    }
+
+    & thead {
+      flex: 0 0 auto;
+      width: calc(100% - 4px);
+    }
+
+    & tbody {
+      flex: 1 1 auto;
+      display: block;
+      overflow-y: scroll;
+      box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16),
+        inset 0 3px 6px rgba(0, 0, 0, 0.23);
+
+      & tr {
+        width: 100%;
+      }
+    }
   }
 
-  // & table {
-  //   display: flex;
-  //   flex-flow: column;
-  //   height: 100%;
-  //   width: 100%;
-
-  //   & thead,
-  //   tbody tr {
-  //     display: table;
-  //     table-layout: fixed;
-  //   }
-
-  //   & thead {
-  //     flex: 0 0 auto;
-  //     width: 100%;
-
-  //     & tr {
-  //       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  //     }
-  //   }
-
-  //   & tbody {
-  //     flex: 1 1 auto;
-  //     display: block;
-  //     overflow-y: scroll;
-
-  //     & tr {
-  //       width: 100%;
-  //     }
-  //   }
-  // }
-
-  // ::-webkit-scrollbar {
-  //   width: 8px;
-  //   height: 8px;
-  // }
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
 }

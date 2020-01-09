@@ -1726,11 +1726,33 @@ p.title-description {
   height: 300px;
   overflow-x: auto;
 }
-.scrollable-table-container th {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background-color: #ffffff !important;
+.scrollable-table-container table {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+}
+.scrollable-table-container table thead,
+.scrollable-table-container table tbody tr {
+  display: table;
+  table-layout: fixed;
+}
+.scrollable-table-container table thead {
+  flex: 0 0 auto;
+  width: calc(100% - 4px);
+}
+.scrollable-table-container table tbody {
+  flex: 1 1 auto;
+  display: block;
+  overflow-y: scroll;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), inset 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.scrollable-table-container table tbody tr {
+  width: 100%;
+}
+.scrollable-table-container ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
 }
 
 /** COLORPORTAL MODALS **/
