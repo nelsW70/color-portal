@@ -43,6 +43,9 @@
       @supports (-ms-ime-align: auto) {
         width: 98.5%;
       }
+      @supports (-ms-ime-align: auto) and (-webkit-text-stroke: initial) {
+        width: 98.5%;
+      }
     }
 
     & tbody {
