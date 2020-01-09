@@ -1732,6 +1732,11 @@ p.title-description {
   height: 100%;
   width: 100%;
 }
+@supports (-ms-ime-align: auto) {
+  .scrollable-table-container table thead {
+    width: 98.5%;
+  }
+}
 @media only screen and (max-width: 1600px) {
   .scrollable-table-container table.compare-stylist-travel tbody tr td:nth-child(7),
 .scrollable-table-container table.compare-stylist-travel thead tr th:nth-child(7) {
@@ -1755,6 +1760,7 @@ p.title-description {
   flex: 0 0 auto;
   width: calc(100% - 4px);
   z-index: 2;
+  box-shadow: 0 1px 4px 0 rgba(51, 71, 86, 0.4) !important;
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .scrollable-table-container table thead {
@@ -1765,7 +1771,6 @@ p.title-description {
   flex: 1 1 auto;
   display: block;
   overflow-y: scroll;
-  box-shadow: inset 0 1px 4px 0 rgba(51, 71, 86, 0.4);
 }
 .scrollable-table-container table tbody tr {
   width: 100%;
@@ -1789,6 +1794,12 @@ p.title-description {
 .scrollable-table-container ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
+}
+
+_:-ms-lang(x),
+_:-webkit-full-screen,
+thead {
+  width: 85%;
 }
 
 /** COLORPORTAL MODALS **/
