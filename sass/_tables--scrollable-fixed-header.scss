@@ -1,0 +1,21 @@
+/** SCROLLABLE TABLE W/FIXED HEADER**/
+
+.floatThead-wrapper .floatThead-container {
+  z-index: 1 !important;
+  box-shadow: -2px 4px 4px -4px rgba(51, 71, 86, 0.4);
+
+  thead tr {
+    background-color: $background-color-white-one;
+    z-index: 2;
+  }
+}
+
+.scrollable-table-container {
+  height: 300px;
+  overflow: auto;
+  border-bottom: solid 1px rgba(17, 35, 48, 0.25);
+
+  & table {
+    border-bottom: none !important;
+  }
+}

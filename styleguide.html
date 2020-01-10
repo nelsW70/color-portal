@@ -1205,6 +1205,144 @@
         <br/>&lt;script&gt;<br/>&nbsp;&nbsp;//&nbsp;drag/drop&nbsp;table&nbsp;initialize<br/>&nbsp;&nbsp;$('tbody.drag-drop').sortable();<br/>&lt;/script&gt;
     </code>
     <hr>
+    <h4 class="mb-4 font-weight-semi-bold italic">scrollable table w/fixed header</h4>
+    <div class="scrollable-table-container">
+      <table class="ui very basic striped padded table table-scrollable">
+        <thead>
+          <tr>
+            <th scope="col">Project Name</th>
+            <th scope="col">Customer</th>
+            <th scope="col">Color Name</th>
+            <th scope="col">Program Name</th>
+            <th scope="col">Designer</th>
+            <th scope="col">Status</th>
+            <th scope="col">Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="">ALE19379</a></td>
+            <td>Nissan</td>
+            <td>A Flash</td>
+            <td><a href="">Dissan MXQ29 MY 2019</a></td>
+            <td>Hallie Ferguson</td>
+            <td><span class="dot dot--approved"></span>Approved</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td><a href="">BLE19379</a></td>
+            <td>Olympic</td>
+            <td>B Flash</td>
+            <td><a href="">Eissan MXQ29 MY 2019</a></td>
+            <td>Alvin Vega</td>
+            <td><span class="dot dot--approved"></span>Approved</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><a href="">CLE19379</a></td>
+            <td>Paint</td>
+            <td>C Flash</td>
+            <td><a href="">Fissan MXQ29 MY 2019</a></td>
+            <td>Jared Luna</td>
+            <td><span class="dot dot--rejected"></span>Rejected</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><a href="">DLE19379</a></td>
+            <td>Qbert</td>
+            <td>D Flash</td>
+            <td><a href="">Gissan MXQ29 MY 2019</a></td>
+            <td>Elijah Porter</td>
+            <td><span class="dot dot--pending"></span>Pending</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td><a href="">DLE19379</a></td>
+            <td>Qbert</td>
+            <td>D Flash</td>
+            <td><a href="">Gissan MXQ29 MY 2019</a></td>
+            <td>Elijah Porter</td>
+            <td><span class="dot dot--pending"></span>Pending</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td><a href="">DLE19379</a></td>
+            <td>Qbert</td>
+            <td>D Flash</td>
+            <td><a href="">Gissan MXQ29 MY 2019</a></td>
+            <td>Elijah Porter</td>
+            <td><span class="dot dot--pending"></span>Pending</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td><a href="">DLE19379</a></td>
+            <td>Qbert</td>
+            <td>D Flash</td>
+            <td><a href="">Gissan MXQ29 MY 2019</a></td>
+            <td>Elijah Porter</td>
+            <td><span class="dot dot--pending"></span>Pending</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td><a href="">DLE19379</a></td>
+            <td>Qbert</td>
+            <td>D Flash</td>
+            <td><a href="">Gissan MXQ29 MY 2019</a></td>
+            <td>Elijah Porter</td>
+            <td><span class="dot dot--pending"></span>Pending</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td><a href="">DLE19379</a></td>
+            <td>Qbert</td>
+            <td>D Flash</td>
+            <td><a href="">Gissan MXQ29 MY 2019</a></td>
+            <td>Elijah Porter</td>
+            <td><span class="dot dot--pending"></span>Pending</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td><a href="">DLE19379</a></td>
+            <td>Qbert</td>
+            <td>D Flash</td>
+            <td><a href="">Gissan MXQ29 MY 2019</a></td>
+            <td>Elijah Porter</td>
+            <td><span class="dot dot--pending"></span>Pending</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view html
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <code>
+
+          </code>
+          </p>
+      </div>
+    </div>
+    <p class="requires-comment">requires js script</p>
+    <code>
+      
+    </code>
+    <p class="requires-comment" style="margin-top:3rem;">requires js script</p>
+    <div class="ui styled accordion">
+      <div class="title">
+        <i class="dropdown icon"></i>
+        view js
+      </div>
+      <div class="content">
+        <p class="transition visible" style="display: block !important;">
+          <code></code>
+        </p>
+      </div>
+    </div>
+    <hr>
     <h3 class="styleguide">select</h3>
     <h4 class="mb-4 font-weight-semi-bold italic">large select</h4>
       <!-- LARGE SELECT -->
@@ -2847,6 +2985,17 @@
     <script src="js/modals.js"></script>
     <!-- Fake Validation Demo -->
     <script src="js-styleguide/fake-validation.js"></script>
+    <!-- SCROLLABLE TABLE HEADER  -->
+    <script src="js/table-floathead.js"></script>
+    <script>
+    // SCROLLABLE TABLE FIXED HEADER SELECTION
+      var $table = $('.table-scrollable');
+      $table.floatThead({
+          scrollContainer: function($table){
+            return $table.closest('.scrollable-table-container');
+          }
+      });
+    </script>
   </body>
 </html>
 

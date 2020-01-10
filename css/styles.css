@@ -1407,6 +1407,25 @@ table.ui.table.very.basic.striped.padded.table tbody tr td .dot--rejected {
   background-color: #ce3f11;
 }
 
+/** SCROLLABLE TABLE W/FIXED HEADER**/
+.floatThead-wrapper .floatThead-container {
+  z-index: 1 !important;
+  box-shadow: -2px 4px 4px -4px rgba(51, 71, 86, 0.4);
+}
+.floatThead-wrapper .floatThead-container thead tr {
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.scrollable-table-container {
+  height: 300px;
+  overflow: auto;
+  border-bottom: solid 1px rgba(17, 35, 48, 0.25);
+}
+.scrollable-table-container table {
+  border-bottom: none !important;
+}
+
 /** FOOTER **/
 footer {
   height: 60px;
@@ -1723,18 +1742,6 @@ p.title-description {
 }
 
 /** COLORPORTAL SCROLLABLE TABLE **/
-.floatThead-wrapper .floatThead-container {
-  z-index: 1 !important;
-}
-
-.scrollable-table-container {
-  height: 300px;
-  overflow: auto;
-}
-.scrollable-table-container table thead {
-  z-index: 2;
-  box-shadow: 0 1px 4px 0 rgba(51, 71, 86, 0.4) !important;
-}
 .scrollable-table-container table tbody td {
   font-size: 0.75rem !important;
 }
@@ -1750,10 +1757,6 @@ p.title-description {
 }
 .scrollable-table-container table tbody td button.ppg.ui.small {
   min-height: 25px;
-}
-
-.compare-stylist-travel thead tr {
-  background-color: #ffffff;
 }
 
 /** COLORPORTAL MODALS **/
