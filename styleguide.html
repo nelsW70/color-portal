@@ -1415,22 +1415,16 @@
           </p>
       </div>
     </div>
-    <p class="requires-comment">requires js script</p>
+    <p class="requires-comment">requires js script to select table</p>
     <code>
-      
+      &lt;script&gt;<br/>&nbsp;&nbsp;var&nbsp;$table&nbsp;=&nbsp;$('.table-scrollable');<br/>
+      &nbsp;&nbsp;$table.floatThead({<br/>&nbsp;&nbsp;&nbsp;&nbsp;scrollContainer:&nbsp;function($table)&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;$table.closest('.scrollable-table-container');<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;}<br/>&nbsp;&nbsp;});<br/>&lt;/script&gt;
     </code>
-    <p class="requires-comment" style="margin-top:3rem;">requires js script</p>
-    <div class="ui styled accordion">
-      <div class="title">
-        <i class="dropdown icon"></i>
-        view js
-      </div>
-      <div class="content">
-        <p class="transition visible" style="display: block !important;">
-          <code></code>
-        </p>
-      </div>
-    </div>
+    <p class="requires-comment" style="margin-top:3rem;">requires js to float table header and resize columns</p>
+    <code>
+      &lt;script&nbsp;src=&quot;js/table-floathead.js&quot;&gt;&lt;/script&gt;<br/>
+    </code>
     <hr>
     <h3 class="styleguide">select</h3>
     <h4 class="mb-4 font-weight-semi-bold italic">large select</h4>
