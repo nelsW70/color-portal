@@ -1742,6 +1742,9 @@ p.title-description {
 }
 
 /** COLORPORTAL SCROLLABLE TABLE **/
+.scrollable-table-container {
+  height: 300px;
+}
 .scrollable-table-container.compare-stylist-travel table tbody td {
   font-size: 0.75rem !important;
 }
