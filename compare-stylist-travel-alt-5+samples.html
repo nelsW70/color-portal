@@ -890,8 +890,8 @@
           <section>
             <h2 class="sample-legend">Sample Legend</h2>
             <p class="item-count mt-2">Showing <span>1-20 of 20</span> items.</p>
-            <div class="scrollable-table-container"> 
-              <table class="ui very basic striped padded table draggable-droppable compare-stylist-travel">
+            <div class="scrollable-table-container compare-stylist-travel"> 
+              <table class="ui very basic striped padded table draggable-droppable table-scrollable">
                 <thead>
                   <tr>
                   <th scope="col">Sample Number</th>
@@ -1154,31 +1154,40 @@
         <!-- CARD -->
       </div>
       <div class="ui attached tab" data-tab="data-grid">
-        data grid
+        data grid: 
+        content to be added later: just setting things up
       </div>
       <div class="ui attached tab" data-tab="scatter">
-        scatter
+        scatter: 
+        content to be added later: just setting things up
       </div>
       <div class="ui attached tab" data-tab="delta">
-        delta
+        delta: 
+        content to be added later: just setting things up
       </div>
       <div class="ui attached tab" data-tab="convergence">
-        convergence
+        convergence: 
+        content to be added later: just setting things up
       </div>
       <div class="ui attached tab" data-tab="spectral">
-        spectral
+        spectral: 
+        content to be added later: just setting things up
       </div>
       <div class="ui attached tab" data-tab="effect">
-        effect
+        effect: 
+        content to be added later: just setting things up
       </div>
       <div class="ui attached tab" data-tab="angle-attribute">
-        angle-attribute
+        angle-attribute: 
+        content to be added later: just setting things up
       </div>
       <div class="ui attached tab" data-tab="3d">
-        3d
+        3d: 
+        content to be added later: just setting things up
       </div>
       <div class="ui attached tab" data-tab="pigment">
-        pigment
+        pigment: 
+        content to be added later: just setting things up
       </div>
       <!-- SUBHEADER TABS CONTENT -->
     </main>
@@ -1308,14 +1317,7 @@
     </script>
     <!-- SCROLLABLE TABLE HEADER  -->
     <script src="js/table-floathead.js"></script>
-    <script>
-    // SCROLLABLE TABLE FIXED HEADER SELECTION
-      var $table = $('table');
-      $table.floatThead({
-          scrollContainer: function($table){
-            return $table.closest('.scrollable-table-container');
-          }
-      });
-    </script>
+    <!-- SCROLLABLE TABLE FIXED HEADER SELECTION -->
+    <script src="js/table-scrollable.js"></script>
   </body>
 </html>

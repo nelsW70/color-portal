@@ -1742,20 +1742,20 @@ p.title-description {
 }
 
 /** COLORPORTAL SCROLLABLE TABLE **/
-.scrollable-table-container table tbody td {
+.scrollable-table-container.compare-stylist-travel table tbody td {
   font-size: 0.75rem !important;
 }
-.scrollable-table-container table tbody td button.ppg.ui.primary.button, .scrollable-table-container table tbody td button.ppg.ui.secondary.button {
+.scrollable-table-container.compare-stylist-travel table tbody td button.ppg.ui.primary.button, .scrollable-table-container.compare-stylist-travel table tbody td button.ppg.ui.secondary.button {
   height: 25px;
   padding: 4px 12px;
 }
-.scrollable-table-container table tbody td button .button-text {
+.scrollable-table-container.compare-stylist-travel table tbody td button .button-text {
   font-size: 0.75rem !important;
 }
-.scrollable-table-container table tbody td button .material-icons {
+.scrollable-table-container.compare-stylist-travel table tbody td button .material-icons {
   font-size: 0.85rem;
 }
-.scrollable-table-container table tbody td button.ppg.ui.small {
+.scrollable-table-container.compare-stylist-travel table tbody td button.ppg.ui.small {
   min-height: 25px;
 }
 
