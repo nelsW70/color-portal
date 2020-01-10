@@ -1431,6 +1431,7 @@ footer .footer-trademark {
 
 .ui.dimmer.modals {
   background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1001;
 }
 
 .ppg.ui.modal {

@@ -1,6 +1,7 @@
 // background overlay for modals
 .ui.dimmer.modals {
   background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1001;
 }
 
 // modals
