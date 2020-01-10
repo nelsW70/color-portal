@@ -1723,6 +1723,10 @@ p.title-description {
 }
 
 /** COLORPORTAL SCROLLABLE TABLE **/
+.floatThead-wrapper .floatThead-container {
+  z-index: 1 !important;
+}
+
 .scrollable-table-container {
   height: 300px;
   overflow: auto;
