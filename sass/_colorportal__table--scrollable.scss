@@ -1,9 +1,9 @@
 /** COLORPORTAL SCROLLABLE TABLE **/
 
 .scrollable-table-container {
-  min-height: 250px;
-
   &.compare-stylist-travel {
+    max-height: 250px;
+
     & table {
       & tbody {
         & td {
