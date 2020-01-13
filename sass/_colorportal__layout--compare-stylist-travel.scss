@@ -2,4 +2,13 @@
 .wrapper-one.compare-stylist-travel {
   max-height: 500px;
   overflow-y: auto;
+  display: flex;
+
+  & .col-one {
+    width: 60%;
+  }
+
+  & .col-two {
+    width: 40%;
+  }
 }

@@ -533,6 +533,11 @@ a:hover {
   background-color: rgba(25, 102, 236, 0.1) !important;
 }
 
+/** BADGE **/
+.ppg-badge.ui.label {
+  border-radius: 1px;
+}
+
 .ppg-custom-radio.ui.radio.checkbox {
   min-height: 22px;
   line-height: 22px;
@@ -1540,6 +1545,13 @@ p.title-description {
 .wrapper-one.compare-stylist-travel {
   max-height: 500px;
   overflow-y: auto;
+  display: flex;
+}
+.wrapper-one.compare-stylist-travel .col-one {
+  width: 60%;
+}
+.wrapper-one.compare-stylist-travel .col-two {
+  width: 40%;
 }
 
 /** COLORPORTAL ACCORDION **/
@@ -1976,6 +1988,16 @@ table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected 
 
 .travel-filter-row .multi-select.ui.dropdown {
   width: 16rem;
+}
+
+/** COLORPORTAL BADGE **/
+.ppg-badge.color-portal.ui.label {
+  background-color: #334756;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 400;
+  height: 26px;
+  border: 1px solid #334756;
 }
 
 /*# sourceMappingURL=styles.css.map */
