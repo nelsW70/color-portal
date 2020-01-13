@@ -1542,16 +1542,49 @@ p.title-description {
 }
 
 /** COMPARE STYLIST LAYOUT **/
-.wrapper-one.compare-stylist-travel {
+.selected-samples.compare-stylist-travel {
   max-height: 500px;
   overflow-y: auto;
   display: flex;
 }
-.wrapper-one.compare-stylist-travel .col-one {
-  width: 60%;
+.selected-samples.compare-stylist-travel .sample-type {
+  font-size: 0.8125rem;
 }
-.wrapper-one.compare-stylist-travel .col-two {
+.selected-samples.compare-stylist-travel .sample-name-container {
+  display: flex;
+  align-items: baseline;
+  margin-top: 0.25rem;
+}
+.selected-samples.compare-stylist-travel .sample-name-container .sample-name {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-right: 0.75rem;
+}
+.selected-samples.compare-stylist-travel .sample-details {
+  display: flex;
+  margin-top: 0.65rem;
+}
+.selected-samples.compare-stylist-travel .sample-details .detail {
+  margin-right: 2rem;
+  font-size: 0.8125rem;
+  color: rgba(25, 48, 64, 0.75);
+}
+.selected-samples.compare-stylist-travel .sample-details .detail span {
+  font-weight: 600;
+}
+.selected-samples.compare-stylist-travel .sample-table {
+  margin-top: 1rem;
+}
+.selected-samples.compare-stylist-travel .sample-table th {
+  text-transform: none;
+}
+.selected-samples.compare-stylist-travel .col-one {
+  width: 60%;
+  padding: 2rem 25px;
+}
+.selected-samples.compare-stylist-travel .col-two {
   width: 40%;
+  padding: 2rem 25px;
 }
 
 /** COLORPORTAL ACCORDION **/

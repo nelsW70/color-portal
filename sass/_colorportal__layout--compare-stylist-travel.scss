@@ -1,14 +1,54 @@
 /** COMPARE STYLIST LAYOUT **/
-.wrapper-one.compare-stylist-travel {
+.selected-samples.compare-stylist-travel {
   max-height: 500px;
   overflow-y: auto;
   display: flex;
 
+  & .sample-type {
+    font-size: 0.8125rem;
+  }
+
+  & .sample-name-container {
+    display: flex;
+    align-items: baseline;
+    margin-top: 0.25rem;
+    & .sample-name {
+      font-size: 1.125rem;
+      font-weight: $font-weight-semi-bold;
+      margin-right: 0.75rem;
+    }
+  }
+
+  & .sample-details {
+    display: flex;
+    margin-top: 0.65rem;
+
+    & .detail {
+      margin-right: 2rem;
+      font-size: 0.8125rem;
+      color: rgba(25, 48, 64, 0.75);
+
+      span {
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+
+  & .sample-table {
+    margin-top: 1rem;
+
+    th {
+      text-transform: none;
+    }
+  }
+
   & .col-one {
     width: 60%;
+    padding: 2rem 25px;
   }
 
   & .col-two {
     width: 40%;
+    padding: 2rem 25px;
   }
 }
