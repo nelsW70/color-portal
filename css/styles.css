@@ -1648,6 +1648,21 @@ p.title-description {
   text-transform: capitalize;
 }
 
+/** COLORPORTAL TABLE **/
+table.ui.very.basic.striped.padded.table.table--sample-legend thead tr th {
+  padding: 0.5rem 1rem;
+}
+table.ui.very.basic.striped.padded.table.table--sample-legend td {
+  padding: 0.6125rem 1rem;
+}
+table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td {
+  background-color: #456175 !important;
+  color: #ffffff !important;
+}
+table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td:before {
+  color: #ffffff !important;
+}
+
 /** STYLIST - PROJECT DETAILS TABLES **/
 .styling-iterations,
 .linked-colors {

@@ -895,7 +895,7 @@
             <h2 class="sample-legend">Sample Legend</h2>
             <p class="item-count mt-2">Showing <span>1-20 of 20</span> items.</p>
             <div class="scrollable-table-container compare-stylist-travel"> 
-              <table class="ui very basic striped padded table draggable-droppable table-scrollable">
+              <table class="ui very basic striped padded table draggable-droppable table-scrollable table--sample-legend">
                 <thead>
                   <tr>
                   <th scope="col">Sample Number</th>
@@ -910,7 +910,7 @@
                   </tr>
               </thead>
               <tbody class="drag-drop">
-                <tr>
+                <tr class="standard-row">
                   <td>1</td>
                   <td>1 - 4367 -02-01 Standard Film(1,A)</td>
                   <td>Styling Inspiration</td>
@@ -929,7 +929,7 @@
                     </button>
                   </td>
                   <td>
-                    <button class="ppg ui primary button">
+                    <button class="ppg ui primary button choose-standard">
                       <span class="button-text">Set standard</span>
                     </button>
                   </td>
@@ -1325,5 +1325,11 @@
     <script src="js/table-floathead.js"></script>
     <!-- SCROLLABLE TABLE FIXED HEADER SELECTION -->
     <script src="js/table-scrollable.js"></script>
+    <!-- SET STANDARD SELECTION -->
+    <script>
+      $( ".choose-standard" ).click(function() {
+        $( ".standard-row").toggleClass( "selected" );
+      });
+    </script>
   </body>
 </html>

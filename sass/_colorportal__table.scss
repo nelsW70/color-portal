@@ -1,0 +1,27 @@
+/** COLORPORTAL TABLE **/
+
+// compare-stylist-travel-alt-5+samples
+
+table.ui.very.basic.striped.padded.table.table {
+  &--sample-legend {
+    thead tr {
+      th {
+        padding: 0.5rem 1rem;
+      }
+    }
+    td {
+      padding: 0.6125rem 1rem;
+    }
+    tbody tr {
+      &.selected {
+        td {
+          background-color: #456175 !important;
+          color: $font-color-white-one !important;
+          &:before {
+            color: $font-color-white-one !important;
+          }
+        }
+      }
+    }
+  }
+}
