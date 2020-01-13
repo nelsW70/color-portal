@@ -13,6 +13,10 @@ table.ui.very.basic.striped.padded.table.table {
       padding: 0.6125rem 1rem;
     }
     tbody tr {
+      // TRIGGERED BY CLICK EVENT ON 'SET STANDARD' BUTTON
+      & .selected-check {
+        display: none;
+      }
       &.selected {
         td {
           background-color: #456175 !important;
@@ -20,6 +24,14 @@ table.ui.very.basic.striped.padded.table.table {
           &:before {
             color: $font-color-white-one !important;
           }
+          & button.primary {
+            display: none;
+          }
+        }
+        & .selected-check {
+          display: block;
+          text-align: center;
+          width: 90px;
         }
       }
     }

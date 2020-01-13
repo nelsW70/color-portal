@@ -932,6 +932,9 @@
                     <button class="ppg ui primary button choose-standard">
                       <span class="button-text">Set standard</span>
                     </button>
+                    <i class="material-icons selected-check unselect-standard">
+                      check
+                    </i>
                   </td>
                 </tr>
                 <tr>
@@ -1325,9 +1328,13 @@
     <script src="js/table-floathead.js"></script>
     <!-- SCROLLABLE TABLE FIXED HEADER SELECTION -->
     <script src="js/table-scrollable.js"></script>
-    <!-- SET STANDARD SELECTION -->
+    <!-- SET STANDARD SELECTION VISUAL DEMO/TOGGLES SELECTED CLASS ON SAMPLE LEGEND TABLE ROW -->
+    <!-- DEMO IMPLEMENTED ON FIRST ROW OF TABLE BECAUSE I DON'T KNOW HOW YOU WANT TO IMPLEMENT IT -->
     <script>
       $( ".choose-standard" ).click(function() {
+        $( ".standard-row").toggleClass( "selected" );
+      });
+      $( ".unselect-standard" ).click(function() {
         $( ".standard-row").toggleClass( "selected" );
       });
     </script>
