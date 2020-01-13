@@ -1536,6 +1536,12 @@ p.title-description {
   font-size: 0.875rem;
 }
 
+/** COMPARE STYLIST LAYOUT **/
+.wrapper-one.compare-stylist-travel {
+  height: 500px;
+  overflow-y: auto;
+}
+
 /** COLORPORTAL ACCORDION **/
 .color-portal-accordion .accordion-toggle-one {
   cursor: pointer;
@@ -1769,7 +1775,7 @@ table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected 
 
 /** COLORPORTAL SCROLLABLE TABLE **/
 .scrollable-table-container {
-  height: 300px;
+  min-height: 250px;
 }
 .scrollable-table-container.compare-stylist-travel table tbody td {
   font-size: 0.75rem !important;
