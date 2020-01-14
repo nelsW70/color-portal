@@ -1420,7 +1420,7 @@
               <div class="name-expand">
                 <div class="name">∆L* - D65</div>
                 <div class="expand">
-                  <button class="ppg ui small button">
+                  <button class="ppg ui small button expanded-view-modal-btn">
                     <i class="material-icons material-icons--print mr-1">launch</i>
                     <span class="button-text">Expand</span>
                   </button>
@@ -1433,7 +1433,7 @@
               <div class="name-expand">
                 <div class="name">∆L* - D65</div>
                 <div class="expand">
-                  <button class="ppg ui small button">
+                  <button class="ppg ui small button expanded-view-modal-btn">
                     <i class="material-icons material-icons--print mr-1">launch</i>
                     <span class="button-text">Expand</span>
                   </button>
@@ -1446,7 +1446,7 @@
               <div class="name-expand">
                 <div class="name">∆L* - D65</div>
                 <div class="expand">
-                  <button class="ppg ui small button">
+                  <button class="ppg ui small button expanded-view-modal-btn">
                     <i class="material-icons material-icons--print mr-1">launch</i>
                     <span class="button-text">Expand</span>
                   </button>
@@ -1459,7 +1459,7 @@
               <div class="name-expand">
                 <div class="name">∆L* - D65</div>
                 <div class="expand">
-                  <button class="ppg ui small button">
+                  <button class="ppg ui small button expanded-view-modal-btn">
                     <i class="material-icons material-icons--print mr-1">launch</i>
                     <span class="button-text">Expand</span>
                   </button>
@@ -1472,7 +1472,7 @@
               <div class="name-expand">
                 <div class="name">∆L* - D65</div>
                 <div class="expand">
-                  <button class="ppg ui small button">
+                  <button class="ppg ui small button expanded-view-modal-btn">
                     <i class="material-icons material-icons--print mr-1">launch</i>
                     <span class="button-text">Expand</span>
                   </button>
@@ -1483,6 +1483,24 @@
             </div>
           </div>
           <!-- RIGHT COLUMN -->
+          <!-- EXPANDED VIEW MODAL -->
+          <div class="ppg ui large modal expanded-view-modal">
+            <div class="header modal-header-container">
+              <div class="modal-header">
+                Large Modal Header
+              </div>
+              <i class="material-icons expanded-view-modal-close">
+                close
+              </i>
+            </div>
+            <div class="content">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nulla atque quam molestias, 
+                reprehenderit sed aliquam provident est voluptate laborum!
+              </p>
+            </div>
+          </div>
+          <!-- EXPANDED VIEW MODAL -->
         </div>
       </div>
         <!-- TRAVEL TAB CONTENT -->
@@ -1667,6 +1685,19 @@
         } else {
           $(this).closest('tr').addClass('selected')
         }
+      });
+    </script>
+    <!-- EXPANDED VIEW MODAL -->
+    <script>
+      // OPEN 'COMPARE DATA' MODAL WITH 'COMPARE DATA' BUTTON
+      $('.expanded-view-modal-btn').click(function() {
+        $('.expanded-view-modal').modal('show');
+      });
+    </script>
+    <script>
+      // close large modal with modal 'x' icon
+      $('.expanded-view-modal-close').click(function() {
+        $('.expanded-view-modal').modal('hide');
       });
     </script>
   </body>
