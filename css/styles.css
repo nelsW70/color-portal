@@ -1604,6 +1604,10 @@ p.title-description {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  min-height: 50px;
+}
+.selected-samples.compare-stylist-travel .col-two .colorimetric-container {
+  min-height: 90px;
 }
 .selected-samples.compare-stylist-travel .col-two .colorimetric-title {
   font-size: 1.125rem;
@@ -1613,10 +1617,27 @@ p.title-description {
 }
 .selected-samples.compare-stylist-travel .col-two .colorimetric-select .selection.dropdown {
   background-color: #ffffff;
-  width: 68px;
+  width: 66px;
 }
 .selected-samples.compare-stylist-travel .col-two .colorimetric-select .selection.dropdown .text, .selected-samples.compare-stylist-travel .col-two .colorimetric-select .selection.dropdown .item {
   font-size: 0.8125rem;
+}
+.selected-samples.compare-stylist-travel .col-two .graph-container {
+  margin-bottom: 2rem;
+}
+.selected-samples.compare-stylist-travel .col-two .graph-container .name-expand {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.selected-samples.compare-stylist-travel .col-two .graph-container .name-expand .name {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.selected-samples.compare-stylist-travel .col-two .graph-container .svg-container {
+  height: 150px;
+  background-color: goldenrod;
+  margin-top: 1rem;
 }
 
 /** COLORPORTAL ACCORDION **/

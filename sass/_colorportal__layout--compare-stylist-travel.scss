@@ -73,6 +73,11 @@
       display: flex;
       align-items: baseline;
       justify-content: space-between;
+      min-height: 50px;
+
+      &-container {
+        min-height: 90px;
+      }
 
       &-title {
         font-size: 1.125rem;
@@ -83,13 +88,35 @@
         }
         & .selection.dropdown {
           background-color: $background-color-white-one;
-          width: 68px;
+          width: 66px;
 
           & .text,
           & .item {
             font-size: 0.8125rem;
           }
         }
+      }
+    }
+
+    & .graph-container {
+      margin-bottom: 2rem;
+
+      & .name-expand {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        & .name {
+          font-size: 0.875rem;
+          font-weight: $font-weight-bold;
+        }
+      }
+
+      & .svg-container {
+        height: 150px;
+        // remove background-color when svg is in
+        background-color: goldenrod;
+        margin-top: 1rem;
       }
     }
   }
