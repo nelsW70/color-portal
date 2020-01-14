@@ -910,7 +910,7 @@
                   </tr>
               </thead>
               <tbody class="drag-drop">
-                <tr class="standard-row">
+                <tr>
                   <td>1</td>
                   <td>1 - 4367 -02-01 Standard Film(1,A)</td>
                   <td>Styling Inspiration</td>
@@ -956,9 +956,12 @@
                     </button>
                   </td>
                   <td>
-                    <button class="ppg ui primary button">
+                    <button class="ppg ui primary button choose-standard">
                       <span class="button-text">Set standard</span>
                     </button>
+                    <i class="material-icons selected-check unselect-standard">
+                      check
+                    </i>
                   </td>
                 </tr>
                 <tr>
@@ -980,9 +983,12 @@
                     </button>
                   </td>
                   <td>
-                    <button class="ppg ui primary button">
+                    <button class="ppg ui primary button choose-standard">
                       <span class="button-text">Set standard</span>
                     </button>
+                    <i class="material-icons selected-check unselect-standard">
+                      check
+                    </i>
                   </td>
                 </tr>
                 <tr>
@@ -1004,9 +1010,12 @@
                     </button>
                   </td>
                   <td>
-                    <button class="ppg ui primary button">
+                    <button class="ppg ui primary button choose-standard">
                       <span class="button-text">Set standard</span>
                     </button>
+                    <i class="material-icons selected-check unselect-standard">
+                      check
+                    </i>
                   </td>
                 </tr>
                 <tr>
@@ -1028,9 +1037,12 @@
                     </button>
                   </td>
                   <td>
-                    <button class="ppg ui primary button">
+                    <button class="ppg ui primary button choose-standard">
                       <span class="button-text">Set standard</span>
                     </button>
+                    <i class="material-icons selected-check unselect-standard">
+                      check
+                    </i>
                   </td>
                 </tr>
                 <tr>
@@ -1052,9 +1064,12 @@
                     </button>
                   </td>
                   <td>
-                    <button class="ppg ui primary button">
+                    <button class="ppg ui primary button choose-standard">
                       <span class="button-text">Set standard</span>
                     </button>
+                    <i class="material-icons selected-check unselect-standard">
+                      check
+                    </i>
                   </td>
                 </tr>
                 <tr>
@@ -1076,9 +1091,12 @@
                     </button>
                   </td>
                   <td>
-                    <button class="ppg ui primary button">
+                    <button class="ppg ui primary button choose-standard">
                       <span class="button-text">Set standard</span>
                     </button>
+                    <i class="material-icons selected-check unselect-standard">
+                      check
+                    </i>
                   </td>
                 </tr>
                 <tr>
@@ -1100,9 +1118,12 @@
                     </button>
                   </td>
                   <td>
-                    <button class="ppg ui primary button">
+                    <button class="ppg ui primary button choose-standard">
                       <span class="button-text">Set standard</span>
                     </button>
+                    <i class="material-icons selected-check unselect-standard">
+                      check
+                    </i>
                   </td>
                 </tr>
                 <tr>
@@ -1124,9 +1145,12 @@
                     </button>
                   </td>
                   <td>
-                    <button class="ppg ui primary button">
+                    <button class="ppg ui primary button choose-standard">
                       <span class="button-text">Set standard</span>
                     </button>
+                    <i class="material-icons selected-check unselect-standard">
+                      check
+                    </i>
                   </td>
                 </tr>
                 <tr>
@@ -1148,9 +1172,12 @@
                     </button>
                   </td>
                   <td>
-                    <button class="ppg ui primary button">
+                    <button class="ppg ui primary button choose-standard">
                       <span class="button-text">Set standard</span>
                     </button>
+                    <i class="material-icons selected-check unselect-standard">
+                      check
+                    </i>
                   </td>
                 </tr>
               </tbody>
@@ -1406,15 +1433,23 @@
     <script src="js/table-floathead.js"></script>
     <!-- SCROLLABLE TABLE FIXED HEADER SELECTION -->
     <script src="js/table-scrollable.js"></script>
-    <!-- SET STANDARD SELECTION VISUAL DEMO/TOGGLES SELECTED CLASS ON SAMPLE LEGEND TABLE ROW -->
-    <!-- DEMO IMPLEMENTED ON FIRST ROW OF TABLE BECAUSE I DON'T KNOW HOW YOU WANT TO IMPLEMENT IT -->
+    <!-- SET STANDARD SELECTION TOGGLES SELECTED CLASS ON SAMPLE LEGEND TABLE ROWS -->
     <script>
-      $( ".choose-standard" ).click(function() {
-        $( ".standard-row").toggleClass( "selected" );
+       $(".choose-standard").click(function() {
+        if($(this).closest('tr').hasClass('selected')) {
+          $(this).closest('tr').removeClass('selected')
+        } else {
+          $(this).closest('tr').addClass('selected')
+        }
       });
-      $( ".unselect-standard" ).click(function() {
-        $( ".standard-row").toggleClass( "selected" );
+      $(".unselect-standard").click(function() {
+        if($(this).closest('tr').hasClass('selected')) {
+          $(this).closest('tr').removeClass('selected')
+        } else {
+          $(this).closest('tr').addClass('selected')
+        }
       });
     </script>
+
   </body>
 </html>
