@@ -1,6 +1,20 @@
 /** COLORPORTAL MODALS **/
 
 .ppg.colorportal.ui {
+  &.large.expanded-view-modal {
+    & .header.modal-header-container {
+      background-color: transparent;
+      border-bottom: none;
+
+      & .modal-header {
+        color: $font-color-primary;
+      }
+
+      & .expanded-view-modal-close {
+        color: $font-color-primary;
+      }
+    }
+  }
   &.medium.modal {
     max-width: 650px;
 

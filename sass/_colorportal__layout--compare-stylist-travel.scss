@@ -50,6 +50,7 @@
 
   & .sample-table {
     margin: 1rem 0;
+    overflow: auto;
 
     th {
       text-transform: none;

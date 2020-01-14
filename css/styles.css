@@ -1585,6 +1585,7 @@ p.title-description {
 }
 .selected-samples.compare-stylist-travel .sample-table {
   margin: 1rem 0;
+  overflow: auto;
 }
 .selected-samples.compare-stylist-travel .sample-table th {
   text-transform: none;
@@ -1893,6 +1894,16 @@ table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected 
 }
 
 /** COLORPORTAL MODALS **/
+.ppg.colorportal.ui.large.expanded-view-modal .header.modal-header-container {
+  background-color: transparent;
+  border-bottom: none;
+}
+.ppg.colorportal.ui.large.expanded-view-modal .header.modal-header-container .modal-header {
+  color: #193040;
+}
+.ppg.colorportal.ui.large.expanded-view-modal .header.modal-header-container .expanded-view-modal-close {
+  color: #193040;
+}
 .ppg.colorportal.ui.medium.modal {
   max-width: 650px;
 }
