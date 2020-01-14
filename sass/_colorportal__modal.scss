@@ -8,6 +8,8 @@
 
       & .modal-header {
         color: $font-color-primary;
+        font-size: 1.5rem !important;
+        font-weight: $font-weight-bold;
       }
 
       & .expanded-view-modal-close {

@@ -1900,6 +1900,8 @@ table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected 
 }
 .ppg.colorportal.ui.large.expanded-view-modal .header.modal-header-container .modal-header {
   color: #193040;
+  font-size: 1.5rem !important;
+  font-weight: 600;
 }
 .ppg.colorportal.ui.large.expanded-view-modal .header.modal-header-container .expanded-view-modal-close {
   color: #193040;
