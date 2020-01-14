@@ -68,5 +68,29 @@
   & .col-two {
     width: 40%;
     padding: 2rem 25px;
+
+    & .colorimetric {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+
+      &-title {
+        font-size: 1.125rem;
+      }
+      &-select {
+        & .label {
+          font-size: 0.8125rem;
+        }
+        & .selection.dropdown {
+          background-color: $background-color-white-one;
+          width: 68px;
+
+          & .text,
+          & .item {
+            font-size: 0.8125rem;
+          }
+        }
+      }
+    }
   }
 }

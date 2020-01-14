@@ -1600,6 +1600,24 @@ p.title-description {
   width: 40%;
   padding: 2rem 25px;
 }
+.selected-samples.compare-stylist-travel .col-two .colorimetric {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.selected-samples.compare-stylist-travel .col-two .colorimetric-title {
+  font-size: 1.125rem;
+}
+.selected-samples.compare-stylist-travel .col-two .colorimetric-select .label {
+  font-size: 0.8125rem;
+}
+.selected-samples.compare-stylist-travel .col-two .colorimetric-select .selection.dropdown {
+  background-color: #ffffff;
+  width: 68px;
+}
+.selected-samples.compare-stylist-travel .col-two .colorimetric-select .selection.dropdown .text, .selected-samples.compare-stylist-travel .col-two .colorimetric-select .selection.dropdown .item {
+  font-size: 0.8125rem;
+}
 
 /** COLORPORTAL ACCORDION **/
 .color-portal-accordion .accordion-toggle-one {
