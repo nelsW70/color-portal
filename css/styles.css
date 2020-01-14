@@ -1554,11 +1554,15 @@ p.title-description {
   display: flex;
   align-items: baseline;
   margin-top: 0.25rem;
+  margin-bottom: 1rem;
 }
 .selected-samples.compare-stylist-travel .sample-name-container .sample-name {
   font-size: 1.125rem;
   font-weight: 500;
   margin-right: 0.75rem;
+}
+.selected-samples.compare-stylist-travel .sample-name-container .sample-name--col-two {
+  margin-left: auto;
 }
 .selected-samples.compare-stylist-travel .sample-details {
   display: flex;
@@ -1569,11 +1573,18 @@ p.title-description {
   font-size: 0.8125rem;
   color: rgba(25, 48, 64, 0.75);
 }
+.selected-samples.compare-stylist-travel .sample-details .detail--green {
+  color: #0a8d4d;
+  font-weight: 600;
+}
+.selected-samples.compare-stylist-travel .sample-details .detail--col-two {
+  margin: 0 0 0 auto;
+}
 .selected-samples.compare-stylist-travel .sample-details .detail span {
   font-weight: 600;
 }
 .selected-samples.compare-stylist-travel .sample-table {
-  margin-top: 1rem;
+  margin: 2rem 0;
 }
 .selected-samples.compare-stylist-travel .sample-table th {
   text-transform: none;

@@ -12,10 +12,15 @@
     display: flex;
     align-items: baseline;
     margin-top: 0.25rem;
+    margin-bottom: 1rem;
     & .sample-name {
       font-size: 1.125rem;
       font-weight: $font-weight-semi-bold;
       margin-right: 0.75rem;
+
+      &--col-two {
+        margin-left: auto;
+      }
     }
   }
 
@@ -28,6 +33,15 @@
       font-size: 0.8125rem;
       color: rgba(25, 48, 64, 0.75);
 
+      &--green {
+        color: $font-color-green-one;
+        font-weight: $font-weight-bold;
+      }
+
+      &--col-two {
+        margin: 0 0 0 auto;
+      }
+
       span {
         font-weight: $font-weight-bold;
       }
@@ -35,7 +49,7 @@
   }
 
   & .sample-table {
-    margin-top: 1rem;
+    margin: 2rem 0;
 
     th {
       text-transform: none;
