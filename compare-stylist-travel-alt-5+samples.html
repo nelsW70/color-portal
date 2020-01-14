@@ -1301,6 +1301,13 @@
                         <th scope="col">b*</th>
                         <th scope="col">C*</th>
                         <th scope="col">h*</th>
+                        <th scope="col">∆L*</th>
+                        <th scope="col">∆a*</th>
+                        <th scope="col">∆b*</th>
+                        <th scope="col">∆C*</th>
+                        <th scope="col">∆H*</th>
+                        <th scope="col">∆E</th>
+                        <th scope="col">Flop Index</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -1311,6 +1318,13 @@
                         <td>23.98</td>
                         <td>6.43</td>
                         <td>76.33</td>
+                        <td>38.96</td>
+                        <td>23.98</td>
+                        <td>23.98</td>
+                        <td>23.98</td>
+                        <td>23.98</td>
+                        <td>23.98</td>
+                        <td>76.33</td>
                       </tr>
                       <tr>
                         <td>25°</td>
@@ -1319,6 +1333,13 @@
                         <td>77.43</td>
                         <td>12.55</td>
                         <td>58.99</td>
+                        <td>30.96</td>
+                        <td>77.43</td>
+                        <td>77.43</td>
+                        <td>77.43</td>
+                        <td>77.43</td>
+                        <td>77.43</td>
+                        <td></td>
                       </tr>
                       <tr>
                         <td>45°</td>
@@ -1327,6 +1348,13 @@
                         <td>23.98</td>
                         <td>6.43</td>
                         <td>76.33</td>
+                        <td>38.96</td>
+                        <td>23.98</td>
+                        <td>23.98</td>
+                        <td>23.98</td>
+                        <td>23.98</td>
+                        <td>23.98</td>
+                        <td></td>
                       </tr>
                       <tr>
                         <td>75°</td>
@@ -1335,6 +1363,13 @@
                         <td>77.43</td>
                         <td>12.55</td>
                         <td>54.99</td>
+                        <td>30.96</td>
+                        <td>77.43</td>
+                        <td>77.43</td>
+                        <td>77.43</td>
+                        <td>77.43</td>
+                        <td>77.43</td>
+                        <td></td>
                       </tr>
                       <tr>
                         <td>110°</td>
@@ -1343,6 +1378,13 @@
                         <td>23.98</td>
                         <td>6.43</td>
                         <td>76.33</td>
+                        <td>38.96</td>
+                        <td>23.98</td>
+                        <td>23.98</td>
+                        <td>23.98</td>
+                        <td>23.98</td>
+                        <td>23.98</td>
+                        <td></td>
                       </tr>
                     </tbody>
                   </table>
@@ -1521,8 +1563,8 @@
     <script src="js/table-floathead.js"></script>
     <!-- SCROLLABLE TABLE FIXED HEADER SELECTION -->
     <script src="js/table-scrollable.js"></script>
-    <!-- SET STANDARD SELECTION TOGGLES SELECTED CLASS ON SAMPLE LEGEND TABLE ROWS -->
     <script>
+      // SET STANDARD SELECTION TOGGLES SELECTED CLASS ON SAMPLE LEGEND TABLE ROWS
        $(".choose-standard").click(function() {
         if($(this).closest('tr').hasClass('selected')) {
           $(this).closest('tr').removeClass('selected')
@@ -1538,6 +1580,5 @@
         }
       });
     </script>
-
   </body>
 </html>
