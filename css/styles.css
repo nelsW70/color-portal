@@ -1636,8 +1636,8 @@ p.title-description {
   font-weight: 600;
 }
 .selected-samples.compare-stylist-travel .col-two .graph-container .svg-container {
-  height: 150px;
-  background-color: goldenrod;
+  height: 170px;
+  width: 100%;
   margin-top: 1rem;
 }
 
@@ -1927,7 +1927,7 @@ table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected 
   width: 95%;
 }
 .ppg.colorportal.ui.large.expanded-view-modal .content__col-two .svg-container {
-  min-height: 500px;
+  min-height: 660px;
   width: 97.5%;
 }
 .ppg.colorportal.ui.large.expanded-view-modal .content__description {
@@ -1943,7 +1943,7 @@ table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected 
   width: 100%;
   justify-content: center;
   align-items: baseline;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 .ppg.colorportal.ui.large.expanded-view-modal .content .pagination__buttons {
   display: flex;
