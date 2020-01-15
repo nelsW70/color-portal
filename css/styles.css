@@ -1897,14 +1897,36 @@ table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected 
 .ppg.colorportal.ui.large.expanded-view-modal .header.modal-header-container {
   background-color: transparent;
   border-bottom: none;
+  height: 56px;
 }
 .ppg.colorportal.ui.large.expanded-view-modal .header.modal-header-container .modal-header {
   color: #193040;
   font-size: 1.5rem !important;
-  font-weight: 600;
+  font-weight: 500;
+  padding-top: 1rem;
 }
 .ppg.colorportal.ui.large.expanded-view-modal .header.modal-header-container .expanded-view-modal-close {
   color: #193040;
+}
+.ppg.colorportal.ui.large.expanded-view-modal .content {
+  display: flex;
+}
+.ppg.colorportal.ui.large.expanded-view-modal .content__col-one {
+  display: flex;
+  align-items: center;
+  width: 5%;
+}
+.ppg.colorportal.ui.large.expanded-view-modal .content__col-one .sideways {
+  font-size: 1.125rem;
+  font-weight: 500;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+}
+.ppg.colorportal.ui.large.expanded-view-modal .content__col-two {
+  width: 95%;
+}
+.ppg.colorportal.ui.large.expanded-view-modal .content__col-two .svg-container {
+  min-height: 500px;
 }
 .ppg.colorportal.ui.medium.modal {
   max-width: 650px;

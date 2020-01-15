@@ -5,15 +5,39 @@
     & .header.modal-header-container {
       background-color: transparent;
       border-bottom: none;
+      height: 56px;
 
       & .modal-header {
         color: $font-color-primary;
         font-size: 1.5rem !important;
-        font-weight: $font-weight-bold;
+        font-weight: $font-weight-semi-bold;
+        padding-top: 1rem;
       }
 
       & .expanded-view-modal-close {
         color: $font-color-primary;
+      }
+    }
+
+    & .content {
+      display: flex;
+
+      &__col-one {
+        display: flex;
+        align-items: center;
+        width: 5%;
+        & .sideways {
+          font-size: 1.125rem;
+          font-weight: $font-weight-semi-bold;
+          writing-mode: tb-rl;
+          transform: rotate(-180deg);
+        }
+      }
+      &__col-two {
+        width: 95%;
+        & .svg-container {
+          min-height: 500px;
+        }
       }
     }
   }
