@@ -33,12 +33,9 @@
       font-size: 0.8125rem;
       color: rgba(25, 48, 64, 0.75);
 
-      &--green {
-        color: $font-color-green-one;
-        font-weight: $font-weight-bold;
-      }
-
       &--col-two {
+        color: $font-color-primary;
+        font-weight: $font-weight-bold;
         margin: 0 0 0 auto;
       }
 

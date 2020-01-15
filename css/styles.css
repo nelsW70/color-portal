@@ -1573,11 +1573,9 @@ p.title-description {
   font-size: 0.8125rem;
   color: rgba(25, 48, 64, 0.75);
 }
-.selected-samples.compare-stylist-travel .sample-details .detail--green {
-  color: #0a8d4d;
-  font-weight: 600;
-}
 .selected-samples.compare-stylist-travel .sample-details .detail--col-two {
+  color: #193040;
+  font-weight: 600;
   margin: 0 0 0 auto;
 }
 .selected-samples.compare-stylist-travel .sample-details .detail span {
