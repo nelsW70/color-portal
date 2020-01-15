@@ -1910,6 +1910,7 @@ table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected 
 }
 .ppg.colorportal.ui.large.expanded-view-modal .content {
   display: flex;
+  flex-wrap: wrap;
 }
 .ppg.colorportal.ui.large.expanded-view-modal .content__col-one {
   display: flex;
@@ -1927,6 +1928,32 @@ table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected 
 }
 .ppg.colorportal.ui.large.expanded-view-modal .content__col-two .svg-container {
   min-height: 500px;
+  width: 97.5%;
+}
+.ppg.colorportal.ui.large.expanded-view-modal .content__description {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 1.25rem;
+}
+.ppg.colorportal.ui.large.expanded-view-modal .content .pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 2rem;
+}
+.ppg.colorportal.ui.large.expanded-view-modal .content .pagination__buttons {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  justify-content: center;
+  transform: translateX(30px);
+}
+.ppg.colorportal.ui.large.expanded-view-modal .content .pagination__text {
+  font-weight: 500;
 }
 .ppg.colorportal.ui.medium.modal {
   max-width: 650px;
