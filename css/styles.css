@@ -1542,6 +1542,14 @@ p.title-description {
 }
 
 /** STYLIST COMPARE LAYOUT **/
+.color-portal--data-grid .wrapper-one .header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.color-portal--data-grid .wrapper-one .header-container .col-two {
+  display: flex;
+}
+
 .selected-samples.stylist-compare--travel {
   max-height: 500px;
   overflow-y: auto;

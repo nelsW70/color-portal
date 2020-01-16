@@ -1,4 +1,18 @@
 /** STYLIST COMPARE LAYOUT **/
+
+.color-portal--data-grid {
+  & .wrapper-one {
+    & .header-container {
+      display: flex;
+      justify-content: space-between;
+
+      & .col-two {
+        display: flex;
+      }
+    }
+  }
+}
+
 .selected-samples.stylist-compare {
   &--travel {
     max-height: 500px;
