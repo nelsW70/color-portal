@@ -1541,99 +1541,99 @@ p.title-description {
   font-size: 0.875rem;
 }
 
-/** COMPARE STYLIST TRAVEL LAYOUT **/
-.selected-samples.compare-stylist-travel {
+/** STYLIST COMPARE TRAVEL LAYOUT **/
+.selected-samples.stylist-compare--travel {
   max-height: 500px;
   overflow-y: auto;
   display: flex;
 }
-.selected-samples.compare-stylist-travel .sample-type {
+.selected-samples.stylist-compare--travel .sample-type {
   font-size: 0.8125rem;
 }
-.selected-samples.compare-stylist-travel .sample-name-container {
+.selected-samples.stylist-compare--travel .sample-name-container {
   display: flex;
   align-items: baseline;
   margin-top: 0.25rem;
   margin-bottom: 1rem;
 }
-.selected-samples.compare-stylist-travel .sample-name-container .sample-name {
+.selected-samples.stylist-compare--travel .sample-name-container .sample-name {
   font-size: 1.125rem;
   font-weight: 500;
   margin-right: 0.75rem;
 }
-.selected-samples.compare-stylist-travel .sample-name-container .sample-name--col-two {
+.selected-samples.stylist-compare--travel .sample-name-container .sample-name--col-two {
   margin-left: auto;
 }
-.selected-samples.compare-stylist-travel .sample-details {
+.selected-samples.stylist-compare--travel .sample-details {
   display: flex;
   margin-top: 0.65rem;
 }
-.selected-samples.compare-stylist-travel .sample-details .detail {
+.selected-samples.stylist-compare--travel .sample-details .detail {
   margin-right: 2rem;
   font-size: 0.8125rem;
   color: rgba(25, 48, 64, 0.75);
 }
-.selected-samples.compare-stylist-travel .sample-details .detail--col-two {
+.selected-samples.stylist-compare--travel .sample-details .detail--col-two {
   color: #193040;
   font-weight: 600;
   margin: 0 0 0 auto;
 }
-.selected-samples.compare-stylist-travel .sample-details .detail span {
+.selected-samples.stylist-compare--travel .sample-details .detail span {
   font-weight: 600;
 }
-.selected-samples.compare-stylist-travel .sample-table {
+.selected-samples.stylist-compare--travel .sample-table {
   margin: 1rem 0;
   overflow: auto;
 }
-.selected-samples.compare-stylist-travel .sample-table th {
+.selected-samples.stylist-compare--travel .sample-table th {
   text-transform: none;
 }
-.selected-samples.compare-stylist-travel .col-one {
+.selected-samples.stylist-compare--travel .col-one {
   width: 60%;
   padding: 2rem 25px;
 }
-.selected-samples.compare-stylist-travel .col-one .sample {
+.selected-samples.stylist-compare--travel .col-one .sample {
   margin-bottom: 2rem;
 }
-.selected-samples.compare-stylist-travel .col-two {
+.selected-samples.stylist-compare--travel .col-two {
   width: 40%;
   padding: 2rem 25px;
 }
-.selected-samples.compare-stylist-travel .col-two .colorimetric {
+.selected-samples.stylist-compare--travel .col-two .colorimetric {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   min-height: 50px;
 }
-.selected-samples.compare-stylist-travel .col-two .colorimetric-container {
+.selected-samples.stylist-compare--travel .col-two .colorimetric-container {
   min-height: 90px;
 }
-.selected-samples.compare-stylist-travel .col-two .colorimetric-title {
+.selected-samples.stylist-compare--travel .col-two .colorimetric-title {
   font-size: 1.125rem;
 }
-.selected-samples.compare-stylist-travel .col-two .colorimetric-select .label {
+.selected-samples.stylist-compare--travel .col-two .colorimetric-select .label {
   font-size: 0.8125rem;
 }
-.selected-samples.compare-stylist-travel .col-two .colorimetric-select .selection.dropdown {
+.selected-samples.stylist-compare--travel .col-two .colorimetric-select .selection.dropdown {
   background-color: #ffffff;
   width: 66px;
 }
-.selected-samples.compare-stylist-travel .col-two .colorimetric-select .selection.dropdown .text, .selected-samples.compare-stylist-travel .col-two .colorimetric-select .selection.dropdown .item {
+.selected-samples.stylist-compare--travel .col-two .colorimetric-select .selection.dropdown .text, .selected-samples.stylist-compare--travel .col-two .colorimetric-select .selection.dropdown .item {
   font-size: 0.8125rem;
 }
-.selected-samples.compare-stylist-travel .col-two .graph-container {
+.selected-samples.stylist-compare--travel .col-two .graph-container {
   margin-bottom: 2rem;
 }
-.selected-samples.compare-stylist-travel .col-two .graph-container .name-expand {
+.selected-samples.stylist-compare--travel .col-two .graph-container .name-expand {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.selected-samples.compare-stylist-travel .col-two .graph-container .name-expand .name {
+.selected-samples.stylist-compare--travel .col-two .graph-container .name-expand .name {
   font-size: 0.875rem;
   font-weight: 600;
 }
-.selected-samples.compare-stylist-travel .col-two .graph-container .svg-container {
+.selected-samples.stylist-compare--travel .col-two .graph-container .svg-container {
   height: 170px;
   width: 100%;
   margin-top: 1rem;
