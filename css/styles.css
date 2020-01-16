@@ -1541,7 +1541,7 @@ p.title-description {
   font-size: 0.875rem;
 }
 
-/** COMPARE STYLIST TRAVEL LAYOUT **/
+/** STYLIST COMPARE LAYOUT **/
 .selected-samples.stylist-compare--travel {
   max-height: 500px;
   overflow-y: auto;
