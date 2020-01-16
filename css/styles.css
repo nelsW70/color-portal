@@ -1600,6 +1600,9 @@ p.title-description {
 .selected-samples.stylist-compare--data-grid .standard-data .table-container .sample-table th {
   text-transform: none;
 }
+.selected-samples.stylist-compare--data-grid .sample-legend {
+  margin: 1rem 0;
+}
 .selected-samples.stylist-compare--travel {
   max-height: 500px;
   overflow-y: auto;
@@ -1789,32 +1792,6 @@ p.title-description {
   text-transform: capitalize;
 }
 
-/** COLORPORTAL TABLE **/
-table.ui.very.basic.striped.padded.table.table--sample-legend thead tr th {
-  padding: 0.5rem 1rem;
-}
-table.ui.very.basic.striped.padded.table.table--sample-legend td {
-  padding: 0.6125rem 1rem;
-}
-table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr .selected-check {
-  display: none;
-}
-table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td {
-  background-color: #456175 !important;
-  color: #ffffff !important;
-}
-table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td:before {
-  color: #ffffff !important;
-}
-table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td button.primary {
-  display: none;
-}
-table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected .selected-check {
-  display: block;
-  text-align: center;
-  width: 90px;
-}
-
 /** STYLIST - PROJECT DETAILS TABLES **/
 .styling-iterations,
 .linked-colors {
@@ -1927,6 +1904,31 @@ table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected 
 }
 .scrollable-table-container.stylist-compare--travel table tbody td button.ppg.ui.small {
   min-height: 25px;
+}
+
+table.ui.very.basic.striped.padded.table.table--sample-legend thead tr th {
+  padding: 0.5rem 1rem;
+}
+table.ui.very.basic.striped.padded.table.table--sample-legend td {
+  padding: 0.6125rem 1rem;
+}
+table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr .selected-check {
+  display: none;
+}
+table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td {
+  background-color: #456175 !important;
+  color: #ffffff !important;
+}
+table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td:before {
+  color: #ffffff !important;
+}
+table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td button.primary {
+  display: none;
+}
+table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected .selected-check {
+  display: block;
+  text-align: center;
+  width: 90px;
 }
 
 /** COLORPORTAL MODALS **/
