@@ -5,7 +5,7 @@ h1.section-title {
   color: $font-color-primary;
 }
 
-h2.sample-legend {
+.section-header {
   font-weight: $font-weight-semi-bold;
   color: $font-color-primary;
   font-size: 1.3125rem;
@@ -26,7 +26,10 @@ p.title-description {
 
 .detail {
   font-size: 0.8125rem;
-  color: rgba(25, 48, 64, 0.75);
+  // color: rgba(25, 48, 64, 0.75);
+  & span {
+    font-weight: $font-weight-bold;
+  }
 }
 
 .colorimetric {

@@ -1531,7 +1531,7 @@ h1.section-title {
   color: #193040;
 }
 
-h2.sample-legend {
+.section-header {
   font-weight: 500;
   color: #193040;
   font-size: 1.3125rem;
@@ -1552,7 +1552,9 @@ p.title-description {
 
 .detail {
   font-size: 0.8125rem;
-  color: rgba(25, 48, 64, 0.75);
+}
+.detail span {
+  font-weight: 600;
 }
 
 .colorimetric-title {
@@ -1576,6 +1578,28 @@ p.title-description {
   display: flex;
 }
 
+.selected-samples.stylist-compare--data-grid {
+  max-height: 800px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.selected-samples.stylist-compare--data-grid .standard-data .section-header {
+  margin-bottom: 1rem;
+}
+.selected-samples.stylist-compare--data-grid .standard-data .multi-select.ui.dropdown {
+  width: 16rem;
+}
+.selected-samples.stylist-compare--data-grid .standard-data .table-container {
+  margin: 1.5rem 0;
+}
+.selected-samples.stylist-compare--data-grid .standard-data .table-container .sample-table {
+  margin: 1rem 0 0 0;
+  overflow-y: auto;
+}
+.selected-samples.stylist-compare--data-grid .standard-data .table-container .sample-table th {
+  text-transform: none;
+}
 .selected-samples.stylist-compare--travel {
   max-height: 500px;
   overflow-y: auto;
@@ -1604,9 +1628,6 @@ p.title-description {
   color: #193040;
   font-weight: 600;
   margin: 0 0 0 auto;
-}
-.selected-samples.stylist-compare--travel .sample-details .detail span {
-  font-weight: 600;
 }
 .selected-samples.stylist-compare--travel .sample-table {
   margin: 1rem 0;
