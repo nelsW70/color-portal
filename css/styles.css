@@ -1541,6 +1541,32 @@ p.title-description {
   font-size: 0.875rem;
 }
 
+.sample-type {
+  font-size: 0.8125rem;
+}
+
+.sample-name {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.detail {
+  font-size: 0.8125rem;
+  color: rgba(25, 48, 64, 0.75);
+}
+
+.colorimetric-title {
+  font-size: 1.125rem;
+}
+.colorimetric-select .label {
+  font-size: 0.8125rem;
+}
+
+.graph-container .name-expand .name {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
 /** STYLIST COMPARE LAYOUT **/
 .color-portal--data-grid .wrapper-one .header-container {
   display: flex;
@@ -1555,9 +1581,6 @@ p.title-description {
   overflow-y: auto;
   display: flex;
 }
-.selected-samples.stylist-compare--travel .sample-type {
-  font-size: 0.8125rem;
-}
 .selected-samples.stylist-compare--travel .sample-name-container {
   display: flex;
   align-items: baseline;
@@ -1565,8 +1588,6 @@ p.title-description {
   margin-bottom: 1rem;
 }
 .selected-samples.stylist-compare--travel .sample-name-container .sample-name {
-  font-size: 1.125rem;
-  font-weight: 500;
   margin-right: 0.75rem;
 }
 .selected-samples.stylist-compare--travel .sample-name-container .sample-name--col-two {
@@ -1578,8 +1599,6 @@ p.title-description {
 }
 .selected-samples.stylist-compare--travel .sample-details .detail {
   margin-right: 2rem;
-  font-size: 0.8125rem;
-  color: rgba(25, 48, 64, 0.75);
 }
 .selected-samples.stylist-compare--travel .sample-details .detail--col-two {
   color: #193040;
@@ -1616,9 +1635,6 @@ p.title-description {
 .selected-samples.stylist-compare--travel .col-two .colorimetric-container {
   min-height: 90px;
 }
-.selected-samples.stylist-compare--travel .col-two .colorimetric-title {
-  font-size: 1.125rem;
-}
 .selected-samples.stylist-compare--travel .col-two .colorimetric-select .label {
   font-size: 0.8125rem;
 }
@@ -1636,10 +1652,6 @@ p.title-description {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-.selected-samples.stylist-compare--travel .col-two .graph-container .name-expand .name {
-  font-size: 0.875rem;
-  font-weight: 600;
 }
 .selected-samples.stylist-compare--travel .col-two .graph-container .svg-container {
   height: 170px;
@@ -2135,7 +2147,7 @@ table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected 
 }
 
 /** COLORPORTAL CARD **/
-.color-portal--travel .ppg-card {
+.color-portal--travel .ppg-card, .color-portal--data-grid .ppg-card {
   padding: 20px;
   margin: 0 4px;
 }

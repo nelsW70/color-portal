@@ -19,18 +19,12 @@
     overflow-y: auto;
     display: flex;
 
-    & .sample-type {
-      font-size: 0.8125rem;
-    }
-
     & .sample-name-container {
       display: flex;
       align-items: baseline;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
       & .sample-name {
-        font-size: 1.125rem;
-        font-weight: $font-weight-semi-bold;
         margin-right: 0.75rem;
 
         &--col-two {
@@ -45,8 +39,6 @@
 
       & .detail {
         margin-right: 2rem;
-        font-size: 0.8125rem;
-        color: rgba(25, 48, 64, 0.75);
 
         &--col-two {
           color: $font-color-primary;
@@ -92,9 +84,6 @@
           min-height: 90px;
         }
 
-        &-title {
-          font-size: 1.125rem;
-        }
         &-select {
           & .label {
             font-size: 0.8125rem;
@@ -118,11 +107,6 @@
           display: flex;
           justify-content: space-between;
           align-items: baseline;
-
-          & .name {
-            font-size: 0.875rem;
-            font-weight: $font-weight-bold;
-          }
         }
 
         & .svg-container {

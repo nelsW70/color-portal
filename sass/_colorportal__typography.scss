@@ -14,3 +14,37 @@ h2.sample-legend {
 p.title-description {
   font-size: 0.875rem;
 }
+
+.sample-type {
+  font-size: 0.8125rem;
+}
+
+.sample-name {
+  font-size: 1.125rem;
+  font-weight: $font-weight-semi-bold;
+}
+
+.detail {
+  font-size: 0.8125rem;
+  color: rgba(25, 48, 64, 0.75);
+}
+
+.colorimetric {
+  &-title {
+    font-size: 1.125rem;
+  }
+  &-select {
+    & .label {
+      font-size: 0.8125rem;
+    }
+  }
+}
+
+.graph-container {
+  & .name-expand {
+    & .name {
+      font-size: 0.875rem;
+      font-weight: $font-weight-bold;
+    }
+  }
+}

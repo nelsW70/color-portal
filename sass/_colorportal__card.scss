@@ -1,7 +1,8 @@
 /** COLORPORTAL CARD **/
 
 .color-portal {
-  &--travel {
+  &--travel,
+  &--data-grid {
     & .ppg-card {
       padding: 20px;
       margin: 0 4px;
