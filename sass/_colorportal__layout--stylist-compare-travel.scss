@@ -85,9 +85,6 @@
         }
 
         &-select {
-          & .label {
-            font-size: 0.8125rem;
-          }
           & .selection.dropdown {
             background-color: $background-color-white-one;
             width: 66px;
