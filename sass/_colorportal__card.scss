@@ -1,8 +1,10 @@
 /** COLORPORTAL CARD **/
 
-.ppg-card.color-portal {
+.color-portal {
   &--travel {
-    padding: 20px;
-    margin: 0 4px;
+    & .ppg-card {
+      padding: 20px;
+      margin: 0 4px;
+    }
   }
 }

@@ -2127,7 +2127,7 @@ table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected 
 }
 
 /** COLORPORTAL CARD **/
-.ppg-card.color-portal--travel {
+.color-portal--travel .ppg-card {
   padding: 20px;
   margin: 0 4px;
 }
