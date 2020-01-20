@@ -1888,45 +1888,43 @@ p.title-description {
 }
 
 /** COLORPORTAL SCROLLABLE TABLE **/
-.scrollable-table-container.stylist-compare--travel {
+.scrollable-table-container.stylist-compare {
   max-height: 250px;
 }
-.scrollable-table-container.stylist-compare--travel table tbody td {
-  font-size: 0.75rem !important;
+.scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table thead tr th {
+  padding: 0.5rem 1rem;
 }
-.scrollable-table-container.stylist-compare--travel table tbody td button.ppg.ui.primary.button, .scrollable-table-container.stylist-compare--travel table tbody td button.ppg.ui.secondary.button {
+.scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr td {
+  font-size: 0.75rem;
+  padding: 0.6125rem 1rem;
+}
+.scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr button.ppg.ui.primary.button, .scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr button.ppg.ui.secondary.button {
   height: 25px;
   padding: 4px 12px;
 }
-.scrollable-table-container.stylist-compare--travel table tbody td button .button-text {
-  font-size: 0.75rem !important;
+.scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr button .button-text {
+  font-size: 0.75rem;
 }
-.scrollable-table-container.stylist-compare--travel table tbody td button .material-icons {
+.scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr button .material-icons {
   font-size: 0.85rem;
 }
-.scrollable-table-container.stylist-compare--travel table tbody td button.ppg.ui.small {
+.scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr button.ppg.ui.small {
   min-height: 25px;
 }
-.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend thead tr th {
-  padding: 0.5rem 1rem;
-}
-.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend td {
-  padding: 0.6125rem 1rem;
-}
-.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr .selected-check {
+.scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr .selected-check {
   display: none;
 }
-.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td {
-  background-color: #456175 !important;
-  color: #ffffff !important;
+.scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr.selected td {
+  background-color: #456175;
+  color: #ffffff;
 }
-.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td:before {
-  color: #ffffff !important;
+.scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr.selected td:before {
+  color: #ffffff;
 }
-.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td button.primary {
+.scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr.selected td button.primary {
   display: none;
 }
-.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected .selected-check {
+.scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr.selected .selected-check {
   display: block;
   text-align: center;
   width: 90px;
