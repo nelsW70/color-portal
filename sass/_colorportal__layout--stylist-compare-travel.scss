@@ -111,6 +111,24 @@
 
           th {
             text-transform: none;
+            &:nth-child(12) {
+              position: relative;
+              &::after {
+                content: 'N';
+                font-size: 0.5rem;
+                position: absolute;
+                top: 0.95rem;
+              }
+            }
+            &:nth-child(13) {
+              position: relative;
+              &::after {
+                content: 'R';
+                font-size: 0.5rem;
+                position: absolute;
+                top: 0.785rem;
+              }
+            }
           }
 
           tbody {

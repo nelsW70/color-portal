@@ -1667,6 +1667,24 @@ p.title-description {
 .selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table th {
   text-transform: none;
 }
+.selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table th:nth-child(12) {
+  position: relative;
+}
+.selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table th:nth-child(12)::after {
+  content: "N";
+  font-size: 0.5rem;
+  position: absolute;
+  top: 0.95rem;
+}
+.selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table th:nth-child(13) {
+  position: relative;
+}
+.selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table th:nth-child(13)::after {
+  content: "R";
+  font-size: 0.5rem;
+  position: absolute;
+  top: 0.785rem;
+}
 .selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table tbody td:first-of-type {
   color: #193040;
   font-weight: 600;
