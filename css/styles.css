@@ -1597,6 +1597,7 @@ p.title-description {
 }
 .selected-samples.stylist-compare--data-grid th, .selected-samples.stylist-compare--data-grid td {
   font-size: 0.75rem !important;
+  padding: 0.725rem !important;
 }
 .selected-samples.stylist-compare--data-grid .standard-data .section-header {
   margin-bottom: 1rem;
@@ -1667,23 +1668,17 @@ p.title-description {
 .selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table th {
   text-transform: none;
 }
-.selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table th:nth-child(12) {
-  position: relative;
-}
 .selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table th:nth-child(12)::after {
   content: "N";
   font-size: 0.5rem;
-  position: absolute;
-  top: 0.95rem;
-}
-.selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table th:nth-child(13) {
   position: relative;
+  top: 2px;
 }
 .selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table th:nth-child(13)::after {
   content: "R";
   font-size: 0.5rem;
-  position: absolute;
-  top: 0.785rem;
+  position: relative;
+  top: 0px;
 }
 .selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table tbody td:first-of-type {
   color: #193040;
