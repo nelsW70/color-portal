@@ -1562,7 +1562,7 @@ p.title-description {
 }
 
 .colorimetric-title {
-  font-size: 1.125rem;
+  font-weight: 400;
 }
 .colorimetric-select .label {
   font-size: 0.8125rem;
@@ -1907,27 +1907,26 @@ p.title-description {
 .scrollable-table-container.stylist-compare--travel table tbody td button.ppg.ui.small {
   min-height: 25px;
 }
-
-table.ui.very.basic.striped.padded.table.table--sample-legend thead tr th {
+.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend thead tr th {
   padding: 0.5rem 1rem;
 }
-table.ui.very.basic.striped.padded.table.table--sample-legend td {
+.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend td {
   padding: 0.6125rem 1rem;
 }
-table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr .selected-check {
+.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr .selected-check {
   display: none;
 }
-table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td {
+.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td {
   background-color: #456175 !important;
   color: #ffffff !important;
 }
-table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td:before {
+.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td:before {
   color: #ffffff !important;
 }
-table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td button.primary {
+.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected td button.primary {
   display: none;
 }
-table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected .selected-check {
+.scrollable-table-container table.ui.very.basic.striped.padded.table.table--sample-legend tbody tr.selected .selected-check {
   display: block;
   text-align: center;
   width: 90px;
