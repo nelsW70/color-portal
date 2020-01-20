@@ -1530,10 +1530,15 @@ h1 {
   font-weight: 500;
 }
 
-.section-header {
-  font-weight: 500;
-  color: #193040;
+h3 {
   font-size: 1.3125rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
 p.title-description {
@@ -1542,11 +1547,6 @@ p.title-description {
 
 .sample-type {
   font-size: 0.8125rem;
-}
-
-.sample-name {
-  font-size: 1.125rem;
-  font-weight: 500;
 }
 
 .detail {
@@ -1807,8 +1807,6 @@ p.title-description {
 .styling-inspirations .table-description__title,
 .styling-iterations .table-description__title,
 .linked-colors .table-description__title {
-  color: #193040;
-  font-size: 1.125rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
   text-transform: capitalize;
