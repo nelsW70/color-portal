@@ -537,6 +537,11 @@ a:hover {
 .ppg-badge.ui.label {
   border-radius: 1px;
 }
+.ppg-badge.ui.label.badge-success {
+  color: #0a8d4d;
+  border: solid 1px #02a154;
+  background-color: rgba(2, 161, 84, 0.1);
+}
 
 .ppg-custom-radio.ui.radio.checkbox {
   min-height: 22px;

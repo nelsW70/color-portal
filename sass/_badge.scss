@@ -2,4 +2,10 @@
 
 .ppg-badge.ui.label {
   border-radius: $border-radius-one;
+
+  &.badge-success {
+    color: #0a8d4d;
+    border: solid 1px $background-color-green-one;
+    background-color: rgba(2, 161, 84, 0.1);
+  }
 }
