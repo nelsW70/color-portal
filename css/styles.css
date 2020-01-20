@@ -1650,7 +1650,7 @@ p.title-description {
 .selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr.selected .selected-check {
   display: block;
   text-align: center;
-  width: 132px;
+  width: 130px;
 }
 .selected-samples.stylist-compare--data-grid .colorimetric {
   margin: 1rem 0;
