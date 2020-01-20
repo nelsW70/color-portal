@@ -1,9 +1,9 @@
 /** CARD **/
 
 .ppg-card {
+  position: relative;
+  z-index: 2;
   border-radius: $border-radius-three;
   box-shadow: 0 1px 4px 0 rgba(51, 71, 86, 0.4);
   padding: 1rem;
-  position: relative;
-  z-index: 2;
 }

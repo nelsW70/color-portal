@@ -1421,11 +1421,11 @@ footer .footer-trademark {
 
 /** CARD **/
 .ppg-card {
+  position: relative;
+  z-index: 2;
   border-radius: 3px;
   box-shadow: 0 1px 4px 0 rgba(51, 71, 86, 0.4);
   padding: 1rem;
-  position: relative;
-  z-index: 2;
 }
 
 /** COLORPORTAL TYPOGRAPHY **/
@@ -1608,6 +1608,43 @@ p.title-description {
 }
 .selected-samples.stylist-compare--data-grid .sample-legend {
   margin: 1rem 0;
+}
+.selected-samples.stylist-compare--data-grid .sample-legend .table-container {
+  overflow: auto;
+}
+.selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr td {
+  font-size: 0.75rem;
+}
+.selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr button.ppg.ui.primary.button {
+  height: 25px;
+  padding: 4px 12px;
+}
+.selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr button .button-text {
+  font-size: 0.75rem;
+}
+.selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr button .material-icons {
+  font-size: 0.85rem;
+}
+.selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr button.ppg.ui.small {
+  min-height: 25px;
+}
+.selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr .selected-check {
+  display: none;
+}
+.selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr.selected td {
+  background-color: #456175;
+  color: #ffffff;
+}
+.selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr.selected td:before {
+  color: #ffffff;
+}
+.selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr.selected td button.primary {
+  display: none;
+}
+.selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr.selected .selected-check {
+  display: block;
+  text-align: center;
+  width: 132px;
 }
 .selected-samples.stylist-compare--travel {
   max-height: 500px;

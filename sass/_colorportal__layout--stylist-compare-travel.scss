@@ -44,6 +44,60 @@
 
     & .sample-legend {
       margin: 1rem 0;
+
+      & .table-container {
+        overflow: auto;
+
+        & .ui.very.basic.striped.padded.table.draggable-droppable {
+          thead tr {
+            th {
+              // padding: 0.5rem 1rem;
+            }
+          }
+          tbody tr {
+            td {
+              font-size: 0.75rem;
+              // padding: 0.6125rem 1rem;
+            }
+            & button {
+              &.ppg.ui.primary.button {
+                height: 25px;
+                padding: 4px 12px;
+              }
+              & .button-text {
+                font-size: 0.75rem;
+              }
+              & .material-icons {
+                font-size: 0.85rem;
+              }
+              &.ppg.ui.small {
+                min-height: 25px;
+              }
+            }
+            // TRIGGERED BY CLICK EVENT ON 'SET STANDARD' BUTTON
+            & .selected-check {
+              display: none;
+            }
+            &.selected {
+              td {
+                background-color: #456175;
+                color: $font-color-white-one;
+                &:before {
+                  color: $font-color-white-one;
+                }
+                & button.primary {
+                  display: none;
+                }
+              }
+              & .selected-check {
+                display: block;
+                text-align: center;
+                width: 132px;
+              }
+            }
+          }
+        }
+      }
     }
   }
   &--travel {
