@@ -31,6 +31,11 @@
   font-style: italic;
 }
 
+/* TEXT ALIGN */
+.align-center {
+  text-align: center !important;
+}
+
 /* ERROR MESSAGE TEXT */
 .danger-message {
   color: $font-color-error-message !important;

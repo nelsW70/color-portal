@@ -114,6 +114,11 @@ a:hover {
   font-style: italic;
 }
 
+/* TEXT ALIGN */
+.align-center {
+  text-align: center !important;
+}
+
 /* ERROR MESSAGE TEXT */
 .danger-message {
   color: #ce3f11 !important;
@@ -1590,6 +1595,9 @@ p.title-description {
   display: flex;
   flex-direction: column;
 }
+.selected-samples.stylist-compare--data-grid th, .selected-samples.stylist-compare--data-grid td {
+  font-size: 0.75rem !important;
+}
 .selected-samples.stylist-compare--data-grid .standard-data .section-header {
   margin-bottom: 1rem;
 }
@@ -1611,9 +1619,6 @@ p.title-description {
 }
 .selected-samples.stylist-compare--data-grid .sample-legend .table-container {
   overflow: auto;
-}
-.selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr td {
-  font-size: 0.75rem;
 }
 .selected-samples.stylist-compare--data-grid .sample-legend .table-container .ui.very.basic.striped.padded.table.draggable-droppable tbody tr button.ppg.ui.primary.button {
   height: 25px;
@@ -1645,6 +1650,29 @@ p.title-description {
   display: block;
   text-align: center;
   width: 132px;
+}
+.selected-samples.stylist-compare--data-grid .colorimetric {
+  margin: 1rem 0;
+}
+.selected-samples.stylist-compare--data-grid .colorimetric .multi-select.ui.dropdown {
+  width: 16rem;
+}
+.selected-samples.stylist-compare--data-grid .colorimetric .table-container {
+  margin: 1.5rem 0;
+}
+.selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table {
+  margin: 1rem 0 0 0;
+  overflow-y: auto;
+}
+.selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table th {
+  text-transform: none;
+}
+.selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table tbody td:first-of-type {
+  color: #193040;
+  font-weight: 600;
+}
+.selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table tbody tr:nth-of-type(5) td {
+  border-bottom: 1px solid rgba(17, 35, 48, 0.25);
 }
 .selected-samples.stylist-compare--travel {
   max-height: 500px;
