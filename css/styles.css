@@ -301,110 +301,6 @@ a:hover {
 }
 
 /** CONTAINERS AND LAYOUT **/
-/* BODY */
-.main-content {
-  min-height: calc(100vh - 195px);
-}
-
-/* GENERAL WRAPPER */
-.wrapper-one {
-  padding: 25px;
-}
-
-/* BREADCRUMBS ROW */
-.breadcrumbs-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.25rem;
-}
-
-/* TITLE ROW */
-.title-row {
-  margin-bottom: 1.25rem;
-}
-
-/* CUSTOMER INFO ROW */
-.customer-info {
-  display: flex;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.customer-info__col-one {
-  display: flex;
-  align-items: flex-end;
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .customer-info__col-one .search-container {
-    max-height: 67px;
-  }
-}
-.customer-info__col-two {
-  display: flex;
-  align-items: flex-end;
-}
-@media only screen and (max-width: 1152px) {
-  .customer-info__col-two {
-    margin-top: 1.25rem;
-  }
-}
-
-/* PROJECTS TABLE */
-.projects-table {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-/* PAGINATION ROW */
-.pagination-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.pagination-row .items-per-page {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  width: 33.333%;
-}
-.pagination-row .items-per-page .item-count {
-  margin-bottom: 0 !important;
-}
-@media only screen and (max-width: 1200px) {
-  .pagination-row .items-per-page .dropdown-inline {
-    width: 100%;
-  }
-  .pagination-row .items-per-page .item-count {
-    order: 2;
-    margin-top: 1rem;
-  }
-}
-.pagination-row .pagination-buttons {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-@media only screen and (max-width: 1200px) {
-  .pagination-row .pagination-buttons {
-    display: block;
-    margin: 0;
-  }
-}
-.pagination-row .pagination-search {
-  justify-content: flex-end;
-  width: 33.333%;
-  text-align: right;
-}
-
-.travel-filter-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin-bottom: 1.5rem;
-}
-
 /* BREADCRUMBS */
 .ui.breadcrumb .divider {
   color: #334756;
@@ -1571,6 +1467,110 @@ p.title-description {
 .graph-container .name-expand .name {
   font-size: 0.875rem;
   font-weight: 600;
+}
+
+/* BODY */
+.main-content {
+  min-height: calc(100vh - 195px);
+}
+
+/* GENERAL WRAPPER */
+.wrapper-one {
+  padding: 25px;
+}
+
+/* BREADCRUMBS ROW */
+.breadcrumbs-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+/* TITLE ROW */
+.title-row {
+  margin-bottom: 1.25rem;
+}
+
+/* CUSTOMER INFO ROW */
+.customer-info {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.customer-info__col-one {
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .customer-info__col-one .search-container {
+    max-height: 67px;
+  }
+}
+.customer-info__col-two {
+  display: flex;
+  align-items: flex-end;
+}
+@media only screen and (max-width: 1152px) {
+  .customer-info__col-two {
+    margin-top: 1.25rem;
+  }
+}
+
+/* PROJECTS TABLE */
+.projects-table {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* PAGINATION ROW */
+.pagination-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.pagination-row .items-per-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  width: 33.333%;
+}
+.pagination-row .items-per-page .item-count {
+  margin-bottom: 0 !important;
+}
+@media only screen and (max-width: 1200px) {
+  .pagination-row .items-per-page .dropdown-inline {
+    width: 100%;
+  }
+  .pagination-row .items-per-page .item-count {
+    order: 2;
+    margin-top: 1rem;
+  }
+}
+.pagination-row .pagination-buttons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+@media only screen and (max-width: 1200px) {
+  .pagination-row .pagination-buttons {
+    display: block;
+    margin: 0;
+  }
+}
+.pagination-row .pagination-search {
+  justify-content: flex-end;
+  width: 33.333%;
+  text-align: right;
+}
+
+.travel-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
 }
 
 /** STYLIST COMPARE LAYOUT **/
