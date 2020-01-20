@@ -1977,11 +1977,11 @@ p.title-description {
   max-height: 250px;
 }
 .scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table thead tr th {
-  padding: 0.5rem 1rem;
+  padding: 0.575rem;
 }
 .scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr td {
   font-size: 0.75rem;
-  padding: 0.6125rem 1rem;
+  padding: 0.575rem;
 }
 .scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr button.ppg.ui.primary.button, .scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr button.ppg.ui.secondary.button {
   height: 25px;
