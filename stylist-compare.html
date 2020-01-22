@@ -1666,7 +1666,7 @@
             <div class="table-container">
               <div class="detail">Illuminant: <span>D65</span></div>
               <!-- NON-LINEAR VIEW -->
-              <div class="sample-table non-linear-view">
+              <div class="sample-table table-view">
                 <table class="ui very basic striped padded table">
                   <thead>
                     <tr>
@@ -1734,7 +1734,7 @@
             <div class="table-container">
               <div class="detail">Illuminant: <span>F11</span></div>
               <!-- NON-LINEAR VIEW -->
-              <div class="sample-table non-linear-view">
+              <div class="sample-table table-view">
                 <table class="ui very basic striped padded table">
                   <thead>
                     <tr>
@@ -1963,7 +1963,7 @@
              <div class="table-container">
               <div class="detail">Illuminant: <span>D65</span></div>
               <!-- NON-LINEAR VIEW -->
-              <div class="sample-table non-linear-view">
+              <div class="sample-table table-view">
                 <table class="ui very basic striped padded table">
                   <thead>
                     <tr>
@@ -2159,7 +2159,7 @@
             <div class="table-container">
               <div class="detail">Illuminant: <span>F11</span></div>
               <!-- NON-LINEAR VIEW -->
-              <div class="sample-table non-linear-view">
+              <div class="sample-table table-view">
                 <table class="ui very basic striped padded table">
                   <thead>
                     <tr>
@@ -2551,12 +2551,12 @@
     <script>
       // TOGGLE BETWEEN TABLE AND LINEAR VIEW
       $('.show-linear-view').click(function() {
-        $('.non-linear-view').addClass('inactive-table');
+        $('.table-view').addClass('inactive-table');
         $('.linear-view').removeClass('inactive-table');
       });
       $('.show-table-view').click(function() {
-        $('.non-linear-view').removeClass('inactive-table');
-        $('.linear-view').addeClass('inactive-table');
+        $('.table-view').removeClass('inactive-table');
+        $('.linear-view').addClass('inactive-table');
       });
     </script>
   </body>
