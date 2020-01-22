@@ -1595,7 +1595,7 @@ p.title-description {
   display: flex;
   flex-direction: column;
 }
-.selected-samples.stylist-compare--data-grid .table-container .sample-table.non-linear-view.inactive-table {
+.selected-samples.stylist-compare--data-grid .table-container .sample-table.inactive-table {
   display: none;
 }
 .selected-samples.stylist-compare--data-grid th, .selected-samples.stylist-compare--data-grid td {
