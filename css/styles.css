@@ -1595,6 +1595,9 @@ p.title-description {
   display: flex;
   flex-direction: column;
 }
+.selected-samples.stylist-compare--data-grid .table-container .sample-table.non-linear-view.inactive-table {
+  display: none;
+}
 .selected-samples.stylist-compare--data-grid th, .selected-samples.stylist-compare--data-grid td {
   font-size: 0.75rem !important;
   padding: 0.725rem !important;

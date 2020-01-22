@@ -1569,14 +1569,14 @@
               <div class="label label--stacked">Show:</div>
               <div class="ui basic buttons">
                 <div
-                  class="ppg tiny ui button btn-group btn-project--show active"
+                  class="ppg tiny ui button btn-group btn-project--show active show-table-view"
                   aria-label="select my projects"
                   role="button"
                 >
                   Table View
                 </div>
                 <div
-                  class="ppg tiny ui button btn-group btn-project--show"
+                  class="ppg tiny ui button btn-group btn-project--show show-linear-view"
                   aria-label="select team projects"
                   role="button"
                 >
@@ -1665,7 +1665,7 @@
             <!-- STANDARD DATA TABLE ONE -->
             <div class="table-container">
               <div class="detail">Illuminant: <span>D65</span></div>
-              <div class="sample-table">
+              <div class="sample-table non-linear-view">
                 <table class="ui very basic striped padded table">
                   <thead>
                     <tr>
@@ -1726,7 +1726,7 @@
             <!-- STANDARD DATA TABLE TWO -->
             <div class="table-container">
               <div class="detail">Illuminant: <span>F11</span></div>
-              <div class="sample-table">
+              <div class="sample-table non-linear-view">
                 <table class="ui very basic striped padded table">
                   <thead>
                     <tr>
@@ -1948,7 +1948,7 @@
              <!-- COLORIMETRIC TABLE ONE -->
              <div class="table-container">
               <div class="detail">Illuminant: <span>D65</span></div>
-              <div class="sample-table">
+              <div class="sample-table non-linear-view">
                 <table class="ui very basic striped padded table">
                   <thead>
                     <tr>
@@ -2303,12 +2303,12 @@
     <script src="js/table-scrollable.js"></script>
     <script>
       // SET STANDARD SELECTION TOGGLES SELECTED CLASS ON SAMPLE LEGEND TABLE ROWS
-       $(".choose-standard").click(function() {
-        if($(this).closest('tr').hasClass('selected')) {
-          $(this).closest('tr').removeClass('selected')
-        } else {
-          $(this).closest('tr').addClass('selected')
-        }
+      $(".choose-standard").click(function() {
+      if($(this).closest('tr').hasClass('selected')) {
+        $(this).closest('tr').removeClass('selected')
+      } else {
+        $(this).closest('tr').addClass('selected')
+      }
       });
       $(".unselect-standard").click(function() {
         if($(this).closest('tr').hasClass('selected')) {
@@ -2329,6 +2329,15 @@
       // close large modal with modal 'x' icon
       $('.expanded-view-modal-close').click(function() {
         $('.expanded-view-modal').modal('hide');
+      });
+    </script>
+    <script>
+      // TOGGLE BETWEEN TABLE AND LINEAR VIEW
+      $('.show-linear-view').click(function() {
+        $('.non-linear-view').addClass('inactive-table');
+      });
+      $('.show-table-view').click(function() {
+        $('.non-linear-view').removeClass('inactive-table');
       });
     </script>
   </body>
