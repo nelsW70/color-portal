@@ -1590,7 +1590,7 @@ p.title-description {
 }
 
 .selected-samples.stylist-compare--data-grid {
-  max-height: 800px;
+  max-height: 1000px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -1688,6 +1688,7 @@ p.title-description {
 .selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table tbody td:first-of-type {
   color: #193040;
   font-weight: 600;
+  line-height: 1rem;
 }
 .selected-samples.stylist-compare--data-grid .colorimetric .table-container .sample-table tbody tr:nth-of-type(5) td {
   border-bottom: 1px solid rgba(17, 35, 48, 0.25);

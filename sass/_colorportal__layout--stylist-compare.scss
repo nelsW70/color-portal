@@ -143,6 +143,7 @@
             td:first-of-type {
               color: $font-color-primary;
               font-weight: $font-weight-bold;
+              line-height: 1rem;
             }
             tr:nth-of-type(5) td {
               border-bottom: 1px solid rgba(17, 35, 48, 0.25);
