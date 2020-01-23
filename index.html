@@ -549,7 +549,11 @@
     <footer>
       <img src="assets/PPG_Blue_Bug.png" alt="PPG Logo" />
       <p class="footer-trademark">
-        &copy;2019 PPG Industries, Inc. All Rights Reserved.
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        PPG Industries, Inc. All Rights Reserved.
       </p>
     </footer>
     <!-- FOOTER -->
