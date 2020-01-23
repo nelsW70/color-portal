@@ -1,5 +1,17 @@
 /** COLORPORTAL SCROLLABLE TABLE **/
 
+// KEEPS PADDING ON JS GENERATED TABLE HEAD CONSISTENT WITH OTHER TABLE
+.floatThead-wrapper {
+  & .floatThead-container {
+    &
+      .ui.very.basic.striped.padded.table.draggable-droppable.table-scrollable.floatThead-table {
+      & th {
+        padding: 0.725rem;
+      }
+    }
+  }
+}
+
 .scrollable-table-container {
   &.stylist-compare {
     max-height: 250px;
