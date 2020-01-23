@@ -1590,7 +1590,7 @@ p.title-description {
 }
 
 .selected-samples.stylist-compare--data-grid {
-  max-height: 800px;
+  max-height: 1000px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
