@@ -1491,12 +1491,11 @@ p.title-description {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.25rem;
 }
 
 /* TITLE ROW */
 .title-row {
-  margin-bottom: 1.25rem;
+  margin: 1.25rem 0;
 }
 
 /* CUSTOMER INFO ROW */
@@ -2017,7 +2016,7 @@ p.title-description {
 .scrollable-table-container.stylist-compare table.ui.very.basic.striped.padded.table tbody tr.selected .selected-check {
   display: block;
   text-align: center;
-  width: 90px;
+  width: 96px;
 }
 
 /** COLORPORTAL MODALS **/
