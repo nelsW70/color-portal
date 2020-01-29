@@ -1438,13 +1438,19 @@ footer .footer-trademark {
   font-size: 0.875rem;
   font-weight: 500;
   color: #193040;
+  border-radius: 2px;
+  border-top: 1px solid #b3c1cc;
+  border-right: 1px solid #b3c1cc;
+  border-bottom: none;
+  border-left: 1px solid #b3c1cc;
 }
 .ppg-tabs .ui.top.attached.tabular.menu a.item:first-of-type {
-  margin-left: 24px;
+  margin-left: 1rem;
+  border-right: none;
+  border-top-left-radius: 2px;
 }
-.ppg-tabs .ui.top.attached.tabular.menu a.item.active {
+.ppg-tabs .ui.bottom.attached.tab.segment {
   border-radius: 2px 2px 0 0 !important;
-  background-color: rgba(231, 235, 237, 0.5) !important;
 }
 .ppg-tabs .ui.bottom.attached.tab.segment.active {
   background-color: rgba(231, 235, 237, 0.5) !important;

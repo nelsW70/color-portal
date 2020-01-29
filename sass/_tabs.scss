@@ -7,21 +7,27 @@
         font-size: 0.875rem;
         font-weight: $font-weight-semi-bold;
         color: $font-color-primary;
+        border-radius: $border-radius-two;
+        border-top: 1px solid $background-color-gray-three;
+        border-right: 1px solid $background-color-gray-three;
+        border-bottom: none;
+        border-left: 1px solid $background-color-gray-three;
         &:first-of-type {
-          margin-left: 24px;
+          margin-left: 1rem;
+          border-right: none;
+          border-top-left-radius: $border-radius-two;
         }
-        &.active {
-          border-radius: $border-radius-two $border-radius-two 0 0 !important;
-          background-color: $background-color-gray-seven !important;
-        }
+        // &.active {
+        //   border-radius: $border-radius-two $border-radius-two 0 0 !important;
+        //   background-color: $background-color-gray-seven !important;
+        // }
       }
     }
     &.bottom.attached.tab.segment {
+      border-radius: $border-radius-two $border-radius-two 0 0 !important;
       &.active {
         background-color: $background-color-gray-seven !important;
       }
     }
   }
 }
-
-// background-color: $background-color-gray-three;
