@@ -1,1 +1,2 @@
-$('.ppg-tabs.menu .item').tab();
+// TABS
+$('.ppg-tabs .menu .item').tab();

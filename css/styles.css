@@ -1434,6 +1434,22 @@ footer .footer-trademark {
 }
 
 /** TABS **/
+.ppg-tabs .ui.top.attached.tabular.menu a.item {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #193040;
+}
+.ppg-tabs .ui.top.attached.tabular.menu a.item:first-of-type {
+  margin-left: 24px;
+}
+.ppg-tabs .ui.top.attached.tabular.menu a.item.active {
+  border-radius: 2px 2px 0 0 !important;
+  background-color: rgba(231, 235, 237, 0.5) !important;
+}
+.ppg-tabs .ui.bottom.attached.tab.segment.active {
+  background-color: rgba(231, 235, 237, 0.5) !important;
+}
+
 /** COLORPORTAL TYPOGRAPHY **/
 h1 {
   font-weight: 500;
