@@ -1222,7 +1222,7 @@ input[type=search]::-webkit-search-cancel-button {
   position: absolute;
   z-index: -1;
 }
-.ppg-file-upload .ui.grid.container .ui.segment label.ui.tiny.right.floated.button {
+.ppg-file-upload .ui.grid.container .ui.segment label.ui.tiny.button {
   display: flex;
   padding: 0;
   width: 106px;

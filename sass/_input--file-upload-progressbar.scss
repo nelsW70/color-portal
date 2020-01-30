@@ -3,9 +3,6 @@
   align-items: center;
   max-width: 500px;
 
-  // & .ppg.ui.primary {
-  //   height: 38px;
-  // }
   & .ui.grid.container {
     margin: 0 !important;
     width: 100% !important;
@@ -36,7 +33,7 @@
         z-index: -1;
       }
 
-      & label.ui.tiny.right.floated.button {
+      & label.ui.tiny.button {
         display: flex;
         padding: 0;
         width: 106px;
