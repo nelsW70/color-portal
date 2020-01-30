@@ -14,8 +14,7 @@ $('#file-upload').change(function() {
 
 $('#progressbar-one').progress({
   text: {
-    active: '{percent}%',
-    success: 'File successfully imported!'
+    active: '{percent}%'
   }
 });
 
