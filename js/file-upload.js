@@ -9,3 +9,18 @@ $('#file-upload').change(function() {
     .prev('.selected-file-name')
     .text(file);
 });
+
+// FAKES PROGRESS ANIMATION
+
+$('#progressbar-one').progress({
+  text: {
+    active: '{percent}%',
+    success: 'File successfully imported!'
+  }
+});
+
+// FAKE CLICK EVENT ON "Import file" BUTTON TO DEMONSTRATE PROGRESS BAR
+
+$('#demo-animate-progress').click(function() {
+  $('#progressbar-one').progress('increment');
+});

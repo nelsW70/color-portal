@@ -2501,18 +2501,24 @@
     <h4 class="mb-4 font-weight-semi-bold italic">file upload w/animated progress bar</h4>
     <!-- FILE UPLOAD W/ANIMATED PROGRESS BAR -->
     <div class="ppg-file-upload">
-      <div class="ui grid container">
-        <div class="ui segment">
-          <div class="selected-file-name"></div>
-          <input type="file" (change)="fileEvent($event)" class="inputfile" id="file-upload" />
-        <label for="file-upload" class="ui tiny button">
-          Choose file
-        </label>
+      <div class="ppg-file-upload__row-one">
+        <div class="ui grid container">
+          <div class="ui segment">
+            <div class="selected-file-name"></div>
+            <input type="file" (change)="fileEvent($event)" class="inputfile" id="file-upload" />
+          <label for="file-upload" class="ui tiny button">
+            Choose file
+          </label>
+          </div>
         </div>
+        <button class="ppg ui primary button ml-2" id="demo-animate-progress">
+          <span class="button-text">Import File</span>
+        </button>
       </div>
-      <button class="ppg ui primary button ml-2">
-        <span class="button-text">Import File</span>
-      </button>
+      <div class="ppg-file-upload__row-two ui blue  small progress" data-value="1" data-total="20" id="progressbar-one">
+        <div class="bar"></div>
+        <div class="label">Adding Photos</div>
+      </div>
     </div>
     <!-- FILE UPLOAD W/ANIMATED PROGRESS BAR -->
     <div class="ui styled accordion">
@@ -3204,5 +3210,6 @@
 <!-- https://codepen.io/apijay/pen/vJzwdK -->
 <!-- SEMANTIC PROGRESS BAR ANIMATION EXAMPLE -->
 <!-- https://semantic-ui.com/modules/progress.html#/examples -->
+<!-- https://semantic-ui.com/modules/progress.html#/usage -->
 <!-- FILE UPLOAD DISPLAY FILE NAME -->
 <!-- https://stackoverflow.com/questions/41542845/how-to-display-file-name-for-custom-styled-input-file-using-jquery -->
