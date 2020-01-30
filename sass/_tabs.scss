@@ -1,7 +1,5 @@
 /** TABS **/
 
-// CLEAN THIS UP: REMOVE UNUSED STUFF AND USE VARAIBLES!!!
-
 .ppg-tabs {
   & .ui {
     &.top.attached.tabular.menu {
@@ -35,6 +33,7 @@
     &.bottom.attached.tab.segment {
       border-top: 1px solid #d4d4d5 !important;
       border-radius: $border-radius-two $border-radius-two 0 0 !important;
+      padding: 1rem 1.25rem;
       &.active {
         border-top: 1px solid #d4d4d5 !important;
         background-color: $background-color-gray-seven !important;

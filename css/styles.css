@@ -1465,6 +1465,7 @@ footer .footer-trademark {
 .ppg-tabs .ui.bottom.attached.tab.segment {
   border-top: 1px solid #d4d4d5 !important;
   border-radius: 2px 2px 0 0 !important;
+  padding: 1rem 1.25rem;
 }
 .ppg-tabs .ui.bottom.attached.tab.segment.active {
   border-top: 1px solid #d4d4d5 !important;
