@@ -1,11 +1,13 @@
 /** TABS **/
 
+// CLEAN THIS UP: REMOVE UNUSED STUFF AND USE VARAIBLES!!!
+
 .ppg-tabs {
   & .ui {
     &.top.attached.tabular.menu {
       height: 46px;
       position: relative;
-      z-index: 9999;
+      z-index: 2;
       margin-bottom: -1px;
       & a.item {
         font-size: 0.875rem;
