@@ -2500,7 +2500,16 @@
 
     <h4 class="mb-4 font-weight-semi-bold italic">file upload w/animated progress bar</h4>
     <!-- FILE UPLOAD W/ANIMATED PROGRESS BAR -->
-    PUT CONTENT HERE
+    <div class="ppg-file-upload">
+      <div class="ui grid container">
+        <div class="ui segment">
+          <input type="file" (change)="fileEvent($event)" class="inputfile" id="embedpollfileinput" />
+        <label for="embedpollfileinput" class="ui tiny red right floated button">
+          Choose file
+        </label>
+        </div>
+      </div>
+    </div>
     <!-- FILE UPLOAD W/ANIMATED PROGRESS BAR -->
     <div class="ui styled accordion">
       <div class="title">

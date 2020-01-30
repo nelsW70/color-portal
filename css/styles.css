@@ -1189,6 +1189,23 @@ input[type=search]::-webkit-search-cancel-button {
   border: solid 1px #1966ec;
 }
 
+.ppg-file-upload .ui.grid.container {
+  margin: 0 !important;
+  width: 100% !important;
+}
+.ppg-file-upload .ui.grid.container .ui.segment {
+  width: 100%;
+  padding: 0.25rem;
+}
+.ppg-file-upload .ui.grid.container .ui.segment .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
 /** TABLES **/
 table.ui.table thead th {
   font-size: 0.8125rem;

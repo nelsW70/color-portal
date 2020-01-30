@@ -1,0 +1,20 @@
+.ppg-file-upload {
+  & .ui.grid.container {
+    margin: 0 !important;
+    width: 100% !important;
+
+    & .ui.segment {
+      width: 100%;
+      padding: 0.25rem;
+
+      & .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+      }
+    }
+  }
+}
