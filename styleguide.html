@@ -2503,12 +2503,16 @@
     <div class="ppg-file-upload">
       <div class="ui grid container">
         <div class="ui segment">
-          <input type="file" (change)="fileEvent($event)" class="inputfile" id="embedpollfileinput" />
-        <label for="embedpollfileinput" class="ui tiny red right floated button">
+          <div class="selected-file-name"></div>
+          <input type="file" (change)="fileEvent($event)" class="inputfile" id="file-upload" />
+        <label for="file-upload" class="ui tiny right floated button">
           Choose file
         </label>
         </div>
       </div>
+      <button class="ppg ui primary button ml-2">
+        <span class="button-text">Import File</span>
+      </button>
     </div>
     <!-- FILE UPLOAD W/ANIMATED PROGRESS BAR -->
     <div class="ui styled accordion">
@@ -3188,6 +3192,8 @@
     <script src="js/table-scrollable.js"></script>
     <!-- TABS -->
     <script src="js/tabs.js"></script>
+    <!-- FILE UPLOAD -->
+    <script src="js/file-upload.js"></script>
   </body>
 </html>
 

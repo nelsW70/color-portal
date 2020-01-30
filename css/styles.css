@@ -1189,13 +1189,30 @@ input[type=search]::-webkit-search-cancel-button {
   border: solid 1px #1966ec;
 }
 
+.ppg-file-upload {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+}
 .ppg-file-upload .ui.grid.container {
   margin: 0 !important;
   width: 100% !important;
+  border-radius: 2px;
 }
 .ppg-file-upload .ui.grid.container .ui.segment {
   width: 100%;
   padding: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.ppg-file-upload .ui.grid.container .ui.segment .selected-file-name {
+  max-width: 75%;
+  font-size: 0.8125rem;
+  padding-left: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .ppg-file-upload .ui.grid.container .ui.segment .inputfile {
   width: 0.1px;
@@ -1204,6 +1221,20 @@ input[type=search]::-webkit-search-cancel-button {
   overflow: hidden;
   position: absolute;
   z-index: -1;
+}
+.ppg-file-upload .ui.grid.container .ui.segment label.ui.tiny.right.floated.button {
+  display: flex;
+  padding: 0;
+  width: 106px;
+  align-items: center;
+  justify-content: center;
+  color: #193040;
+  font-family: "Suisse Intl", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border-radius: 2px;
+  margin: 0;
+  height: 30px;
 }
 
 /** TABLES **/

@@ -1,11 +1,31 @@
 .ppg-file-upload {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+
+  // & .ppg.ui.primary {
+  //   height: 38px;
+  // }
   & .ui.grid.container {
     margin: 0 !important;
     width: 100% !important;
+    border-radius: $border-radius-two;
 
     & .ui.segment {
       width: 100%;
       padding: 0.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      & .selected-file-name {
+        max-width: 75%;
+        font-size: 0.8125rem;
+        padding-left: 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
 
       & .inputfile {
         width: 0.1px;
@@ -14,6 +34,21 @@
         overflow: hidden;
         position: absolute;
         z-index: -1;
+      }
+
+      & label.ui.tiny.right.floated.button {
+        display: flex;
+        padding: 0;
+        width: 106px;
+        align-items: center;
+        justify-content: center;
+        color: $font-color-primary;
+        font-family: $font-family-primary;
+        font-size: 0.8125rem;
+        font-weight: $font-weight-semi-bold;
+        border-radius: $border-radius-two;
+        margin: 0;
+        height: 30px;
       }
     }
   }
