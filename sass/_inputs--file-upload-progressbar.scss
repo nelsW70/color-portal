@@ -56,9 +56,30 @@
     }
   }
 
-  &__row-two.ui.indicating.progress {
-    & .label {
-      text-align: left;
+  & .file-status-row {
+    display: flex;
+    justify-content: space-between;
+
+    &.hide {
+      display: none;
+    }
+    & .file-status {
+      &--loaded {
+        &.hide {
+          display: none;
+        }
+      }
+      &--loading {
+        &.hide {
+          display: none;
+        }
+      }
+    }
+
+    & .percent-loaded {
+      &:after {
+        content: '%';
+      }
     }
   }
 }

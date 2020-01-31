@@ -2517,10 +2517,14 @@
       </div>
       <div class="ppg-file-upload__row-two ui blue  small progress" data-value="1" data-total="20" id="progressbar-one">
         <div class="bar"></div>
-        <div class="label"></div>
       </div>
-      <div class="file-loading">loading</div>
-      <div class="filed-loaded">done</div>
+      <div class="file-status-row hide">
+        <div class="file-status">
+          <span class="file-status--loading">Importing file...</span>
+          <span class="file-status--loaded hide">File successfully imported!</span>
+        </div>
+        <div class="percent-loaded">0</div>
+      </div>
     </div>
     <!-- FILE UPLOAD W/ANIMATED PROGRESS BAR -->
     <div class="ui styled accordion">

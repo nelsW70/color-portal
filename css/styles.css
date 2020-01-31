@@ -1241,8 +1241,21 @@ input[type=search]::-webkit-search-cancel-button {
   margin: 0;
   height: 30px;
 }
-.ppg-file-upload__row-two.ui.indicating.progress .label {
-  text-align: left;
+.ppg-file-upload .file-status-row {
+  display: flex;
+  justify-content: space-between;
+}
+.ppg-file-upload .file-status-row.hide {
+  display: none;
+}
+.ppg-file-upload .file-status-row .file-status--loaded.hide {
+  display: none;
+}
+.ppg-file-upload .file-status-row .file-status--loading.hide {
+  display: none;
+}
+.ppg-file-upload .file-status-row .percent-loaded:after {
+  content: "%";
 }
 
 /** TABLES **/
