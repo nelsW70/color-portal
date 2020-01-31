@@ -1197,7 +1197,7 @@ input[type=search]::-webkit-search-cancel-button {
 .ppg-file-upload__row-one {
   display: flex;
   align-items: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 .ppg-file-upload__row-one .ui.grid.container {
   margin: 0 !important;
@@ -1241,6 +1241,16 @@ input[type=search]::-webkit-search-cancel-button {
   margin: 0;
   height: 30px;
 }
+.ppg-file-upload__row-two.ui.small.progress {
+  margin: 1rem 0 0.5rem 0;
+}
+.ppg-file-upload__row-two.ui.small.progress .ppg-progress-bar {
+  background-color: #1966ec !important;
+  height: 7px;
+}
+.ppg-file-upload__row-two.ui.small.progress .ppg-progress-bar.hide {
+  display: none;
+}
 .ppg-file-upload .file-status-row {
   display: flex;
   justify-content: space-between;
@@ -1248,11 +1258,24 @@ input[type=search]::-webkit-search-cancel-button {
 .ppg-file-upload .file-status-row.hide {
   display: none;
 }
+.ppg-file-upload .file-status-row .file-status {
+  color: #90a8ba;
+  font-size: 0.75rem;
+}
+.ppg-file-upload .file-status-row .file-status--loaded .loaded-icon {
+  position: relative;
+  top: 1px;
+  color: #0a8d4d;
+  font-size: 0.75rem;
+}
 .ppg-file-upload .file-status-row .file-status--loaded.hide {
   display: none;
 }
 .ppg-file-upload .file-status-row .file-status--loading.hide {
   display: none;
+}
+.ppg-file-upload .file-status-row .percent-loaded {
+  font-size: 0.75rem;
 }
 .ppg-file-upload .file-status-row .percent-loaded:after {
   content: "%";

@@ -25,6 +25,7 @@ $('#demo-animate-progress').on('click', function() {
     $('.file-status-row').removeClass('hide');
     $('.file-status--loaded').addClass('hide');
     $('.file-status--loading').removeClass('hide');
+    $('.ppg-progress-bar').removeClass('hide');
     $progress.progress('increment');
     $displayPercent.text($progress.progress('get value'));
     // stop incrementing when complete

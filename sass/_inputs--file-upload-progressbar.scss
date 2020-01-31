@@ -6,7 +6,7 @@
   &__row-one {
     display: flex;
     align-items: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.5rem;
 
     & .ui.grid.container {
       margin: 0 !important;
@@ -56,6 +56,21 @@
     }
   }
 
+  &__row-two {
+    &.ui.small.progress {
+      margin: 1rem 0 0.5rem 0;
+
+      & .ppg-progress-bar {
+        background-color: $background-color-blue-one !important;
+        height: 7px;
+
+        &.hide {
+          display: none;
+        }
+      }
+    }
+  }
+
   & .file-status-row {
     display: flex;
     justify-content: space-between;
@@ -64,7 +79,15 @@
       display: none;
     }
     & .file-status {
+      color: $font-color-gray-four;
+      font-size: 0.75rem;
       &--loaded {
+        & .loaded-icon {
+          position: relative;
+          top: 1px;
+          color: $font-color-green-one;
+          font-size: 0.75rem;
+        }
         &.hide {
           display: none;
         }
@@ -77,6 +100,7 @@
     }
 
     & .percent-loaded {
+      font-size: 0.75rem;
       &:after {
         content: '%';
       }
