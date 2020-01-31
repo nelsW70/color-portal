@@ -58,7 +58,7 @@
 
   &__row-two {
     &.ui.small.progress {
-      margin: 1rem 0 0.5rem 0;
+      margin: 0.75rem 0 0.5rem 0;
 
       & .ppg-progress-bar {
         background-color: $background-color-blue-one !important;
@@ -71,39 +71,57 @@
     }
   }
 
-  & .file-status-row {
-    display: flex;
-    justify-content: space-between;
+  &__row-three {
+    margin-bottom: 1.25rem;
 
-    &.hide {
-      display: none;
+    &.file-status-row {
+      display: flex;
+      justify-content: space-between;
+
+      &.hide {
+        display: none;
+      }
+      & .file-status {
+        color: $font-color-gray-four;
+        font-size: 0.75rem;
+        &--loaded {
+          & .loaded-icon {
+            position: relative;
+            top: 1px;
+            color: $font-color-green-one;
+            font-size: 0.75rem;
+          }
+          &.hide {
+            display: none;
+          }
+        }
+        &--loading {
+          &.hide {
+            display: none;
+          }
+        }
+      }
+
+      & .percent-loaded {
+        font-size: 0.75rem;
+        &:after {
+          content: '%';
+        }
+      }
     }
-    & .file-status {
-      color: $font-color-gray-four;
-      font-size: 0.75rem;
-      &--loaded {
-        & .loaded-icon {
-          position: relative;
-          top: 1px;
-          color: $font-color-green-one;
-          font-size: 0.75rem;
-        }
-        &.hide {
-          display: none;
-        }
-      }
-      &--loading {
-        &.hide {
-          display: none;
-        }
-      }
+  }
+
+  &__row-four {
+    & hr {
+      margin: 0;
     }
 
-    & .percent-loaded {
-      font-size: 0.75rem;
-      &:after {
-        content: '%';
-      }
+    & button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: right;
+      width: 70px;
     }
   }
 }

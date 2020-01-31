@@ -2518,7 +2518,7 @@
       <div class="ppg-file-upload__row-two ui small progress" data-value="1" data-total="20" id="progressbar-one">
         <div class="bar ppg-progress-bar hide"></div>
       </div>
-      <div class="file-status-row hide">
+      <div class="ppg-file-upload__row-three file-status-row hide">
         <div class="file-status">
           <span class="file-status--loading">Importing file...</span>
           <span class="file-status--loaded hide">
@@ -2530,6 +2530,12 @@
         </div>
         <div class="percent-loaded"></div>
       </div>
+      <div class="ppg-file-upload__row-four">
+        <hr>
+        <button class="ppg ui small button mt-2">
+          <span class="button-text cancel-btn">Cancel</span>
+        </button>
+      </div>
     </div>
     <!-- FILE UPLOAD W/ANIMATED PROGRESS BAR -->
     <div class="ui styled accordion">
@@ -2539,15 +2545,49 @@
       </div>
       <div class="content">
         <p class="transition visible" style="display: block !important;">
-          <code>UPDATE DISPLAY CODE HERE</code>
+          <code>
+            &lt;div&nbsp;class=&quot;ppg-file-upload&quot;&gt;<br/>
+            &nbsp;&nbsp;&lt;div&nbsp;class=&quot;ppg-file-upload__row-one&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;ui&nbsp;grid&nbsp;container&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;ui&nbsp;segment&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;selected-file-name&quot;&gt;&lt;/div&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;type=&quot;file&quot;&nbsp;(change)=&quot;fileEvent($event)&quot;&nbsp;class=&quot;inputfile&quot;&nbsp;id=&quot;file-upload&quot;&nbsp;/&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;for=&quot;file-upload&quot;&nbsp;class=&quot;ui&nbsp;tiny&nbsp;button&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose&nbsp;file<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;ppg&nbsp;ui&nbsp;primary&nbsp;button&nbsp;ml-2&quot;&nbsp;id=&quot;demo-animate-progress&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;button-text&quot;&gt;Import&nbsp;File&lt;/span&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br/>&nbsp;&nbsp;&lt;/div&gt;<br/>
+            &nbsp;&nbsp;&lt;div&nbsp;class=&quot;ppg-file-upload__row-two&nbsp;ui&nbsp;small&nbsp;progress&quot;&nbsp;data-value=&quot;1&quot;&nbsp;data-total=&quot;20&quot;&nbsp;id=&quot;progressbar-one&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;bar&nbsp;ppg-progress-bar&nbsp;hide&quot;&gt;&lt;/div&gt;<br/>
+            &nbsp;&nbsp;&lt;/div&gt;<br/>
+            &nbsp;&nbsp;&lt;div&nbsp;class=&quot;ppg-file-upload__row-three&nbsp;file-status-row&nbsp;hide&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;file-status&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;file-status--loading&quot;&gt;Importing&nbsp;file...&lt;/span&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;file-status--loaded&nbsp;hide&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i&nbsp;class=&quot;material-icons&nbsp;loaded-icon&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;check_circle<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/i&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File&nbsp;successfully&nbsp;imported!<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;percent-loaded&quot;&gt;&lt;/div&gt;<br/>
+            &nbsp;&nbsp;&lt;/div&gt;<br/>&nbsp;&nbsp;&lt;div&nbsp;class=&quot;ppg-file-upload__row-four&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;ppg&nbsp;ui&nbsp;small&nbsp;button&nbsp;mt-2&quot;&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;button-text&nbsp;cancel-btn&quot;&gt;Cancel&lt;/span&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br/>&nbsp;&nbsp;&lt;/div&gt;<br/>&lt;/div&gt;
+          </code>
         </p>
       </div>
     </div>
 
     <p class="requires-comment">
-      requires js script to UPDATE CONTENT HERE
+      requires js script
     </p>
-    <code></code>
+    <code>
+      &lt;script&nbsp;src=&quot;js/file-upload.js&quot;&gt;&lt;/script&gt;
+    </code>
     <hr />
     <h3 class="styleguide">checkbox</h3>
     <!-- CHECKBOX -->
@@ -3216,11 +3256,3 @@
 
 
 
-<!-- NOTES: -->
-<!-- SEMANTIC FILE UPLOAD EXAMPLE -->
-<!-- https://codepen.io/apijay/pen/vJzwdK -->
-<!-- SEMANTIC PROGRESS BAR ANIMATION EXAMPLE -->
-<!-- https://semantic-ui.com/modules/progress.html#/examples -->
-<!-- https://semantic-ui.com/modules/progress.html#/usage -->
-<!-- FILE UPLOAD DISPLAY FILE NAME -->
-<!-- https://stackoverflow.com/questions/41542845/how-to-display-file-name-for-custom-styled-input-file-using-jquery -->
